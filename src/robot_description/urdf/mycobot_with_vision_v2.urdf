@@ -147,7 +147,7 @@
     <visual>
       <geometry>
         <!--- 0.0 0 -0.04 -->
-        <mesh filename="package://robot_description/urdf/SuctionPump.STL"/>
+        <mesh filename="package://robot_description/urdf/SuctionPumpInches.STL"/>
       </geometry>
       <material name="white"/>
       <origin xyz = "0 0 0" rpy = " 0 0 0"/>
@@ -155,7 +155,7 @@
     <collision>
       <geometry>
         <!--- 0.0 0 -0.04 -->
-        <mesh filename="package://robot_description/urdf/SuctionPump.STL"/>
+        <mesh filename="package://robot_description/urdf/SuctionPumpInches.STL"/>
       </geometry>
       <origin xyz = "0 0 0" rpy = " 0 0 0"/>
     </collision>
@@ -219,7 +219,7 @@
     <limit effort = "1000.0" lower = "-3.14" upper = "3.14159" velocity = "0"/>
     <parent link="joint6_flange"/>
     <child link="suction_pump"/>
-    <origin xyz= "0 0.30 0.30" rpy = "0 0 0"/>
+    <origin xyz= "0 0.030 0.030" rpy = "0 0 0"/>
   </joint>
 
   <joint name="vision_joint" type="fixed">

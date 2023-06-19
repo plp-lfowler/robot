@@ -14,6 +14,7 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 urdf/SuctionPump.STL
+urdf/SuctionPumpInches.STL
 urdf/joint1.png
 urdf/joint1_pi.dae
 urdf/joint2.dae

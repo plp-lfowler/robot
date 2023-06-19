@@ -1,0 +1,24 @@
+[5.814s] Invoking command in '/home/lance/robot/src/robot_description': PYTHONPATH=/home/lance/robot/build/robot_description/prefix_override:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/lance/robot/build/robot_description/build install --record /home/lance/robot/build/robot_description/install.log --single-version-externally-managed
+[7.462s] running egg_info
+[7.467s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[7.469s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[7.471s] writing entry points to ../../build/robot_description/robot_description.egg-info/entry_points.txt
+[7.473s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[7.474s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[7.487s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[7.493s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[7.497s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[7.498s]   warnings.warn(
+[7.501s] running build
+[7.502s] running build_py
+[7.503s] running install
+[7.504s] running install_lib
+[7.513s] running install_data
+[7.514s] copying urdf/mycobot_with_vision_v2.urdf -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[7.521s] copying urdf/SuctionPumpInches.STL -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[7.522s] running install_egg_info
+[7.538s] removing '/home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info' (and everything under it)
+[7.541s] Copying ../../build/robot_description/robot_description.egg-info to /home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info
+[7.550s] running install_scripts
+[7.730s] writing list of installed files to '/home/lance/robot/build/robot_description/install.log'
+[7.951s] Invoked command in '/home/lance/robot/src/robot_description' returned '0': PYTHONPATH=/home/lance/robot/build/robot_description/prefix_override:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/lance/robot/build/robot_description/build install --record /home/lance/robot/build/robot_description/install.log --single-version-externally-managed
