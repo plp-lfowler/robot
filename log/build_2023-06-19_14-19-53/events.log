@@ -1,0 +1,162 @@
+[0.000000] (-) TimerEvent: {}
+[0.001987] (description) JobQueued: {'identifier': 'description', 'dependencies': OrderedDict()}
+[0.002780] (motion_planning) JobQueued: {'identifier': 'motion_planning', 'dependencies': OrderedDict()}
+[0.002880] (robot_description) JobQueued: {'identifier': 'robot_description', 'dependencies': OrderedDict()}
+[0.002963] (description) JobStarted: {'identifier': 'description'}
+[0.076952] (motion_planning) JobStarted: {'identifier': 'motion_planning'}
+[0.100468] (-) TimerEvent: {}
+[0.179282] (robot_description) JobStarted: {'identifier': 'robot_description'}
+[0.200872] (-) TimerEvent: {}
+[0.272765] (description) JobProgress: {'identifier': 'description', 'progress': 'cmake'}
+[0.275922] (description) JobProgress: {'identifier': 'description', 'progress': 'build'}
+[0.279141] (description) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lance/robot/build/description', '--', '-j4', '-l4'], 'cwd': '/home/lance/robot/build/description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance/robot/src/robot_description'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1215'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1185,unix/lance-desktop:/tmp/.ICE-unix/1185'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5f4c65f6_0502_4830_869c_680afe046367'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.28AZ61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/home/lance/robot/install/description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/description:/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/opt/ros/humble')]), 'shell': False}
+[0.302100] (-) TimerEvent: {}
+[0.403457] (-) TimerEvent: {}
+[0.504953] (-) TimerEvent: {}
+[0.606061] (-) TimerEvent: {}
+[0.707263] (-) TimerEvent: {}
+[0.807971] (-) TimerEvent: {}
+[0.908658] (-) TimerEvent: {}
+[1.009329] (-) TimerEvent: {}
+[1.110028] (-) TimerEvent: {}
+[1.210792] (-) TimerEvent: {}
+[1.311492] (-) TimerEvent: {}
+[1.412201] (-) TimerEvent: {}
+[1.512963] (-) TimerEvent: {}
+[1.613686] (-) TimerEvent: {}
+[1.714452] (-) TimerEvent: {}
+[1.815389] (-) TimerEvent: {}
+[1.916889] (-) TimerEvent: {}
+[1.939657] (description) CommandEnded: {'returncode': 0}
+[2.017096] (-) TimerEvent: {}
+[2.118008] (-) TimerEvent: {}
+[2.218960] (-) TimerEvent: {}
+[2.319761] (-) TimerEvent: {}
+[2.420632] (-) TimerEvent: {}
+[2.521789] (-) TimerEvent: {}
+[2.622460] (-) TimerEvent: {}
+[2.723224] (-) TimerEvent: {}
+[2.824003] (-) TimerEvent: {}
+[2.924849] (-) TimerEvent: {}
+[3.025949] (-) TimerEvent: {}
+[3.127152] (-) TimerEvent: {}
+[3.228200] (-) TimerEvent: {}
+[3.329350] (-) TimerEvent: {}
+[3.430465] (-) TimerEvent: {}
+[3.535499] (-) TimerEvent: {}
+[3.586258] (description) JobProgress: {'identifier': 'description', 'progress': 'install'}
+[3.640704] (description) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lance/robot/build/description'], 'cwd': '/home/lance/robot/build/description', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance/robot/src/robot_description'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1215'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1185,unix/lance-desktop:/tmp/.ICE-unix/1185'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/5f4c65f6_0502_4830_869c_680afe046367'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.28AZ61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.99'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/home/lance/robot/install/description:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/description'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/description:/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/opt/ros/humble')]), 'shell': False}
+[3.647186] (-) TimerEvent: {}
+[3.678525] (description) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.682486] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/ament_index/resource_index/package_run_dependencies/description\n'}
+[3.684733] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/ament_index/resource_index/parent_prefix_path/description\n'}
+[3.689044] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/environment/ament_prefix_path.sh\n'}
+[3.691301] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/environment/ament_prefix_path.dsv\n'}
+[3.695723] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/environment/path.sh\n'}
+[3.697704] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/environment/path.dsv\n'}
+[3.699961] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.bash\n'}
+[3.705480] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.sh\n'}
+[3.707289] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.zsh\n'}
+[3.709423] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.dsv\n'}
+[3.711296] (description) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/description/share/description/package.dsv\n'}
+[3.715959] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/ament_index/resource_index/packages/description\n'}
+[3.718453] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/cmake/descriptionConfig.cmake\n'}
+[3.720078] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/cmake/descriptionConfig-version.cmake\n'}
+[3.721835] (description) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/description/share/description/package.xml\n'}
+[3.745555] (description) CommandEnded: {'returncode': 0}
+[3.753915] (-) TimerEvent: {}
+[3.860916] (-) TimerEvent: {}
+[3.962360] (-) TimerEvent: {}
+[4.064561] (-) TimerEvent: {}
+[4.170588] (-) TimerEvent: {}
+[4.259699] (description) JobEnded: {'identifier': 'description', 'rc': 0}
+[4.271060] (-) TimerEvent: {}
+[4.372472] (-) TimerEvent: {}
+[4.473371] (-) TimerEvent: {}
+[4.574210] (-) TimerEvent: {}
+[4.675622] (-) TimerEvent: {}
+[4.776682] (-) TimerEvent: {}
+[4.877411] (-) TimerEvent: {}
+[4.978181] (-) TimerEvent: {}
+[5.078963] (-) TimerEvent: {}
+[5.179917] (-) TimerEvent: {}
+[5.281102] (-) TimerEvent: {}
+[5.381884] (-) TimerEvent: {}
+[5.482773] (-) TimerEvent: {}
+[5.583606] (-) TimerEvent: {}
+[5.684419] (-) TimerEvent: {}
+[5.785940] (-) TimerEvent: {}
+[5.888754] (-) TimerEvent: {}
+[5.992135] (-) TimerEvent: {}
+[6.097953] (-) TimerEvent: {}
+[6.135367] (robot_description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_description', 'build', '--build-base', '/home/lance/robot/build/robot_description/build', 'install', '--record', '/home/lance/robot/build/robot_description/install.log', '--single-version-externally-managed'], 'cwd': '/home/lance/robot/src/robot_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lance', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lance', 'OLDPWD': '/home/lance/robot/src/robot_description', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1215', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lance/robot/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lance', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lance', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lance-desktop:@/tmp/.ICE-unix/1185,unix/lance-desktop:/tmp/.ICE-unix/1185', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5f4c65f6_0502_4830_869c_680afe046367', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.28AZ61', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/home/lance/robot/install/description:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lance/robot/build/robot_description', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lance/robot/build/robot_description/prefix_override:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/lance/robot/install/description'}, 'shell': False}
+[6.152577] (motion_planning) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/motion_planning', 'build', '--build-base', '/home/lance/robot/build/motion_planning/build', 'install', '--record', '/home/lance/robot/build/motion_planning/install.log', '--single-version-externally-managed'], 'cwd': '/home/lance/robot/src/motion_planning', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lance', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lance', 'OLDPWD': '/home/lance/robot/src/robot_description', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1215', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lance/robot/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lance', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lance', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lance-desktop:@/tmp/.ICE-unix/1185,unix/lance-desktop:/tmp/.ICE-unix/1185', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/5f4c65f6_0502_4830_869c_680afe046367', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.28AZ61', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.99', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/home/lance/robot/install/description:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lance/robot/build/motion_planning', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lance/robot/build/motion_planning/prefix_override:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/lance/robot/install/description'}, 'shell': False}
+[6.198163] (-) TimerEvent: {}
+[6.299816] (-) TimerEvent: {}
+[6.401611] (-) TimerEvent: {}
+[6.502677] (-) TimerEvent: {}
+[6.604186] (-) TimerEvent: {}
+[6.706582] (-) TimerEvent: {}
+[6.808020] (-) TimerEvent: {}
+[6.909091] (-) TimerEvent: {}
+[7.010015] (-) TimerEvent: {}
+[7.111057] (-) TimerEvent: {}
+[7.212071] (-) TimerEvent: {}
+[7.312859] (-) TimerEvent: {}
+[7.413602] (-) TimerEvent: {}
+[7.514450] (-) TimerEvent: {}
+[7.615804] (-) TimerEvent: {}
+[7.717106] (-) TimerEvent: {}
+[7.817826] (-) TimerEvent: {}
+[7.820366] (robot_description) StdoutLine: {'line': b'running egg_info\n'}
+[7.823720] (robot_description) StdoutLine: {'line': b'writing ../../build/robot_description/robot_description.egg-info/PKG-INFO\n'}
+[7.827497] (robot_description) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt\n'}
+[7.829373] (robot_description) StdoutLine: {'line': b'writing entry points to ../../build/robot_description/robot_description.egg-info/entry_points.txt\n'}
+[7.832075] (robot_description) StdoutLine: {'line': b'writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt\n'}
+[7.834497] (robot_description) StdoutLine: {'line': b'writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt\n'}
+[7.846752] (robot_description) StdoutLine: {'line': b"reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'\n"}
+[7.853218] (robot_description) StdoutLine: {'line': b"writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'\n"}
+[7.854682] (robot_description) StdoutLine: {'line': b'running build\n'}
+[7.855428] (robot_description) StdoutLine: {'line': b'running build_py\n'}
+[7.858674] (robot_description) StdoutLine: {'line': b'running install\n'}
+[7.860651] (robot_description) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[7.861723] (robot_description) StderrLine: {'line': b'  warnings.warn(\n'}
+[7.862875] (robot_description) StdoutLine: {'line': b'running install_lib\n'}
+[7.866070] (motion_planning) StdoutLine: {'line': b'running egg_info\n'}
+[7.870812] (motion_planning) StdoutLine: {'line': b'writing ../../build/motion_planning/motion_planning.egg-info/PKG-INFO\n'}
+[7.872682] (robot_description) StdoutLine: {'line': b'running install_data\n'}
+[7.873501] (motion_planning) StdoutLine: {'line': b'writing dependency_links to ../../build/motion_planning/motion_planning.egg-info/dependency_links.txt\n'}
+[7.874683] (motion_planning) StdoutLine: {'line': b'writing entry points to ../../build/motion_planning/motion_planning.egg-info/entry_points.txt\n'}
+[7.875712] (motion_planning) StdoutLine: {'line': b'writing requirements to ../../build/motion_planning/motion_planning.egg-info/requires.txt\n'}
+[7.876881] (motion_planning) StdoutLine: {'line': b'writing top-level names to ../../build/motion_planning/motion_planning.egg-info/top_level.txt\n'}
+[7.881868] (robot_description) StdoutLine: {'line': b'copying urdf/SuctionPump.STL -> /home/lance/robot/install/robot_description/share/robot_description/urdf\n'}
+[7.888170] (motion_planning) StdoutLine: {'line': b"reading manifest file '../../build/motion_planning/motion_planning.egg-info/SOURCES.txt'\n"}
+[7.907274] (motion_planning) StdoutLine: {'line': b"writing manifest file '../../build/motion_planning/motion_planning.egg-info/SOURCES.txt'\n"}
+[7.908477] (motion_planning) StdoutLine: {'line': b'running build\n'}
+[7.909125] (motion_planning) StdoutLine: {'line': b'running build_py\n'}
+[7.909821] (motion_planning) StdoutLine: {'line': b'running install\n'}
+[7.910522] (motion_planning) StderrLine: {'line': b'/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[7.911253] (motion_planning) StderrLine: {'line': b'  warnings.warn(\n'}
+[7.911718] (robot_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.912419] (motion_planning) StdoutLine: {'line': b'running install_lib\n'}
+[7.918017] (-) TimerEvent: {}
+[7.918643] (robot_description) StdoutLine: {'line': b"removing '/home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[7.919574] (motion_planning) StdoutLine: {'line': b'running install_data\n'}
+[7.920283] (robot_description) StdoutLine: {'line': b'Copying ../../build/robot_description/robot_description.egg-info to /home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info\n'}
+[7.922477] (motion_planning) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.931122] (robot_description) StdoutLine: {'line': b'running install_scripts\n'}
+[7.933757] (motion_planning) StdoutLine: {'line': b"removing '/home/lance/robot/install/motion_planning/lib/python3.10/site-packages/motion_planning-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[7.936683] (motion_planning) StdoutLine: {'line': b'Copying ../../build/motion_planning/motion_planning.egg-info to /home/lance/robot/install/motion_planning/lib/python3.10/site-packages/motion_planning-0.0.0-py3.10.egg-info\n'}
+[7.946307] (motion_planning) StdoutLine: {'line': b'running install_scripts\n'}
+[8.018257] (-) TimerEvent: {}
+[8.060009] (robot_description) StdoutLine: {'line': b"writing list of installed files to '/home/lance/robot/build/robot_description/install.log'\n"}
+[8.095043] (motion_planning) StdoutLine: {'line': b"writing list of installed files to '/home/lance/robot/build/motion_planning/install.log'\n"}
+[8.119635] (-) TimerEvent: {}
+[8.225932] (-) TimerEvent: {}
+[8.338719] (robot_description) CommandEnded: {'returncode': 0}
+[8.362611] (-) TimerEvent: {}
+[8.423021] (robot_description) JobEnded: {'identifier': 'robot_description', 'rc': 0}
+[8.457246] (motion_planning) CommandEnded: {'returncode': 0}
+[8.462874] (-) TimerEvent: {}
+[8.534744] (motion_planning) JobEnded: {'identifier': 'motion_planning', 'rc': 0}
+[8.539594] (-) EventReactorShutdown: {}
