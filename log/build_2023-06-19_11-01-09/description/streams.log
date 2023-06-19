@@ -1,0 +1,20 @@
+[0.291s] Invoking command in '/home/lance/robot/build/description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/description -- -j4 -l4
+[1.745s] Invoked command in '/home/lance/robot/build/description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/description -- -j4 -l4
+[3.215s] Invoking command in '/home/lance/robot/build/description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lance/robot/build/description
+[3.275s] -- Install configuration: ""
+[3.276s] -- Up-to-date: /home/lance/robot/install/description/share/ament_index/resource_index/package_run_dependencies/description
+[3.277s] -- Up-to-date: /home/lance/robot/install/description/share/ament_index/resource_index/parent_prefix_path/description
+[3.277s] -- Up-to-date: /home/lance/robot/install/description/share/description/environment/ament_prefix_path.sh
+[3.278s] -- Up-to-date: /home/lance/robot/install/description/share/description/environment/ament_prefix_path.dsv
+[3.278s] -- Up-to-date: /home/lance/robot/install/description/share/description/environment/path.sh
+[3.279s] -- Up-to-date: /home/lance/robot/install/description/share/description/environment/path.dsv
+[3.279s] -- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.bash
+[3.280s] -- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.sh
+[3.280s] -- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.zsh
+[3.289s] -- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.dsv
+[3.292s] -- Installing: /home/lance/robot/install/description/share/description/package.dsv
+[3.293s] -- Up-to-date: /home/lance/robot/install/description/share/ament_index/resource_index/packages/description
+[3.294s] -- Up-to-date: /home/lance/robot/install/description/share/description/cmake/descriptionConfig.cmake
+[3.303s] -- Up-to-date: /home/lance/robot/install/description/share/description/cmake/descriptionConfig-version.cmake
+[3.304s] -- Up-to-date: /home/lance/robot/install/description/share/description/package.xml
+[3.306s] Invoked command in '/home/lance/robot/build/description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lance/robot/build/description
