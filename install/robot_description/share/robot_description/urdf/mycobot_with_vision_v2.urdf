@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mycobot_ai">
   <material name="white">
-    <color rgba="1 0 1 1"/>
+    <color rgba="1 1 1 1"/>
   </material>
 
   <link name="env">
@@ -147,17 +147,17 @@
     <visual>
       <geometry>
         <!--- 0.0 0 -0.04 -->
-        <mesh filename="package://robot_description/urdf/SuctionPumpInches.STL"/>
+        <mesh filename="package://robot_description/urdf/SuctionPumpMeters.STL"/>
       </geometry>
       <material name="white"/>
-      <origin xyz = "0 0 0" rpy = " 0 0 0"/>
+      <origin xyz = "-0.01882 0.01232 0" rpy = "1.5708 0 0"/>
     </visual>
     <collision>
       <geometry>
         <!--- 0.0 0 -0.04 -->
-        <mesh filename="package://robot_description/urdf/SuctionPumpInches.STL"/>
+        <mesh filename="package://robot_description/urdf/SuctionPumpMeters.STL"/>
       </geometry>
-      <origin xyz = "0 0 0" rpy = " 0 0 0"/>
+      <origin xyz = "-0.01882 0.01232 0" rpy = "1.5708 0 0"/>
     </collision>
   </link>
 
@@ -219,7 +219,7 @@
     <limit effort = "1000.0" lower = "-3.14" upper = "3.14159" velocity = "0"/>
     <parent link="joint6_flange"/>
     <child link="suction_pump"/>
-    <origin xyz= "0 0.030 0.030" rpy = "0 0 0"/>
+    <origin xyz= "0 0 0" rpy = "0 0 0"/>
   </joint>
 
   <joint name="vision_joint" type="fixed">

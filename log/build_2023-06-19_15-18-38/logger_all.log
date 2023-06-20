@@ -1,0 +1,239 @@
+[1.677s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.677s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff95b16050>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff965c4c40>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff965c4c40>>)
+[1.800s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.800s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.801s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.801s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.801s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.801s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.801s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lance/robot'
+[1.802s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.802s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.802s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.803s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.856s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.857s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.857s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.858s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.859s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.860s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.861s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.862s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.863s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.863s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.863s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.864s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.865s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.865s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.865s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.865s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.865s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.865s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extensions ['ignore', 'ignore_ament_install']
+[1.866s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extension 'ignore'
+[1.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extension 'ignore_ament_install'
+[1.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extensions ['colcon_pkg']
+[1.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extension 'colcon_pkg'
+[1.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extensions ['colcon_meta']
+[1.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extension 'colcon_meta'
+[1.867s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extensions ['ros']
+[1.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/description) by extension 'ros'
+[1.876s] DEBUG:colcon.colcon_core.package_identification:Package 'src/description' with type 'ros.ament_cmake' and name 'description'
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planning) by extensions ['ignore', 'ignore_ament_install']
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planning) by extension 'ignore'
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planning) by extension 'ignore_ament_install'
+[1.877s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planning) by extensions ['colcon_pkg']
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planning) by extension 'colcon_pkg'
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planning) by extensions ['colcon_meta']
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planning) by extension 'colcon_meta'
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planning) by extensions ['ros']
+[1.878s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_planning) by extension 'ros'
+[1.880s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motion_planning' with type 'ros.ament_python' and name 'motion_planning'
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore'
+[1.881s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ignore_ament_install'
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_pkg']
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_pkg'
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['colcon_meta']
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'colcon_meta'
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extensions ['ros']
+[1.882s] Level 1:colcon.colcon_core.package_identification:_identify(src/robot_description) by extension 'ros'
+[1.885s] DEBUG:colcon.colcon_core.package_identification:Package 'src/robot_description' with type 'ros.ament_python' and name 'robot_description'
+[1.885s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.885s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.885s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.886s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.886s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.010s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.028s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/lance/robot/install
+[2.042s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 311 installed packages in /opt/ros/humble
+[2.054s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.343s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_args' from command line to 'None'
+[2.343s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_target' from command line to 'None'
+[2.343s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.344s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.344s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_clean_first' from command line to 'False'
+[2.344s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'cmake_force_configure' from command line to 'False'
+[2.344s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'ament_cmake_args' from command line to 'None'
+[2.344s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.344s] Level 5:colcon.colcon_core.verb:set package 'description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.344s] DEBUG:colcon.colcon_core.verb:Building package 'description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lance/robot/build/description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lance/robot/install/description', 'merge_install': False, 'path': '/home/lance/robot/src/description', 'symlink_install': False, 'test_result_base': None}
+[2.351s] Level 5:colcon.colcon_core.verb:set package 'motion_planning' build argument 'cmake_args' from command line to 'None'
+[2.351s] Level 5:colcon.colcon_core.verb:set package 'motion_planning' build argument 'cmake_target' from command line to 'None'
+[2.352s] Level 5:colcon.colcon_core.verb:set package 'motion_planning' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.352s] Level 5:colcon.colcon_core.verb:set package 'motion_planning' build argument 'cmake_clean_cache' from command line to 'False'
+[2.352s] Level 5:colcon.colcon_core.verb:set package 'motion_planning' build argument 'cmake_clean_first' from command line to 'False'
+[2.352s] Level 5:colcon.colcon_core.verb:set package 'motion_planning' build argument 'cmake_force_configure' from command line to 'False'
+[2.352s] Level 5:colcon.colcon_core.verb:set package 'motion_planning' build argument 'ament_cmake_args' from command line to 'None'
+[2.352s] Level 5:colcon.colcon_core.verb:set package 'motion_planning' build argument 'catkin_cmake_args' from command line to 'None'
+[2.352s] Level 5:colcon.colcon_core.verb:set package 'motion_planning' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.352s] DEBUG:colcon.colcon_core.verb:Building package 'motion_planning' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lance/robot/build/motion_planning', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lance/robot/install/motion_planning', 'merge_install': False, 'path': '/home/lance/robot/src/motion_planning', 'symlink_install': False, 'test_result_base': None}
+[2.359s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_args' from command line to 'None'
+[2.359s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target' from command line to 'None'
+[2.359s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.360s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[2.360s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_clean_first' from command line to 'False'
+[2.360s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'cmake_force_configure' from command line to 'False'
+[2.360s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'ament_cmake_args' from command line to 'None'
+[2.360s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[2.360s] Level 5:colcon.colcon_core.verb:set package 'robot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.360s] DEBUG:colcon.colcon_core.verb:Building package 'robot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/lance/robot/build/robot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/lance/robot/install/robot_description', 'merge_install': False, 'path': '/home/lance/robot/src/robot_description', 'symlink_install': False, 'test_result_base': None}
+[2.366s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.392s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.393s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/lance/robot/src/description' with build type 'ament_cmake'
+[2.394s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/lance/robot/src/description'
+[2.424s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.426s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.426s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.466s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/lance/robot/src/motion_planning' with build type 'ament_python'
+[2.467s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_planning', 'ament_prefix_path')
+[2.497s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/motion_planning/share/motion_planning/hook/ament_prefix_path.ps1'
+[2.501s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lance/robot/install/motion_planning/share/motion_planning/hook/ament_prefix_path.dsv'
+[2.504s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/motion_planning/share/motion_planning/hook/ament_prefix_path.sh'
+[2.525s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.526s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.562s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/lance/robot/src/robot_description' with build type 'ament_python'
+[2.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'ament_prefix_path')
+[2.590s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/robot_description/share/robot_description/hook/ament_prefix_path.ps1'
+[2.593s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lance/robot/install/robot_description/share/robot_description/hook/ament_prefix_path.dsv'
+[2.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/robot_description/share/robot_description/hook/ament_prefix_path.sh'
+[2.610s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.610s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.675s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lance/robot/build/description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/description -- -j4 -l4
+[4.291s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lance/robot/src/motion_planning'
+[4.311s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.311s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lance/robot/build/description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/description -- -j4 -l4
+[5.891s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/lance/robot/src/robot_description'
+[5.904s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[5.905s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.018s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lance/robot/build/description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/opt/ros/humble /usr/bin/cmake --install /home/lance/robot/build/description
+[6.104s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(description)
+[6.121s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lance/robot/build/description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/opt/ros/humble /usr/bin/cmake --install /home/lance/robot/build/description
+[6.165s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description' for CMake module files
+[6.168s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description' for CMake config files
+[6.170s] Level 1:colcon.colcon_core.shell:create_environment_hook('description', 'cmake_prefix_path')
+[6.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/description/share/description/hook/cmake_prefix_path.ps1'
+[6.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lance/robot/install/description/share/description/hook/cmake_prefix_path.dsv'
+[6.196s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/description/share/description/hook/cmake_prefix_path.sh'
+[6.201s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description/bin'
+[6.202s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description/lib/pkgconfig/description.pc'
+[6.203s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description/lib/python3.10/site-packages'
+[6.205s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description/bin'
+[6.233s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/description/share/description/package.ps1'
+[6.238s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lance/robot/install/description/share/description/package.dsv'
+[6.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/description/share/description/package.sh'
+[6.249s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/description/share/description/package.bash'
+[6.255s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/description/share/description/package.zsh'
+[6.260s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lance/robot/install/description/share/colcon-core/packages/description)
+[6.448s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(description)
+[6.479s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description' for CMake module files
+[6.482s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description' for CMake config files
+[6.484s] Level 1:colcon.colcon_core.shell:create_environment_hook('description', 'cmake_prefix_path')
+[6.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/description/share/description/hook/cmake_prefix_path.ps1'
+[6.514s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lance/robot/install/description/share/description/hook/cmake_prefix_path.dsv'
+[6.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/description/share/description/hook/cmake_prefix_path.sh'
+[6.521s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description/bin'
+[6.522s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description/lib/pkgconfig/description.pc'
+[6.524s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description/lib/python3.10/site-packages'
+[6.525s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/description/bin'
+[6.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/description/share/description/package.ps1'
+[6.560s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lance/robot/install/description/share/description/package.dsv'
+[6.567s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/description/share/description/package.sh'
+[6.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/description/share/description/package.bash'
+[6.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/description/share/description/package.zsh'
+[6.580s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lance/robot/install/description/share/colcon-core/packages/description)
+[8.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lance/robot/src/motion_planning': PYTHONPATH=/home/lance/robot/build/motion_planning/prefix_override:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motion_planning build --build-base /home/lance/robot/build/motion_planning/build install --record /home/lance/robot/build/motion_planning/install.log --single-version-externally-managed
+[8.547s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/lance/robot/src/robot_description': PYTHONPATH=/home/lance/robot/build/robot_description/prefix_override:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/lance/robot/build/robot_description/build install --record /home/lance/robot/build/robot_description/install.log --single-version-externally-managed
+[10.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lance/robot/src/motion_planning' returned '0': PYTHONPATH=/home/lance/robot/build/motion_planning/prefix_override:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motion_planning build --build-base /home/lance/robot/build/motion_planning/build install --record /home/lance/robot/build/motion_planning/install.log --single-version-externally-managed
+[10.597s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/motion_planning' for CMake module files
+[10.601s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/motion_planning' for CMake config files
+[10.607s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/motion_planning/lib'
+[10.610s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/motion_planning/bin'
+[10.611s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/motion_planning/lib/pkgconfig/motion_planning.pc'
+[10.613s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/motion_planning/lib/python3.10/site-packages'
+[10.614s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_planning', 'pythonpath')
+[10.647s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/motion_planning/share/motion_planning/hook/pythonpath.ps1'
+[10.654s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lance/robot/install/motion_planning/share/motion_planning/hook/pythonpath.dsv'
+[10.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/motion_planning/share/motion_planning/hook/pythonpath.sh'
+[10.670s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/motion_planning/bin'
+[10.671s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_planning)
+[10.694s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/motion_planning/share/motion_planning/package.ps1'
+[10.699s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lance/robot/install/motion_planning/share/motion_planning/package.dsv'
+[10.702s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/motion_planning/share/motion_planning/package.sh'
+[10.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/motion_planning/share/motion_planning/package.bash'
+[10.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/motion_planning/share/motion_planning/package.zsh'
+[10.710s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lance/robot/install/motion_planning/share/colcon-core/packages/motion_planning)
+[10.751s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/robot_description' for CMake module files
+[10.755s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/lance/robot/src/robot_description' returned '0': PYTHONPATH=/home/lance/robot/build/robot_description/prefix_override:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/lance/robot/build/robot_description/build install --record /home/lance/robot/build/robot_description/install.log --single-version-externally-managed
+[10.757s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/robot_description' for CMake config files
+[10.762s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/robot_description/lib'
+[10.762s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/robot_description/bin'
+[10.763s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/robot_description/lib/pkgconfig/robot_description.pc'
+[10.764s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/robot_description/lib/python3.10/site-packages'
+[10.765s] Level 1:colcon.colcon_core.shell:create_environment_hook('robot_description', 'pythonpath')
+[10.778s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/robot_description/share/robot_description/hook/pythonpath.ps1'
+[10.780s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/lance/robot/install/robot_description/share/robot_description/hook/pythonpath.dsv'
+[10.782s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/lance/robot/install/robot_description/share/robot_description/hook/pythonpath.sh'
+[10.785s] Level 1:colcon.colcon_core.environment:checking '/home/lance/robot/install/robot_description/bin'
+[10.786s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(robot_description)
+[10.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/robot_description/share/robot_description/package.ps1'
+[10.810s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/lance/robot/install/robot_description/share/robot_description/package.dsv'
+[10.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/robot_description/share/robot_description/package.sh'
+[10.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/robot_description/share/robot_description/package.bash'
+[10.818s] INFO:colcon.colcon_core.shell:Creating package script '/home/lance/robot/install/robot_description/share/robot_description/package.zsh'
+[10.821s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/lance/robot/install/robot_description/share/colcon-core/packages/robot_description)
+[10.822s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[10.825s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[10.826s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[10.827s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[10.857s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[10.858s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[10.858s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[10.928s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[10.945s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lance/robot/install/local_setup.ps1'
+[10.950s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lance/robot/install/_local_setup_util_ps1.py'
+[10.958s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lance/robot/install/setup.ps1'
+[10.967s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lance/robot/install/local_setup.sh'
+[10.971s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/lance/robot/install/_local_setup_util_sh.py'
+[10.974s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lance/robot/install/setup.sh'
+[10.984s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lance/robot/install/local_setup.bash'
+[10.988s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lance/robot/install/setup.bash'
+[11.000s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/lance/robot/install/local_setup.zsh'
+[11.004s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/lance/robot/install/setup.zsh'

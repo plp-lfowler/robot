@@ -1,0 +1,22 @@
+[5.856s] Invoking command in '/home/lance/robot/src/motion_planning': PYTHONPATH=/home/lance/robot/build/motion_planning/prefix_override:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motion_planning build --build-base /home/lance/robot/build/motion_planning/build install --record /home/lance/robot/build/motion_planning/install.log --single-version-externally-managed
+[7.611s] running egg_info
+[7.614s] writing ../../build/motion_planning/motion_planning.egg-info/PKG-INFO
+[7.616s] writing dependency_links to ../../build/motion_planning/motion_planning.egg-info/dependency_links.txt
+[7.617s] writing entry points to ../../build/motion_planning/motion_planning.egg-info/entry_points.txt
+[7.619s] writing requirements to ../../build/motion_planning/motion_planning.egg-info/requires.txt
+[7.620s] writing top-level names to ../../build/motion_planning/motion_planning.egg-info/top_level.txt
+[7.630s] reading manifest file '../../build/motion_planning/motion_planning.egg-info/SOURCES.txt'
+[7.635s] writing manifest file '../../build/motion_planning/motion_planning.egg-info/SOURCES.txt'
+[7.636s] running build
+[7.636s] running build_py
+[7.637s] running install
+[7.638s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[7.639s]   warnings.warn(
+[7.640s] running install_lib
+[7.655s] running install_data
+[7.660s] running install_egg_info
+[7.667s] removing '/home/lance/robot/install/motion_planning/lib/python3.10/site-packages/motion_planning-0.0.0-py3.10.egg-info' (and everything under it)
+[7.670s] Copying ../../build/motion_planning/motion_planning.egg-info to /home/lance/robot/install/motion_planning/lib/python3.10/site-packages/motion_planning-0.0.0-py3.10.egg-info
+[7.678s] running install_scripts
+[7.798s] writing list of installed files to '/home/lance/robot/build/motion_planning/install.log'
+[8.039s] Invoked command in '/home/lance/robot/src/motion_planning' returned '0': PYTHONPATH=/home/lance/robot/build/motion_planning/prefix_override:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motion_planning build --build-base /home/lance/robot/build/motion_planning/build install --record /home/lance/robot/build/motion_planning/install.log --single-version-externally-managed

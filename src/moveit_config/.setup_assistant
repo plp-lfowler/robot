@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: robot_description
+    relative_path: urdf/mycobot_with_vision_v2.urdf
+  srdf:
+    relative_path: config/mycobot_ai.srdf
+  package_settings:
+    author_name: Lance Fowler
+    author_email: lance.fowler@plp.com
+    generated_timestamp: 1687268662
