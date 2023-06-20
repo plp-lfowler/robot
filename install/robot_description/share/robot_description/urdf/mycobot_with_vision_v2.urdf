@@ -16,7 +16,7 @@
     <collision>
       <geometry>
         <!--- 0.0 0 -0.04  1.5708 3.14159-->
-        <mesh filename="package://robot_description/urdf/suit_env_v2.dae"/>
+        <mesh filename="package://robot_description/urdf/env_meters.STL"/>
       </geometry>
       <!-- <origin xyz = "0 0 -0.02 " rpy = "1.5708 0 -1.5708"/> -->
       <origin xyz = "0.16 0 0.0 " rpy = "0 0 3.14159"/>

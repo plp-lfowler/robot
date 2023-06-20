@@ -1,0 +1,20 @@
+[1.976s] Invoking command in '/home/lance/robot/build/description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/description -- -j4 -l4
+[3.882s] Invoked command in '/home/lance/robot/build/description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/description -- -j4 -l4
+[4.162s] Invoking command in '/home/lance/robot/build/description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/opt/ros/humble /usr/bin/cmake --install /home/lance/robot/build/description
+[4.219s] -- Install configuration: ""
+[4.223s] -- Up-to-date: /home/lance/robot/install/description/share/ament_index/resource_index/package_run_dependencies/description
+[4.227s] -- Up-to-date: /home/lance/robot/install/description/share/ament_index/resource_index/parent_prefix_path/description
+[4.229s] -- Up-to-date: /home/lance/robot/install/description/share/description/environment/ament_prefix_path.sh
+[4.231s] -- Up-to-date: /home/lance/robot/install/description/share/description/environment/ament_prefix_path.dsv
+[4.233s] -- Up-to-date: /home/lance/robot/install/description/share/description/environment/path.sh
+[4.234s] -- Up-to-date: /home/lance/robot/install/description/share/description/environment/path.dsv
+[4.234s] -- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.bash
+[4.236s] -- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.sh
+[4.237s] -- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.zsh
+[4.238s] -- Up-to-date: /home/lance/robot/install/description/share/description/local_setup.dsv
+[4.250s] -- Installing: /home/lance/robot/install/description/share/description/package.dsv
+[4.252s] -- Up-to-date: /home/lance/robot/install/description/share/ament_index/resource_index/packages/description
+[4.253s] -- Up-to-date: /home/lance/robot/install/description/share/description/cmake/descriptionConfig.cmake
+[4.254s] -- Up-to-date: /home/lance/robot/install/description/share/description/cmake/descriptionConfig-version.cmake
+[4.255s] -- Up-to-date: /home/lance/robot/install/description/share/description/package.xml
+[4.276s] Invoked command in '/home/lance/robot/build/description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/motion_planning:/opt/ros/humble /usr/bin/cmake --install /home/lance/robot/build/description
