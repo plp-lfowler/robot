@@ -1,0 +1,22 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/lance/robot/build/robot_description",
+        "/home/lance/robot/install/robot_description/lib/python3.10/site-packages",
+        "/home/lance/robot/build/motion_planning",
+        "/home/lance/robot/install/motion_planning/lib/python3.10/site-packages",
+        "/home/lance/robot/build/controllers",
+        "/home/lance/robot/install/controllers/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/lance/robot/build/robot_description",
+        "/home/lance/robot/install/robot_description/lib/python3.10/site-packages",
+        "/home/lance/robot/build/motion_planning",
+        "/home/lance/robot/install/motion_planning/lib/python3.10/site-packages",
+        "/home/lance/robot/build/controllers",
+        "/home/lance/robot/install/controllers/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

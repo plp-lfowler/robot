@@ -1,0 +1,10 @@
+/home/lance/robot/build/my_cobot_control/CMakeFiles/uninstall.dir
+/home/lance/robot/build/my_cobot_control/CMakeFiles/my_cobot_control_uninstall.dir
+/home/lance/robot/build/my_cobot_control/CMakeFiles/my_cobot_control.dir
+/home/lance/robot/build/my_cobot_control/CMakeFiles/test.dir
+/home/lance/robot/build/my_cobot_control/CMakeFiles/edit_cache.dir
+/home/lance/robot/build/my_cobot_control/CMakeFiles/rebuild_cache.dir
+/home/lance/robot/build/my_cobot_control/CMakeFiles/list_install_components.dir
+/home/lance/robot/build/my_cobot_control/CMakeFiles/install.dir
+/home/lance/robot/build/my_cobot_control/CMakeFiles/install/local.dir
+/home/lance/robot/build/my_cobot_control/CMakeFiles/install/strip.dir

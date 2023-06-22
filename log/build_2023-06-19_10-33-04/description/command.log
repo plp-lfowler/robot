@@ -1,6 +1,0 @@
-Invoking command in '/home/lance/robot/build/description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lance/robot/src/description -DCMAKE_INSTALL_PREFIX=/home/lance/robot/install/description
-Invoked command in '/home/lance/robot/build/description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/lance/robot/src/description -DCMAKE_INSTALL_PREFIX=/home/lance/robot/install/description
-Invoking command in '/home/lance/robot/build/description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/description -- -j4 -l4
-Invoked command in '/home/lance/robot/build/description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/description -- -j4 -l4
-Invoking command in '/home/lance/robot/build/description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lance/robot/build/description
-Invoked command in '/home/lance/robot/build/description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/lance/robot/build/description

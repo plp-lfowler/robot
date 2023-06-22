@@ -1,0 +1,59 @@
+[7.312s] Invoking command in '/home/lance/robot/src/robot_description': PYTHONPATH=/home/lance/robot/build/robot_description/prefix_override:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/lance/robot/build/robot_description/build install --record /home/lance/robot/build/robot_description/install.log --single-version-externally-managed
+[9.162s] running egg_info
+[9.166s] creating ../../build/robot_description/robot_description.egg-info
+[9.169s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[9.170s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[9.171s] writing entry points to ../../build/robot_description/robot_description.egg-info/entry_points.txt
+[9.173s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[9.173s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[9.174s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[9.188s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[9.202s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[9.203s] running build
+[9.204s] running build_py
+[9.206s] creating /home/lance/robot/build/robot_description/build
+[9.207s] creating /home/lance/robot/build/robot_description/build/lib
+[9.208s] creating /home/lance/robot/build/robot_description/build/lib/robot_description
+[9.209s] copying robot_description/__init__.py -> /home/lance/robot/build/robot_description/build/lib/robot_description
+[9.209s] running install
+[9.210s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[9.210s]   warnings.warn(
+[9.211s] running install_lib
+[9.212s] creating /home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description
+[9.213s] copying /home/lance/robot/build/robot_description/build/lib/robot_description/__init__.py -> /home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description
+[9.217s] byte-compiling /home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description/__init__.py to __init__.cpython-310.pyc
+[9.218s] running install_data
+[9.223s] creating /home/lance/robot/install/robot_description/share/ament_index
+[9.223s] creating /home/lance/robot/install/robot_description/share/ament_index/resource_index
+[9.224s] creating /home/lance/robot/install/robot_description/share/ament_index/resource_index/packages
+[9.225s] copying resource/robot_description -> /home/lance/robot/install/robot_description/share/ament_index/resource_index/packages
+[9.226s] copying package.xml -> /home/lance/robot/install/robot_description/share/robot_description
+[9.227s] creating /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.227s] copying urdf/mycobot_with_vision_v2.urdf -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.228s] copying urdf/joint7.png -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.230s] copying urdf/joint3.png -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.233s] copying urdf/joint1.png -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.238s] copying urdf/joint6.png -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.240s] copying urdf/joint2.png -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.242s] copying urdf/joint5.png -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.244s] copying urdf/joint4.png -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.245s] copying urdf/joint1_pi.dae -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.551s] copying urdf/joint7.dae -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.587s] copying urdf/joint5.dae -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.656s] copying urdf/joint6.dae -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.698s] copying urdf/suit_env_v2.dae -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[9.927s] copying urdf/joint3.dae -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[10.028s] copying urdf/joint4.dae -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[10.057s] copying urdf/joint2.dae -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[10.117s] copying urdf/SuctionPumpInches.STL -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[10.141s] copying urdf/env_meters.STL -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[10.143s] copying urdf/SuctionPumpMeters.STL -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[10.167s] copying urdf/env.STL -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[10.169s] copying urdf/env_meters_correct_coords.STL -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[10.172s] copying urdf/SuctionPump.STL -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[10.196s] copying urdf/SuctionPumpFeet.STL -> /home/lance/robot/install/robot_description/share/robot_description/urdf
+[10.221s] running install_egg_info
+[10.232s] Copying ../../build/robot_description/robot_description.egg-info to /home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info
+[10.238s] running install_scripts
+[10.360s] writing list of installed files to '/home/lance/robot/build/robot_description/install.log'
+[10.517s] Invoked command in '/home/lance/robot/src/robot_description' returned '0': PYTHONPATH=/home/lance/robot/build/robot_description/prefix_override:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/lance/robot/build/robot_description/build install --record /home/lance/robot/build/robot_description/install.log --single-version-externally-managed

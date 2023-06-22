@@ -1,0 +1,5 @@
+[console_scripts]
+follow_trajectory = controllers.follow_trajectory_controller:main
+joint_state = controllers.joint_state_controller:main
+my_cobot = controllers.my_cobot_server:main
+

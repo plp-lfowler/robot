@@ -1,0 +1,29 @@
+[8.091s] Invoking command in '/home/lance/robot/build/controllers': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/description PYTHONPATH=/home/lance/robot/build/controllers/prefix_override:/home/lance/robot/install/controllers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/lance/robot/build/controllers/build --no-deps install_data
+[10.131s] running develop
+[10.138s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[10.138s]   warnings.warn(
+[10.146s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[10.147s]   warnings.warn(
+[10.580s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.16.0-unknown is an invalid version and will not be supported in a future release
+[10.581s]   warnings.warn(
+[10.582s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 1.1build1 is an invalid version and will not be supported in a future release
+[10.583s]   warnings.warn(
+[10.584s] /usr/lib/python3/dist-packages/pkg_resources/__init__.py:116: PkgResourcesDeprecationWarning: 0.1.43ubuntu1 is an invalid version and will not be supported in a future release
+[10.584s]   warnings.warn(
+[11.429s] running egg_info
+[11.429s] writing controllers.egg-info/PKG-INFO
+[11.430s] writing dependency_links to controllers.egg-info/dependency_links.txt
+[11.431s] writing entry points to controllers.egg-info/entry_points.txt
+[11.432s] writing requirements to controllers.egg-info/requires.txt
+[11.433s] writing top-level names to controllers.egg-info/top_level.txt
+[11.443s] reading manifest file 'controllers.egg-info/SOURCES.txt'
+[11.447s] writing manifest file 'controllers.egg-info/SOURCES.txt'
+[11.455s] running build_ext
+[11.456s] Creating /home/lance/robot/install/controllers/lib/python3.10/site-packages/controllers.egg-link (link to .)
+[11.461s] Installing follow_trajectory script to /home/lance/robot/install/controllers/lib/controllers
+[11.463s] Installing joint_state script to /home/lance/robot/install/controllers/lib/controllers
+[11.464s] Installing my_cobot script to /home/lance/robot/install/controllers/lib/controllers
+[11.466s] 
+[11.466s] Installed /home/lance/robot/build/controllers
+[11.467s] running install_data
+[11.650s] Invoked command in '/home/lance/robot/build/controllers' returned '0': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/description PYTHONPATH=/home/lance/robot/build/controllers/prefix_override:/home/lance/robot/install/controllers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/lance/robot/build/controllers/build --no-deps install_data
