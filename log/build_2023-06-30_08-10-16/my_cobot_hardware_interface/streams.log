@@ -1,0 +1,32 @@
+[0.119s] Invoking command in '/home/lance/robot/build/my_cobot_hardware_interface': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/my_cobot_hardware_interface -- -j4 -l4
+[0.262s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.067s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.105s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[1.312s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.324s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.361s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.412s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.488s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.722s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.730s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.861s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.462s] -- Found hardware_interface: 2.26.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[4.680s] -- Found controller_manager: 2.26.0 (/opt/ros/humble/share/controller_manager/cmake)
+[6.216s] -- Found my_cobot_interfaces: 0.0.0 (/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake)
+[6.700s] -- Configuring done
+[6.733s] [31mCMake Error at CMakeLists.txt:21 (add_executable):
+[6.733s]   Cannot find source file:
+[6.734s] 
+[6.734s]     src/my_cobot_hardware_interface.cpp
+[6.734s] 
+[6.735s]   Tried extensions .c .C .c++ .cc .cpp .cxx .cu .mpp .m .M .mm .ixx .cppm .h
+[6.735s]   .hh .h++ .hm .hpp .hxx .in .txx .f .F .for .f77 .f90 .f95 .f03 .hip .ispc
+[6.735s] 
+[6.735s] [0m
+[6.776s] [31mCMake Error at CMakeLists.txt:21 (add_executable):
+[6.776s]   No SOURCES given to target: my_cobot_hardware_interface
+[6.776s] 
+[6.777s] [0m
+[6.777s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[6.809s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1
+[6.816s] Invoked command in '/home/lance/robot/build/my_cobot_hardware_interface' returned '2': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/my_cobot_hardware_interface -- -j4 -l4

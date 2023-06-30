@@ -1,0 +1,235 @@
+[0.000000] (-) TimerEvent: {}
+[0.001632] (-) JobUnselected: {'identifier': 'bringup'}
+[0.002259] (-) JobUnselected: {'identifier': 'computer_vision'}
+[0.003796] (-) JobUnselected: {'identifier': 'controllers'}
+[0.003999] (-) JobUnselected: {'identifier': 'motion_planning'}
+[0.004094] (-) JobUnselected: {'identifier': 'moveit_config'}
+[0.004172] (-) JobUnselected: {'identifier': 'my_cobot_interfaces'}
+[0.004249] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.004333] (my_cobot_hardware_interface) JobQueued: {'identifier': 'my_cobot_hardware_interface', 'dependencies': OrderedDict([('my_cobot_interfaces', '/home/lance/robot/install/my_cobot_interfaces')])}
+[0.004444] (my_cobot_hardware_interface) JobStarted: {'identifier': 'my_cobot_hardware_interface'}
+[0.098983] (-) TimerEvent: {}
+[0.122534] (my_cobot_hardware_interface) JobProgress: {'identifier': 'my_cobot_hardware_interface', 'progress': 'cmake'}
+[0.128009] (my_cobot_hardware_interface) JobProgress: {'identifier': 'my_cobot_hardware_interface', 'progress': 'build'}
+[0.132761] (my_cobot_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lance/robot/build/my_cobot_hardware_interface', '--', '-j4', '-l4'], 'cwd': '/home/lance/robot/build/my_cobot_hardware_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance/robot/install/my_cobot_interfaces'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1258'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1228,unix/lance-desktop:/tmp/.ICE-unix/1228'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7c96f463_1b7a_48b8_bbc9_8aa0e31ae1ff'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.5BAS61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.254'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/my_cobot_hardware_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[0.199207] (-) TimerEvent: {}
+[0.300222] (-) TimerEvent: {}
+[0.368433] (my_cobot_hardware_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_hardware_interface\x1b[0m\n'}
+[0.400438] (-) TimerEvent: {}
+[0.481492] (my_cobot_hardware_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o\x1b[0m\n'}
+[0.500607] (-) TimerEvent: {}
+[0.601471] (-) TimerEvent: {}
+[0.702188] (-) TimerEvent: {}
+[0.802915] (-) TimerEvent: {}
+[0.903634] (-) TimerEvent: {}
+[1.004345] (-) TimerEvent: {}
+[1.105219] (-) TimerEvent: {}
+[1.206136] (-) TimerEvent: {}
+[1.306841] (-) TimerEvent: {}
+[1.407611] (-) TimerEvent: {}
+[1.508349] (-) TimerEvent: {}
+[1.609121] (-) TimerEvent: {}
+[1.709796] (-) TimerEvent: {}
+[1.810473] (-) TimerEvent: {}
+[1.911253] (-) TimerEvent: {}
+[2.012020] (-) TimerEvent: {}
+[2.112725] (-) TimerEvent: {}
+[2.213532] (-) TimerEvent: {}
+[2.314251] (-) TimerEvent: {}
+[2.421091] (-) TimerEvent: {}
+[2.522305] (-) TimerEvent: {}
+[2.623645] (-) TimerEvent: {}
+[2.724863] (-) TimerEvent: {}
+[2.826104] (-) TimerEvent: {}
+[2.927255] (-) TimerEvent: {}
+[3.028499] (-) TimerEvent: {}
+[3.129696] (-) TimerEvent: {}
+[3.230602] (-) TimerEvent: {}
+[3.332403] (-) TimerEvent: {}
+[3.433584] (-) TimerEvent: {}
+[3.534409] (-) TimerEvent: {}
+[3.635408] (-) TimerEvent: {}
+[3.736261] (-) TimerEvent: {}
+[3.837177] (-) TimerEvent: {}
+[3.937946] (-) TimerEvent: {}
+[4.038800] (-) TimerEvent: {}
+[4.139660] (-) TimerEvent: {}
+[4.240484] (-) TimerEvent: {}
+[4.341375] (-) TimerEvent: {}
+[4.442203] (-) TimerEvent: {}
+[4.543038] (-) TimerEvent: {}
+[4.643868] (-) TimerEvent: {}
+[4.744630] (-) TimerEvent: {}
+[4.845489] (-) TimerEvent: {}
+[4.946581] (-) TimerEvent: {}
+[5.047397] (-) TimerEvent: {}
+[5.148252] (-) TimerEvent: {}
+[5.249358] (-) TimerEvent: {}
+[5.350925] (-) TimerEvent: {}
+[5.452129] (-) TimerEvent: {}
+[5.553643] (-) TimerEvent: {}
+[5.654777] (-) TimerEvent: {}
+[5.755947] (-) TimerEvent: {}
+[5.857268] (-) TimerEvent: {}
+[5.958474] (-) TimerEvent: {}
+[6.059786] (-) TimerEvent: {}
+[6.161441] (-) TimerEvent: {}
+[6.262785] (-) TimerEvent: {}
+[6.363681] (-) TimerEvent: {}
+[6.464496] (-) TimerEvent: {}
+[6.565315] (-) TimerEvent: {}
+[6.666127] (-) TimerEvent: {}
+[6.766982] (-) TimerEvent: {}
+[6.867817] (-) TimerEvent: {}
+[6.968636] (-) TimerEvent: {}
+[7.069514] (-) TimerEvent: {}
+[7.170470] (-) TimerEvent: {}
+[7.271346] (-) TimerEvent: {}
+[7.372172] (-) TimerEvent: {}
+[7.473170] (-) TimerEvent: {}
+[7.573941] (-) TimerEvent: {}
+[7.674732] (-) TimerEvent: {}
+[7.775508] (-) TimerEvent: {}
+[7.876393] (-) TimerEvent: {}
+[7.977183] (-) TimerEvent: {}
+[8.078025] (-) TimerEvent: {}
+[8.178822] (-) TimerEvent: {}
+[8.279620] (-) TimerEvent: {}
+[8.380472] (-) TimerEvent: {}
+[8.481367] (-) TimerEvent: {}
+[8.582373] (-) TimerEvent: {}
+[8.683959] (-) TimerEvent: {}
+[8.785310] (-) TimerEvent: {}
+[8.886471] (-) TimerEvent: {}
+[8.987641] (-) TimerEvent: {}
+[9.088909] (-) TimerEvent: {}
+[9.190143] (-) TimerEvent: {}
+[9.292497] (-) TimerEvent: {}
+[9.393817] (-) TimerEvent: {}
+[9.495040] (-) TimerEvent: {}
+[9.596103] (-) TimerEvent: {}
+[9.696897] (-) TimerEvent: {}
+[9.797734] (-) TimerEvent: {}
+[9.898586] (-) TimerEvent: {}
+[9.999431] (-) TimerEvent: {}
+[10.100231] (-) TimerEvent: {}
+[10.201092] (-) TimerEvent: {}
+[10.301877] (-) TimerEvent: {}
+[10.402777] (-) TimerEvent: {}
+[10.503568] (-) TimerEvent: {}
+[10.604383] (-) TimerEvent: {}
+[10.705165] (-) TimerEvent: {}
+[10.805949] (-) TimerEvent: {}
+[10.906825] (-) TimerEvent: {}
+[11.007705] (-) TimerEvent: {}
+[11.108490] (-) TimerEvent: {}
+[11.209353] (-) TimerEvent: {}
+[11.310094] (-) TimerEvent: {}
+[11.410945] (-) TimerEvent: {}
+[11.511740] (-) TimerEvent: {}
+[11.612558] (-) TimerEvent: {}
+[11.713395] (-) TimerEvent: {}
+[11.814260] (-) TimerEvent: {}
+[11.915095] (-) TimerEvent: {}
+[12.016485] (-) TimerEvent: {}
+[12.118343] (-) TimerEvent: {}
+[12.219817] (-) TimerEvent: {}
+[12.321182] (-) TimerEvent: {}
+[12.422397] (-) TimerEvent: {}
+[12.525684] (-) TimerEvent: {}
+[12.626911] (-) TimerEvent: {}
+[12.728114] (-) TimerEvent: {}
+[12.829245] (-) TimerEvent: {}
+[12.930017] (-) TimerEvent: {}
+[13.030819] (-) TimerEvent: {}
+[13.131763] (-) TimerEvent: {}
+[13.232579] (-) TimerEvent: {}
+[13.333467] (-) TimerEvent: {}
+[13.434276] (-) TimerEvent: {}
+[13.535086] (-) TimerEvent: {}
+[13.635917] (-) TimerEvent: {}
+[13.736725] (-) TimerEvent: {}
+[13.837629] (-) TimerEvent: {}
+[13.938418] (-) TimerEvent: {}
+[13.958842] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:40:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvirt-specifiers in \xe2\x80\x98\x1b[01m\x1b[Kread\x1b[m\x1b[K\xe2\x80\x99 not allowed outside a class definition\n'}
+[13.959769] (my_cobot_hardware_interface) StderrLine: {'line': b'   40 |                                        const rclcpp::Duration& period) \x1b[01;31m\x1b[Koverride\x1b[m\x1b[K\n'}
+[13.960427] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[13.985129] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type my_cobot_hardware_interface::read(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.985991] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:44:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_radians_client_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[13.986642] (my_cobot_hardware_interface) StderrLine: {'line': b'   44 |     auto future = \x1b[01;31m\x1b[Kget_radians_client_\x1b[m\x1b[K->async_send_request(request);\n'}
+[13.987175] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.999184] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:45:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knode_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmode_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.000159] (my_cobot_hardware_interface) StderrLine: {'line': b'   45 |     rclcpp::spin_until_future_complete(\x1b[01;31m\x1b[Knode_\x1b[m\x1b[K, future);\n'}
+[14.000789] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[14.001518] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[Kmode_t\x1b[m\x1b[K\n'}
+[14.024702] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:50:38:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint_names_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.026067] (my_cobot_hardware_interface) StderrLine: {'line': b'   50 |       if (response->angles.size() == \x1b[01;31m\x1b[Kjoint_names_\x1b[m\x1b[K.size())\n'}
+[14.026729] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                      \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.038630] (-) TimerEvent: {}
+[14.053010] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:54:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint_state_variable_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.053740] (my_cobot_hardware_interface) StderrLine: {'line': b'   54 |           \x1b[01;31m\x1b[Kjoint_state_variable_\x1b[m\x1b[K[i] = response->angles[i];\n'}
+[14.054167] (my_cobot_hardware_interface) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.054833] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:\x1b[m\x1b[K At global scope:\n'}
+[14.055360] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:64:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kvirt-specifiers in \xe2\x80\x98\x1b[01m\x1b[Kwrite\x1b[m\x1b[K\xe2\x80\x99 not allowed outside a class definition\n'}
+[14.055804] (my_cobot_hardware_interface) StderrLine: {'line': b'   64 |                                         const rclcpp::Duration& period) \x1b[01;31m\x1b[Koverride\x1b[m\x1b[K\n'}
+[14.056193] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                                                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.072381] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type my_cobot_hardware_interface::write(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.073466] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:67:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint_names_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.074221] (my_cobot_hardware_interface) StderrLine: {'line': b'   67 |     request->joint_names = \x1b[01;31m\x1b[Kjoint_names_\x1b[m\x1b[K;\n'}
+[14.074909] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.101790] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:68:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjoint_command_variable_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.102752] (my_cobot_hardware_interface) StderrLine: {'line': b'   68 |     request->angles.resize(\x1b[01;31m\x1b[Kjoint_command_variable_\x1b[m\x1b[K.size());\n'}
+[14.103383] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.136346] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:75:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kset_radians_client_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[14.137159] (my_cobot_hardware_interface) StderrLine: {'line': b'   75 |     auto future = \x1b[01;31m\x1b[Kset_radians_client_\x1b[m\x1b[K->async_send_request(request);\n'}
+[14.137772] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.138795] (-) TimerEvent: {}
+[14.149170] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:76:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knode_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kmode_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[14.149953] (my_cobot_hardware_interface) StderrLine: {'line': b'   76 |     rclcpp::spin_until_future_complete(\x1b[01;31m\x1b[Knode_\x1b[m\x1b[K, future);\n'}
+[14.150784] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[14.151509] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[Kmode_t\x1b[m\x1b[K\n'}
+[14.239008] (-) TimerEvent: {}
+[14.339840] (-) TimerEvent: {}
+[14.440658] (-) TimerEvent: {}
+[14.541541] (-) TimerEvent: {}
+[14.642304] (-) TimerEvent: {}
+[14.743098] (-) TimerEvent: {}
+[14.843860] (-) TimerEvent: {}
+[14.944641] (-) TimerEvent: {}
+[15.045480] (-) TimerEvent: {}
+[15.146264] (-) TimerEvent: {}
+[15.247129] (-) TimerEvent: {}
+[15.347970] (-) TimerEvent: {}
+[15.448914] (-) TimerEvent: {}
+[15.550717] (-) TimerEvent: {}
+[15.652082] (-) TimerEvent: {}
+[15.753345] (-) TimerEvent: {}
+[15.854510] (-) TimerEvent: {}
+[15.955751] (-) TimerEvent: {}
+[16.056933] (-) TimerEvent: {}
+[16.158167] (-) TimerEvent: {}
+[16.259320] (-) TimerEvent: {}
+[16.360476] (-) TimerEvent: {}
+[16.461750] (-) TimerEvent: {}
+[16.562739] (-) TimerEvent: {}
+[16.663544] (-) TimerEvent: {}
+[16.764310] (-) TimerEvent: {}
+[16.865149] (-) TimerEvent: {}
+[16.965947] (-) TimerEvent: {}
+[17.066743] (-) TimerEvent: {}
+[17.167593] (-) TimerEvent: {}
+[17.268745] (-) TimerEvent: {}
+[17.370199] (-) TimerEvent: {}
+[17.470986] (-) TimerEvent: {}
+[17.571892] (-) TimerEvent: {}
+[17.672757] (-) TimerEvent: {}
+[17.773706] (-) TimerEvent: {}
+[17.802634] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_cobot_hardware_interface.dir/build.make:76: CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o] Error 1\n'}
+[17.803642] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_cobot_hardware_interface.dir/all] Error 2\n'}
+[17.804844] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[17.813157] (my_cobot_hardware_interface) CommandEnded: {'returncode': 2}
+[17.874061] (-) TimerEvent: {}
+[17.975466] (-) TimerEvent: {}
+[18.079987] (my_cobot_hardware_interface) JobEnded: {'identifier': 'my_cobot_hardware_interface', 'rc': 2}
+[18.082185] (-) TimerEvent: {}
+[18.091545] (-) EventReactorShutdown: {}

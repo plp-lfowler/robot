@@ -1,0 +1,12 @@
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:69 (add_executable):
+  add_executable cannot create target "test_my_cobot_hardware_interface"
+  because another target with the same name already exists.  The existing
+  target is an executable created in source directory
+  "/home/lance/robot/src/my_cobot_hardware_interface".  See documentation for
+  policy CMP0002 for more details.
+Call Stack (most recent call first):
+  /opt/ros/humble/share/ament_cmake_gmock/cmake/ament_add_gmock.cmake:52 (_ament_add_gmock)
+  CMakeLists.txt:69 (ament_add_gmock)
+
+[0m
+gmake: *** [Makefile:267: cmake_check_build_system] Error 1

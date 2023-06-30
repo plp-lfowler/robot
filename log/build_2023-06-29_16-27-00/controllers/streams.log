@@ -1,0 +1,20 @@
+[4.102s] Invoking command in '/home/lance/robot/build/controllers': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install PYTHONPATH=/home/lance/robot/build/controllers/prefix_override:/home/lance/robot/install/controllers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/lance/robot/build/controllers/build --no-deps install_data
+[5.582s] running develop
+[6.568s] running egg_info
+[6.569s] writing controllers.egg-info/PKG-INFO
+[6.570s] writing dependency_links to controllers.egg-info/dependency_links.txt
+[6.571s] writing entry points to controllers.egg-info/entry_points.txt
+[6.572s] writing requirements to controllers.egg-info/requires.txt
+[6.573s] writing top-level names to controllers.egg-info/top_level.txt
+[6.583s] reading manifest file 'controllers.egg-info/SOURCES.txt'
+[6.587s] writing manifest file 'controllers.egg-info/SOURCES.txt'
+[6.594s] running build_ext
+[6.595s] Creating /home/lance/robot/install/controllers/lib/python3.10/site-packages/controllers.egg-link (link to .)
+[6.599s] Installing follow_trajectory script to /home/lance/robot/install/controllers/lib/controllers
+[6.600s] Installing joint_state script to /home/lance/robot/install/controllers/lib/controllers
+[6.601s] Installing my_cobot script to /home/lance/robot/install/controllers/lib/controllers
+[6.603s] Installing shutdown script to /home/lance/robot/install/controllers/lib/controllers
+[6.604s] 
+[6.604s] Installed /home/lance/robot/build/controllers
+[6.605s] running install_data
+[6.781s] Invoked command in '/home/lance/robot/build/controllers' returned '0': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install PYTHONPATH=/home/lance/robot/build/controllers/prefix_override:/home/lance/robot/install/controllers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/lance/robot/build/controllers/build --no-deps install_data

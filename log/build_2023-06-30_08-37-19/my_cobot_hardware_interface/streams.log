@@ -1,0 +1,204 @@
+[0.118s] Invoking command in '/home/lance/robot/build/my_cobot_hardware_interface': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake /home/lance/robot/src/my_cobot_hardware_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lance/robot/install/my_cobot_hardware_interface
+[0.177s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.980s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.015s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[1.197s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.207s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.234s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.281s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.346s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.579s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.586s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.705s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.301s] -- Found hardware_interface: 2.26.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[4.449s] -- Found my_cobot_interfaces: 0.0.0 (/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake)
+[5.116s] -- Configuring done
+[5.276s] -- Generating done
+[5.287s] -- Build files have been written to: /home/lance/robot/build/my_cobot_hardware_interface
+[5.319s] Invoked command in '/home/lance/robot/build/my_cobot_hardware_interface' returned '0': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake /home/lance/robot/src/my_cobot_hardware_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lance/robot/install/my_cobot_hardware_interface
+[5.331s] Invoking command in '/home/lance/robot/build/my_cobot_hardware_interface': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/my_cobot_hardware_interface -- -j4 -l4
+[5.523s] [35m[1mConsolidate compiler generated dependencies of target my_cobot_hardware_interface[0m
+[5.619s] [ 50%] [32mBuilding CXX object CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o[0m
+[19.088s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:13:37:[m[K [01;31m[Kerror: [m[K‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::MyCobotHardwareInterface::on_configure(const hardware_interface::HardwareInfo&)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[19.089s]    13 |     hardware_interface::return_type [01;31m[Kon_configure[m[K(const hardware_interface::HardwareInfo& info) override
+[19.089s]       |                                     [01;31m[K^~~~~~~~~~~~[m[K
+[19.090s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:21:37:[m[K [01;31m[Kerror: [m[K‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::MyCobotHardwareInterface::on_cleanup()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[19.090s]    21 |     hardware_interface::return_type [01;31m[Kon_cleanup[m[K() override
+[19.090s]       |                                     [01;31m[K^~~~~~~~~~[m[K
+[19.091s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:52:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid my_cobot_hardware_interface::MyCobotHardwareInterface::on_activate()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[19.091s]    52 |     void [01;31m[Kon_activate[m[K() override
+[19.092s]       |          [01;31m[K^~~~~~~~~~~[m[K
+[19.092s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:58:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid my_cobot_hardware_interface::MyCobotHardwareInterface::on_deactivate()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[19.093s]    58 |     void [01;31m[Kon_deactivate[m[K() override
+[19.093s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[19.094s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:64:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid my_cobot_hardware_interface::MyCobotHardwareInterface::on_error(const string&)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[19.095s]    64 |     void [01;31m[Kon_error[m[K(const std::string& error_message) override
+[19.096s]       |          [01;31m[K^~~~~~~~[m[K
+[19.096s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:69:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid my_cobot_hardware_interface::MyCobotHardwareInterface::read()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[19.097s]    69 |     void [01;31m[Kread[m[K() override
+[19.097s]       |          [01;31m[K^~~~[m[K
+[19.097s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:99:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid my_cobot_hardware_interface::MyCobotHardwareInterface::write()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+[19.098s]    99 |     void [01;31m[Kwrite[m[K() override
+[19.098s]       |          [01;31m[K^~~~~[m[K
+[19.098s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In member function ‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::MyCobotHardwareInterface::on_configure(const hardware_interface::HardwareInfo&)[m[K’:
+[19.099s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:15:27:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >[m[K’ and ‘[01m[Kconst std::vector<hardware_interface::ComponentInfo>[m[K’)
+[19.099s]    15 |       joint_names_ = info.[01;31m[Kjoints[m[K;
+[19.100s]       |                           [01;31m[K^~~~~~[m[K
+[19.100s] In file included from [01m[K/usr/include/c++/11/vector:72[m[K,
+[19.100s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[19.101s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[19.101s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[19.101s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[19.102s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.102s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.102s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.103s]                  from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1[m[K:
+[19.104s] [01m[K/usr/include/c++/11/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >][m[K’
+[19.104s]   198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[19.104s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[19.105s] [01m[K/usr/include/c++/11/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::vector<hardware_interface::ComponentInfo>[m[K’ to ‘[01m[Kconst std::vector<std::__cxx11::basic_string<char> >&[m[K’
+[19.105s]   199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+[19.105s]       |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[19.106s] In file included from [01m[K/usr/include/c++/11/vector:67[m[K,
+[19.106s]                  from [01m[K/usr/include/c++/11/functional:62[m[K,
+[19.106s]                  from [01m[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13[m[K,
+[19.107s]                  from [01m[K/usr/include/c++/11/algorithm:74[m[K,
+[19.107s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18[m[K,
+[19.108s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.108s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.109s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.109s]                  from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1[m[K:
+[19.110s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >][m[K’
+[19.110s]   709 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[19.110s]       |       [01;36m[K^~~~~~~~[m[K
+[19.111s] [01m[K/usr/include/c++/11/bits/stl_vector.h:709:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::vector<hardware_interface::ComponentInfo>[m[K’ to ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >&&[m[K’
+[19.111s]   709 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+[19.112s]       |                 [01;36m[K~~~~~~~~~^~~[m[K
+[19.112s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >][m[K’
+[19.112s]   730 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[19.113s]       |       [01;36m[K^~~~~~~~[m[K
+[19.113s] [01m[K/usr/include/c++/11/bits/stl_vector.h:730:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst std::vector<hardware_interface::ComponentInfo>[m[K’ to ‘[01m[Kstd::initializer_list<std::__cxx11::basic_string<char> >[m[K’
+[19.113s]   730 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+[19.114s]       |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[19.114s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:18:47:[m[K [01;31m[Kerror: [m[K‘[01m[KSUCCESS[m[K’ is not a member of ‘[01m[Khardware_interface::return_type[m[K’
+[19.114s]    18 |       return hardware_interface::return_type::[01;31m[KSUCCESS[m[K;
+[19.115s]       |                                               [01;31m[K^~~~~~~[m[K
+[19.115s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In member function ‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::MyCobotHardwareInterface::on_cleanup()[m[K’:
+[19.116s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:23:47:[m[K [01;31m[Kerror: [m[K‘[01m[KSUCCESS[m[K’ is not a member of ‘[01m[Khardware_interface::return_type[m[K’
+[19.116s]    23 |       return hardware_interface::return_type::[01;31m[KSUCCESS[m[K;
+[19.117s]       |                                               [01;31m[K^~~~~~~[m[K
+[19.117s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<hardware_interface::StateInterface> my_cobot_hardware_interface::MyCobotHardwareInterface::export_state_interfaces()[m[K’:
+[19.117s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:33:70:[m[K [01;31m[Kerror: [m[K‘[01m[KHW_IF_POSITION[m[K’ is not a member of ‘[01m[Khardware_interface[m[K’
+[19.118s]    33 | nterfaces.emplace_back(joint_names_[i], hardware_interface::[01;31m[KHW_IF_POSITION[m[K, &joint_angles_[i]);
+[19.118s]       |                                                             [01;31m[K^~~~~~~~~~~~~~[m[K
+[19.119s] 
+[19.132s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In member function ‘[01m[Kvirtual std::vector<hardware_interface::CommandInterface> my_cobot_hardware_interface::MyCobotHardwareInterface::export_command_interfaces()[m[K’:
+[19.133s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:46:70:[m[K [01;31m[Kerror: [m[K‘[01m[KHW_IF_POSITION_COMMAND[m[K’ is not a member of ‘[01m[Khardware_interface[m[K’
+[19.133s]    46 | nterfaces.emplace_back(joint_names_[i], hardware_interface::[01;31m[KHW_IF_POSITION_COMMAND[m[K, &joint_angles_command_[i]);
+[19.134s]       |                                                             [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.134s] 
+[19.149s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In member function ‘[01m[Kvoid my_cobot_hardware_interface::MyCobotHardwareInterface::read()[m[K’:
+[19.150s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:85:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kjoint_angles[m[K’; did you mean ‘[01m[Kjoint_names[m[K’?
+[19.152s]    85 |         if (response->[01;31m[Kjoint_angles[m[K.size() == joint_angles_.size())
+[19.152s]       |                       [01;31m[K^~~~~~~~~~~~[m[K
+[19.153s]       |                       [32m[Kjoint_names[m[K
+[19.154s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:89:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kjoint_angles[m[K’; did you mean ‘[01m[Kjoint_names[m[K’?
+[19.155s]    89 |             joint_angles_[i] = response->[01;31m[Kjoint_angles[m[K[i].data();
+[19.156s]       |                                          [01;31m[K^~~~~~~~~~~~[m[K
+[19.156s]       |                                          [32m[Kjoint_names[m[K
+[19.166s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In member function ‘[01m[Kvoid my_cobot_hardware_interface::MyCobotHardwareInterface::write()[m[K’:
+[19.167s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:111:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct my_cobot_interfaces::srv::SetRadians_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct my_cobot_interfaces::srv::SetRadians_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kjoint_angles[m[K’; did you mean ‘[01m[Kjoint_names[m[K’?
+[19.168s]   111 |         request->[01;31m[Kjoint_angles[m[K[i] = joint_angles_command_[i].data();
+[19.168s]       |                  [01;31m[K^~~~~~~~~~~~[m[K
+[19.168s]       |                  [32m[Kjoint_names[m[K
+[19.169s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:111:61:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[Kdata[m[K’ in ‘[01m[K((my_cobot_hardware_interface::MyCobotHardwareInterface*)this)->my_cobot_hardware_interface::MyCobotHardwareInterface::joint_angles_command_.std::vector<double, std::allocator<double> >::operator[](i)[m[K’, which is of non-class type ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<double>, double>::value_type[m[K’ {aka ‘[01m[Kdouble[m[K’}
+[19.170s]   111 |         request->joint_angles[i] = joint_angles_command_[i].[01;31m[Kdata[m[K();
+[19.170s]       |                                                             [01;31m[K^~~~[m[K
+[19.170s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:114:55:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Client<my_cobot_interfaces::srv::GetRadians>::async_send_request(std::shared_ptr<my_cobot_interfaces::srv::SetRadians_Request_<std::allocator<void> > >&)[m[K’
+[19.171s]   114 |       auto future_result = [01;31m[Kclient_->async_send_request(request)[m[K;
+[19.171s]       |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[19.171s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.171s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.172s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.172s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.172s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.173s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.173s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.173s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.175s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.175s]                  from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1[m[K:
+[19.176s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:643:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::shared_ptr<my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFutureAndRequestId rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest, CallbackT&&) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<typename ServiceT::Response::SharedPtr>)> >::value>::type* <anonymous> = <anonymous>; ServiceT = my_cobot_interfaces::srv::GetRadians][m[K’
+[19.176s]   643 |   [01;36m[Kasync_send_request[m[K(SharedRequest request, CallbackT && cb)
+[19.177s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[19.177s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:643:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.178s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:114:55:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[19.178s]   114 |       auto future_result = [01;36m[Kclient_->async_send_request(request)[m[K;
+[19.179s]       |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[19.179s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.180s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.180s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.181s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.181s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.181s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.182s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.183s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.183s]                  from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1[m[K:
+[19.183s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:674:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<std::shared_ptr<my_cobot_interfaces::srv::GetRadians_Request_<std::allocator<void> > >, std::shared_ptr<my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> > > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFutureWithRequestAndRequestId rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest, CallbackT&&) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<typename ServiceT::Request::SharedPtr, typename ServiceT::Response::SharedPtr> >)> >::value>::type* <anonymous> = <anonymous>; ServiceT = my_cobot_interfaces::srv::GetRadians][m[K’
+[19.184s]   674 |   [01;36m[Kasync_send_request[m[K(SharedRequest request, CallbackT && cb)
+[19.184s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[19.185s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:674:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[19.185s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:114:55:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[19.186s]   114 |       auto future_result = [01;36m[Kclient_->async_send_request(request)[m[K;
+[19.186s]       |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~[m[K
+[19.187s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[19.187s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[19.188s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[19.188s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[19.189s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[19.189s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[19.189s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[19.190s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[19.190s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[19.190s]                  from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1[m[K:
+[19.191s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:608:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Client<ServiceT>::FutureAndRequestId rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest) [with ServiceT = my_cobot_interfaces::srv::GetRadians; rclcpp::Client<ServiceT>::SharedRequest = std::shared_ptr<my_cobot_interfaces::srv::GetRadians_Request_<std::allocator<void> > >][m[K’
+[19.191s]   608 |   [01;36m[Kasync_send_request[m[K(SharedRequest request)
+[19.192s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[19.192s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:608:36:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kshared_ptr<[01;32m[Kmy_cobot_interfaces::srv::SetRadians_Request_<std::allocator<void> >[m[K>[m[K’ to ‘[01m[Kshared_ptr<[01;32m[Kmy_cobot_interfaces::srv::GetRadians_Request_<std::allocator<void> >[m[K>[m[K’
+[19.192s]   608 |   async_send_request([01;36m[KSharedRequest request[m[K)
+[19.193s]       |                      [01;36m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[19.194s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[19.194s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:149:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = class my_cobot_hardware_interface::MyCobotHardwareInterface[m[K’ {aka ‘[01m[Kclass my_cobot_hardware_interface::MyCobotHardwareInterface[m[K’} has no member named ‘[01m[Kinit[m[K’
+[19.195s]   149 |   my_cobot_hw_interface->[01;31m[Kinit[m[K(node);
+[19.196s]       |                          [01;31m[K^~~~[m[K
+[21.219s] In file included from [01m[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33[m[K,
+[21.220s]                  from [01m[K/usr/include/c++/11/bits/allocator.h:46[m[K,
+[21.221s]                  from [01m[K/usr/include/c++/11/memory:64[m[K,
+[21.221s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+[21.222s]                  from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1[m[K:
+[21.223s] /usr/include/c++/11/ext/new_allocator.h: In instantiation of ‘[01m[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = my_cobot_hardware_interface::MyCobotHardwareInterface; _Args = {}; _Tp = my_cobot_hardware_interface::MyCobotHardwareInterface][m[K’:
+[21.224s] [01m[K/usr/include/c++/11/bits/alloc_traits.h:516:17:[m[K   required from ‘[01m[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = my_cobot_hardware_interface::MyCobotHardwareInterface; _Args = {}; _Tp = my_cobot_hardware_interface::MyCobotHardwareInterface; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<my_cobot_hardware_interface::MyCobotHardwareInterface>][m[K’
+[21.224s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:[m[K   required from ‘[01m[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = my_cobot_hardware_interface::MyCobotHardwareInterface; _Alloc = std::allocator<my_cobot_hardware_interface::MyCobotHardwareInterface>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[21.225s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:[m[K   required from ‘[01m[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = my_cobot_hardware_interface::MyCobotHardwareInterface; _Alloc = std::allocator<my_cobot_hardware_interface::MyCobotHardwareInterface>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[21.226s] [01m[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:[m[K   required from ‘[01m[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<my_cobot_hardware_interface::MyCobotHardwareInterface>; _Args = {}; _Tp = my_cobot_hardware_interface::MyCobotHardwareInterface; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic][m[K’
+[21.227s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:409:59:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<my_cobot_hardware_interface::MyCobotHardwareInterface>; _Args = {}; _Tp = my_cobot_hardware_interface::MyCobotHardwareInterface][m[K’
+[21.228s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:862:14:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = my_cobot_hardware_interface::MyCobotHardwareInterface; _Alloc = std::allocator<my_cobot_hardware_interface::MyCobotHardwareInterface>; _Args = {}][m[K’
+[21.229s] [01m[K/usr/include/c++/11/bits/shared_ptr.h:878:39:[m[K   required from ‘[01m[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = my_cobot_hardware_interface::MyCobotHardwareInterface; _Args = {}][m[K’
+[21.230s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:148:103:[m[K   required from here
+[21.230s] [01m[K/usr/include/c++/11/ext/new_allocator.h:162:11:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[Kmy_cobot_hardware_interface::MyCobotHardwareInterface[m[K’
+[21.231s]   162 |         { [01;31m[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)[m[K; }
+[21.232s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.233s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:8:9:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[Kmy_cobot_hardware_interface::MyCobotHardwareInterface[m[K’:
+[21.235s]     8 |   class [01;36m[KMyCobotHardwareInterface[m[K : public hardware_interface::SystemInterface
+[21.238s]       |         [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[21.239s] In file included from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:2[m[K:
+[21.240s] [01m[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:173:23:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[21.241s]   173 |   virtual return_type [01;36m[Kread[m[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;
+[21.241s]       |                       [01;36m[K^~~~[m[K
+[21.242s] [01m[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:184:23:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+[21.243s]   184 |   virtual return_type [01;36m[Kwrite[m[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;
+[21.244s]       |                       [01;36m[K^~~~~[m[K
+[21.851s] gmake[2]: *** [CMakeFiles/my_cobot_hardware_interface.dir/build.make:76: CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o] Error 1
+[21.852s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_cobot_hardware_interface.dir/all] Error 2
+[21.852s] gmake: *** [Makefile:146: all] Error 2
+[21.860s] Invoked command in '/home/lance/robot/build/my_cobot_hardware_interface' returned '2': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/my_cobot_hardware_interface -- -j4 -l4

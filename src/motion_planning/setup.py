@@ -14,12 +14,13 @@ setup(
     install_requires=['setuptools'],
     zip_safe=True,
     maintainer='lance',
-    maintainer_email='lance@todo.todo',
+    maintainer_email='lance.fowler@plp.com',
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'mp = motion_planning.motion_planning:main'
         ],
     },
 )

@@ -1,0 +1,26 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/lance/robot/install/robot_description/lib/python3.10/site-packages",
+        "/home/lance/robot/install/controllers/lib/python3.10/site-packages",
+        "/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages",
+        "/home/lance/robot/build/motion_planning",
+        "/home/lance/robot/install/motion_planning/lib/python3.10/site-packages",
+        "/home/lance/robot/build/computer_vision",
+        "/home/lance/robot/install/computer_vision/lib/python3.10/site-packages",
+        "/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/lance/robot/install/robot_description/lib/python3.10/site-packages",
+        "/home/lance/robot/install/controllers/lib/python3.10/site-packages",
+        "/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages",
+        "/home/lance/robot/build/motion_planning",
+        "/home/lance/robot/install/motion_planning/lib/python3.10/site-packages",
+        "/home/lance/robot/build/computer_vision",
+        "/home/lance/robot/install/computer_vision/lib/python3.10/site-packages",
+        "/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

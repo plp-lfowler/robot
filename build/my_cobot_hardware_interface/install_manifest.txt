@@ -1,0 +1,7 @@
+/home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/my_cobot_hardware_interface.xml
+/home/lance/robot/install/my_cobot_hardware_interface/lib/libmy_cobot_hardware_interface.so
+/home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/library_path.sh
+/home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/library_path.dsv
+/home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/package.dsv
+/home/lance/robot/install/my_cobot_hardware_interface/share/ament_index/resource_index/my_cobot_hardware_interface__pluginlib__plugin/my_cobot_hardware_interface
+/home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake

@@ -4,3 +4,7 @@ my_cobot_interfaces.egg-info/PKG-INFO
 my_cobot_interfaces.egg-info/SOURCES.txt
 my_cobot_interfaces.egg-info/dependency_links.txt
 my_cobot_interfaces.egg-info/top_level.txt
+my_cobot_interfaces/srv/__init__.py
+my_cobot_interfaces/srv/_get_radians.py
+my_cobot_interfaces/srv/_play_pause.py
+my_cobot_interfaces/srv/_set_radians.py

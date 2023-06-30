@@ -1,5 +1,6 @@
 from setuptools import setup
-
+import os
+from glob import glob
 package_name = 'controllers'
 
 setup(
@@ -10,6 +11,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*')))
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -22,7 +24,8 @@ setup(
         'console_scripts': [
         	'joint_state = controllers.joint_state_controller:main',
             'my_cobot = controllers.my_cobot_server:main',
-            'follow_trajectory = controllers.follow_trajectory_controller:main'
+            'follow_trajectory = controllers.follow_trajectory_controller:main',
+            'shutdown = controllers.my_cobot_server:shutdown'
         ],
     },
 )

@@ -1,0 +1,362 @@
+[0.000000] (-) TimerEvent: {}
+[0.001712] (-) JobUnselected: {'identifier': 'bringup'}
+[0.002313] (-) JobUnselected: {'identifier': 'computer_vision'}
+[0.002405] (-) JobUnselected: {'identifier': 'controllers'}
+[0.002482] (-) JobUnselected: {'identifier': 'motion_planning'}
+[0.002558] (-) JobUnselected: {'identifier': 'moveit_config'}
+[0.002634] (-) JobUnselected: {'identifier': 'my_cobot_interfaces'}
+[0.002710] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.002792] (my_cobot_hardware_interface) JobQueued: {'identifier': 'my_cobot_hardware_interface', 'dependencies': OrderedDict([('my_cobot_interfaces', '/home/lance/robot/install/my_cobot_interfaces')])}
+[0.002888] (my_cobot_hardware_interface) JobStarted: {'identifier': 'my_cobot_hardware_interface'}
+[0.099682] (-) TimerEvent: {}
+[0.131481] (my_cobot_hardware_interface) JobProgress: {'identifier': 'my_cobot_hardware_interface', 'progress': 'cmake'}
+[0.135245] (my_cobot_hardware_interface) JobProgress: {'identifier': 'my_cobot_hardware_interface', 'progress': 'build'}
+[0.139301] (my_cobot_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lance/robot/build/my_cobot_hardware_interface', '--', '-j4', '-l4'], 'cwd': '/home/lance/robot/build/my_cobot_hardware_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1258'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1228,unix/lance-desktop:/tmp/.ICE-unix/1228'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/7847ff92_331b_4869_856f_5916f3d89580'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.5BAS61'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.165'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/my_cobot_hardware_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/build/robot_description:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/build/controllers:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/build/motion_planning:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/build/computer_vision:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/build/bringup:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[0.200000] (-) TimerEvent: {}
+[0.301139] (-) TimerEvent: {}
+[0.385614] (my_cobot_hardware_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_hardware_interface\x1b[0m\n'}
+[0.401276] (-) TimerEvent: {}
+[0.482414] (my_cobot_hardware_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o\x1b[0m\n'}
+[0.501496] (-) TimerEvent: {}
+[0.602283] (-) TimerEvent: {}
+[0.703045] (-) TimerEvent: {}
+[0.803772] (-) TimerEvent: {}
+[0.904502] (-) TimerEvent: {}
+[1.005338] (-) TimerEvent: {}
+[1.106069] (-) TimerEvent: {}
+[1.206789] (-) TimerEvent: {}
+[1.307511] (-) TimerEvent: {}
+[1.408284] (-) TimerEvent: {}
+[1.509076] (-) TimerEvent: {}
+[1.609861] (-) TimerEvent: {}
+[1.710611] (-) TimerEvent: {}
+[1.811374] (-) TimerEvent: {}
+[1.912152] (-) TimerEvent: {}
+[2.013038] (-) TimerEvent: {}
+[2.113888] (-) TimerEvent: {}
+[2.214682] (-) TimerEvent: {}
+[2.315486] (-) TimerEvent: {}
+[2.416241] (-) TimerEvent: {}
+[2.517097] (-) TimerEvent: {}
+[2.618001] (-) TimerEvent: {}
+[2.718859] (-) TimerEvent: {}
+[2.819896] (-) TimerEvent: {}
+[2.920695] (-) TimerEvent: {}
+[3.021538] (-) TimerEvent: {}
+[3.122325] (-) TimerEvent: {}
+[3.223219] (-) TimerEvent: {}
+[3.324098] (-) TimerEvent: {}
+[3.425052] (-) TimerEvent: {}
+[3.525836] (-) TimerEvent: {}
+[3.626693] (-) TimerEvent: {}
+[3.727494] (-) TimerEvent: {}
+[3.828424] (-) TimerEvent: {}
+[3.929295] (-) TimerEvent: {}
+[4.030106] (-) TimerEvent: {}
+[4.130855] (-) TimerEvent: {}
+[4.231641] (-) TimerEvent: {}
+[4.332527] (-) TimerEvent: {}
+[4.433474] (-) TimerEvent: {}
+[4.534346] (-) TimerEvent: {}
+[4.635132] (-) TimerEvent: {}
+[4.735960] (-) TimerEvent: {}
+[4.836849] (-) TimerEvent: {}
+[4.937734] (-) TimerEvent: {}
+[5.038557] (-) TimerEvent: {}
+[5.139389] (-) TimerEvent: {}
+[5.240194] (-) TimerEvent: {}
+[5.341123] (-) TimerEvent: {}
+[5.441936] (-) TimerEvent: {}
+[5.542820] (-) TimerEvent: {}
+[5.643628] (-) TimerEvent: {}
+[5.744487] (-) TimerEvent: {}
+[5.845439] (-) TimerEvent: {}
+[5.946282] (-) TimerEvent: {}
+[6.047122] (-) TimerEvent: {}
+[6.148001] (-) TimerEvent: {}
+[6.248802] (-) TimerEvent: {}
+[6.349632] (-) TimerEvent: {}
+[6.450421] (-) TimerEvent: {}
+[6.551243] (-) TimerEvent: {}
+[6.652061] (-) TimerEvent: {}
+[6.752873] (-) TimerEvent: {}
+[6.853784] (-) TimerEvent: {}
+[6.954610] (-) TimerEvent: {}
+[7.055406] (-) TimerEvent: {}
+[7.156211] (-) TimerEvent: {}
+[7.257038] (-) TimerEvent: {}
+[7.357897] (-) TimerEvent: {}
+[7.458705] (-) TimerEvent: {}
+[7.559513] (-) TimerEvent: {}
+[7.660322] (-) TimerEvent: {}
+[7.761136] (-) TimerEvent: {}
+[7.862155] (-) TimerEvent: {}
+[7.962965] (-) TimerEvent: {}
+[8.063775] (-) TimerEvent: {}
+[8.164532] (-) TimerEvent: {}
+[8.265631] (-) TimerEvent: {}
+[8.367039] (-) TimerEvent: {}
+[8.468496] (-) TimerEvent: {}
+[8.569679] (-) TimerEvent: {}
+[8.670801] (-) TimerEvent: {}
+[8.772118] (-) TimerEvent: {}
+[8.873378] (-) TimerEvent: {}
+[8.974438] (-) TimerEvent: {}
+[9.075549] (-) TimerEvent: {}
+[9.176717] (-) TimerEvent: {}
+[9.278157] (-) TimerEvent: {}
+[9.379466] (-) TimerEvent: {}
+[9.480608] (-) TimerEvent: {}
+[9.582023] (-) TimerEvent: {}
+[9.683393] (-) TimerEvent: {}
+[9.784673] (-) TimerEvent: {}
+[9.885770] (-) TimerEvent: {}
+[9.986851] (-) TimerEvent: {}
+[10.087704] (-) TimerEvent: {}
+[10.188700] (-) TimerEvent: {}
+[10.289582] (-) TimerEvent: {}
+[10.390515] (-) TimerEvent: {}
+[10.491360] (-) TimerEvent: {}
+[10.592252] (-) TimerEvent: {}
+[10.693092] (-) TimerEvent: {}
+[10.793902] (-) TimerEvent: {}
+[10.894711] (-) TimerEvent: {}
+[10.995555] (-) TimerEvent: {}
+[11.096472] (-) TimerEvent: {}
+[11.197293] (-) TimerEvent: {}
+[11.297997] (-) TimerEvent: {}
+[11.398771] (-) TimerEvent: {}
+[11.499583] (-) TimerEvent: {}
+[11.600430] (-) TimerEvent: {}
+[11.701366] (-) TimerEvent: {}
+[11.802179] (-) TimerEvent: {}
+[11.902971] (-) TimerEvent: {}
+[11.991248] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:14:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type my_cobot_hw_interface::MyCobotHardwareInterface::on_configure(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[11.993165] (my_cobot_hardware_interface) StderrLine: {'line': b'   14 |     hardware_interface::return_type \x1b[01;31m\x1b[Kon_configure\x1b[m\x1b[K(const hardware_interface::HardwareInfo& info) override\n'}
+[11.993699] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.994073] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:22:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type my_cobot_hw_interface::MyCobotHardwareInterface::on_cleanup()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[11.994532] (my_cobot_hardware_interface) StderrLine: {'line': b'   22 |     hardware_interface::return_type \x1b[01;31m\x1b[Kon_cleanup\x1b[m\x1b[K() override\n'}
+[11.995092] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.995558] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:55:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid my_cobot_hw_interface::MyCobotHardwareInterface::on_activate()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[11.996038] (my_cobot_hardware_interface) StderrLine: {'line': b'   55 |     void \x1b[01;31m\x1b[Kon_activate\x1b[m\x1b[K() override\n'}
+[11.996428] (my_cobot_hardware_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.996799] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:61:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid my_cobot_hw_interface::MyCobotHardwareInterface::on_deactivate()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[11.997349] (my_cobot_hardware_interface) StderrLine: {'line': b'   61 |     void \x1b[01;31m\x1b[Kon_deactivate\x1b[m\x1b[K() override\n'}
+[11.998366] (my_cobot_hardware_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[11.999417] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:67:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid my_cobot_hw_interface::MyCobotHardwareInterface::on_error(const string&)\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[12.000076] (my_cobot_hardware_interface) StderrLine: {'line': b'   67 |     void \x1b[01;31m\x1b[Kon_error\x1b[m\x1b[K(const std::string& error_message) override\n'}
+[12.000468] (my_cobot_hardware_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.000830] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:72:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid my_cobot_hw_interface::MyCobotHardwareInterface::on_init()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[12.001315] (my_cobot_hardware_interface) StderrLine: {'line': b'   72 |     void \x1b[01;31m\x1b[Kon_init\x1b[m\x1b[K() override\n'}
+[12.001699] (my_cobot_hardware_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.002040] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:77:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting return type specified for \xe2\x80\x98\x1b[01m\x1b[Kvirtual void my_cobot_hw_interface::MyCobotHardwareInterface::prepare_command_mode_switch(const std::vector<std::__cxx11::basic_string<char> >&, const std::vector<std::__cxx11::basic_string<char> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.002462] (my_cobot_hardware_interface) StderrLine: {'line': b'   77 |     void \x1b[01;31m\x1b[Kprepare_command_mode_switch\x1b[m\x1b[K(const std::vector<std::string>& start_interfaces,\n'}
+[12.002815] (my_cobot_hardware_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.003140] (-) TimerEvent: {}
+[12.003555] (my_cobot_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:2\x1b[m\x1b[K:\n'}
+[12.004178] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:137:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Koverridden function is \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::prepare_command_mode_switch(const std::vector<std::__cxx11::basic_string<char> >&, const std::vector<std::__cxx11::basic_string<char> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.004636] (my_cobot_hardware_interface) StderrLine: {'line': b'  137 |   virtual return_type \x1b[01;36m\x1b[Kprepare_command_mode_switch\x1b[m\x1b[K(\n'}
+[12.005056] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.005436] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:83:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kconflicting return type specified for \xe2\x80\x98\x1b[01m\x1b[Kvirtual void my_cobot_hw_interface::MyCobotHardwareInterface::perform_command_mode_switch(const std::vector<std::__cxx11::basic_string<char> >&, const std::vector<std::__cxx11::basic_string<char> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.005885] (my_cobot_hardware_interface) StderrLine: {'line': b'   83 |     void \x1b[01;31m\x1b[Kperform_command_mode_switch\x1b[m\x1b[K(const std::vector<std::string>& start_interfaces,\n'}
+[12.006216] (my_cobot_hardware_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.006546] (my_cobot_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:2\x1b[m\x1b[K:\n'}
+[12.006895] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:156:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Koverridden function is \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::perform_command_mode_switch(const std::vector<std::__cxx11::basic_string<char> >&, const std::vector<std::__cxx11::basic_string<char> >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.007254] (my_cobot_hardware_interface) StderrLine: {'line': b'  156 |   virtual return_type \x1b[01;36m\x1b[Kperform_command_mode_switch\x1b[m\x1b[K(\n'}
+[12.007600] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.007933] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:89:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid my_cobot_hw_interface::MyCobotHardwareInterface::read()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[12.008296] (my_cobot_hardware_interface) StderrLine: {'line': b'   89 |     void \x1b[01;31m\x1b[Kread\x1b[m\x1b[K() override\n'}
+[12.008654] (my_cobot_hardware_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.009209] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:119:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid my_cobot_hw_interface::MyCobotHardwareInterface::write()\x1b[m\x1b[K\xe2\x80\x99 marked \xe2\x80\x98\x1b[01m\x1b[Koverride\x1b[m\x1b[K\xe2\x80\x99, but does not override\n'}
+[12.009611] (my_cobot_hardware_interface) StderrLine: {'line': b'  119 |     void \x1b[01;31m\x1b[Kwrite\x1b[m\x1b[K() override\n'}
+[12.009973] (my_cobot_hardware_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[12.010329] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type my_cobot_hw_interface::MyCobotHardwareInterface::on_configure(const hardware_interface::HardwareInfo&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.010713] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:16:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno match for \xe2\x80\x98\x1b[01m\x1b[Koperator=\x1b[m\x1b[K\xe2\x80\x99 (operand types are \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::__cxx11::basic_string<char> >\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<hardware_interface::ComponentInfo>\x1b[m\x1b[K\xe2\x80\x99)\n'}
+[12.011165] (my_cobot_hardware_interface) StderrLine: {'line': b'   16 |       joint_names_ = info.\x1b[01;31m\x1b[Kjoints\x1b[m\x1b[K;\n'}
+[12.011731] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[12.012289] (my_cobot_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:72\x1b[m\x1b[K,\n'}
+[12.012739] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[12.013210] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[12.013944] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[12.014432] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.014804] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.015149] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.015537] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.015908] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1\x1b[m\x1b[K:\n'}
+[12.016248] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:198:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.016637] (my_cobot_hardware_interface) StderrLine: {'line': b'  198 |     \x1b[01;36m\x1b[Kvector<_Tp, _Alloc>\x1b[m\x1b[K::\n'}
+[12.017078] (my_cobot_hardware_interface) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.017446] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/vector.tcc:199:42:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<hardware_interface::ComponentInfo>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<std::__cxx11::basic_string<char> >&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.017811] (my_cobot_hardware_interface) StderrLine: {'line': b'  199 |     operator=(\x1b[01;36m\x1b[Kconst vector<_Tp, _Alloc>& __x\x1b[m\x1b[K)\n'}
+[12.018161] (my_cobot_hardware_interface) StderrLine: {'line': b'      |               \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.018545] (my_cobot_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/11/vector:67\x1b[m\x1b[K,\n'}
+[12.018937] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/functional:62\x1b[m\x1b[K,\n'}
+[12.019265] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/pstl/glue_algorithm_defs.h:13\x1b[m\x1b[K,\n'}
+[12.019712] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/algorithm:74\x1b[m\x1b[K,\n'}
+[12.020056] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:18\x1b[m\x1b[K,\n'}
+[12.020392] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.020745] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.021207] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.021550] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1\x1b[m\x1b[K:\n'}
+[12.021891] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:709:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.022251] (my_cobot_hardware_interface) StderrLine: {'line': b'  709 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())\n'}
+[12.022589] (my_cobot_hardware_interface) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.022917] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:709:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<hardware_interface::ComponentInfo>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<std::__cxx11::basic_string<char> >&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.023278] (my_cobot_hardware_interface) StderrLine: {'line': b'  709 |       operator=(\x1b[01;36m\x1b[Kvector&& __x\x1b[m\x1b[K) noexcept(_Alloc_traits::_S_nothrow_move())\n'}
+[12.023665] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.024023] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:730:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.024417] (my_cobot_hardware_interface) StderrLine: {'line': b'  730 |       \x1b[01;36m\x1b[Koperator\x1b[m\x1b[K=(initializer_list<value_type> __l)\n'}
+[12.024763] (my_cobot_hardware_interface) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[12.025182] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/stl_vector.h:730:46:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst std::vector<hardware_interface::ComponentInfo>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kstd::initializer_list<std::__cxx11::basic_string<char> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.025576] (my_cobot_hardware_interface) StderrLine: {'line': b'  730 |       operator=(\x1b[01;36m\x1b[Kinitializer_list<value_type> __l\x1b[m\x1b[K)\n'}
+[12.025939] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[12.026284] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:19:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSUCCESS\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.026811] (my_cobot_hardware_interface) StderrLine: {'line': b'   19 |       return hardware_interface::return_type::\x1b[01;31m\x1b[KSUCCESS\x1b[m\x1b[K;\n'}
+[12.027461] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.027905] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type my_cobot_hw_interface::MyCobotHardwareInterface::on_cleanup()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.028407] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:24:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KSUCCESS\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Khardware_interface::return_type\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.029150] (my_cobot_hardware_interface) StderrLine: {'line': b'   24 |       return hardware_interface::return_type::\x1b[01;31m\x1b[KSUCCESS\x1b[m\x1b[K;\n'}
+[12.029701] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[12.030174] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual std::vector<hardware_interface::StateInterface> my_cobot_hw_interface::MyCobotHardwareInterface::export_state_interfaces()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.030654] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:35:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KHW_IF_POSITION\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Khardware_interface\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.031128] (my_cobot_hardware_interface) StderrLine: {'line': b'   35 |             joint_names_[i], hardware_interface::\x1b[01;31m\x1b[KHW_IF_POSITION\x1b[m\x1b[K, &joint_angles_[i]);\n'}
+[12.031619] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.032105] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual std::vector<hardware_interface::CommandInterface> my_cobot_hw_interface::MyCobotHardwareInterface::export_command_interfaces()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.032762] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:49:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KHW_IF_POSITION_COMMAND\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Khardware_interface\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.034315] (my_cobot_hardware_interface) StderrLine: {'line': b'   49 |             joint_names_[i], hardware_interface::\x1b[01;31m\x1b[KHW_IF_POSITION_COMMAND\x1b[m\x1b[K, &joint_angles_command_[i]);\n'}
+[12.035050] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.059534] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid my_cobot_hw_interface::MyCobotHardwareInterface::read()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.061087] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:105:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kjoint_angles\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kjoint_names\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.061968] (my_cobot_hardware_interface) StderrLine: {'line': b'  105 |         if (response->\x1b[01;31m\x1b[Kjoint_angles\x1b[m\x1b[K.size() == joint_angles_.size())\n'}
+[12.062804] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.063577] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                       \x1b[32m\x1b[Kjoint_names\x1b[m\x1b[K\n'}
+[12.064496] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:109:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kjoint_angles\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kjoint_names\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.065431] (my_cobot_hardware_interface) StderrLine: {'line': b'  109 |             joint_angles_[i] = response->\x1b[01;31m\x1b[Kjoint_angles\x1b[m\x1b[K[i].data();\n'}
+[12.066289] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.067002] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                          \x1b[32m\x1b[Kjoint_names\x1b[m\x1b[K\n'}
+[12.080333] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid my_cobot_hw_interface::MyCobotHardwareInterface::write()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.081492] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:131:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kusing element_type = struct my_cobot_interfaces::srv::SetRadians_Request_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kstruct my_cobot_interfaces::srv::SetRadians_Request_<std::allocator<void> >\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kjoint_angles\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kjoint_names\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[12.082339] (my_cobot_hardware_interface) StderrLine: {'line': b'  131 |         request->\x1b[01;31m\x1b[Kjoint_angles\x1b[m\x1b[K[i] = joint_angles_command_[i].data();\n'}
+[12.083093] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.083773] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                  \x1b[32m\x1b[Kjoint_names\x1b[m\x1b[K\n'}
+[12.084496] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:131:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Krequest for member \xe2\x80\x98\x1b[01m\x1b[Kdata\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[K((my_cobot_hw_interface::MyCobotHardwareInterface*)this)->my_cobot_hw_interface::MyCobotHardwareInterface::joint_angles_command_.std::vector<double, std::allocator<double> >::operator[](i)\x1b[m\x1b[K\xe2\x80\x99, which is of non-class type \xe2\x80\x98\x1b[01m\x1b[K__gnu_cxx::__alloc_traits<std::allocator<double>, double>::value_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[12.087590] (my_cobot_hardware_interface) StderrLine: {'line': b'  131 |         request->joint_angles[i] = joint_angles_command_[i].\x1b[01;31m\x1b[Kdata\x1b[m\x1b[K();\n'}
+[12.088493] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[12.089458] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:134:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Client<my_cobot_interfaces::srv::GetRadians>::async_send_request(std::shared_ptr<my_cobot_interfaces::srv::SetRadians_Request_<std::allocator<void> > >&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.090408] (my_cobot_hardware_interface) StderrLine: {'line': b'  134 |       auto future_result = \x1b[01;31m\x1b[Kclient_->async_send_request(request)\x1b[m\x1b[K;\n'}
+[12.091153] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.091872] (my_cobot_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.092631] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.093469] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.094265] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.095180] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.096160] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.097064] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.097765] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.098426] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.099177] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1\x1b[m\x1b[K:\n'}
+[12.099998] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:643:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::shared_ptr<my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFutureAndRequestId rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest, CallbackT&&) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<typename ServiceT::Response::SharedPtr>)> >::value>::type* <anonymous> = <anonymous>; ServiceT = my_cobot_interfaces::srv::GetRadians]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.101017] (my_cobot_hardware_interface) StderrLine: {'line': b'  643 |   \x1b[01;36m\x1b[Kasync_send_request\x1b[m\x1b[K(SharedRequest request, CallbackT && cb)\n'}
+[12.101899] (my_cobot_hardware_interface) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.102514] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:643:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.102938] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:134:55:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[12.103370] (-) TimerEvent: {}
+[12.104105] (my_cobot_hardware_interface) StderrLine: {'line': b'  134 |       auto future_result = \x1b[01;36m\x1b[Kclient_->async_send_request(request)\x1b[m\x1b[K;\n'}
+[12.104836] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.105679] (my_cobot_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.106521] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.107157] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.107823] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.108553] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.109345] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.110156] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.110872] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.111506] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.112312] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1\x1b[m\x1b[K:\n'}
+[12.113161] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:674:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class CallbackT, typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<std::shared_ptr<my_cobot_interfaces::srv::GetRadians_Request_<std::allocator<void> > >, std::shared_ptr<my_cobot_interfaces::srv::GetRadians_Response_<std::allocator<void> > > > >)> >::value, void>::type* <anonymous> > rclcpp::Client<ServiceT>::SharedFutureWithRequestAndRequestId rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest, CallbackT&&) [with CallbackT = CallbackT; typename std::enable_if<rclcpp::function_traits::same_arguments<CallbackT, std::function<void(std::shared_future<std::pair<typename ServiceT::Request::SharedPtr, typename ServiceT::Response::SharedPtr> >)> >::value>::type* <anonymous> = <anonymous>; ServiceT = my_cobot_interfaces::srv::GetRadians]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.114474] (my_cobot_hardware_interface) StderrLine: {'line': b'  674 |   \x1b[01;36m\x1b[Kasync_send_request\x1b[m\x1b[K(SharedRequest request, CallbackT && cb)\n'}
+[12.115440] (my_cobot_hardware_interface) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.116041] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:674:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[12.116661] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:134:55:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[12.117293] (my_cobot_hardware_interface) StderrLine: {'line': b'  134 |       auto future_result = \x1b[01;36m\x1b[Kclient_->async_send_request(request)\x1b[m\x1b[K;\n'}
+[12.117891] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~\x1b[m\x1b[K\n'}
+[12.118500] (my_cobot_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[12.118883] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[12.119372] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[12.120104] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[12.120766] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[12.121483] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[12.122163] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[12.122930] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[12.123692] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[12.124364] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1\x1b[m\x1b[K:\n'}
+[12.125210] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:608:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Client<ServiceT>::FutureAndRequestId rclcpp::Client<ServiceT>::async_send_request(rclcpp::Client<ServiceT>::SharedRequest) [with ServiceT = my_cobot_interfaces::srv::GetRadians; rclcpp::Client<ServiceT>::SharedRequest = std::shared_ptr<my_cobot_interfaces::srv::GetRadians_Request_<std::allocator<void> > >]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.125992] (my_cobot_hardware_interface) StderrLine: {'line': b'  608 |   \x1b[01;36m\x1b[Kasync_send_request\x1b[m\x1b[K(SharedRequest request)\n'}
+[12.126701] (my_cobot_hardware_interface) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[12.127331] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:608:36:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[Kmy_cobot_interfaces::srv::SetRadians_Request_<std::allocator<void> >\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[Kmy_cobot_interfaces::srv::GetRadians_Request_<std::allocator<void> >\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.127976] (my_cobot_hardware_interface) StderrLine: {'line': b'  608 |   async_send_request(\x1b[01;36m\x1b[KSharedRequest request\x1b[m\x1b[K)\n'}
+[12.128654] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[12.203664] (-) TimerEvent: {}
+[12.305258] (-) TimerEvent: {}
+[12.406673] (-) TimerEvent: {}
+[12.507499] (-) TimerEvent: {}
+[12.608430] (-) TimerEvent: {}
+[12.709511] (-) TimerEvent: {}
+[12.810558] (-) TimerEvent: {}
+[12.911593] (-) TimerEvent: {}
+[13.012392] (-) TimerEvent: {}
+[13.113217] (-) TimerEvent: {}
+[13.214017] (-) TimerEvent: {}
+[13.314819] (-) TimerEvent: {}
+[13.415775] (-) TimerEvent: {}
+[13.516815] (-) TimerEvent: {}
+[13.617970] (-) TimerEvent: {}
+[13.718778] (-) TimerEvent: {}
+[13.819566] (-) TimerEvent: {}
+[13.920385] (-) TimerEvent: {}
+[14.021315] (-) TimerEvent: {}
+[14.122313] (-) TimerEvent: {}
+[14.223472] (-) TimerEvent: {}
+[14.288722] (my_cobot_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/aarch64-linux-gnu/c++/11/bits/c++allocator.h:33\x1b[m\x1b[K,\n'}
+[14.289946] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/bits/allocator.h:46\x1b[m\x1b[K,\n'}
+[14.290573] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/11/memory:64\x1b[m\x1b[K,\n'}
+[14.291114] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153\x1b[m\x1b[K,\n'}
+[14.291655] (my_cobot_hardware_interface) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1\x1b[m\x1b[K:\n'}
+[14.292218] (my_cobot_hardware_interface) StderrLine: {'line': b'/usr/include/c++/11/ext/new_allocator.h: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kvoid __gnu_cxx::new_allocator<_Tp>::construct(_Up*, _Args&& ...) [with _Up = my_cobot_hw_interface::MyCobotHardwareInterface; _Args = {}; _Tp = my_cobot_hw_interface::MyCobotHardwareInterface]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.292981] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/alloc_traits.h:516:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstatic void std::allocator_traits<std::allocator<_Tp1> >::construct(std::allocator_traits<std::allocator<_Tp1> >::allocator_type&, _Up*, _Args&& ...) [with _Up = my_cobot_hw_interface::MyCobotHardwareInterface; _Args = {}; _Tp = my_cobot_hw_interface::MyCobotHardwareInterface; std::allocator_traits<std::allocator<_Tp1> >::allocator_type = std::allocator<my_cobot_hw_interface::MyCobotHardwareInterface>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.293709] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:519:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::_Sp_counted_ptr_inplace<_Tp, _Alloc, _Lp>::_Sp_counted_ptr_inplace(_Alloc, _Args&& ...) [with _Args = {}; _Tp = my_cobot_hw_interface::MyCobotHardwareInterface; _Alloc = std::allocator<my_cobot_hw_interface::MyCobotHardwareInterface>; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.294339] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:650:16:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_count<_Lp>::__shared_count(_Tp*&, std::_Sp_alloc_shared_tag<_Alloc>, _Args&& ...) [with _Tp = my_cobot_hw_interface::MyCobotHardwareInterface; _Alloc = std::allocator<my_cobot_hw_interface::MyCobotHardwareInterface>; _Args = {}; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.294979] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr_base.h:1342:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::__shared_ptr<_Tp, _Lp>::__shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<my_cobot_hw_interface::MyCobotHardwareInterface>; _Args = {}; _Tp = my_cobot_hw_interface::MyCobotHardwareInterface; __gnu_cxx::_Lock_policy _Lp = __gnu_cxx::_S_atomic]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.295570] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:409:59:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp>::shared_ptr(std::_Sp_alloc_shared_tag<_Tp>, _Args&& ...) [with _Alloc = std::allocator<my_cobot_hw_interface::MyCobotHardwareInterface>; _Args = {}; _Tp = my_cobot_hw_interface::MyCobotHardwareInterface]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.296194] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:862:14:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::allocate_shared(const _Alloc&, _Args&& ...) [with _Tp = my_cobot_hw_interface::MyCobotHardwareInterface; _Alloc = std::allocator<my_cobot_hw_interface::MyCobotHardwareInterface>; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.296758] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/bits/shared_ptr.h:878:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kstd::shared_ptr<_Tp> std::make_shared(_Args&& ...) [with _Tp = my_cobot_hw_interface::MyCobotHardwareInterface; _Args = {}]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.297681] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:168:97:\x1b[m\x1b[K   required from here\n'}
+[14.298350] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/ext/new_allocator.h:162:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid new-expression of abstract class type \xe2\x80\x98\x1b[01m\x1b[Kmy_cobot_hw_interface::MyCobotHardwareInterface\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.299085] (my_cobot_hardware_interface) StderrLine: {'line': b'  162 |         { \x1b[01;31m\x1b[K::new((void *)__p) _Up(std::forward<_Args>(__args)...)\x1b[m\x1b[K; }\n'}
+[14.299686] (my_cobot_hardware_interface) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.300273] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:9:9:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  because the following virtual functions are pure within \xe2\x80\x98\x1b[01m\x1b[Kmy_cobot_hw_interface::MyCobotHardwareInterface\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.300928] (my_cobot_hardware_interface) StderrLine: {'line': b'    9 |   class \x1b[01;36m\x1b[KMyCobotHardwareInterface\x1b[m\x1b[K : public hardware_interface::SystemInterface\n'}
+[14.301596] (my_cobot_hardware_interface) StderrLine: {'line': b'      |         \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.302330] (my_cobot_hardware_interface) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:2\x1b[m\x1b[K:\n'}
+[14.302871] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:173:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::read(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.303395] (my_cobot_hardware_interface) StderrLine: {'line': b'  173 |   virtual return_type \x1b[01;36m\x1b[Kread\x1b[m\x1b[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;\n'}
+[14.304026] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[14.304634] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/hardware_interface/system_interface.hpp:184:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K    \xe2\x80\x98\x1b[01m\x1b[Kvirtual hardware_interface::return_type hardware_interface::SystemInterface::write(const rclcpp::Time&, const rclcpp::Duration&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.305448] (my_cobot_hardware_interface) StderrLine: {'line': b'  184 |   virtual return_type \x1b[01;36m\x1b[Kwrite\x1b[m\x1b[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;\n'}
+[14.306049] (my_cobot_hardware_interface) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[14.323719] (-) TimerEvent: {}
+[14.425073] (-) TimerEvent: {}
+[14.526423] (-) TimerEvent: {}
+[14.627339] (-) TimerEvent: {}
+[14.728213] (-) TimerEvent: {}
+[14.829001] (-) TimerEvent: {}
+[14.929858] (-) TimerEvent: {}
+[14.967933] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_cobot_hardware_interface.dir/build.make:76: CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o] Error 1\n'}
+[14.969266] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_cobot_hardware_interface.dir/all] Error 2\n'}
+[14.970492] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[14.994253] (my_cobot_hardware_interface) CommandEnded: {'returncode': 2}
+[15.030240] (-) TimerEvent: {}
+[15.131193] (-) TimerEvent: {}
+[15.236992] (-) TimerEvent: {}
+[15.257760] (my_cobot_hardware_interface) JobEnded: {'identifier': 'my_cobot_hardware_interface', 'rc': 2}
+[15.269966] (-) EventReactorShutdown: {}

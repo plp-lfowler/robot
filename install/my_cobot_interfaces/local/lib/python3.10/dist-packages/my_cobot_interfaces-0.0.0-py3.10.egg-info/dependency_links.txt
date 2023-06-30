@@ -1,1 +1,1 @@
-
+/home/lance/robot/build/my_cobot_interfaces/ament_cmake_python/my_cobot_interfaces/my_cobot_interfaces.egg-info/dependency_links.txt

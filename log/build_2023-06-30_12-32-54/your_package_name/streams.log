@@ -1,0 +1,43 @@
+[2.313s] Invoking command in '/home/lance/robot/build/your_package_name': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install /usr/bin/cmake /home/lance/robot/src/my_cobot_hardware_interface -DCMAKE_INSTALL_PREFIX=/home/lance/robot/install/your_package_name
+[3.212s] -- The C compiler identification is GNU 11.3.0
+[3.626s] -- The CXX compiler identification is GNU 11.3.0
+[3.686s] -- Detecting C compiler ABI info
+[4.210s] -- Detecting C compiler ABI info - done
+[4.247s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.250s] -- Detecting C compile features
+[4.256s] -- Detecting C compile features - done
+[4.276s] -- Detecting CXX compiler ABI info
+[4.871s] -- Detecting CXX compiler ABI info - done
+[4.915s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.917s] -- Detecting CXX compile features
+[4.919s] -- Detecting CXX compile features - done
+[4.973s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[6.511s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[7.426s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[8.070s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[8.406s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[8.478s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[8.570s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[8.703s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[8.843s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.444s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[9.487s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[9.729s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[9.848s] -- Looking for pthread.h
+[10.226s] -- Looking for pthread.h - found
+[10.227s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.608s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[10.612s] -- Found Threads: TRUE  
+[11.411s] -- Found hardware_interface: 2.26.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[13.669s] -- Found my_cobot_interfaces: 0.0.0 (/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake)
+[13.998s] [31mCMake Error at /opt/ros/humble/share/pluginlib/cmake/pluginlib_export_plugin_description_file.cmake:84 (message):
+[13.999s]   Given plugin description file
+[13.999s]   '/home/lance/robot/src/my_cobot_hardware_interface/your_package_name_plugin.xml'
+[14.000s]   does not exist
+[14.000s] Call Stack (most recent call first):
+[14.001s]   CMakeLists.txt:33 (pluginlib_export_plugin_description_file)
+[14.001s] 
+[14.001s] [0m
+[14.002s] -- Configuring incomplete, errors occurred!
+[14.003s] See also "/home/lance/robot/build/your_package_name/CMakeFiles/CMakeOutput.log".
+[14.033s] Invoked command in '/home/lance/robot/build/your_package_name' returned '1': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install /usr/bin/cmake /home/lance/robot/src/my_cobot_hardware_interface -DCMAKE_INSTALL_PREFIX=/home/lance/robot/install/your_package_name

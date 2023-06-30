@@ -1,0 +1,23 @@
+[10.324s] Invoking command in '/home/lance/robot/build/bringup': PYTHONPATH=/home/lance/robot/build/bringup/prefix_override:/home/lance/robot/install/bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/lance/robot/build/bringup/build
+[12.953s] running develop
+[15.449s] Invoked command in '/home/lance/robot/build/bringup' returned '0': PYTHONPATH=/home/lance/robot/build/bringup/prefix_override:/home/lance/robot/install/bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/lance/robot/build/bringup/build
+[15.454s] Invoking command in '/home/lance/robot/src/bringup': PYTHONPATH=/home/lance/robot/build/bringup/prefix_override:/home/lance/robot/install/bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bringup build --build-base /home/lance/robot/build/bringup/build install --record /home/lance/robot/build/bringup/install.log --single-version-externally-managed
+[18.238s] running egg_info
+[18.245s] writing ../../build/bringup/bringup.egg-info/PKG-INFO
+[18.251s] writing dependency_links to ../../build/bringup/bringup.egg-info/dependency_links.txt
+[18.254s] writing entry points to ../../build/bringup/bringup.egg-info/entry_points.txt
+[18.255s] writing requirements to ../../build/bringup/bringup.egg-info/requires.txt
+[18.256s] writing top-level names to ../../build/bringup/bringup.egg-info/top_level.txt
+[18.265s] reading manifest file '../../build/bringup/bringup.egg-info/SOURCES.txt'
+[18.270s] writing manifest file '../../build/bringup/bringup.egg-info/SOURCES.txt'
+[18.270s] running build
+[18.271s] running build_py
+[18.273s] running install
+[18.275s] running install_lib
+[18.293s] running install_data
+[18.294s] running install_egg_info
+[18.297s] removing '/home/lance/robot/install/bringup/lib/python3.10/site-packages/bringup-0.0.0-py3.10.egg-info' (and everything under it)
+[18.301s] Copying ../../build/bringup/bringup.egg-info to /home/lance/robot/install/bringup/lib/python3.10/site-packages/bringup-0.0.0-py3.10.egg-info
+[18.313s] running install_scripts
+[18.424s] writing list of installed files to '/home/lance/robot/build/bringup/install.log'
+[20.168s] Invoked command in '/home/lance/robot/src/bringup' returned '0': PYTHONPATH=/home/lance/robot/build/bringup/prefix_override:/home/lance/robot/install/bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bringup build --build-base /home/lance/robot/build/bringup/build install --record /home/lance/robot/build/bringup/install.log --single-version-externally-managed

@@ -1,0 +1,204 @@
+[0.000000] (-) TimerEvent: {}
+[0.001713] (-) JobUnselected: {'identifier': 'bringup'}
+[0.002368] (-) JobUnselected: {'identifier': 'computer_vision'}
+[0.002461] (-) JobUnselected: {'identifier': 'controllers'}
+[0.002539] (-) JobUnselected: {'identifier': 'motion_planning'}
+[0.002614] (-) JobUnselected: {'identifier': 'moveit_config'}
+[0.002690] (-) JobUnselected: {'identifier': 'my_cobot_interfaces'}
+[0.002765] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.002849] (my_cobot_hardware_interface) JobQueued: {'identifier': 'my_cobot_hardware_interface', 'dependencies': OrderedDict([('my_cobot_interfaces', '/home/lance/robot/install/my_cobot_interfaces')])}
+[0.002942] (my_cobot_hardware_interface) JobStarted: {'identifier': 'my_cobot_hardware_interface'}
+[0.098964] (-) TimerEvent: {}
+[0.109314] (my_cobot_hardware_interface) JobProgress: {'identifier': 'my_cobot_hardware_interface', 'progress': 'cmake'}
+[0.114503] (my_cobot_hardware_interface) JobProgress: {'identifier': 'my_cobot_hardware_interface', 'progress': 'build'}
+[0.119142] (my_cobot_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lance/robot/build/my_cobot_hardware_interface', '--', '-j4', '-l4'], 'cwd': '/home/lance/robot/build/my_cobot_hardware_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance/robot/src/my_cobot_hardware_interface'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1261'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1241,unix/lance-desktop:/tmp/.ICE-unix/1241'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b3e32d7a_6f77_4786_af50_73ac07d461e0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.INCB71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.166'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/my_cobot_hardware_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/build/controllers:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/build/motion_planning:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[0.199251] (-) TimerEvent: {}
+[0.261598] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299512] (-) TimerEvent: {}
+[0.400329] (-) TimerEvent: {}
+[0.501023] (-) TimerEvent: {}
+[0.601814] (-) TimerEvent: {}
+[0.702649] (-) TimerEvent: {}
+[0.803520] (-) TimerEvent: {}
+[0.904998] (-) TimerEvent: {}
+[1.005808] (-) TimerEvent: {}
+[1.082899] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.105998] (-) TimerEvent: {}
+[1.120331] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found moveit_core: 2.5.4 (/opt/ros/humble/share/moveit_core/cmake)\n'}
+[1.180045] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread \n'}
+[1.206170] (-) TimerEvent: {}
+[1.218399] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem \n'}
+[1.306353] (-) TimerEvent: {}
+[1.402121] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.406506] (-) TimerEvent: {}
+[1.413285] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.438476] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.485837] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.506705] (-) TimerEvent: {}
+[1.555351] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.606885] (-) TimerEvent: {}
+[1.707611] (-) TimerEvent: {}
+[1.808382] (-) TimerEvent: {}
+[1.909218] (-) TimerEvent: {}
+[2.009968] (-) TimerEvent: {}
+[2.110689] (-) TimerEvent: {}
+[2.211420] (-) TimerEvent: {}
+[2.232651] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.240146] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)\n'}
+[2.311628] (-) TimerEvent: {}
+[2.364596] (my_cobot_hardware_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[2.411823] (-) TimerEvent: {}
+[2.512573] (-) TimerEvent: {}
+[2.613397] (-) TimerEvent: {}
+[2.714125] (-) TimerEvent: {}
+[2.814857] (-) TimerEvent: {}
+[2.915589] (-) TimerEvent: {}
+[3.016288] (-) TimerEvent: {}
+[3.117104] (-) TimerEvent: {}
+[3.162213] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- library: /usr/lib/aarch64-linux-gnu/libcurl.so\n'}
+[3.217285] (-) TimerEvent: {}
+[3.318046] (-) TimerEvent: {}
+[3.418932] (-) TimerEvent: {}
+[3.519644] (-) TimerEvent: {}
+[3.620353] (-) TimerEvent: {}
+[3.721072] (-) TimerEvent: {}
+[3.821810] (-) TimerEvent: {}
+[3.922558] (-) TimerEvent: {}
+[4.023291] (-) TimerEvent: {}
+[4.124019] (-) TimerEvent: {}
+[4.224786] (-) TimerEvent: {}
+[4.292867] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[4.324986] (-) TimerEvent: {}
+[4.425687] (-) TimerEvent: {}
+[4.526422] (-) TimerEvent: {}
+[4.627199] (-) TimerEvent: {}
+[4.727921] (-) TimerEvent: {}
+[4.828647] (-) TimerEvent: {}
+[4.929421] (-) TimerEvent: {}
+[5.030147] (-) TimerEvent: {}
+[5.130919] (-) TimerEvent: {}
+[5.231648] (-) TimerEvent: {}
+[5.332377] (-) TimerEvent: {}
+[5.433097] (-) TimerEvent: {}
+[5.533862] (-) TimerEvent: {}
+[5.634599] (-) TimerEvent: {}
+[5.735328] (-) TimerEvent: {}
+[5.836057] (-) TimerEvent: {}
+[5.936819] (-) TimerEvent: {}
+[6.037572] (-) TimerEvent: {}
+[6.138291] (-) TimerEvent: {}
+[6.239035] (-) TimerEvent: {}
+[6.339834] (-) TimerEvent: {}
+[6.440558] (-) TimerEvent: {}
+[6.541279] (-) TimerEvent: {}
+[6.642040] (-) TimerEvent: {}
+[6.742791] (-) TimerEvent: {}
+[6.843689] (-) TimerEvent: {}
+[6.944424] (-) TimerEvent: {}
+[7.045129] (-) TimerEvent: {}
+[7.145862] (-) TimerEvent: {}
+[7.246572] (-) TimerEvent: {}
+[7.347296] (-) TimerEvent: {}
+[7.448012] (-) TimerEvent: {}
+[7.548767] (-) TimerEvent: {}
+[7.649512] (-) TimerEvent: {}
+[7.750237] (-) TimerEvent: {}
+[7.850969] (-) TimerEvent: {}
+[7.951709] (-) TimerEvent: {}
+[8.052540] (-) TimerEvent: {}
+[8.153359] (-) TimerEvent: {}
+[8.254127] (-) TimerEvent: {}
+[8.355011] (-) TimerEvent: {}
+[8.428417] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found moveit_ros_planning: 2.5.4 (/opt/ros/humble/share/moveit_ros_planning/cmake)\n'}
+[8.446327] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono \n'}
+[8.455181] (-) TimerEvent: {}
+[8.555936] (-) TimerEvent: {}
+[8.656693] (-) TimerEvent: {}
+[8.757448] (-) TimerEvent: {}
+[8.858176] (-) TimerEvent: {}
+[8.958829] (-) TimerEvent: {}
+[9.059551] (-) TimerEvent: {}
+[9.160284] (-) TimerEvent: {}
+[9.261063] (-) TimerEvent: {}
+[9.361834] (-) TimerEvent: {}
+[9.462609] (-) TimerEvent: {}
+[9.563421] (-) TimerEvent: {}
+[9.664131] (-) TimerEvent: {}
+[9.764909] (-) TimerEvent: {}
+[9.799243] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found moveit_ros_planning_interface: 2.5.4 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)\n'}
+[9.816945] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread \n'}
+[9.865152] (-) TimerEvent: {}
+[9.965920] (-) TimerEvent: {}
+[10.066660] (-) TimerEvent: {}
+[10.167397] (-) TimerEvent: {}
+[10.268131] (-) TimerEvent: {}
+[10.368869] (-) TimerEvent: {}
+[10.407963] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options \n'}
+[10.469061] (-) TimerEvent: {}
+[10.569926] (-) TimerEvent: {}
+[10.670713] (-) TimerEvent: {}
+[10.771481] (-) TimerEvent: {}
+[10.872402] (-) TimerEvent: {}
+[10.973142] (-) TimerEvent: {}
+[11.073924] (-) TimerEvent: {}
+[11.174670] (-) TimerEvent: {}
+[11.231089] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread \n'}
+[11.274860] (-) TimerEvent: {}
+[11.375587] (-) TimerEvent: {}
+[11.476304] (-) TimerEvent: {}
+[11.577049] (-) TimerEvent: {}
+[11.677824] (-) TimerEvent: {}
+[11.778563] (-) TimerEvent: {}
+[11.879299] (-) TimerEvent: {}
+[11.980015] (-) TimerEvent: {}
+[12.080735] (-) TimerEvent: {}
+[12.181486] (-) TimerEvent: {}
+[12.282230] (-) TimerEvent: {}
+[12.383023] (-) TimerEvent: {}
+[12.483746] (-) TimerEvent: {}
+[12.584491] (-) TimerEvent: {}
+[12.615331] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found ros2_control: 2.26.0 (/opt/ros/humble/share/ros2_control/cmake)\n'}
+[12.616756] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found my_cobot_interfaces: 0.0.0 (/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake)\n'}
+[12.684688] (-) TimerEvent: {}
+[12.763486] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[12.784987] (-) TimerEvent: {}
+[12.885827] (-) TimerEvent: {}
+[12.986522] (-) TimerEvent: {}
+[13.087311] (-) TimerEvent: {}
+[13.135770] (my_cobot_hardware_interface) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[13.136787] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/lance/robot/src/my_cobot_hardware_interface/include\n'}
+[13.137241] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[13.140548] (my_cobot_hardware_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[13.147793] (my_cobot_hardware_interface) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[13.148398] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[13.149847] (my_cobot_hardware_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[13.155015] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[13.187477] (-) TimerEvent: {}
+[13.288249] (-) TimerEvent: {}
+[13.388998] (-) TimerEvent: {}
+[13.394519] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[13.407961] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/lance/robot/build/my_cobot_hardware_interface\n'}
+[13.489219] (-) TimerEvent: {}
+[13.590077] (-) TimerEvent: {}
+[13.598844] (my_cobot_hardware_interface) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o\x1b[0m\n'}
+[13.601980] (my_cobot_hardware_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_hardware_interface_node.dir/src/MyCobotHardwareInterface.cpp.o\x1b[0m\n'}
+[13.667891] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kmy_cobot_hardware_interface/MyCobotHardwareInterface.hpp: No such file or directory\n'}
+[13.668595] (my_cobot_hardware_interface) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K"my_cobot_hardware_interface/MyCobotHardwareInterface.hpp"\x1b[m\x1b[K\n'}
+[13.669134] (my_cobot_hardware_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.669700] (my_cobot_hardware_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[13.673194] (my_cobot_hardware_interface) StderrLine: {'line': b'\x1b[01m\x1b[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kmy_cobot_hardware_interface/MyCobotHardwareInterface.hpp: No such file or directory\n'}
+[13.673969] (my_cobot_hardware_interface) StderrLine: {'line': b'    1 | #include \x1b[01;31m\x1b[K"my_cobot_hardware_interface/MyCobotHardwareInterface.hpp"\x1b[m\x1b[K\n'}
+[13.674960] (my_cobot_hardware_interface) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.675414] (my_cobot_hardware_interface) StderrLine: {'line': b'compilation terminated.\n'}
+[13.675728] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_cobot_hardware_interface.dir/build.make:76: CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o] Error 1\n'}
+[13.676015] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/my_cobot_hardware_interface.dir/all] Error 2\n'}
+[13.676355] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[13.677359] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/my_cobot_hardware_interface_node.dir/build.make:76: CMakeFiles/my_cobot_hardware_interface_node.dir/src/MyCobotHardwareInterface.cpp.o] Error 1\n'}
+[13.678098] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/my_cobot_hardware_interface_node.dir/all] Error 2\n'}
+[13.679070] (my_cobot_hardware_interface) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[13.686322] (my_cobot_hardware_interface) CommandEnded: {'returncode': 2}
+[13.692899] (-) TimerEvent: {}
+[13.794637] (-) TimerEvent: {}
+[13.898863] (-) TimerEvent: {}
+[13.917313] (my_cobot_hardware_interface) JobEnded: {'identifier': 'my_cobot_hardware_interface', 'rc': 2}
+[13.929356] (-) EventReactorShutdown: {}

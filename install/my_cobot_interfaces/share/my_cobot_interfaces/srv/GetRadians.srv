@@ -1,3 +1,1 @@
----
-float64[] angles
-string[] joint_names
+/home/lance/robot/src/my_cobot_interfaces/srv/GetRadians.srv

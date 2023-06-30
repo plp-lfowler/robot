@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c.o"
   "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c.o.d"
+  "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c.o"
+  "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c.o.d"
   "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c.o"
   "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c.o.d"
   "libmy_cobot_interfaces__rosidl_generator_c.pdb"
@@ -9,11 +11,16 @@ file(REMOVE_RECURSE
   "rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.h"
   "rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__struct.h"
   "rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__type_support.h"
+  "rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c"
+  "rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.h"
+  "rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__struct.h"
+  "rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__type_support.h"
   "rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c"
   "rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.h"
   "rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__struct.h"
   "rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__type_support.h"
   "rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
+  "rosidl_generator_c/my_cobot_interfaces/srv/play_pause.h"
   "rosidl_generator_c/my_cobot_interfaces/srv/set_radians.h"
 )
 

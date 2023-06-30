@@ -1,0 +1,17 @@
+running develop
+running egg_info
+creating motion_planning.egg-info
+writing motion_planning.egg-info/PKG-INFO
+writing dependency_links to motion_planning.egg-info/dependency_links.txt
+writing entry points to motion_planning.egg-info/entry_points.txt
+writing requirements to motion_planning.egg-info/requires.txt
+writing top-level names to motion_planning.egg-info/top_level.txt
+writing manifest file 'motion_planning.egg-info/SOURCES.txt'
+reading manifest file 'motion_planning.egg-info/SOURCES.txt'
+writing manifest file 'motion_planning.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lance/robot/install/motion_planning/lib/python3.10/site-packages/motion-planning.egg-link (link to .)
+Installing mp script to /home/lance/robot/install/motion_planning/lib/motion_planning
+
+Installed /home/lance/robot/build/motion_planning
+running install_data

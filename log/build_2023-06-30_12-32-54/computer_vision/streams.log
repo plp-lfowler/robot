@@ -1,0 +1,30 @@
+[10.436s] Invoking command in '/home/lance/robot/build/computer_vision': PYTHONPATH=/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/lance/robot/build/computer_vision/build
+[12.933s] running develop
+[14.652s] Removing /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer-vision.egg-link (link to .)
+[15.106s] Invoked command in '/home/lance/robot/build/computer_vision' returned '0': PYTHONPATH=/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/lance/robot/build/computer_vision/build
+[15.118s] Invoking command in '/home/lance/robot/src/computer_vision': PYTHONPATH=/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/computer_vision build --build-base /home/lance/robot/build/computer_vision/build install --record /home/lance/robot/build/computer_vision/install.log --single-version-externally-managed
+[16.987s] running egg_info
+[16.990s] writing ../../build/computer_vision/computer_vision.egg-info/PKG-INFO
+[16.992s] writing dependency_links to ../../build/computer_vision/computer_vision.egg-info/dependency_links.txt
+[16.994s] writing entry points to ../../build/computer_vision/computer_vision.egg-info/entry_points.txt
+[16.996s] writing requirements to ../../build/computer_vision/computer_vision.egg-info/requires.txt
+[16.996s] writing top-level names to ../../build/computer_vision/computer_vision.egg-info/top_level.txt
+[17.014s] reading manifest file '../../build/computer_vision/computer_vision.egg-info/SOURCES.txt'
+[17.028s] writing manifest file '../../build/computer_vision/computer_vision.egg-info/SOURCES.txt'
+[17.029s] running build
+[17.031s] running build_py
+[17.033s] creating /home/lance/robot/build/computer_vision/build
+[17.034s] creating /home/lance/robot/build/computer_vision/build/lib
+[17.037s] creating /home/lance/robot/build/computer_vision/build/lib/computer_vision
+[17.039s] copying computer_vision/computer_vision.py -> /home/lance/robot/build/computer_vision/build/lib/computer_vision
+[17.041s] copying computer_vision/__init__.py -> /home/lance/robot/build/computer_vision/build/lib/computer_vision
+[17.042s] running install
+[17.043s] running install_lib
+[17.051s] running install_data
+[17.058s] running install_egg_info
+[17.073s] removing '/home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision-0.0.0-py3.10.egg-info' (and everything under it)
+[17.078s] Copying ../../build/computer_vision/computer_vision.egg-info to /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision-0.0.0-py3.10.egg-info
+[17.090s] running install_scripts
+[17.227s] Installing cv script to /home/lance/robot/install/computer_vision/lib/computer_vision
+[17.247s] writing list of installed files to '/home/lance/robot/build/computer_vision/install.log'
+[17.730s] Invoked command in '/home/lance/robot/src/computer_vision' returned '0': PYTHONPATH=/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/computer_vision build --build-base /home/lance/robot/build/computer_vision/build install --record /home/lance/robot/build/computer_vision/install.log --single-version-externally-managed

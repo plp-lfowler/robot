@@ -1,2 +1,1 @@
-from my_cobot_interfaces.srv._get_radians import GetRadians  # noqa: F401
-from my_cobot_interfaces.srv._set_radians import SetRadians  # noqa: F401
+/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_py/my_cobot_interfaces/srv/__init__.py

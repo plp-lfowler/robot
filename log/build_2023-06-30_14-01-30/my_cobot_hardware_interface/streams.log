@@ -1,0 +1,42 @@
+[0.133s] Invoking command in '/home/lance/robot/build/my_cobot_hardware_interface': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/my_cobot_hardware_interface -- -j4 -l4
+[0.365s] [35m[1mConsolidate compiler generated dependencies of target my_cobot_hardware_interface[0m
+[0.479s] [ 50%] [32mBuilding CXX object CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o[0m
+[13.955s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:40:72:[m[K [01;31m[Kerror: [m[Kvirt-specifiers in ‘[01m[Kread[m[K’ not allowed outside a class definition
+[13.956s]    40 |                                        const rclcpp::Duration& period) [01;31m[Koverride[m[K
+[13.956s]       |                                                                        [01;31m[K^~~~~~~~[m[K
+[13.981s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In function ‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[13.982s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:44:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_radians_client_[m[K’ was not declared in this scope
+[13.983s]    44 |     auto future = [01;31m[Kget_radians_client_[m[K->async_send_request(request);
+[13.983s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[13.995s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:45:40:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+[13.996s]    45 |     rclcpp::spin_until_future_complete([01;31m[Knode_[m[K, future);
+[13.997s]       |                                        [01;31m[K^~~~~[m[K
+[13.997s]       |                                        [32m[Kmode_t[m[K
+[14.021s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:50:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_names_[m[K’ was not declared in this scope
+[14.022s]    50 |       if (response->angles.size() == [01;31m[Kjoint_names_[m[K.size())
+[14.023s]       |                                      [01;31m[K^~~~~~~~~~~~[m[K
+[14.049s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:54:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_state_variable_[m[K’ was not declared in this scope
+[14.050s]    54 |           [01;31m[Kjoint_state_variable_[m[K[i] = response->angles[i];
+[14.050s]       |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[14.051s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K At global scope:
+[14.051s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:64:73:[m[K [01;31m[Kerror: [m[Kvirt-specifiers in ‘[01m[Kwrite[m[K’ not allowed outside a class definition
+[14.052s]    64 |                                         const rclcpp::Duration& period) [01;31m[Koverride[m[K
+[14.052s]       |                                                                         [01;31m[K^~~~~~~~[m[K
+[14.069s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In function ‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[14.069s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_names_[m[K’ was not declared in this scope
+[14.070s]    67 |     request->joint_names = [01;31m[Kjoint_names_[m[K;
+[14.071s]       |                            [01;31m[K^~~~~~~~~~~~[m[K
+[14.098s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:68:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_command_variable_[m[K’ was not declared in this scope
+[14.099s]    68 |     request->angles.resize([01;31m[Kjoint_command_variable_[m[K.size());
+[14.099s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[14.132s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:75:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_radians_client_[m[K’ was not declared in this scope
+[14.133s]    75 |     auto future = [01;31m[Kset_radians_client_[m[K->async_send_request(request);
+[14.134s]       |                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[14.145s] [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:76:40:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+[14.146s]    76 |     rclcpp::spin_until_future_complete([01;31m[Knode_[m[K, future);
+[14.147s]       |                                        [01;31m[K^~~~~[m[K
+[14.147s]       |                                        [32m[Kmode_t[m[K
+[17.799s] gmake[2]: *** [CMakeFiles/my_cobot_hardware_interface.dir/build.make:76: CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o] Error 1
+[17.800s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_cobot_hardware_interface.dir/all] Error 2
+[17.801s] gmake: *** [Makefile:146: all] Error 2
+[17.810s] Invoked command in '/home/lance/robot/build/my_cobot_hardware_interface' returned '2': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/my_cobot_hardware_interface -- -j4 -l4

@@ -1,0 +1,47 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o[0m
+In file included from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1[m[K:
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/include/my_cobot_hardware_interface/MyCobotHardwareInterface.hpp:16:35:[m[K [01;31m[Kerror: [m[K‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::MyCobotHardwareInterface::configure(const hardware_interface::HardwareInfo&)[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   16 |   hardware_interface::return_type [01;31m[Kconfigure[m[K(const hardware_interface::HardwareInfo& info) override;
+      |                                   [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/include/my_cobot_hardware_interface/MyCobotHardwareInterface.hpp:19:35:[m[K [01;31m[Kerror: [m[K‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::MyCobotHardwareInterface::read()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   19 |   hardware_interface::return_type [01;31m[Kread[m[K() override;
+      |                                   [01;31m[K^~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/include/my_cobot_hardware_interface/MyCobotHardwareInterface.hpp:20:35:[m[K [01;31m[Kerror: [m[K‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::MyCobotHardwareInterface::write()[m[K’ marked ‘[01m[Koverride[m[K’, but does not override
+   20 |   hardware_interface::return_type [01;31m[Kwrite[m[K() override;
+      |                                   [01;31m[K^~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In member function ‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::MyCobotHardwareInterface::configure(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:19:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kconfigure[m[K’ is not a member of ‘[01m[Khardware_interface::ActuatorInterface[m[K’
+   19 |     if (hardware_interface::ActuatorInterface::[01;31m[Kconfigure[m[K(info) != hardware_interface::return_type::OK)
+      |                                                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In member function ‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::MyCobotHardwareInterface::read()[m[K’:
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:54:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct my_cobot_interfaces::srv::GetRadians_Request_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct my_cobot_interfaces::srv::GetRadians_Request_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kjoint_names[m[K’
+   54 |     request->[01;31m[Kjoint_names[m[K = joint_names_;
+      |              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In member function ‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::MyCobotHardwareInterface::write()[m[K’:
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:91:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing element_type = struct my_cobot_interfaces::srv::SetRadians_Response_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct my_cobot_interfaces::srv::SetRadians_Response_<std::allocator<void> >[m[K’} has no member named ‘[01m[Ksuccess[m[K’
+   91 |       if (response->[01;31m[Ksuccess[m[K)
+      |                     [01;31m[K^~~~~~~[m[K
+In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57[m[K,
+                 from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+                 from [01m[K/opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp:40[m[K,
+                 from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:2[m[K:
+/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = my_cobot_hardware_interface::MyCobotHardwareInterface; B = hardware_interface::ActuatorInterface][m[K’:
+[01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kinvalid new-expression of abstract class type ‘[01m[Kmy_cobot_hardware_interface::MyCobotHardwareInterface[m[K’
+  218 |     return [01;31m[Knew C[m[K;
+      |            [01;31m[K^~~~~[m[K
+In file included from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1[m[K:
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/include/my_cobot_hardware_interface/MyCobotHardwareInterface.hpp:11:7:[m[K [01;36m[Knote: [m[K  because the following virtual functions are pure within ‘[01m[Kmy_cobot_hardware_interface::MyCobotHardwareInterface[m[K’:
+   11 | class [01;36m[KMyCobotHardwareInterface[m[K : public hardware_interface::ActuatorInterface
+      |       [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/include/my_cobot_hardware_interface/MyCobotHardwareInterface.hpp:4[m[K,
+                 from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/hardware_interface/actuator_interface.hpp:172:23:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual hardware_interface::return_type hardware_interface::ActuatorInterface::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+  172 |   virtual return_type [01;36m[Kread[m[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;
+      |                       [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/hardware_interface/actuator_interface.hpp:183:23:[m[K [01;36m[Knote: [m[K    ‘[01m[Kvirtual hardware_interface::return_type hardware_interface::ActuatorInterface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’
+  183 |   virtual return_type [01;36m[Kwrite[m[K(const rclcpp::Time & time, const rclcpp::Duration & period) = 0;
+      |                       [01;36m[K^~~~~[m[K
+gmake[2]: *** [CMakeFiles/my_cobot_hardware_interface.dir/build.make:76: CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_cobot_hardware_interface.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

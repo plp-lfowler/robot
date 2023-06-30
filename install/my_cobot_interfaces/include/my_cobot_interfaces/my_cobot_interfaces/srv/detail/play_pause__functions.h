@@ -1,0 +1,1 @@
+/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.h

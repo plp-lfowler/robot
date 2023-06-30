@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c" "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c.o" "gcc" "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c.o.d"
+  "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c" "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c.o" "gcc" "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c.o.d"
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c" "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c.o" "gcc" "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c.o.d"
   )
 
@@ -18,10 +19,15 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__struct.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__type_support.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
+  "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
+  "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
+  "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__struct.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
+  "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__type_support.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__struct.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__type_support.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
+  "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/play_pause.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/set_radians.h" "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h"
   )
 

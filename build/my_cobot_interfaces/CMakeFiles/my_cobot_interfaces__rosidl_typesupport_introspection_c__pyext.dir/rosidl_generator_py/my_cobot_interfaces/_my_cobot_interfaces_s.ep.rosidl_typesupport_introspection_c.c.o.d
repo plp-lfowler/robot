@@ -209,4 +209,7 @@ CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/ro
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.h \
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__type_support.h \
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__struct.h \
- /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.h
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__type_support.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__struct.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.h

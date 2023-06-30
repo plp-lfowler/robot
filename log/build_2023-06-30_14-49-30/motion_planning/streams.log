@@ -1,0 +1,28 @@
+[14.338s] Invoking command in '/home/lance/robot/src/motion_planning': PYTHONPATH=/home/lance/robot/build/motion_planning/prefix_override:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motion_planning build --build-base /home/lance/robot/build/motion_planning/build install --record /home/lance/robot/build/motion_planning/install.log --single-version-externally-managed
+[20.080s] running egg_info
+[20.081s] creating ../../build/motion_planning/motion_planning.egg-info
+[20.082s] writing ../../build/motion_planning/motion_planning.egg-info/PKG-INFO
+[20.083s] writing dependency_links to ../../build/motion_planning/motion_planning.egg-info/dependency_links.txt
+[20.084s] writing entry points to ../../build/motion_planning/motion_planning.egg-info/entry_points.txt
+[20.086s] writing requirements to ../../build/motion_planning/motion_planning.egg-info/requires.txt
+[20.087s] writing top-level names to ../../build/motion_planning/motion_planning.egg-info/top_level.txt
+[20.087s] writing manifest file '../../build/motion_planning/motion_planning.egg-info/SOURCES.txt'
+[20.103s] reading manifest file '../../build/motion_planning/motion_planning.egg-info/SOURCES.txt'
+[20.107s] writing manifest file '../../build/motion_planning/motion_planning.egg-info/SOURCES.txt'
+[20.108s] running build
+[20.109s] running build_py
+[20.110s] creating /home/lance/robot/build/motion_planning/build
+[20.112s] creating /home/lance/robot/build/motion_planning/build/lib
+[20.113s] creating /home/lance/robot/build/motion_planning/build/lib/motion_planning
+[20.114s] copying motion_planning/motion_planning.py -> /home/lance/robot/build/motion_planning/build/lib/motion_planning
+[20.114s] copying motion_planning/__init__.py -> /home/lance/robot/build/motion_planning/build/lib/motion_planning
+[20.115s] running install
+[20.116s] running install_lib
+[20.123s] running install_data
+[20.126s] running install_egg_info
+[20.148s] removing '/home/lance/robot/install/motion_planning/lib/python3.10/site-packages/motion_planning-0.0.0-py3.10.egg-info' (and everything under it)
+[20.150s] Copying ../../build/motion_planning/motion_planning.egg-info to /home/lance/robot/install/motion_planning/lib/python3.10/site-packages/motion_planning-0.0.0-py3.10.egg-info
+[20.192s] running install_scripts
+[20.410s] Installing mp script to /home/lance/robot/install/motion_planning/lib/motion_planning
+[20.414s] writing list of installed files to '/home/lance/robot/build/motion_planning/install.log'
+[20.664s] Invoked command in '/home/lance/robot/src/motion_planning' returned '0': PYTHONPATH=/home/lance/robot/build/motion_planning/prefix_override:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/motion_planning build --build-base /home/lance/robot/build/motion_planning/build install --record /home/lance/robot/build/motion_planning/install.log --single-version-externally-managed

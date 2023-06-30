@@ -1,0 +1,41 @@
+[1.931s] Invoking command in '/home/lance/robot/build/moveit_config': AMENT_PREFIX_PATH=/home/lance/robot/install/robot_description:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble CMAKE_PREFIX_PATH=/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install /usr/bin/cmake --build /home/lance/robot/build/moveit_config -- -j4 -l4
+[2.194s] Invoked command in '/home/lance/robot/build/moveit_config' returned '0': AMENT_PREFIX_PATH=/home/lance/robot/install/robot_description:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble CMAKE_PREFIX_PATH=/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install /usr/bin/cmake --build /home/lance/robot/build/moveit_config -- -j4 -l4
+[2.368s] Invoking command in '/home/lance/robot/build/moveit_config': AMENT_PREFIX_PATH=/home/lance/robot/install/robot_description:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble CMAKE_PREFIX_PATH=/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install /usr/bin/cmake --install /home/lance/robot/build/moveit_config
+[2.426s] -- Install configuration: ""
+[2.435s] -- Execute custom install script
+[2.441s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/ament_index/resource_index/package_run_dependencies/moveit_config
+[2.445s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/ament_index/resource_index/parent_prefix_path/moveit_config
+[2.449s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/environment/ament_prefix_path.sh
+[2.455s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/environment/ament_prefix_path.dsv
+[2.458s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/environment/path.sh
+[2.461s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/environment/path.dsv
+[2.464s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/local_setup.bash
+[2.467s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/local_setup.sh
+[2.469s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/local_setup.zsh
+[2.472s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/local_setup.dsv
+[2.476s] -- Symlinking: /home/lance/robot/install/moveit_config/share/moveit_config/package.dsv
+[2.533s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/ament_index/resource_index/packages/moveit_config
+[2.536s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/cmake/moveit_configConfig.cmake
+[2.539s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/cmake/moveit_configConfig-version.cmake
+[2.541s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/package.xml
+[2.546s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/launch/demo.launch.py
+[2.549s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/launch/move_group.launch.py
+[2.551s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/launch/moveit_rviz.launch.py
+[2.555s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/launch/rsp.launch.py
+[2.559s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/launch/setup_assistant.launch.py
+[2.561s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/launch/spawn_controllers.launch.py
+[2.564s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/launch/static_virtual_joint_tfs.launch.py
+[2.567s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/launch/warehouse_db.launch.py
+[2.572s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/initial_positions.yaml
+[2.574s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/joint_limits.yaml
+[2.577s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/kinematics.yaml
+[2.579s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/moveit.rviz
+[2.581s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/moveit_controllers.yaml
+[2.585s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/mycobot_ai.ros2_control.xacro
+[2.587s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/mycobot_ai.srdf
+[2.590s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/mycobot_ai.urdf.xacro
+[2.593s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/pilz_cartesian_limits.yaml
+[2.595s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/ros2_controllers.yaml
+[2.598s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/config/sensors_3d.yaml
+[2.600s] -- Up-to-date symlink: /home/lance/robot/install/moveit_config/share/moveit_config/.setup_assistant
+[2.618s] Invoked command in '/home/lance/robot/build/moveit_config' returned '0': AMENT_PREFIX_PATH=/home/lance/robot/install/robot_description:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble CMAKE_PREFIX_PATH=/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install /usr/bin/cmake --install /home/lance/robot/build/moveit_config

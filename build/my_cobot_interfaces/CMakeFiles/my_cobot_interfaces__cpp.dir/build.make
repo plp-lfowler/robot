@@ -74,6 +74,10 @@ CMakeFiles/my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/sr
 CMakeFiles/my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/set_radians__builder.hpp
 CMakeFiles/my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/set_radians__struct.hpp
 CMakeFiles/my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/set_radians__traits.hpp
+CMakeFiles/my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/play_pause.hpp
+CMakeFiles/my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__builder.hpp
+CMakeFiles/my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__struct.hpp
+CMakeFiles/my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__traits.hpp
 
 rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -92,6 +96,7 @@ rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp: /opt/ros/humble/sh
 rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp: rosidl_adapter/my_cobot_interfaces/srv/GetRadians.idl
 rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp: rosidl_adapter/my_cobot_interfaces/srv/SetRadians.idl
+rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp: rosidl_adapter/my_cobot_interfaces/srv/PlayPause.idl
 rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
@@ -118,14 +123,30 @@ rosidl_generator_cpp/my_cobot_interfaces/srv/detail/set_radians__struct.hpp: ros
 rosidl_generator_cpp/my_cobot_interfaces/srv/detail/set_radians__traits.hpp: rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_cobot_interfaces/srv/detail/set_radians__traits.hpp
 
+rosidl_generator_cpp/my_cobot_interfaces/srv/play_pause.hpp: rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_cobot_interfaces/srv/play_pause.hpp
+
+rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__builder.hpp: rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__builder.hpp
+
+rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__struct.hpp: rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__struct.hpp
+
+rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__traits.hpp: rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__traits.hpp
+
 my_cobot_interfaces__cpp: CMakeFiles/my_cobot_interfaces__cpp
 my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/get_radians__builder.hpp
 my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/get_radians__struct.hpp
 my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/get_radians__traits.hpp
+my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__builder.hpp
+my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__struct.hpp
+my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/play_pause__traits.hpp
 my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/set_radians__builder.hpp
 my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/set_radians__struct.hpp
 my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/detail/set_radians__traits.hpp
 my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/get_radians.hpp
+my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/play_pause.hpp
 my_cobot_interfaces__cpp: rosidl_generator_cpp/my_cobot_interfaces/srv/set_radians.hpp
 my_cobot_interfaces__cpp: CMakeFiles/my_cobot_interfaces__cpp.dir/build.make
 .PHONY : my_cobot_interfaces__cpp

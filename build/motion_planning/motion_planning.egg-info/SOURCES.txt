@@ -9,6 +9,7 @@ setup.py
 ../../build/motion_planning/motion_planning.egg-info/top_level.txt
 ../../build/motion_planning/motion_planning.egg-info/zip-safe
 motion_planning/__init__.py
+motion_planning/motion_planning.py
 resource/motion_planning
 test/test_copyright.py
 test/test_flake8.py

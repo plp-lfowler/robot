@@ -1,0 +1,42 @@
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:40:72:[m[K [01;31m[Kerror: [m[Kvirt-specifiers in ‘[01m[Kread[m[K’ not allowed outside a class definition
+   40 |                                        const rclcpp::Duration& period) [01;31m[Koverride[m[K
+      |                                                                        [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In function ‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::read(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:44:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_radians_client_[m[K’ was not declared in this scope
+   44 |     auto future = [01;31m[Kget_radians_client_[m[K->async_send_request(request);
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:45:40:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+   45 |     rclcpp::spin_until_future_complete([01;31m[Knode_[m[K, future);
+      |                                        [01;31m[K^~~~~[m[K
+      |                                        [32m[Kmode_t[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:50:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_names_[m[K’ was not declared in this scope
+   50 |       if (response->angles.size() == [01;31m[Kjoint_names_[m[K.size())
+      |                                      [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:54:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_state_variable_[m[K’ was not declared in this scope
+   54 |           [01;31m[Kjoint_state_variable_[m[K[i] = response->angles[i];
+      |           [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K At global scope:
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:64:73:[m[K [01;31m[Kerror: [m[Kvirt-specifiers in ‘[01m[Kwrite[m[K’ not allowed outside a class definition
+   64 |                                         const rclcpp::Duration& period) [01;31m[Koverride[m[K
+      |                                                                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K In function ‘[01m[Khardware_interface::return_type my_cobot_hardware_interface::write(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_names_[m[K’ was not declared in this scope
+   67 |     request->joint_names = [01;31m[Kjoint_names_[m[K;
+      |                            [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:68:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kjoint_command_variable_[m[K’ was not declared in this scope
+   68 |     request->angles.resize([01;31m[Kjoint_command_variable_[m[K.size());
+      |                            [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:75:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kset_radians_client_[m[K’ was not declared in this scope
+   75 |     auto future = [01;31m[Kset_radians_client_[m[K->async_send_request(request);
+      |                   [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:76:40:[m[K [01;31m[Kerror: [m[K‘[01m[Knode_[m[K’ was not declared in this scope; did you mean ‘[01m[Kmode_t[m[K’?
+   76 |     rclcpp::spin_until_future_complete([01;31m[Knode_[m[K, future);
+      |                                        [01;31m[K^~~~~[m[K
+      |                                        [32m[Kmode_t[m[K
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:[m[K At global scope:
+[01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:90:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kprivate[m[K’
+   90 | [01;31m[Kprivate[m[K:
+      | [01;31m[K^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/my_cobot_hardware_interface.dir/build.make:76: CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/my_cobot_hardware_interface.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

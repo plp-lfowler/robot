@@ -79,6 +79,7 @@ rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__r
 rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/rosidl_typesupport_introspection_c/resource/srv__type_support.c.em
 rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h: rosidl_adapter/my_cobot_interfaces/srv/GetRadians.idl
 rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h: rosidl_adapter/my_cobot_interfaces/srv/SetRadians.idl
+rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h: rosidl_adapter/my_cobot_interfaces/srv/PlayPause.idl
 rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C introspection for ROS interfaces"
@@ -87,11 +88,17 @@ rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__r
 rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_introspection_c.h
 
+rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_introspection_c.h: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_introspection_c.h
+
 rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c
 
 rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c
+
+rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c
 
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c.o: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c.o: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c
@@ -121,16 +128,32 @@ CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_ty
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c -o CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c.s
 
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/flags.make
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o -MF CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o.d -o CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o -c /home/lance/robot/build/my_cobot_interfaces/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c
+
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lance/robot/build/my_cobot_interfaces/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c > CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.i
+
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c -o CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.s
+
 # Object files for target my_cobot_interfaces__rosidl_typesupport_introspection_c
 my_cobot_interfaces__rosidl_typesupport_introspection_c_OBJECTS = \
 "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c.o" \
-"CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c.o"
+"CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c.o" \
+"CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o"
 
 # External object files for target my_cobot_interfaces__rosidl_typesupport_introspection_c
 my_cobot_interfaces__rosidl_typesupport_introspection_c_EXTERNAL_OBJECTS =
 
 libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c.o
 libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c.o
+libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o
 libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/build.make
 libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so: libmy_cobot_interfaces__rosidl_generator_c.so
 libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
@@ -139,7 +162,7 @@ libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/l
 libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so: /opt/ros/humble/lib/librcutils.so
 libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C shared library libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -152,6 +175,8 @@ CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/clean:
 
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_introspection_c.h
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_introspection_c.h
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/depend: rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c
 	cd /home/lance/robot/build/my_cobot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lance/robot/src/my_cobot_interfaces /home/lance/robot/src/my_cobot_interfaces /home/lance/robot/build/my_cobot_interfaces /home/lance/robot/build/my_cobot_interfaces /home/lance/robot/build/my_cobot_interfaces/CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/DependInfo.cmake --color=$(COLOR)

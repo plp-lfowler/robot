@@ -1,0 +1,1 @@
+/home/lance/robot/build/my_cobot_hardware_interface/ament_cmake_core/my_cobot_hardware_interfaceConfig.cmake

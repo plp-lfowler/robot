@@ -1,0 +1,28 @@
+[35m[1mConsolidate compiler generated dependencies of target my_cobot_hardware_interface[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libmy_cobot_hardware_interface.so[0m
+[100%] Built target my_cobot_hardware_interface
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface//my_cobot_hardware_interface_plugin.xml
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/include/my_cobot_hardware_interface/MyCobotHardwareInterface.hpp
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/ament_index/resource_index/package_run_dependencies/my_cobot_hardware_interface
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/ament_index/resource_index/parent_prefix_path/my_cobot_hardware_interface
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/ament_prefix_path.sh
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/ament_prefix_path.dsv
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/path.sh
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/path.dsv
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/local_setup.bash
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/local_setup.sh
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/local_setup.zsh
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/local_setup.dsv
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/package.dsv
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/ament_index/resource_index/packages/my_cobot_hardware_interface
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_cobot_hardware_interface
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/cmake/my_cobot_hardware_interfaceConfig.cmake
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/cmake/my_cobot_hardware_interfaceConfig-version.cmake
+-- Symlinking: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/package.xml
+-- Installing: /home/lance/robot/install/my_cobot_hardware_interface/lib/libmy_cobot_hardware_interface.so
+-- Set runtime path of "/home/lance/robot/install/my_cobot_hardware_interface/lib/libmy_cobot_hardware_interface.so" to ""

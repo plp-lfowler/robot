@@ -1,1 +1,1 @@
-/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/description:/opt/ros/humble
+/home/lance/robot/build/my_cobot_interfaces/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/my_cobot_interfaces

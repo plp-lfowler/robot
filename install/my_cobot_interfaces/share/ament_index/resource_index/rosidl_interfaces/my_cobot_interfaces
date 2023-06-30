@@ -1,8 +1,1 @@
-srv/GetRadians.idl
-srv/GetRadians.srv
-srv/GetRadians_Request.msg
-srv/GetRadians_Response.msg
-srv/SetRadians.idl
-srv/SetRadians.srv
-srv/SetRadians_Request.msg
-srv/SetRadians_Response.msg
+/home/lance/robot/build/my_cobot_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/my_cobot_interfaces

@@ -4,8 +4,14 @@
   <name>motion_planning</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="lance@todo.todo">lance</maintainer>
+  <maintainer email="lance.fowler@plp.com">lance</maintainer>
   <license>TODO: License declaration</license>
+
+  <build_depend>pymoveit2</build_depend>
+  <build_depend>scipy</build_depend>
+
+  <exec_depend>pymoveit2</exec_depend>
+  <exec_depend>scipy</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>my_cobot_hardware_interface</name>
+  <version>0.1.0</version>
+  <description>TODO: Package description</description>
+
+  <maintainer email="your_email@example.com">Your Name</maintainer>
+  <license>TODO: License declaration</license>
+
+  <build_depend>rclcpp</build_depend>
+  <build_depend>hardware_interface</build_depend>
+  <build_depend>my_cobot_interfaces</build_depend>
+
+  <build_export_depend>rclcpp</build_export_depend>
+  <build_export_depend>hardware_interface</build_export_depend>
+  <build_export_depend>my_cobot_interfaces</build_export_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>hardware_interface</exec_depend>
+  <exec_depend>my_cobot_interfaces</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+

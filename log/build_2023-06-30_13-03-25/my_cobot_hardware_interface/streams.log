@@ -1,0 +1,43 @@
+[0.109s] Invoking command in '/home/lance/robot/build/my_cobot_hardware_interface': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install /usr/bin/cmake /home/lance/robot/src/my_cobot_hardware_interface -DCMAKE_INSTALL_PREFIX=/home/lance/robot/install/my_cobot_hardware_interface
+[0.170s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.968s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.003s] -- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+[1.313s] -- Found rclcpp: 16.0.4 (/opt/ros/humble/share/rclcpp/cmake)
+[1.394s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.405s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.431s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.479s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.536s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.769s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.776s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[1.893s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.496s] -- Found hardware_interface: 2.26.0 (/opt/ros/humble/share/hardware_interface/cmake)
+[4.447s] -- Found my_cobot_interfaces: 0.0.0 (/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake)
+[5.058s] Error parsing '/home/lance/robot/src/my_cobot_hardware_interface/package.xml':
+[5.291s] Traceback (most recent call last):
+[5.291s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[5.292s]     main()
+[5.292s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[5.293s]     raise e
+[5.294s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[5.295s]     package = parse_package_string(
+[5.296s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 786, in parse_package_string
+[5.297s]     raise InvalidPackage('Error(s):%s' % (''.join(['\n- %s' % e for e in errors])), filename)
+[5.298s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/lance/robot/src/my_cobot_hardware_interface/package.xml':
+[5.299s] Error(s):
+[5.300s] - The manifest of package "my_cobot_hardware_interface" (with format version 3) must not contain the following tags: build
+[5.384s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[5.385s]   execute_process(/usr/bin/python3.10
+[5.386s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[5.386s]   /home/lance/robot/src/my_cobot_hardware_interface/package.xml
+[5.386s]   /home/lance/robot/build/my_cobot_hardware_interface/ament_cmake_core/package.cmake)
+[5.386s]   returned error code 1
+[5.387s] Call Stack (most recent call first):
+[5.387s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[5.388s]   /opt/ros/humble/share/ament_cmake_core/cmake/core/ament_package.cmake:63 (ament_package_xml)
+[5.388s]   CMakeLists.txt:60 (ament_package)
+[5.388s] 
+[5.388s] [0m
+[5.389s] -- Configuring incomplete, errors occurred!
+[5.389s] See also "/home/lance/robot/build/my_cobot_hardware_interface/CMakeFiles/CMakeOutput.log".
+[5.421s] Invoked command in '/home/lance/robot/build/my_cobot_hardware_interface' returned '1': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install /usr/bin/cmake /home/lance/robot/src/my_cobot_hardware_interface -DCMAKE_INSTALL_PREFIX=/home/lance/robot/install/my_cobot_hardware_interface

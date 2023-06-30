@@ -1,0 +1,5 @@
+<launch>
+    <node pkg = "controllers" exec="my_cobot" name="my_cobot_server"/>
+    <node pkg = "controllers" exec = "joint_state" name="joint_states"/>
+    <node pkg = "controllers" exec = "follow_trajectory"/>
+</launch>

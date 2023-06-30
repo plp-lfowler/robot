@@ -1,0 +1,9 @@
+<library path="lib/libmy_cobot_hardware_interface">
+  <class name="my_cobot_hardware_interface::MyCobotHardwareInterface" type="my_cobot_hardware_interface::MyCobotHardwareInterface">
+    <description>
+      This is a hardware interface for MyCobot.
+    </description>
+    <base_class type="hardware_interface::ActuatorInterface"/>
+  </class>
+</library>
+

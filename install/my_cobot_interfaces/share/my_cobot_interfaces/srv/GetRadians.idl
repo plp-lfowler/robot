@@ -1,17 +1,1 @@
-// generated from rosidl_adapter/resource/srv.idl.em
-// with input from my_cobot_interfaces/srv/GetRadians.srv
-// generated code does not contain a copyright notice
-
-
-module my_cobot_interfaces {
-  module srv {
-    struct GetRadians_Request {
-      uint8 structure_needs_at_least_one_member;
-    };
-    struct GetRadians_Response {
-      sequence<double> angles;
-
-      sequence<string> joint_names;
-    };
-  };
-};
+/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/GetRadians.idl

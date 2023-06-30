@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_py/my_cobot_interfaces/srv/_get_radians_s.c" "CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_get_radians_s.c.o" "gcc" "CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_get_radians_s.c.o.d"
+  "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_py/my_cobot_interfaces/srv/_play_pause_s.c" "CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_play_pause_s.c.o" "gcc" "CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_play_pause_s.c.o.d"
   "/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_py/my_cobot_interfaces/srv/_set_radians_s.c" "CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_set_radians_s.c.o" "gcc" "CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_set_radians_s.c.o.d"
   )
 

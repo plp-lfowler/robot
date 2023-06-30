@@ -1,0 +1,258 @@
+[0.355s] Invoking command in '/home/lance/robot/build/my_cobot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake /home/lance/robot/src/my_cobot_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lance/robot/install/my_cobot_interfaces
+[4.120s] -- The C compiler identification is GNU 11.3.0
+[4.120s] -- The CXX compiler identification is GNU 11.3.0
+[4.120s] -- Detecting C compiler ABI info
+[4.121s] -- Detecting C compiler ABI info - done
+[4.121s] -- Check for working C compiler: /usr/bin/cc - skipped
+[4.121s] -- Detecting C compile features
+[4.122s] -- Detecting C compile features - done
+[4.122s] -- Detecting CXX compiler ABI info
+[4.123s] -- Detecting CXX compiler ABI info - done
+[4.124s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.125s] -- Detecting CXX compile features
+[4.126s] -- Detecting CXX compile features - done
+[4.129s] -- Found ament_cmake: 1.3.4 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.129s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[4.131s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.134s] -- Found builtin_interfaces: 1.2.1 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[4.323s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.401s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.497s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.618s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.790s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.960s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[6.913s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[9.985s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[10.913s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[11.102s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.6", minimum required is "3.6") 
+[11.142s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[11.400s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.6", minimum required is "3.5") 
+[11.402s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[11.404s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[11.406s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[11.593s] -- Found PythonExtra: .so  
+[11.985s] -- Found ament_lint_auto: 0.12.6 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[12.388s] -- Added test 'lint_cmake' to check CMake code style
+[12.405s] -- Added test 'xmllint' to check XML markup files
+[12.442s] -- Configuring done
+[12.732s] -- Generating done
+[12.756s] -- Build files have been written to: /home/lance/robot/build/my_cobot_interfaces
+[12.788s] Invoked command in '/home/lance/robot/build/my_cobot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake /home/lance/robot/src/my_cobot_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/lance/robot/install/my_cobot_interfaces
+[12.790s] Invoking command in '/home/lance/robot/build/my_cobot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/my_cobot_interfaces -- -j4 -l4
+[13.115s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[13.234s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[13.378s] [  4%] Built target ament_cmake_python_symlink_my_cobot_interfaces
+[16.455s] running egg_info
+[16.456s] creating my_cobot_interfaces.egg-info
+[16.457s] writing my_cobot_interfaces.egg-info/PKG-INFO
+[16.457s] writing dependency_links to my_cobot_interfaces.egg-info/dependency_links.txt
+[16.458s] writing top-level names to my_cobot_interfaces.egg-info/top_level.txt
+[16.461s] writing manifest file 'my_cobot_interfaces.egg-info/SOURCES.txt'
+[16.477s] reading manifest file 'my_cobot_interfaces.egg-info/SOURCES.txt'
+[16.482s] writing manifest file 'my_cobot_interfaces.egg-info/SOURCES.txt'
+[16.717s] [  4%] Built target ament_cmake_python_build_my_cobot_interfaces_egg
+[16.855s] [  4%] Built target my_cobot_interfaces__cpp
+[16.935s] [  6%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[16.937s] [  8%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[16.976s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[17.112s] [ 12%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c.o[0m
+[17.876s] [ 14%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c.o[0m
+[18.449s] [ 17%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c.o[0m
+[19.235s] [ 19%] [32m[1mLinking C shared library libmy_cobot_interfaces__rosidl_generator_c.so[0m
+[19.441s] [ 21%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/get_radians__type_support.cpp.o[0m
+[19.762s] [ 21%] Built target my_cobot_interfaces__rosidl_generator_c
+[19.923s] [ 23%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[20.310s] [ 25%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/get_radians__type_support.cpp.o[0m
+[20.532s] [ 27%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp.o[0m
+[23.705s] [ 29%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/set_radians__type_support.cpp.o[0m
+[24.717s] [ 31%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/get_radians__type_support_c.cpp.o[0m
+[25.845s] [ 34%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/set_radians__type_support.cpp.o[0m
+[26.475s] [ 36%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_radians__type_support.cpp.o[0m
+[26.539s] [ 38%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/play_pause__type_support.cpp.o[0m
+[28.729s] [ 40%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_radians__type_support_c.cpp.o[0m
+[30.485s] [ 42%] [32m[1mLinking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_cpp.so[0m
+[30.923s] [ 42%] Built target my_cobot_interfaces__rosidl_typesupport_cpp
+[31.054s] [ 44%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[31.613s] [ 46%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/play_pause__type_support.cpp.o[0m
+[32.128s] [ 48%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/play_pause__type_support.cpp.o[0m
+[32.393s] [ 51%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/play_pause__type_support_c.cpp.o[0m
+[34.125s] [ 53%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c.o[0m
+[34.457s] [ 55%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c.o[0m
+[34.790s] [ 57%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o[0m
+[34.823s] [ 59%] [32m[1mLinking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[34.979s] [ 61%] [32m[1mLinking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[35.054s] [ 63%] [32m[1mLinking C shared library libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so[0m
+[35.285s] [ 63%] Built target my_cobot_interfaces__rosidl_typesupport_introspection_c
+[35.328s] [ 63%] Built target my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp
+[35.362s] [ 65%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[35.374s] [ 68%] [32m[1mLinking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[35.442s] [ 68%] Built target my_cobot_interfaces__rosidl_typesupport_introspection_cpp
+[35.773s] [ 68%] Built target my_cobot_interfaces__rosidl_typesupport_fastrtps_c
+[36.834s] [ 70%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/get_radians__type_support.cpp.o[0m
+[36.836s] [ 72%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/set_radians__type_support.cpp.o[0m
+[36.843s] [ 74%] [32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/play_pause__type_support.cpp.o[0m
+[37.018s] [ 76%] [32m[1mLinking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_c.so[0m
+[37.197s] [ 76%] Built target my_cobot_interfaces__rosidl_typesupport_c
+[37.290s] [ 76%] Built target my_cobot_interfaces
+[37.389s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[40.254s] [ 78%] Built target my_cobot_interfaces__py
+[40.357s] [ 82%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_get_radians_s.c.o[0m
+[40.358s] [ 82%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_set_radians_s.c.o[0m
+[40.364s] [ 85%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_play_pause_s.c.o[0m
+[41.118s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/my_cobot_interfaces/libmy_cobot_interfaces__rosidl_generator_py.so[0m
+[41.343s] [ 87%] Built target my_cobot_interfaces__rosidl_generator_py
+[41.448s] [ 91%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[41.449s] [ 91%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[41.453s] [ 93%] [32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[42.115s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[42.116s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[42.123s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[42.379s] [100%] Built target my_cobot_interfaces__rosidl_typesupport_c__pyext
+[42.380s] [100%] Built target my_cobot_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[42.382s] [100%] Built target my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext
+[42.430s] Invoked command in '/home/lance/robot/build/my_cobot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake --build /home/lance/robot/build/my_cobot_interfaces -- -j4 -l4
+[43.061s] Invoking command in '/home/lance/robot/build/my_cobot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake --install /home/lance/robot/build/my_cobot_interfaces
+[43.095s] -- Install configuration: ""
+[43.097s] -- Execute custom install script
+[43.098s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_cobot_interfaces
+[43.135s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_generator_c__visibility_control.h
+[43.171s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__functions.h
+[43.208s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__struct.h
+[43.243s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__type_support.h
+[43.280s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__functions.h
+[43.336s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__struct.h
+[43.377s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__type_support.h
+[43.414s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__functions.h
+[43.449s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__struct.h
+[43.487s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__type_support.h
+[43.522s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/get_radians.h
+[43.556s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/play_pause.h
+[43.593s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/set_radians.h
+[43.628s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/library_path.sh
+[43.663s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/library_path.dsv
+[43.704s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[43.742s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_fastrtps_c.h
+[43.779s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_fastrtps_c.h
+[43.815s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_fastrtps_c.h
+[43.851s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__builder.hpp
+[43.891s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__struct.hpp
+[43.927s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__traits.hpp
+[43.961s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__builder.hpp
+[43.998s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__struct.hpp
+[44.033s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__traits.hpp
+[44.068s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__builder.hpp
+[44.105s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__struct.hpp
+[44.140s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__traits.hpp
+[44.176s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/get_radians.hpp
+[44.212s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/play_pause.hpp
+[44.247s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/set_radians.hpp
+[44.287s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[44.324s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_fastrtps_cpp.hpp
+[44.359s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_fastrtps_cpp.hpp
+[44.397s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_fastrtps_cpp.hpp
+[44.432s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[44.468s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h
+[44.506s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_introspection_c.h
+[44.545s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_introspection_c.h
+[44.585s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_cpp.hpp
+[44.621s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_introspection_cpp.hpp
+[44.657s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_introspection_cpp.hpp
+[44.694s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/pythonpath.sh
+[44.729s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/pythonpath.dsv
+[44.765s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[44.804s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[44.839s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[44.875s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[44.917s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/__init__.py
+[44.954s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_c.c
+[44.992s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[45.028s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[45.063s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/libmy_cobot_interfaces__rosidl_generator_py.so
+[45.100s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[45.135s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[45.170s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[45.208s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/__init__.py
+[45.242s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_radians.py
+[45.277s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_radians_s.c
+[45.314s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_play_pause.py
+[45.349s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_play_pause_s.c
+[45.386s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_radians.py
+[45.424s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_radians_s.c
+[45.461s] -- Up-to-date symlink: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[45.462s] -- Up-to-date symlink: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[45.464s] -- Up-to-date symlink: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[45.465s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians.idl
+[45.502s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians.idl
+[45.538s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause.idl
+[45.574s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians.srv
+[45.612s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians_Request.msg
+[45.646s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians_Response.msg
+[45.683s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians.srv
+[45.719s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians_Request.msg
+[45.755s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians_Response.msg
+[45.794s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause.srv
+[45.830s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause_Request.msg
+[45.865s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause_Response.msg
+[45.902s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_cobot_interfaces
+[45.937s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_cobot_interfaces
+[45.972s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/ament_prefix_path.sh
+[46.011s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/ament_prefix_path.dsv
+[46.046s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/path.sh
+[46.084s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/path.dsv
+[46.121s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.bash
+[46.156s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.sh
+[46.194s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.zsh
+[46.230s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.dsv
+[46.265s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/package.dsv
+[46.303s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/packages/my_cobot_interfaces
+[46.341s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/rosidl_cmake-extras.cmake
+[46.375s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[46.413s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[46.448s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[46.485s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[46.521s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[46.557s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[46.594s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfacesConfig.cmake
+[46.630s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfacesConfig-version.cmake
+[46.665s] -- Symlinking: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/package.xml
+[46.702s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_generator_c.so
+[46.707s] -- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_generator_c.so" to ""
+[46.708s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_fastrtps_c.so
+[46.712s] -- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[46.713s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[46.718s] -- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[46.719s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so
+[46.722s] -- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[46.723s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_c.so
+[46.725s] -- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_c.so" to ""
+[46.726s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_introspection_cpp.so
+[46.730s] -- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[46.731s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_cpp.so
+[46.734s] -- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_cpp.so" to ""
+[46.943s] Listing '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces'...
+[46.944s] Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/__init__.py'...
+[46.945s] Listing '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv'...
+[46.946s] Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/__init__.py'...
+[46.947s] Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_radians.py'...
+[46.948s] Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_play_pause.py'...
+[46.949s] Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_radians.py'...
+[46.970s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_generator_py.so
+[46.972s] -- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_generator_py.so" to ""
+[46.973s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cExport.cmake
+[46.975s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cExport-noconfig.cmake
+[46.978s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[46.981s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[46.983s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cppExport.cmake
+[46.988s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[46.989s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[46.991s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[46.993s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[46.994s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cExport.cmake
+[46.996s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[46.998s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[46.999s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[47.001s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cppExport.cmake
+[47.003s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[47.006s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_pyExport.cmake
+[47.007s] -- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[47.026s] Invoked command in '/home/lance/robot/build/my_cobot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble /usr/bin/cmake --install /home/lance/robot/build/my_cobot_interfaces
