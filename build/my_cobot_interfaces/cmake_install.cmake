@@ -368,6 +368,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_cobot_interfaces/srv" TYPE FILE FILES "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/SetCoords.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_cobot_interfaces/srv" TYPE FILE FILES "/home/lance/robot/src/my_cobot_interfaces/srv/GetRadians.srv")
 endif()
 
@@ -401,6 +405,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_cobot_interfaces/srv" TYPE FILE FILES "/home/lance/robot/build/my_cobot_interfaces/rosidl_cmake/srv/PlayPause_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_cobot_interfaces/srv" TYPE FILE FILES "/home/lance/robot/src/my_cobot_interfaces/srv/SetCoords.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_cobot_interfaces/srv" TYPE FILE FILES "/home/lance/robot/build/my_cobot_interfaces/rosidl_cmake/srv/SetCoords_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_cobot_interfaces/srv" TYPE FILE FILES "/home/lance/robot/build/my_cobot_interfaces/rosidl_cmake/srv/SetCoords_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

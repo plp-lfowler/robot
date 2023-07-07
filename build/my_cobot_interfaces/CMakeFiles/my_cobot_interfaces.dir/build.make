@@ -75,6 +75,9 @@ CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/SetRadians_Response.msg
 CMakeFiles/my_cobot_interfaces: /home/lance/robot/src/my_cobot_interfaces/srv/PlayPause.srv
 CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/PlayPause_Request.msg
 CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/PlayPause_Response.msg
+CMakeFiles/my_cobot_interfaces: /home/lance/robot/src/my_cobot_interfaces/srv/SetCoords.srv
+CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/SetCoords_Request.msg
+CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/SetCoords_Response.msg
 CMakeFiles/my_cobot_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/my_cobot_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 

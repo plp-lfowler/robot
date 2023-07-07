@@ -16,6 +16,7 @@ rosidl_generate_interfaces(my_cobot_interfaces
   "srv/GetRadians.srv"
   "srv/SetRadians.srv"
   "srv/PlayPause.srv"
+  "srv/SetCoords.srv"
   DEPENDENCIES builtin_interfaces
 )
 

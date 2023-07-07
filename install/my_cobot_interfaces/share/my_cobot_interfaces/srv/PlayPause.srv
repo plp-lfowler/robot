@@ -1,1 +1,2 @@
-/home/lance/robot/src/my_cobot_interfaces/srv/PlayPause.srv
+bool play
+---

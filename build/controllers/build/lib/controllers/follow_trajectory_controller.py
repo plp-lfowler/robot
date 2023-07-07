@@ -23,14 +23,14 @@ class MyRobotActionServerNode(Node):
         # Extract the joint trajectory commands from the goal
         trajectory = goal_handle.request.trajectory
 
-        self.hardware_interface.play_pause_robot(False)
+        #self.hardware_interface.play_pause_robot(False)
 
         for point in trajectory.points:
             # Send each trajectory point to the robot's hardware interface
             self.hardware_interface.send_joint_angles_to_robot(point.positions, trajectory.joint_names)
             time.sleep(0.1)
 
-        self.hardware_interface.play_pause_robot(True)
+        #self.hardware_interface.play_pause_robot(True)
 
         self.hardware_interface.wait_for_joint_angles(trajectory.points[-1].positions, trajectory.joint_names)
 

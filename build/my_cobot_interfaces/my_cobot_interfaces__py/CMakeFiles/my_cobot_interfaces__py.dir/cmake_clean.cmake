@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/my_cobot_interfaces/srv/_get_radians_s.c"
   "../rosidl_generator_py/my_cobot_interfaces/srv/_play_pause.py"
   "../rosidl_generator_py/my_cobot_interfaces/srv/_play_pause_s.c"
+  "../rosidl_generator_py/my_cobot_interfaces/srv/_set_coords.py"
+  "../rosidl_generator_py/my_cobot_interfaces/srv/_set_coords_s.c"
   "../rosidl_generator_py/my_cobot_interfaces/srv/_set_radians.py"
   "../rosidl_generator_py/my_cobot_interfaces/srv/_set_radians_s.c"
   "CMakeFiles/my_cobot_interfaces__py"

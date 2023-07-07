@@ -1,0 +1,691 @@
+[0.000000] (-) TimerEvent: {}
+[0.002661] (bringup) JobQueued: {'identifier': 'bringup', 'dependencies': OrderedDict()}
+[0.003312] (computer_vision) JobQueued: {'identifier': 'computer_vision', 'dependencies': OrderedDict()}
+[0.005125] (motion_planning) JobQueued: {'identifier': 'motion_planning', 'dependencies': OrderedDict()}
+[0.005267] (my_cobot_interfaces) JobQueued: {'identifier': 'my_cobot_interfaces', 'dependencies': OrderedDict()}
+[0.005354] (robot_description) JobQueued: {'identifier': 'robot_description', 'dependencies': OrderedDict()}
+[0.005437] (controllers) JobQueued: {'identifier': 'controllers', 'dependencies': OrderedDict([('my_cobot_interfaces', '/home/lance/robot/install/my_cobot_interfaces')])}
+[0.005530] (my_cobot_hardware_interface) JobQueued: {'identifier': 'my_cobot_hardware_interface', 'dependencies': OrderedDict([('my_cobot_interfaces', '/home/lance/robot/install/my_cobot_interfaces')])}
+[0.005614] (moveit_config) JobQueued: {'identifier': 'moveit_config', 'dependencies': OrderedDict([('my_cobot_interfaces', '/home/lance/robot/install/my_cobot_interfaces'), ('robot_description', '/home/lance/robot/install/robot_description'), ('my_cobot_hardware_interface', '/home/lance/robot/install/my_cobot_hardware_interface')])}
+[0.005709] (my_cobot_interfaces) JobStarted: {'identifier': 'my_cobot_interfaces'}
+[0.098863] (-) TimerEvent: {}
+[0.183684] (robot_description) JobStarted: {'identifier': 'robot_description'}
+[0.204401] (-) TimerEvent: {}
+[0.297378] (bringup) JobStarted: {'identifier': 'bringup'}
+[0.309773] (-) TimerEvent: {}
+[0.398127] (computer_vision) JobStarted: {'identifier': 'computer_vision'}
+[0.411989] (-) TimerEvent: {}
+[0.516650] (my_cobot_interfaces) JobProgress: {'identifier': 'my_cobot_interfaces', 'progress': 'cmake'}
+[0.516962] (-) TimerEvent: {}
+[0.524827] (my_cobot_interfaces) JobProgress: {'identifier': 'my_cobot_interfaces', 'progress': 'build'}
+[0.527807] (my_cobot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lance/robot/build/my_cobot_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/lance/robot/build/my_cobot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_hardware_interface/lib:/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1236'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YE4I71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.349'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/my_cobot_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[0.617224] (-) TimerEvent: {}
+[0.718287] (-) TimerEvent: {}
+[0.819384] (-) TimerEvent: {}
+[0.920384] (-) TimerEvent: {}
+[1.021814] (-) TimerEvent: {}
+[1.123337] (-) TimerEvent: {}
+[1.224341] (-) TimerEvent: {}
+[1.325424] (-) TimerEvent: {}
+[1.426504] (-) TimerEvent: {}
+[1.527787] (-) TimerEvent: {}
+[1.629947] (-) TimerEvent: {}
+[1.731510] (-) TimerEvent: {}
+[1.832803] (-) TimerEvent: {}
+[1.934285] (-) TimerEvent: {}
+[2.036067] (-) TimerEvent: {}
+[2.137833] (-) TimerEvent: {}
+[2.239454] (-) TimerEvent: {}
+[2.341220] (-) TimerEvent: {}
+[2.442953] (-) TimerEvent: {}
+[2.544682] (-) TimerEvent: {}
+[2.646157] (-) TimerEvent: {}
+[2.748007] (-) TimerEvent: {}
+[2.849559] (-) TimerEvent: {}
+[2.951367] (-) TimerEvent: {}
+[3.053190] (-) TimerEvent: {}
+[3.160402] (-) TimerEvent: {}
+[3.271114] (-) TimerEvent: {}
+[3.372460] (-) TimerEvent: {}
+[3.473553] (-) TimerEvent: {}
+[3.574612] (-) TimerEvent: {}
+[3.675759] (-) TimerEvent: {}
+[3.777475] (-) TimerEvent: {}
+[3.879013] (-) TimerEvent: {}
+[3.982371] (-) TimerEvent: {}
+[4.083291] (-) TimerEvent: {}
+[4.184319] (-) TimerEvent: {}
+[4.285288] (-) TimerEvent: {}
+[4.386255] (-) TimerEvent: {}
+[4.487675] (-) TimerEvent: {}
+[4.589427] (-) TimerEvent: {}
+[4.690918] (-) TimerEvent: {}
+[4.792515] (-) TimerEvent: {}
+[4.893423] (-) TimerEvent: {}
+[4.994292] (-) TimerEvent: {}
+[5.095265] (-) TimerEvent: {}
+[5.198441] (-) TimerEvent: {}
+[5.300887] (-) TimerEvent: {}
+[5.401829] (-) TimerEvent: {}
+[5.502995] (-) TimerEvent: {}
+[5.604690] (-) TimerEvent: {}
+[5.705676] (-) TimerEvent: {}
+[5.806608] (-) TimerEvent: {}
+[5.907534] (-) TimerEvent: {}
+[6.008387] (-) TimerEvent: {}
+[6.109396] (-) TimerEvent: {}
+[6.210309] (-) TimerEvent: {}
+[6.311230] (-) TimerEvent: {}
+[6.412079] (-) TimerEvent: {}
+[6.512932] (-) TimerEvent: {}
+[6.613772] (-) TimerEvent: {}
+[6.714568] (-) TimerEvent: {}
+[6.815544] (-) TimerEvent: {}
+[6.917327] (-) TimerEvent: {}
+[7.018174] (-) TimerEvent: {}
+[7.119044] (-) TimerEvent: {}
+[7.219943] (-) TimerEvent: {}
+[7.320807] (-) TimerEvent: {}
+[7.421656] (-) TimerEvent: {}
+[7.522546] (-) TimerEvent: {}
+[7.623856] (-) TimerEvent: {}
+[7.727549] (-) TimerEvent: {}
+[7.729742] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_generator_c\x1b[0m\n'}
+[7.730535] (my_cobot_interfaces) StdoutLine: {'line': b'[  2%] Built target my_cobot_interfaces__cpp\n'}
+[7.731172] (my_cobot_interfaces) StdoutLine: {'line': b'[ 12%] Built target my_cobot_interfaces__rosidl_generator_c\n'}
+[7.731705] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[7.732254] (my_cobot_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_my_cobot_interfaces\n'}
+[7.732788] (my_cobot_interfaces) StdoutLine: {'line': b'[ 23%] Built target my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[7.733303] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[7.734188] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[7.734716] (my_cobot_interfaces) StdoutLine: {'line': b'[ 34%] Built target my_cobot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[7.735211] (my_cobot_interfaces) StdoutLine: {'line': b'[ 44%] Built target my_cobot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[7.735631] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[7.736059] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[7.736424] (my_cobot_interfaces) StdoutLine: {'line': b'[ 55%] Built target my_cobot_interfaces__rosidl_typesupport_introspection_c\n'}
+[7.736802] (my_cobot_interfaces) StdoutLine: {'line': b'[ 65%] Built target my_cobot_interfaces__rosidl_typesupport_c\n'}
+[7.737170] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[7.737531] (my_cobot_interfaces) StdoutLine: {'line': b'[ 76%] Built target my_cobot_interfaces__rosidl_typesupport_cpp\n'}
+[7.737906] (my_cobot_interfaces) StdoutLine: {'line': b'[ 76%] Built target my_cobot_interfaces\n'}
+[7.738284] (my_cobot_interfaces) StdoutLine: {'line': b'[ 78%] Built target my_cobot_interfaces__py\n'}
+[7.738670] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_generator_py\x1b[0m\n'}
+[7.739202] (my_cobot_interfaces) StdoutLine: {'line': b'[ 87%] Built target my_cobot_interfaces__rosidl_generator_py\n'}
+[7.739675] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[7.740206] (my_cobot_interfaces) StdoutLine: {'line': b'[ 91%] Built target my_cobot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.740727] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[7.741160] (my_cobot_interfaces) StdoutLine: {'line': b'[ 95%] Built target my_cobot_interfaces__rosidl_typesupport_c__pyext\n'}
+[7.741532] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[7.741886] (my_cobot_interfaces) StdoutLine: {'line': b'[100%] Built target my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[7.742247] (my_cobot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[7.742601] (my_cobot_interfaces) StdoutLine: {'line': b'writing my_cobot_interfaces.egg-info/PKG-INFO\n'}
+[7.743778] (my_cobot_interfaces) StdoutLine: {'line': b'writing dependency_links to my_cobot_interfaces.egg-info/dependency_links.txt\n'}
+[7.746082] (my_cobot_interfaces) StdoutLine: {'line': b'writing top-level names to my_cobot_interfaces.egg-info/top_level.txt\n'}
+[7.747505] (my_cobot_interfaces) StdoutLine: {'line': b"reading manifest file 'my_cobot_interfaces.egg-info/SOURCES.txt'\n"}
+[7.748745] (my_cobot_interfaces) StdoutLine: {'line': b"writing manifest file 'my_cobot_interfaces.egg-info/SOURCES.txt'\n"}
+[7.750844] (my_cobot_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_my_cobot_interfaces_egg\n'}
+[7.752314] (my_cobot_interfaces) CommandEnded: {'returncode': 0}
+[7.829361] (-) TimerEvent: {}
+[7.930830] (-) TimerEvent: {}
+[8.032922] (-) TimerEvent: {}
+[8.135002] (-) TimerEvent: {}
+[8.236013] (-) TimerEvent: {}
+[8.343502] (-) TimerEvent: {}
+[8.445376] (-) TimerEvent: {}
+[8.546577] (-) TimerEvent: {}
+[8.647476] (-) TimerEvent: {}
+[8.748524] (-) TimerEvent: {}
+[8.850032] (-) TimerEvent: {}
+[8.951576] (-) TimerEvent: {}
+[9.053059] (-) TimerEvent: {}
+[9.154718] (-) TimerEvent: {}
+[9.256517] (-) TimerEvent: {}
+[9.358295] (-) TimerEvent: {}
+[9.460085] (-) TimerEvent: {}
+[9.561776] (-) TimerEvent: {}
+[9.663782] (-) TimerEvent: {}
+[9.765495] (-) TimerEvent: {}
+[9.867140] (-) TimerEvent: {}
+[9.968935] (-) TimerEvent: {}
+[10.070501] (-) TimerEvent: {}
+[10.172597] (-) TimerEvent: {}
+[10.288508] (my_cobot_interfaces) JobProgress: {'identifier': 'my_cobot_interfaces', 'progress': 'install'}
+[10.294590] (-) TimerEvent: {}
+[10.395598] (-) TimerEvent: {}
+[10.410533] (my_cobot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lance/robot/build/my_cobot_interfaces'], 'cwd': '/home/lance/robot/build/my_cobot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_hardware_interface/lib:/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1236'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YE4I71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.349'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/my_cobot_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[10.495909] (-) TimerEvent: {}
+[10.533992] (my_cobot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.537078] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_cobot_interfaces\n'}
+[10.540584] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[10.543286] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[10.546756] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[10.550550] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__functions.h\n'}
+[10.552488] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__functions.c\n'}
+[10.554337] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__struct.h\n'}
+[10.557495] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__struct.h\n'}
+[10.558591] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__functions.h\n'}
+[10.561060] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__functions.h\n'}
+[10.561876] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__functions.c\n'}
+[10.572452] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__type_support.h\n'}
+[10.573329] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__type_support.h\n'}
+[10.574058] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__functions.c\n'}
+[10.574740] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__struct.h\n'}
+[10.579200] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__type_support.h\n'}
+[10.579812] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/play_pause.h\n'}
+[10.580362] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/set_radians.h\n'}
+[10.580926] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/get_radians.h\n'}
+[10.581702] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg\n'}
+[10.599671] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.600395] (-) TimerEvent: {}
+[10.601102] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/library_path.sh\n'}
+[10.601907] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/library_path.dsv\n'}
+[10.602576] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_generator_c.so\n'}
+[10.603357] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[10.604153] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[10.604823] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[10.605497] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_fastrtps_c.h\n'}
+[10.606252] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_fastrtps_c.h\n'}
+[10.607063] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_fastrtps_c.h\n'}
+[10.607777] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg\n'}
+[10.608484] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.636493] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[10.637282] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[10.638010] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[10.638662] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[10.639454] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__struct.hpp\n'}
+[10.640198] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__struct.hpp\n'}
+[10.640999] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__traits.hpp\n'}
+[10.641665] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__traits.hpp\n'}
+[10.642308] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__builder.hpp\n'}
+[10.643533] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__builder.hpp\n'}
+[10.644256] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__builder.hpp\n'}
+[10.644916] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__traits.hpp\n'}
+[10.645561] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__struct.hpp\n'}
+[10.646253] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/get_radians.hpp\n'}
+[10.648636] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/set_radians.hpp\n'}
+[10.650186] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/play_pause.hpp\n'}
+[10.651288] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[10.652177] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[10.652929] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[10.653600] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/dds_fastrtps\n'}
+[10.654390] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.664198] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.664976] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.665700] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg\n'}
+[10.666464] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.667314] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.667985] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[10.668631] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[10.669296] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[10.669953] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h\n'}
+[10.670941] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__type_support.c\n'}
+[10.683723] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__type_support.c\n'}
+[10.684539] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_introspection_c.h\n'}
+[10.685248] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_introspection_c.h\n'}
+[10.685954] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__type_support.c\n'}
+[10.686696] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg\n'}
+[10.687489] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.688175] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[10.688839] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_c.so\n'}
+[10.689650] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[10.698721] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[10.699582] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[10.700321] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.700971] (-) TimerEvent: {}
+[10.702271] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.703146] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__type_support.cpp\n'}
+[10.703789] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__type_support.cpp\n'}
+[10.704593] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__type_support.cpp\n'}
+[10.705538] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.706421] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[10.714052] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_cpp.so\n'}
+[10.715871] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/pythonpath.sh\n'}
+[10.717598] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/pythonpath.dsv\n'}
+[10.718574] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info\n'}
+[10.719409] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[10.731944] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[10.733799] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[10.735680] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[10.738759] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces\n'}
+[10.740070] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[10.741209] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/__init__.py\n'}
+[10.742234] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/libmy_cobot_interfaces__rosidl_generator_py.so\n'}
+[10.742983] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.743732] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv\n'}
+[10.744866] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_play_pause_s.c\n'}
+[10.746607] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_radians.py\n'}
+[10.748789] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/__init__.py\n'}
+[10.749969] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_play_pause.py\n'}
+[10.750761] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_radians.py\n'}
+[10.751679] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_radians_s.c\n'}
+[10.752260] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_radians_s.c\n'}
+[10.753017] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.754009] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.767714] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.791656] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[10.803044] (-) TimerEvent: {}
+[10.904063] (-) TimerEvent: {}
+[11.009696] (-) TimerEvent: {}
+[11.086606] (my_cobot_interfaces) StdoutLine: {'line': b"Listing '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces'...\n"}
+[11.088866] (my_cobot_interfaces) StdoutLine: {'line': b"Listing '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv'...\n"}
+[11.110000] (-) TimerEvent: {}
+[11.128661] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.134345] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.137517] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[11.150412] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_generator_py.so\n'}
+[11.156800] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians.idl\n'}
+[11.158371] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians.idl\n'}
+[11.159185] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause.idl\n'}
+[11.159841] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians.srv\n'}
+[11.160583] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians_Request.msg\n'}
+[11.165812] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians_Response.msg\n'}
+[11.167076] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians.srv\n'}
+[11.168199] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians_Request.msg\n'}
+[11.169946] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians_Response.msg\n'}
+[11.171365] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause.srv\n'}
+[11.172439] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause_Request.msg\n'}
+[11.173178] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause_Response.msg\n'}
+[11.174142] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_cobot_interfaces\n'}
+[11.176181] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_cobot_interfaces\n'}
+[11.178990] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/ament_prefix_path.sh\n'}
+[11.181228] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/ament_prefix_path.dsv\n'}
+[11.183683] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/path.sh\n'}
+[11.184715] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/path.dsv\n'}
+[11.185479] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.bash\n'}
+[11.186254] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.sh\n'}
+[11.186981] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.zsh\n'}
+[11.187716] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.dsv\n'}
+[11.188365] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/package.dsv\n'}
+[11.189665] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/packages/my_cobot_interfaces\n'}
+[11.202936] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cExport.cmake\n'}
+[11.204924] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[11.210078] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[11.213872] (-) TimerEvent: {}
+[11.215215] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[11.217211] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[11.223720] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[11.227875] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[11.238461] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[11.244201] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[11.245103] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[11.245753] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[11.247420] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[11.249161] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[11.251111] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[11.252671] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[11.253409] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[11.254119] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[11.256257] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[11.257347] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[11.258246] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[11.259083] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[11.260095] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[11.260832] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[11.261730] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[11.262530] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfacesConfig.cmake\n'}
+[11.263994] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfacesConfig-version.cmake\n'}
+[11.271342] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/package.xml\n'}
+[11.279352] (my_cobot_interfaces) CommandEnded: {'returncode': 0}
+[11.314089] (-) TimerEvent: {}
+[11.415898] (-) TimerEvent: {}
+[11.516943] (-) TimerEvent: {}
+[11.617876] (-) TimerEvent: {}
+[11.718888] (-) TimerEvent: {}
+[11.821001] (-) TimerEvent: {}
+[11.922591] (-) TimerEvent: {}
+[12.023625] (-) TimerEvent: {}
+[12.124616] (-) TimerEvent: {}
+[12.225657] (-) TimerEvent: {}
+[12.342433] (-) TimerEvent: {}
+[12.444017] (-) TimerEvent: {}
+[12.546390] (-) TimerEvent: {}
+[12.663938] (-) TimerEvent: {}
+[12.766629] (-) TimerEvent: {}
+[12.773795] (bringup) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/bringup', 'build', '--build-base', '/home/lance/robot/build/bringup/build', 'install', '--record', '/home/lance/robot/build/bringup/install.log', '--single-version-externally-managed'], 'cwd': '/home/lance/robot/src/bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lance', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lance/robot/install/my_cobot_hardware_interface/lib:/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lance', 'OLDPWD': '/home/lance', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1236', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lance/moveit2_ws/install:/home/lance/robot/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lance', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lance', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YE4I71', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.349', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lance/robot/build/bringup', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lance/robot/build/bringup/prefix_override:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install'}, 'shell': False}
+[12.825526] (robot_description) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/robot_description', 'build', '--build-base', '/home/lance/robot/build/robot_description/build', 'install', '--record', '/home/lance/robot/build/robot_description/install.log', '--single-version-externally-managed'], 'cwd': '/home/lance/robot/src/robot_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lance', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lance/robot/install/my_cobot_hardware_interface/lib:/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lance', 'OLDPWD': '/home/lance', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1236', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lance/moveit2_ws/install:/home/lance/robot/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lance', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lance', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YE4I71', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.349', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lance/robot/build/robot_description', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lance/robot/build/robot_description/prefix_override:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install'}, 'shell': False}
+[12.842658] (computer_vision) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/computer_vision', 'build', '--build-base', '/home/lance/robot/build/computer_vision/build', 'install', '--record', '/home/lance/robot/build/computer_vision/install.log', '--single-version-externally-managed'], 'cwd': '/home/lance/robot/src/computer_vision', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lance', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lance/robot/install/my_cobot_hardware_interface/lib:/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lance', 'OLDPWD': '/home/lance', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1236', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lance/moveit2_ws/install:/home/lance/robot/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lance', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lance', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YE4I71', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.349', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lance/robot/build/computer_vision', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install'}, 'shell': False}
+[12.867067] (-) TimerEvent: {}
+[12.968349] (-) TimerEvent: {}
+[13.083071] (-) TimerEvent: {}
+[13.199221] (-) TimerEvent: {}
+[13.306144] (-) TimerEvent: {}
+[13.331097] (my_cobot_interfaces) JobEnded: {'identifier': 'my_cobot_interfaces', 'rc': 0}
+[13.352714] (my_cobot_hardware_interface) JobStarted: {'identifier': 'my_cobot_hardware_interface'}
+[13.414045] (-) TimerEvent: {}
+[13.520696] (-) TimerEvent: {}
+[13.624403] (-) TimerEvent: {}
+[13.726181] (-) TimerEvent: {}
+[13.743854] (my_cobot_hardware_interface) JobProgress: {'identifier': 'my_cobot_hardware_interface', 'progress': 'cmake'}
+[13.767362] (my_cobot_hardware_interface) JobProgress: {'identifier': 'my_cobot_hardware_interface', 'progress': 'build'}
+[13.769234] (my_cobot_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lance/robot/build/my_cobot_hardware_interface', '--', '-j4', '-l4'], 'cwd': '/home/lance/robot/build/my_cobot_hardware_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1236'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YE4I71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.349'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/my_cobot_hardware_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[13.826443] (-) TimerEvent: {}
+[13.927932] (-) TimerEvent: {}
+[14.032748] (-) TimerEvent: {}
+[14.134320] (-) TimerEvent: {}
+[14.235949] (-) TimerEvent: {}
+[14.337279] (-) TimerEvent: {}
+[14.438926] (-) TimerEvent: {}
+[14.477110] (my_cobot_hardware_interface) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_hardware_interface\x1b[0m\n'}
+[14.539110] (-) TimerEvent: {}
+[14.640645] (-) TimerEvent: {}
+[14.742118] (-) TimerEvent: {}
+[14.785182] (my_cobot_hardware_interface) StdoutLine: {'line': b'[100%] Built target my_cobot_hardware_interface\n'}
+[14.842418] (-) TimerEvent: {}
+[14.943787] (my_cobot_hardware_interface) CommandEnded: {'returncode': 0}
+[14.945903] (-) TimerEvent: {}
+[15.046870] (-) TimerEvent: {}
+[15.147670] (-) TimerEvent: {}
+[15.248666] (-) TimerEvent: {}
+[15.350200] (-) TimerEvent: {}
+[15.451935] (-) TimerEvent: {}
+[15.563447] (-) TimerEvent: {}
+[15.566815] (my_cobot_hardware_interface) JobProgress: {'identifier': 'my_cobot_hardware_interface', 'progress': 'install'}
+[15.568247] (my_cobot_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lance/robot/build/my_cobot_hardware_interface'], 'cwd': '/home/lance/robot/build/my_cobot_hardware_interface', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1236'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YE4I71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.349'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/my_cobot_hardware_interface'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[15.663766] (-) TimerEvent: {}
+[15.711217] (bringup) StdoutLine: {'line': b'running egg_info\n'}
+[15.712582] (bringup) StdoutLine: {'line': b'writing ../../build/bringup/bringup.egg-info/PKG-INFO\n'}
+[15.723249] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[15.724489] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/my_cobot_hardware_interface.xml\n'}
+[15.730085] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/include\n'}
+[15.730889] (bringup) StdoutLine: {'line': b'writing dependency_links to ../../build/bringup/bringup.egg-info/dependency_links.txt\n'}
+[15.731697] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/include/my_cobot_hardware_interface\n'}
+[15.732324] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/include/my_cobot_hardware_interface/MyCobotHardwareInterface.hpp\n'}
+[15.732910] (bringup) StdoutLine: {'line': b'writing entry points to ../../build/bringup/bringup.egg-info/entry_points.txt\n'}
+[15.733438] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/library_path.sh\n'}
+[15.733975] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/library_path.dsv\n'}
+[15.734525] (bringup) StdoutLine: {'line': b'writing requirements to ../../build/bringup/bringup.egg-info/requires.txt\n'}
+[15.735805] (bringup) StdoutLine: {'line': b'writing top-level names to ../../build/bringup/bringup.egg-info/top_level.txt\n'}
+[15.745264] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/lib/libmy_cobot_hardware_interface.so\n'}
+[15.746090] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/ament_index/resource_index/package_run_dependencies/my_cobot_hardware_interface\n'}
+[15.746816] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/ament_index/resource_index/parent_prefix_path/my_cobot_hardware_interface\n'}
+[15.747413] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/ament_prefix_path.sh\n'}
+[15.748002] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/ament_prefix_path.dsv\n'}
+[15.748705] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/path.sh\n'}
+[15.749504] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/environment/path.dsv\n'}
+[15.750170] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/local_setup.bash\n'}
+[15.750838] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/local_setup.sh\n'}
+[15.754718] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/local_setup.zsh\n'}
+[15.762230] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/local_setup.dsv\n'}
+[15.766859] (-) TimerEvent: {}
+[15.771398] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/package.dsv\n'}
+[15.772581] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/ament_index/resource_index/packages/my_cobot_hardware_interface\n'}
+[15.773562] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/my_cobot_hardware_interface\n'}
+[15.774498] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[15.775732] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/cmake/my_cobot_hardware_interfaceConfig.cmake\n'}
+[15.776616] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/cmake/my_cobot_hardware_interfaceConfig-version.cmake\n'}
+[15.777414] (my_cobot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_hardware_interface/share/my_cobot_hardware_interface/package.xml\n'}
+[15.791287] (bringup) StdoutLine: {'line': b"reading manifest file '../../build/bringup/bringup.egg-info/SOURCES.txt'\n"}
+[15.792712] (my_cobot_hardware_interface) CommandEnded: {'returncode': 0}
+[15.794604] (bringup) StdoutLine: {'line': b"writing manifest file '../../build/bringup/bringup.egg-info/SOURCES.txt'\n"}
+[15.814267] (bringup) StdoutLine: {'line': b'running build\n'}
+[15.815591] (bringup) StdoutLine: {'line': b'running build_py\n'}
+[15.816337] (bringup) StdoutLine: {'line': b'running install\n'}
+[15.817504] (bringup) StdoutLine: {'line': b'running install_lib\n'}
+[15.841450] (bringup) StdoutLine: {'line': b'running install_data\n'}
+[15.871368] (bringup) StdoutLine: {'line': b'running install_egg_info\n'}
+[15.872301] (-) TimerEvent: {}
+[15.887348] (bringup) StdoutLine: {'line': b"removing '/home/lance/robot/install/bringup/lib/python3.10/site-packages/bringup-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[15.888308] (bringup) StdoutLine: {'line': b'Copying ../../build/bringup/bringup.egg-info to /home/lance/robot/install/bringup/lib/python3.10/site-packages/bringup-0.0.0-py3.10.egg-info\n'}
+[15.906739] (bringup) StdoutLine: {'line': b'running install_scripts\n'}
+[15.972606] (-) TimerEvent: {}
+[16.073835] (-) TimerEvent: {}
+[16.143287] (computer_vision) StdoutLine: {'line': b'running egg_info\n'}
+[16.146948] (robot_description) StdoutLine: {'line': b'running egg_info\n'}
+[16.149081] (robot_description) StdoutLine: {'line': b'writing ../../build/robot_description/robot_description.egg-info/PKG-INFO\n'}
+[16.152101] (computer_vision) StdoutLine: {'line': b'writing ../../build/computer_vision/computer_vision.egg-info/PKG-INFO\n'}
+[16.156594] (bringup) StdoutLine: {'line': b"writing list of installed files to '/home/lance/robot/build/bringup/install.log'\n"}
+[16.169756] (robot_description) StdoutLine: {'line': b'writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt\n'}
+[16.171906] (computer_vision) StdoutLine: {'line': b'writing dependency_links to ../../build/computer_vision/computer_vision.egg-info/dependency_links.txt\n'}
+[16.173538] (robot_description) StdoutLine: {'line': b'writing entry points to ../../build/robot_description/robot_description.egg-info/entry_points.txt\n'}
+[16.174343] (-) TimerEvent: {}
+[16.175586] (computer_vision) StdoutLine: {'line': b'writing entry points to ../../build/computer_vision/computer_vision.egg-info/entry_points.txt\n'}
+[16.177313] (robot_description) StdoutLine: {'line': b'writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt\n'}
+[16.178618] (robot_description) StdoutLine: {'line': b'writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt\n'}
+[16.184979] (computer_vision) StdoutLine: {'line': b'writing requirements to ../../build/computer_vision/computer_vision.egg-info/requires.txt\n'}
+[16.186306] (computer_vision) StdoutLine: {'line': b'writing top-level names to ../../build/computer_vision/computer_vision.egg-info/top_level.txt\n'}
+[16.251048] (computer_vision) StdoutLine: {'line': b"reading manifest file '../../build/computer_vision/computer_vision.egg-info/SOURCES.txt'\n"}
+[16.252716] (robot_description) StdoutLine: {'line': b"reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'\n"}
+[16.274642] (-) TimerEvent: {}
+[16.275877] (computer_vision) StdoutLine: {'line': b"writing manifest file '../../build/computer_vision/computer_vision.egg-info/SOURCES.txt'\n"}
+[16.277358] (computer_vision) StdoutLine: {'line': b'running build\n'}
+[16.278987] (computer_vision) StdoutLine: {'line': b'running build_py\n'}
+[16.280721] (robot_description) StdoutLine: {'line': b"writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'\n"}
+[16.281630] (robot_description) StdoutLine: {'line': b'running build\n'}
+[16.282617] (robot_description) StdoutLine: {'line': b'running build_py\n'}
+[16.304627] (robot_description) StdoutLine: {'line': b'running install\n'}
+[16.307109] (robot_description) StdoutLine: {'line': b'running install_lib\n'}
+[16.316659] (computer_vision) StdoutLine: {'line': b'running install\n'}
+[16.318859] (computer_vision) StdoutLine: {'line': b'running install_lib\n'}
+[16.330380] (robot_description) StdoutLine: {'line': b'running install_data\n'}
+[16.333370] (computer_vision) StdoutLine: {'line': b'running install_data\n'}
+[16.340722] (computer_vision) StdoutLine: {'line': b'running install_egg_info\n'}
+[16.357833] (computer_vision) StdoutLine: {'line': b"removing '/home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[16.368609] (robot_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[16.372063] (computer_vision) StdoutLine: {'line': b'Copying ../../build/computer_vision/computer_vision.egg-info to /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision-0.0.0-py3.10.egg-info\n'}
+[16.383114] (-) TimerEvent: {}
+[16.386922] (robot_description) StdoutLine: {'line': b"removing '/home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[16.403340] (computer_vision) StdoutLine: {'line': b'running install_scripts\n'}
+[16.404528] (robot_description) StdoutLine: {'line': b'Copying ../../build/robot_description/robot_description.egg-info to /home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info\n'}
+[16.463321] (robot_description) StdoutLine: {'line': b'running install_scripts\n'}
+[16.495161] (-) TimerEvent: {}
+[16.620181] (-) TimerEvent: {}
+[16.710612] (robot_description) StdoutLine: {'line': b"writing list of installed files to '/home/lance/robot/build/robot_description/install.log'\n"}
+[16.725851] (-) TimerEvent: {}
+[16.727332] (computer_vision) StdoutLine: {'line': b'Installing cv script to /home/lance/robot/install/computer_vision/lib/computer_vision\n'}
+[16.768623] (computer_vision) StdoutLine: {'line': b"writing list of installed files to '/home/lance/robot/build/computer_vision/install.log'\n"}
+[16.843129] (-) TimerEvent: {}
+[16.959032] (-) TimerEvent: {}
+[16.990501] (my_cobot_hardware_interface) JobEnded: {'identifier': 'my_cobot_hardware_interface', 'rc': 0}
+[17.015712] (motion_planning) JobStarted: {'identifier': 'motion_planning'}
+[17.071231] (-) TimerEvent: {}
+[17.183212] (-) TimerEvent: {}
+[17.212046] (bringup) CommandEnded: {'returncode': 0}
+[17.283741] (-) TimerEvent: {}
+[17.324414] (bringup) JobEnded: {'identifier': 'bringup', 'rc': 0}
+[17.373301] (controllers) JobStarted: {'identifier': 'controllers'}
+[17.398220] (-) TimerEvent: {}
+[17.437388] (computer_vision) CommandEnded: {'returncode': 0}
+[17.500810] (-) TimerEvent: {}
+[17.548233] (computer_vision) JobEnded: {'identifier': 'computer_vision', 'rc': 0}
+[17.570673] (robot_description) CommandEnded: {'returncode': 0}
+[17.604421] (-) TimerEvent: {}
+[17.648226] (robot_description) JobEnded: {'identifier': 'robot_description', 'rc': 0}
+[17.676343] (moveit_config) JobStarted: {'identifier': 'moveit_config'}
+[17.704607] (-) TimerEvent: {}
+[17.805541] (-) TimerEvent: {}
+[17.906925] (-) TimerEvent: {}
+[18.007755] (-) TimerEvent: {}
+[18.108664] (-) TimerEvent: {}
+[18.209546] (-) TimerEvent: {}
+[18.310373] (-) TimerEvent: {}
+[18.411324] (-) TimerEvent: {}
+[18.512240] (-) TimerEvent: {}
+[18.613081] (-) TimerEvent: {}
+[18.713869] (-) TimerEvent: {}
+[18.814652] (-) TimerEvent: {}
+[18.915507] (-) TimerEvent: {}
+[19.016349] (-) TimerEvent: {}
+[19.117184] (-) TimerEvent: {}
+[19.218077] (-) TimerEvent: {}
+[19.318966] (-) TimerEvent: {}
+[19.419967] (-) TimerEvent: {}
+[19.521080] (-) TimerEvent: {}
+[19.622232] (-) TimerEvent: {}
+[19.723988] (-) TimerEvent: {}
+[19.825249] (-) TimerEvent: {}
+[19.926648] (-) TimerEvent: {}
+[20.027531] (-) TimerEvent: {}
+[20.128415] (-) TimerEvent: {}
+[20.229503] (-) TimerEvent: {}
+[20.330732] (-) TimerEvent: {}
+[20.432872] (-) TimerEvent: {}
+[20.533928] (-) TimerEvent: {}
+[20.634900] (-) TimerEvent: {}
+[20.735755] (-) TimerEvent: {}
+[20.836717] (-) TimerEvent: {}
+[20.938270] (-) TimerEvent: {}
+[21.039545] (-) TimerEvent: {}
+[21.140492] (-) TimerEvent: {}
+[21.241589] (-) TimerEvent: {}
+[21.342897] (-) TimerEvent: {}
+[21.443792] (-) TimerEvent: {}
+[21.544582] (-) TimerEvent: {}
+[21.645697] (-) TimerEvent: {}
+[21.746839] (-) TimerEvent: {}
+[21.848988] (-) TimerEvent: {}
+[21.897245] (moveit_config) JobProgress: {'identifier': 'moveit_config', 'progress': 'cmake'}
+[21.903349] (moveit_config) JobProgress: {'identifier': 'moveit_config', 'progress': 'build'}
+[21.904945] (moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lance/robot/build/moveit_config', '--', '-j4', '-l4'], 'cwd': '/home/lance/robot/build/moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_hardware_interface/lib:/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1236'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YE4I71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.349'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/robot_description:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/moveit_config'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[21.959460] (-) TimerEvent: {}
+[22.060972] (-) TimerEvent: {}
+[22.167151] (-) TimerEvent: {}
+[22.175883] (moveit_config) CommandEnded: {'returncode': 0}
+[22.267363] (-) TimerEvent: {}
+[22.355516] (moveit_config) JobProgress: {'identifier': 'moveit_config', 'progress': 'install'}
+[22.355917] (moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lance/robot/build/moveit_config'], 'cwd': '/home/lance/robot/build/moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_hardware_interface/lib:/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1236'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.YE4I71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.349'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/robot_description:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/moveit_config'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[22.367617] (-) TimerEvent: {}
+[22.409074] (moveit_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.410376] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/ament_index/resource_index/package_run_dependencies/moveit_config\n'}
+[22.411748] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/ament_index/resource_index/parent_prefix_path/moveit_config\n'}
+[22.412684] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/environment/ament_prefix_path.sh\n'}
+[22.413854] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/environment/ament_prefix_path.dsv\n'}
+[22.414727] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/environment/path.sh\n'}
+[22.416449] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/environment/path.dsv\n'}
+[22.417424] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/local_setup.bash\n'}
+[22.418195] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/local_setup.sh\n'}
+[22.419761] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/local_setup.zsh\n'}
+[22.420458] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/local_setup.dsv\n'}
+[22.421806] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/package.dsv\n'}
+[22.423901] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/ament_index/resource_index/packages/moveit_config\n'}
+[22.425381] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/cmake/moveit_configConfig.cmake\n'}
+[22.426502] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/cmake/moveit_configConfig-version.cmake\n'}
+[22.429312] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/package.xml\n'}
+[22.430764] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/launch\n'}
+[22.432341] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/launch/moveit.launch.py\n'}
+[22.433274] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/launch/static_virtual_joint_tfs.launch.py\n'}
+[22.433923] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/launch/demo.launch.py\n'}
+[22.434678] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/launch/warehouse_db.launch.py\n'}
+[22.435734] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/launch/moveit_rviz.launch.py\n'}
+[22.436541] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/launch/setup_assistant.launch.py\n'}
+[22.437233] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/launch/spawn_controllers.launch.py\n'}
+[22.438011] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/launch/move_group.launch.py\n'}
+[22.439022] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/launch/rsp.launch.py\n'}
+[22.440837] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config\n'}
+[22.442479] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/moveit_controllers.yaml\n'}
+[22.443459] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/mycobot_ai.srdf\n'}
+[22.444179] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/kinematics.yaml\n'}
+[22.444965] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/pilz_cartesian_limits.yaml\n'}
+[22.445868] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/mycobot_ai.ros2_control.xacro\n'}
+[22.446904] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/joint_limits.yaml\n'}
+[22.447677] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/mycobot_ai.urdf.xacro\n'}
+[22.448778] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/initial_positions.yaml\n'}
+[22.449424] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/moveit.rviz\n'}
+[22.450060] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/ros2_controllers.yaml\n'}
+[22.450843] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/config/sensors_3d.yaml\n'}
+[22.488697] (-) TimerEvent: {}
+[22.489646] (moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/moveit_config/share/moveit_config/.setup_assistant\n'}
+[22.490337] (moveit_config) CommandEnded: {'returncode': 0}
+[22.589167] (-) TimerEvent: {}
+[22.690205] (-) TimerEvent: {}
+[22.796635] (-) TimerEvent: {}
+[22.898757] (-) TimerEvent: {}
+[22.901388] (moveit_config) JobEnded: {'identifier': 'moveit_config', 'rc': 0}
+[23.002393] (-) TimerEvent: {}
+[23.103727] (-) TimerEvent: {}
+[23.205136] (-) TimerEvent: {}
+[23.306987] (-) TimerEvent: {}
+[23.407884] (-) TimerEvent: {}
+[23.509080] (-) TimerEvent: {}
+[23.610088] (-) TimerEvent: {}
+[23.711075] (-) TimerEvent: {}
+[23.811996] (-) TimerEvent: {}
+[23.912954] (-) TimerEvent: {}
+[24.013984] (-) TimerEvent: {}
+[24.114941] (-) TimerEvent: {}
+[24.215815] (-) TimerEvent: {}
+[24.317026] (-) TimerEvent: {}
+[24.417987] (-) TimerEvent: {}
+[24.519009] (-) TimerEvent: {}
+[24.619962] (-) TimerEvent: {}
+[24.720819] (-) TimerEvent: {}
+[24.821671] (-) TimerEvent: {}
+[24.922652] (-) TimerEvent: {}
+[25.024185] (-) TimerEvent: {}
+[25.095713] (motion_planning) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/motion_planning', 'build', '--build-base', '/home/lance/robot/build/motion_planning/build', 'install', '--record', '/home/lance/robot/build/motion_planning/install.log', '--single-version-externally-managed'], 'cwd': '/home/lance/robot/src/motion_planning', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lance', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lance/robot/install/my_cobot_hardware_interface/lib:/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lance', 'OLDPWD': '/home/lance', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1236', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lance/moveit2_ws/install:/home/lance/robot/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lance', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lance', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YE4I71', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.349', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lance/robot/build/motion_planning', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lance/robot/build/motion_planning/prefix_override:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install'}, 'shell': False}
+[25.127063] (-) TimerEvent: {}
+[25.191093] (controllers) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/controllers', 'build', '--build-base', '/home/lance/robot/build/controllers/build', 'install', '--record', '/home/lance/robot/build/controllers/install.log', '--single-version-externally-managed'], 'cwd': '/home/lance/robot/src/controllers', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'lance', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/lance', 'OLDPWD': '/home/lance', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1236', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/lance/moveit2_ws/install:/home/lance/robot/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'lance', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'lance', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/lance-desktop:@/tmp/.ICE-unix/1217,unix/lance-desktop:/tmp/.ICE-unix/1217', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/23741f9f_63e8_49b2_a7cc_180b7385590f', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YE4I71', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.349', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/computer_vision:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/lance/robot/build/controllers', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/lance/robot/build/controllers/prefix_override:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install'}, 'shell': False}
+[25.227250] (-) TimerEvent: {}
+[25.328673] (-) TimerEvent: {}
+[25.430189] (-) TimerEvent: {}
+[25.531724] (-) TimerEvent: {}
+[25.632680] (-) TimerEvent: {}
+[25.734257] (-) TimerEvent: {}
+[25.835825] (-) TimerEvent: {}
+[25.936671] (-) TimerEvent: {}
+[26.037477] (-) TimerEvent: {}
+[26.138330] (-) TimerEvent: {}
+[26.239929] (-) TimerEvent: {}
+[26.347880] (-) TimerEvent: {}
+[26.449415] (-) TimerEvent: {}
+[26.550529] (-) TimerEvent: {}
+[26.652938] (-) TimerEvent: {}
+[26.754564] (-) TimerEvent: {}
+[26.856407] (-) TimerEvent: {}
+[26.957517] (-) TimerEvent: {}
+[27.058599] (-) TimerEvent: {}
+[27.162997] (-) TimerEvent: {}
+[27.264602] (-) TimerEvent: {}
+[27.304466] (controllers) StdoutLine: {'line': b'running egg_info\n'}
+[27.305833] (controllers) StdoutLine: {'line': b'writing ../../build/controllers/controllers.egg-info/PKG-INFO\n'}
+[27.308662] (controllers) StdoutLine: {'line': b'writing dependency_links to ../../build/controllers/controllers.egg-info/dependency_links.txt\n'}
+[27.310853] (controllers) StdoutLine: {'line': b'writing entry points to ../../build/controllers/controllers.egg-info/entry_points.txt\n'}
+[27.313490] (controllers) StdoutLine: {'line': b'writing requirements to ../../build/controllers/controllers.egg-info/requires.txt\n'}
+[27.315616] (controllers) StdoutLine: {'line': b'writing top-level names to ../../build/controllers/controllers.egg-info/top_level.txt\n'}
+[27.333864] (controllers) StdoutLine: {'line': b"reading manifest file '../../build/controllers/controllers.egg-info/SOURCES.txt'\n"}
+[27.339446] (controllers) StdoutLine: {'line': b"writing manifest file '../../build/controllers/controllers.egg-info/SOURCES.txt'\n"}
+[27.340487] (controllers) StdoutLine: {'line': b'running build\n'}
+[27.341351] (controllers) StdoutLine: {'line': b'running build_py\n'}
+[27.344673] (controllers) StdoutLine: {'line': b'copying controllers/joint_state_controller.py -> /home/lance/robot/build/controllers/build/lib/controllers\n'}
+[27.346424] (controllers) StdoutLine: {'line': b'running install\n'}
+[27.350189] (controllers) StdoutLine: {'line': b'running install_lib\n'}
+[27.355370] (controllers) StdoutLine: {'line': b'copying /home/lance/robot/build/controllers/build/lib/controllers/joint_state_controller.py -> /home/lance/robot/install/controllers/lib/python3.10/site-packages/controllers\n'}
+[27.361243] (controllers) StdoutLine: {'line': b'byte-compiling /home/lance/robot/install/controllers/lib/python3.10/site-packages/controllers/joint_state_controller.py to joint_state_controller.cpython-310.pyc\n'}
+[27.362835] (motion_planning) StdoutLine: {'line': b'running egg_info\n'}
+[27.364535] (controllers) StdoutLine: {'line': b'running install_data\n'}
+[27.365266] (-) TimerEvent: {}
+[27.367201] (motion_planning) StdoutLine: {'line': b'writing ../../build/motion_planning/motion_planning.egg-info/PKG-INFO\n'}
+[27.369315] (motion_planning) StdoutLine: {'line': b'writing dependency_links to ../../build/motion_planning/motion_planning.egg-info/dependency_links.txt\n'}
+[27.370439] (motion_planning) StdoutLine: {'line': b'writing entry points to ../../build/motion_planning/motion_planning.egg-info/entry_points.txt\n'}
+[27.371923] (controllers) StdoutLine: {'line': b'running install_egg_info\n'}
+[27.373308] (motion_planning) StdoutLine: {'line': b'writing requirements to ../../build/motion_planning/motion_planning.egg-info/requires.txt\n'}
+[27.374129] (motion_planning) StdoutLine: {'line': b'writing top-level names to ../../build/motion_planning/motion_planning.egg-info/top_level.txt\n'}
+[27.383441] (controllers) StdoutLine: {'line': b"removing '/home/lance/robot/install/controllers/lib/python3.10/site-packages/controllers-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[27.386717] (motion_planning) StdoutLine: {'line': b"reading manifest file '../../build/motion_planning/motion_planning.egg-info/SOURCES.txt'\n"}
+[27.387558] (controllers) StdoutLine: {'line': b'Copying ../../build/controllers/controllers.egg-info to /home/lance/robot/install/controllers/lib/python3.10/site-packages/controllers-0.0.0-py3.10.egg-info\n'}
+[27.392115] (motion_planning) StdoutLine: {'line': b"writing manifest file '../../build/motion_planning/motion_planning.egg-info/SOURCES.txt'\n"}
+[27.393557] (motion_planning) StdoutLine: {'line': b'running build\n'}
+[27.394398] (motion_planning) StdoutLine: {'line': b'running build_py\n'}
+[27.403528] (controllers) StdoutLine: {'line': b'running install_scripts\n'}
+[27.405107] (motion_planning) StdoutLine: {'line': b'running install\n'}
+[27.408143] (motion_planning) StdoutLine: {'line': b'running install_lib\n'}
+[27.419142] (motion_planning) StdoutLine: {'line': b'running install_data\n'}
+[27.427165] (motion_planning) StdoutLine: {'line': b'running install_egg_info\n'}
+[27.437663] (motion_planning) StdoutLine: {'line': b"removing '/home/lance/robot/install/motion_planning/lib/python3.10/site-packages/motion_planning-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[27.440852] (motion_planning) StdoutLine: {'line': b'Copying ../../build/motion_planning/motion_planning.egg-info to /home/lance/robot/install/motion_planning/lib/python3.10/site-packages/motion_planning-0.0.0-py3.10.egg-info\n'}
+[27.452028] (motion_planning) StdoutLine: {'line': b'running install_scripts\n'}
+[27.465626] (-) TimerEvent: {}
+[27.514336] (controllers) StdoutLine: {'line': b'Installing follow_trajectory script to /home/lance/robot/install/controllers/lib/controllers\n'}
+[27.515601] (controllers) StdoutLine: {'line': b'Installing joint_state script to /home/lance/robot/install/controllers/lib/controllers\n'}
+[27.517120] (controllers) StdoutLine: {'line': b'Installing my_cobot script to /home/lance/robot/install/controllers/lib/controllers\n'}
+[27.518543] (controllers) StdoutLine: {'line': b'Installing shutdown script to /home/lance/robot/install/controllers/lib/controllers\n'}
+[27.522548] (controllers) StdoutLine: {'line': b"writing list of installed files to '/home/lance/robot/build/controllers/install.log'\n"}
+[27.566005] (-) TimerEvent: {}
+[27.609880] (motion_planning) StdoutLine: {'line': b'Installing mp script to /home/lance/robot/install/motion_planning/lib/motion_planning\n'}
+[27.613335] (motion_planning) StdoutLine: {'line': b"writing list of installed files to '/home/lance/robot/build/motion_planning/install.log'\n"}
+[27.666626] (-) TimerEvent: {}
+[27.792463] (controllers) CommandEnded: {'returncode': 0}
+[27.810950] (-) TimerEvent: {}
+[27.892594] (controllers) JobEnded: {'identifier': 'controllers', 'rc': 0}
+[27.920170] (-) TimerEvent: {}
+[27.921811] (motion_planning) CommandEnded: {'returncode': 0}
+[28.007469] (motion_planning) JobEnded: {'identifier': 'motion_planning', 'rc': 0}
+[28.011477] (-) EventReactorShutdown: {}

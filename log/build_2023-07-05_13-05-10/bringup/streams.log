@@ -1,0 +1,20 @@
+[15.688s] Invoking command in '/home/lance/robot/src/bringup': PYTHONPATH=/home/lance/robot/build/bringup/prefix_override:/home/lance/robot/install/bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bringup build --build-base /home/lance/robot/build/bringup/build install --record /home/lance/robot/build/bringup/install.log --single-version-externally-managed
+[21.235s] running egg_info
+[21.239s] writing ../../build/bringup/bringup.egg-info/PKG-INFO
+[21.248s] writing dependency_links to ../../build/bringup/bringup.egg-info/dependency_links.txt
+[21.250s] writing entry points to ../../build/bringup/bringup.egg-info/entry_points.txt
+[21.274s] writing requirements to ../../build/bringup/bringup.egg-info/requires.txt
+[21.274s] writing top-level names to ../../build/bringup/bringup.egg-info/top_level.txt
+[21.290s] reading manifest file '../../build/bringup/bringup.egg-info/SOURCES.txt'
+[21.291s] writing manifest file '../../build/bringup/bringup.egg-info/SOURCES.txt'
+[21.309s] running build
+[21.309s] running build_py
+[21.310s] running install
+[21.311s] running install_lib
+[21.312s] running install_data
+[21.317s] running install_egg_info
+[21.326s] removing '/home/lance/robot/install/bringup/lib/python3.10/site-packages/bringup-0.0.0-py3.10.egg-info' (and everything under it)
+[21.327s] Copying ../../build/bringup/bringup.egg-info to /home/lance/robot/install/bringup/lib/python3.10/site-packages/bringup-0.0.0-py3.10.egg-info
+[21.341s] running install_scripts
+[21.502s] writing list of installed files to '/home/lance/robot/build/bringup/install.log'
+[23.284s] Invoked command in '/home/lance/robot/src/bringup' returned '0': PYTHONPATH=/home/lance/robot/build/bringup/prefix_override:/home/lance/robot/install/bringup/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/bringup build --build-base /home/lance/robot/build/bringup/build install --record /home/lance/robot/build/bringup/install.log --single-version-externally-managed

@@ -1,3 +1,4 @@
 /home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/GetRadians.idl
 /home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/SetRadians.idl
 /home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/PlayPause.idl
+/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/SetCoords.idl

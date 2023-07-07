@@ -1,1 +1,1 @@
-/home/lance/robot/build/my_cobot_hardware_interface/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/my_cobot_hardware_interface
+rclcpp;hardware_interface;my_cobot_interfaces

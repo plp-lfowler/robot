@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing computer_vision.egg-info/PKG-INFO
+writing dependency_links to computer_vision.egg-info/dependency_links.txt
+writing entry points to computer_vision.egg-info/entry_points.txt
+writing requirements to computer_vision.egg-info/requires.txt
+writing top-level names to computer_vision.egg-info/top_level.txt
+reading manifest file 'computer_vision.egg-info/SOURCES.txt'
+writing manifest file 'computer_vision.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer-vision.egg-link (link to .)
+Installing cv script to /home/lance/robot/install/computer_vision/lib/computer_vision
+
+Installed /home/lance/robot/build/computer_vision
+running install_data

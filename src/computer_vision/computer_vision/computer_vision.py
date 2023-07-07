@@ -8,6 +8,8 @@ import numpy as np
 
 class Block:
     def __init__(self, x, y, w, h, angle, color):
+        self.ROBOT_X_AT_ORIGIN = 147
+        self.ROBOT_Y_AT_ORIGIN = 15
         self.HORIZ_RES = 640
         self.VERT_RES = 480
         self.PERSPECTIVE_FACTOR = 14/120
@@ -29,8 +31,8 @@ class Block:
         return np.array([x, y, z])
 
     
-    def get_3D_point(self):
-        BOX_SIZE = 1 #box-width
+    def get_3D_point_cam(self):
+        BOX_SIZE = 40 #box-width
         CAM_HEIGHT_BOXES = 9.4231
         pixel_size = (self.w + self.h) / 2
         scalingFactor = BOX_SIZE / pixel_size
@@ -38,6 +40,13 @@ class Block:
         point = pixel_position * scalingFactor
         point[2] = (CAM_HEIGHT_BOXES * BOX_SIZE)  - point[2]
         return point
+    
+    def get_3D_point(self):
+        xCam, yCam, zCam = self.get_3D_point_cam()
+        xRob = self.ROBOT_X_AT_ORIGIN - yCam
+        yRob = self.ROBOT_Y_AT_ORIGIN + xCam
+        zRob = zCam
+        return np.array([xRob, yRob, zRob])
     
     def drawOn(self, img):
         x = self.x + self.HORIZ_RES / 2

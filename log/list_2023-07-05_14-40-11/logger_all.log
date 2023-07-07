@@ -1,0 +1,136 @@
+[13.478s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/lance/robot']
+[13.478s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/lance/robot'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffffa200e3e0>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0xffffa1f29cc0>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0xffffa1f29cc0>>)
+[14.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[14.372s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[14.373s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[14.373s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[14.403s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[14.408s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/lance/robot'
+[14.413s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extensions ['ignore', 'ignore_ament_install']
+[14.415s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extension 'ignore'
+[14.417s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extension 'ignore_ament_install'
+[14.430s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extensions ['colcon_pkg']
+[14.432s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extension 'colcon_pkg'
+[14.434s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extensions ['colcon_meta']
+[14.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extension 'colcon_meta'
+[14.448s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extensions ['ros']
+[14.448s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extension 'ros'
+[14.847s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extensions ['cmake', 'python']
+[14.848s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extension 'cmake'
+[14.849s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extension 'python'
+[14.849s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extensions ['python_setup_py']
+[14.850s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot) by extension 'python_setup_py'
+[14.852s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/build) by extensions ['ignore', 'ignore_ament_install']
+[14.854s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/build) by extension 'ignore'
+[14.856s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/build) ignored
+[14.860s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/install) by extensions ['ignore', 'ignore_ament_install']
+[14.862s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/install) by extension 'ignore'
+[14.864s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/install) ignored
+[14.865s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/log) by extensions ['ignore', 'ignore_ament_install']
+[14.866s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/log) by extension 'ignore'
+[14.866s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/log) ignored
+[14.870s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extensions ['ignore', 'ignore_ament_install']
+[14.872s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extension 'ignore'
+[14.874s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extension 'ignore_ament_install'
+[14.875s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extensions ['colcon_pkg']
+[14.877s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extension 'colcon_pkg'
+[14.878s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extensions ['colcon_meta']
+[14.879s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extension 'colcon_meta'
+[14.881s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extensions ['ros']
+[14.883s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extension 'ros'
+[14.886s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extensions ['cmake', 'python']
+[14.887s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extension 'cmake'
+[14.889s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extension 'python'
+[14.890s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extensions ['python_setup_py']
+[14.892s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src) by extension 'python_setup_py'
+[14.896s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/bringup) by extensions ['ignore', 'ignore_ament_install']
+[14.899s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/bringup) by extension 'ignore'
+[14.900s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/bringup) by extension 'ignore_ament_install'
+[14.901s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/bringup) by extensions ['colcon_pkg']
+[14.902s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/bringup) by extension 'colcon_pkg'
+[14.903s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/bringup) by extensions ['colcon_meta']
+[14.904s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/bringup) by extension 'colcon_meta'
+[14.906s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/bringup) by extensions ['ros']
+[14.907s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/bringup) by extension 'ros'
+[14.940s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lance/robot/src/bringup' with type 'ros.ament_python' and name 'bringup'
+[14.941s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/computer_vision) by extensions ['ignore', 'ignore_ament_install']
+[14.942s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/computer_vision) by extension 'ignore'
+[14.943s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/computer_vision) by extension 'ignore_ament_install'
+[14.944s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/computer_vision) by extensions ['colcon_pkg']
+[14.944s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/computer_vision) by extension 'colcon_pkg'
+[14.945s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/computer_vision) by extensions ['colcon_meta']
+[14.945s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/computer_vision) by extension 'colcon_meta'
+[14.946s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/computer_vision) by extensions ['ros']
+[14.946s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/computer_vision) by extension 'ros'
+[14.950s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lance/robot/src/computer_vision' with type 'ros.ament_python' and name 'computer_vision'
+[14.951s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/controllers) by extensions ['ignore', 'ignore_ament_install']
+[14.952s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/controllers) by extension 'ignore'
+[14.953s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/controllers) by extension 'ignore_ament_install'
+[14.954s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/controllers) by extensions ['colcon_pkg']
+[14.954s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/controllers) by extension 'colcon_pkg'
+[14.955s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/controllers) by extensions ['colcon_meta']
+[14.955s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/controllers) by extension 'colcon_meta'
+[14.956s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/controllers) by extensions ['ros']
+[14.957s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/controllers) by extension 'ros'
+[14.961s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lance/robot/src/controllers' with type 'ros.ament_python' and name 'controllers'
+[14.962s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/coord_controller) by extensions ['ignore', 'ignore_ament_install']
+[14.963s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/coord_controller) by extension 'ignore'
+[14.964s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/coord_controller) by extension 'ignore_ament_install'
+[14.964s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/coord_controller) by extensions ['colcon_pkg']
+[14.965s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/coord_controller) by extension 'colcon_pkg'
+[14.965s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/coord_controller) by extensions ['colcon_meta']
+[14.966s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/coord_controller) by extension 'colcon_meta'
+[14.967s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/coord_controller) by extensions ['ros']
+[14.967s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/coord_controller) by extension 'ros'
+[14.971s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lance/robot/src/coord_controller' with type 'ros.ament_python' and name 'coord_controller'
+[14.972s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/motion_planning) by extensions ['ignore', 'ignore_ament_install']
+[14.973s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/motion_planning) by extension 'ignore'
+[14.974s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/motion_planning) by extension 'ignore_ament_install'
+[14.975s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/motion_planning) by extensions ['colcon_pkg']
+[14.976s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/motion_planning) by extension 'colcon_pkg'
+[14.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/motion_planning) by extensions ['colcon_meta']
+[14.977s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/motion_planning) by extension 'colcon_meta'
+[14.978s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/motion_planning) by extensions ['ros']
+[14.979s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/motion_planning) by extension 'ros'
+[14.987s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lance/robot/src/motion_planning' with type 'ros.ament_python' and name 'motion_planning'
+[14.991s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/moveit_config) by extensions ['ignore', 'ignore_ament_install']
+[14.994s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/moveit_config) by extension 'ignore'
+[14.997s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/moveit_config) by extension 'ignore_ament_install'
+[15.000s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/moveit_config) by extensions ['colcon_pkg']
+[15.001s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/moveit_config) by extension 'colcon_pkg'
+[15.002s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/moveit_config) by extensions ['colcon_meta']
+[15.004s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/moveit_config) by extension 'colcon_meta'
+[15.006s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/moveit_config) by extensions ['ros']
+[15.007s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/moveit_config) by extension 'ros'
+[15.016s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lance/robot/src/moveit_config' with type 'ros.ament_cmake' and name 'moveit_config'
+[15.019s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_hardware_interface) by extensions ['ignore', 'ignore_ament_install']
+[15.022s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_hardware_interface) by extension 'ignore'
+[15.024s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_hardware_interface) by extension 'ignore_ament_install'
+[15.027s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_hardware_interface) by extensions ['colcon_pkg']
+[15.028s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_hardware_interface) by extension 'colcon_pkg'
+[15.030s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_hardware_interface) by extensions ['colcon_meta']
+[15.031s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_hardware_interface) by extension 'colcon_meta'
+[15.045s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_hardware_interface) by extensions ['ros']
+[15.048s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_hardware_interface) by extension 'ros'
+[15.056s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lance/robot/src/my_cobot_hardware_interface' with type 'ros.ament_cmake' and name 'my_cobot_hardware_interface'
+[15.058s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[15.058s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_interfaces) by extension 'ignore'
+[15.059s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_interfaces) by extension 'ignore_ament_install'
+[15.068s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_interfaces) by extensions ['colcon_pkg']
+[15.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_interfaces) by extension 'colcon_pkg'
+[15.069s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_interfaces) by extensions ['colcon_meta']
+[15.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_interfaces) by extension 'colcon_meta'
+[15.070s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_interfaces) by extensions ['ros']
+[15.071s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/my_cobot_interfaces) by extension 'ros'
+[15.074s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lance/robot/src/my_cobot_interfaces' with type 'ros.ament_cmake' and name 'my_cobot_interfaces'
+[15.075s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/robot_description) by extensions ['ignore', 'ignore_ament_install']
+[15.081s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/robot_description) by extension 'ignore'
+[15.090s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/robot_description) by extension 'ignore_ament_install'
+[15.092s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/robot_description) by extensions ['colcon_pkg']
+[15.113s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/robot_description) by extension 'colcon_pkg'
+[15.113s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/robot_description) by extensions ['colcon_meta']
+[15.114s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/robot_description) by extension 'colcon_meta'
+[15.115s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/robot_description) by extensions ['ros']
+[15.115s] Level 1:colcon.colcon_core.package_identification:_identify(/home/lance/robot/src/robot_description) by extension 'ros'
+[15.127s] DEBUG:colcon.colcon_core.package_identification:Package '/home/lance/robot/src/robot_description' with type 'ros.ament_python' and name 'robot_description'
+[15.127s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults

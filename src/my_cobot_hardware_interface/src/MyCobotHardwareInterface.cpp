@@ -44,8 +44,8 @@ namespace my_cobot_hardware_interface
     joint_state_variable_.resize(joint_names_.size(), 0.0);
     joint_command_variable_.resize(joint_names_.size(), 0.0);
     node_ = rclcpp::Node::make_shared("my_cobot_hardware_interface");
-    get_radians_client_ = node_->create_client<my_cobot_interfaces::srv::GetRadians>("my_cobot/get_radians");
-    set_radians_client_ = node_->create_client<my_cobot_interfaces::srv::SetRadians>("my_cobot/set_radians");
+    get_radians_client_ = node_->create_client<my_cobot_interfaces::srv::GetRadians>("mycobot/get_radians");
+    set_radians_client_ = node_->create_client<my_cobot_interfaces::srv::SetRadians>("mycobot/set_radians");
   }
 
   std::vector<hardware_interface::StateInterface> MyCobotHardwareInterface::export_state_interfaces()

@@ -1,1 +1,2 @@
-/home/lance/robot/build/my_cobot_interfaces/rosidl_cmake/srv/SetRadians_Request.msg
+string[] joint_names
+float64[] angles

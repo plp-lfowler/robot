@@ -1,1 +1,3 @@
-/home/lance/robot/build/my_cobot_interfaces/rosidl_cmake/srv/GetRadians_Response.msg
+
+float64[] angles
+string[] joint_names

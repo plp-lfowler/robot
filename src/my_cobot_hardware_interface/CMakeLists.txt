@@ -30,13 +30,16 @@ ament_target_dependencies(${PROJECT_NAME}
 )
 
 # Export the plugin as a class
-pluginlib_export_plugin_description_file(my_cobot_hardware_interface ${PROJECT_NAME}.xml)
+pluginlib_export_plugin_description_file(hardware_interface ${PROJECT_NAME}.xml)
 
 # Install
 install(
   DIRECTORY include/
   DESTINATION include
 )
+
+# Add the library to ament_export_libraries (optional)
+ament_export_libraries(${PROJECT_NAME})
 
 install(
   TARGETS ${PROJECT_NAME}
@@ -45,9 +48,6 @@ install(
   ARCHIVE DESTINATION lib
   RUNTIME DESTINATION bin
 )
-
-# Add the library to ament_export_libraries (optional)
-ament_export_libraries(${PROJECT_NAME})
 
 ament_package()
 

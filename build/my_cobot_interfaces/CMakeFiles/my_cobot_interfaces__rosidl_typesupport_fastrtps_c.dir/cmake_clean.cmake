@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/get_radians__type_support_c.cpp.o.d"
   "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/play_pause__type_support_c.cpp.o"
   "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/play_pause__type_support_c.cpp.o.d"
+  "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_coords__type_support_c.cpp.o"
+  "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_coords__type_support_c.cpp.o.d"
   "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_radians__type_support_c.cpp.o"
   "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_radians__type_support_c.cpp.o.d"
   "libmy_cobot_interfaces__rosidl_typesupport_fastrtps_c.pdb"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/get_radians__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/play_pause__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_coords__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_coords__type_support_c.cpp"
   "rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_fastrtps_c.h"
   "rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_radians__type_support_c.cpp"
 )

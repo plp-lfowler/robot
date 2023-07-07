@@ -3,6 +3,7 @@
   "non_idl_tuples": [
     "/home/lance/robot/src/my_cobot_interfaces:srv/GetRadians.srv",
     "/home/lance/robot/src/my_cobot_interfaces:srv/SetRadians.srv",
-    "/home/lance/robot/src/my_cobot_interfaces:srv/PlayPause.srv"
+    "/home/lance/robot/src/my_cobot_interfaces:srv/PlayPause.srv",
+    "/home/lance/robot/src/my_cobot_interfaces:srv/SetCoords.srv"
   ]
 }

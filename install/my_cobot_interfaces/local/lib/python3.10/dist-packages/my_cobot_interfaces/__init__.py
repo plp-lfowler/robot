@@ -1,1 +1,0 @@
-/home/lance/robot/build/my_cobot_interfaces/rosidl_generator_py/my_cobot_interfaces/__init__.py

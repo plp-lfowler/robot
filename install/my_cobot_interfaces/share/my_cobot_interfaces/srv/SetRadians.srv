@@ -1,1 +1,3 @@
-/home/lance/robot/src/my_cobot_interfaces/srv/SetRadians.srv
+string[] joint_names
+float64[] angles
+---

@@ -1,8 +1,0 @@
-In file included from [01m[K/home/lance/robot/src/my_cobot_hardware_interface/src/MyCobotHardwareInterface.cpp:1[m[K:
-[01m[K/home/lance/robot/src/my_cobot_hardware_interface/include/my_cobot_hardware_interface/MyCobotHardwareInterface.hpp:4:10:[m[K [01;31m[Kfatal error: [m[Kros2_control_demo_msgs/srv/get_radians.hpp: No such file or directory
-    4 | #include [01;31m[K<ros2_control_demo_msgs/srv/get_radians.hpp>[m[K
-      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
-compilation terminated.
-gmake[2]: *** [CMakeFiles/my_cobot_hardware_interface.dir/build.make:76: CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o] Error 1
-gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/my_cobot_hardware_interface.dir/all] Error 2
-gmake: *** [Makefile:146: all] Error 2

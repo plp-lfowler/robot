@@ -1,1 +1,1 @@
-/home/lance/robot/build/my_cobot_interfaces/rosidl_cmake/srv/PlayPause_Request.msg
+bool play

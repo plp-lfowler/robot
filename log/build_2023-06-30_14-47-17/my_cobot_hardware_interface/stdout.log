@@ -1,4 +1,0 @@
-[ 25%] [32mBuilding CXX object CMakeFiles/hardware.dir/src/MyCobotHardwareInterface.cpp.o[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/my_cobot_hardware_interface.dir/src/MyCobotHardwareInterface.cpp.o[0m
-[ 75%] [32m[1mLinking CXX shared library libmy_cobot_hardware_interface.so[0m
-[ 75%] Built target my_cobot_hardware_interface

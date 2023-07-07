@@ -80,6 +80,7 @@ rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_
 rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp: rosidl_adapter/my_cobot_interfaces/srv/GetRadians.idl
 rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp: rosidl_adapter/my_cobot_interfaces/srv/SetRadians.idl
 rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp: rosidl_adapter/my_cobot_interfaces/srv/PlayPause.idl
+rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp: rosidl_adapter/my_cobot_interfaces/srv/SetCoords.idl
 rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ type support for eProsima Fast-RTPS"
@@ -99,6 +100,12 @@ rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/play
 
 rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_fastrtps_cpp.hpp
+
+rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp
+
+rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/set_coords__rosidl_typesupport_fastrtps_cpp.hpp: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/set_coords__rosidl_typesupport_fastrtps_cpp.hpp
 
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp.o: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/flags.make
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp
@@ -142,11 +149,26 @@ CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_types
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/play_pause__type_support.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/play_pause__type_support.cpp -o CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/play_pause__type_support.cpp.s
 
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.o: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/flags.make
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.o: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.o: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.o -MF CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.o.d -o CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.o -c /home/lance/robot/build/my_cobot_interfaces/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp
+
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/lance/robot/build/my_cobot_interfaces/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp > CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.i
+
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp -o CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.s
+
 # Object files for target my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp
 my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp_OBJECTS = \
 "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp.o" \
 "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_radians__type_support.cpp.o" \
-"CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/play_pause__type_support.cpp.o"
+"CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/play_pause__type_support.cpp.o" \
+"CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.o"
 
 # External object files for target my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp
 my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
@@ -154,6 +176,7 @@ my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp_EXTERNAL_OBJECTS =
 libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp.o
 libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_radians__type_support.cpp.o
 libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/play_pause__type_support.cpp.o
+libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.o
 libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make
 libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
@@ -162,7 +185,7 @@ libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/
 libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: /opt/ros/humble/lib/librcutils.so
 libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so: CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -175,9 +198,11 @@ CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/clean:
 
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/play_pause__type_support.cpp
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_radians__type_support.cpp
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_fastrtps_cpp.hpp
+CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/set_coords__rosidl_typesupport_fastrtps_cpp.hpp
 CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend: rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_fastrtps_cpp.hpp
 	cd /home/lance/robot/build/my_cobot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lance/robot/src/my_cobot_interfaces /home/lance/robot/src/my_cobot_interfaces /home/lance/robot/build/my_cobot_interfaces /home/lance/robot/build/my_cobot_interfaces /home/lance/robot/build/my_cobot_interfaces/CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/depend

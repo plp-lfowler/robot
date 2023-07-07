@@ -12,5 +12,5 @@ def generate_launch_description():
 
     moveit_launch = IncludeLaunchDescription(PythonLaunchDescriptionSource(
         [os.path.join(get_package_share_directory("moveit_config"), "launch"),
-         "/move_group.launch.py"]))
+         "/moveit.launch.py"]))
     return LaunchDescription([control_launch, moveit_launch])

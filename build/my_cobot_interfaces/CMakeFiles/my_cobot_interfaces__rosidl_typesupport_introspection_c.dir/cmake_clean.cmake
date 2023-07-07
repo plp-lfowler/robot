@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c.o.d"
   "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o"
   "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o.d"
+  "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_coords__type_support.c.o"
+  "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_coords__type_support.c.o.d"
   "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c.o"
   "CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c.o.d"
   "libmy_cobot_interfaces__rosidl_typesupport_introspection_c.pdb"
@@ -11,6 +13,8 @@ file(REMOVE_RECURSE
   "rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c"
   "rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c"
+  "rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_coords__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_coords__type_support.c"
   "rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c"
 )

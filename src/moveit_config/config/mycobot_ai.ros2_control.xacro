@@ -4,10 +4,9 @@
         <xacro:property name="initial_positions" value="${load_yaml(initial_positions_file)['initial_positions']}"/>
         
 
-        <ros2_control name="${name}" type="system">
+        <ros2_control name="${name}" type="actuator">
             <hardware>
-                <!-- By default, set up controllers for simulation. This won't work on real hardware -->
-                <plugin>my_cobot_hardware_interface</plugin>
+                <!-- <plugin>my_cobot_hardware_interface/MyCobotHardwareInterface</plugin> -->
             </hardware>
             <joint name="joint2_to_joint1">
                 <command_interface name="position"/>

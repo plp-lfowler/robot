@@ -1,1 +1,16 @@
-/home/lance/robot/build/my_cobot_interfaces/ament_cmake_index/share/ament_index/resource_index/rosidl_interfaces/my_cobot_interfaces
+srv/GetRadians.idl
+srv/GetRadians.srv
+srv/GetRadians_Request.msg
+srv/GetRadians_Response.msg
+srv/PlayPause.idl
+srv/PlayPause.srv
+srv/PlayPause_Request.msg
+srv/PlayPause_Response.msg
+srv/SetCoords.idl
+srv/SetCoords.srv
+srv/SetCoords_Request.msg
+srv/SetCoords_Response.msg
+srv/SetRadians.idl
+srv/SetRadians.srv
+srv/SetRadians_Request.msg
+srv/SetRadians_Response.msg

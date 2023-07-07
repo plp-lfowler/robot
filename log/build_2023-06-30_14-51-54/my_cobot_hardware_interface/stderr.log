@@ -1,9 +1,0 @@
-[31mCMake Error at CMakeLists.txt:30 (add_executable):
-  add_executable cannot create target "my_cobot_hardware_interface" because
-  another target with the same name already exists.  The existing target is a
-  shared library created in source directory
-  "/home/lance/robot/src/my_cobot_hardware_interface".  See documentation for
-  policy CMP0002 for more details.
-
-[0m
-gmake: *** [Makefile:284: cmake_check_build_system] Error 1

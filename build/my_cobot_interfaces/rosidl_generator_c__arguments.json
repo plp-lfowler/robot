@@ -5,7 +5,8 @@
   "idl_tuples": [
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/GetRadians.idl",
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/SetRadians.idl",
-    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/PlayPause.idl"
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/PlayPause.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/SetCoords.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
@@ -28,6 +29,7 @@
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/GetRadians.idl",
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/SetRadians.idl",
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/PlayPause.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/SetCoords.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
   ]
