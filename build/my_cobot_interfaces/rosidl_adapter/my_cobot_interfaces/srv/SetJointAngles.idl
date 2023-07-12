@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_cobot_interfaces/srv/SetJointAngles.srv
+// generated code does not contain a copyright notice
+
+
+module my_cobot_interfaces {
+  module srv {
+    struct SetJointAngles_Request {
+      double j1;
+
+      double j2;
+
+      double j3;
+
+      double j4;
+
+      double j5;
+
+      double j6;
+    };
+    struct SetJointAngles_Response {
+      boolean success;
+    };
+  };
+};

@@ -19,10 +19,10 @@ my_cobot_interfaces__srv__SetCoords_Request__init(my_cobot_interfaces__srv__SetC
   // x
   // y
   // z
-  // rx
-  // ry
-  // rz
-  // cartesian
+  // w
+  // i
+  // j
+  // k
   return true;
 }
 
@@ -35,10 +35,10 @@ my_cobot_interfaces__srv__SetCoords_Request__fini(my_cobot_interfaces__srv__SetC
   // x
   // y
   // z
-  // rx
-  // ry
-  // rz
-  // cartesian
+  // w
+  // i
+  // j
+  // k
 }
 
 bool
@@ -59,20 +59,20 @@ my_cobot_interfaces__srv__SetCoords_Request__are_equal(const my_cobot_interfaces
   if (lhs->z != rhs->z) {
     return false;
   }
-  // rx
-  if (lhs->rx != rhs->rx) {
+  // w
+  if (lhs->w != rhs->w) {
     return false;
   }
-  // ry
-  if (lhs->ry != rhs->ry) {
+  // i
+  if (lhs->i != rhs->i) {
     return false;
   }
-  // rz
-  if (lhs->rz != rhs->rz) {
+  // j
+  if (lhs->j != rhs->j) {
     return false;
   }
-  // cartesian
-  if (lhs->cartesian != rhs->cartesian) {
+  // k
+  if (lhs->k != rhs->k) {
     return false;
   }
   return true;
@@ -92,14 +92,14 @@ my_cobot_interfaces__srv__SetCoords_Request__copy(
   output->y = input->y;
   // z
   output->z = input->z;
-  // rx
-  output->rx = input->rx;
-  // ry
-  output->ry = input->ry;
-  // rz
-  output->rz = input->rz;
-  // cartesian
-  output->cartesian = input->cartesian;
+  // w
+  output->w = input->w;
+  // i
+  output->i = input->i;
+  // j
+  output->j = input->j;
+  // k
+  output->k = input->k;
   return true;
 }
 

@@ -73,11 +73,25 @@ my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/
 my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_radians.py
 my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_play_pause.py
 my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_coords.py
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_get_blocks.py
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_joint_angles.py
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_pump_off.py
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_pump_on.py
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/msg/_block.py
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/action/_set_angles.py
 my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/__init__.py
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/msg/__init__.py
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/action/__init__.py
 my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_get_radians_s.c
 my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_radians_s.c
 my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_play_pause_s.c
 my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_coords_s.c
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_get_blocks_s.c
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_joint_angles_s.c
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_pump_off_s.c
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_pump_on_s.c
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/msg/_block_s.c
+my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/action/_set_angles_s.c
 
 rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -96,8 +110,19 @@ rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesup
 rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_cobot_interfaces/srv/SetRadians.idl
 rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_cobot_interfaces/srv/PlayPause.idl
 rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_cobot_interfaces/srv/SetCoords.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_cobot_interfaces/srv/GetBlocks.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_cobot_interfaces/srv/SetJointAngles.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_cobot_interfaces/srv/PumpOff.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_cobot_interfaces/srv/PumpOn.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_cobot_interfaces/msg/Block.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/my_cobot_interfaces/action/SetAngles.idl
 rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
+rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
 	cd /home/lance/robot/build/my_cobot_interfaces/my_cobot_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
@@ -119,8 +144,32 @@ rosidl_generator_py/my_cobot_interfaces/srv/_play_pause.py: rosidl_generator_py/
 rosidl_generator_py/my_cobot_interfaces/srv/_set_coords.py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_set_coords.py
 
+rosidl_generator_py/my_cobot_interfaces/srv/_get_blocks.py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_get_blocks.py
+
+rosidl_generator_py/my_cobot_interfaces/srv/_set_joint_angles.py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_set_joint_angles.py
+
+rosidl_generator_py/my_cobot_interfaces/srv/_pump_off.py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_pump_off.py
+
+rosidl_generator_py/my_cobot_interfaces/srv/_pump_on.py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_pump_on.py
+
+rosidl_generator_py/my_cobot_interfaces/msg/_block.py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/msg/_block.py
+
+rosidl_generator_py/my_cobot_interfaces/action/_set_angles.py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/action/_set_angles.py
+
 rosidl_generator_py/my_cobot_interfaces/srv/__init__.py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/__init__.py
+
+rosidl_generator_py/my_cobot_interfaces/msg/__init__.py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/msg/__init__.py
+
+rosidl_generator_py/my_cobot_interfaces/action/__init__.py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/action/__init__.py
 
 rosidl_generator_py/my_cobot_interfaces/srv/_get_radians_s.c: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_get_radians_s.c
@@ -134,17 +183,49 @@ rosidl_generator_py/my_cobot_interfaces/srv/_play_pause_s.c: rosidl_generator_py
 rosidl_generator_py/my_cobot_interfaces/srv/_set_coords_s.c: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_set_coords_s.c
 
+rosidl_generator_py/my_cobot_interfaces/srv/_get_blocks_s.c: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_get_blocks_s.c
+
+rosidl_generator_py/my_cobot_interfaces/srv/_set_joint_angles_s.c: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_set_joint_angles_s.c
+
+rosidl_generator_py/my_cobot_interfaces/srv/_pump_off_s.c: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_pump_off_s.c
+
+rosidl_generator_py/my_cobot_interfaces/srv/_pump_on_s.c: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/srv/_pump_on_s.c
+
+rosidl_generator_py/my_cobot_interfaces/msg/_block_s.c: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/msg/_block_s.c
+
+rosidl_generator_py/my_cobot_interfaces/action/_set_angles_s.c: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/my_cobot_interfaces/action/_set_angles_s.c
+
 my_cobot_interfaces__py: my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_c.c
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/action/__init__.py
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/action/_set_angles.py
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/action/_set_angles_s.c
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/msg/__init__.py
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/msg/_block.py
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/msg/_block_s.c
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/__init__.py
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_get_blocks.py
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_get_blocks_s.c
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_get_radians.py
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_get_radians_s.c
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_play_pause.py
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_play_pause_s.c
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_pump_off.py
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_pump_off_s.c
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_pump_on.py
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_pump_on_s.c
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_coords.py
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_coords_s.c
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_joint_angles.py
+my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_joint_angles_s.c
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_radians.py
 my_cobot_interfaces__py: rosidl_generator_py/my_cobot_interfaces/srv/_set_radians_s.c
 my_cobot_interfaces__py: my_cobot_interfaces__py/CMakeFiles/my_cobot_interfaces__py.dir/build.make

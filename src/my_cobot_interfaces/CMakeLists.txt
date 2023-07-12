@@ -17,6 +17,12 @@ rosidl_generate_interfaces(my_cobot_interfaces
   "srv/SetRadians.srv"
   "srv/PlayPause.srv"
   "srv/SetCoords.srv"
+  "srv/GetBlocks.srv"
+  "srv/SetJointAngles.srv"
+  "srv/PumpOff.srv"
+  "srv/PumpOn.srv"
+  "msg/Block.msg"
+  "action/SetAngles.action"
   DEPENDENCIES builtin_interfaces
 )
 

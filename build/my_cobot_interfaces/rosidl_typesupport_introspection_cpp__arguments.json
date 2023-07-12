@@ -6,11 +6,22 @@
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/GetRadians.idl",
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/SetRadians.idl",
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/PlayPause.idl",
-    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/SetCoords.idl"
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/SetCoords.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/GetBlocks.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/SetJointAngles.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/PumpOff.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:srv/PumpOn.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:msg/Block.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces:action/SetAngles.idl"
   ],
   "ros_interface_dependencies": [
     "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
-    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+    "builtin_interfaces:/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",
+    "action_msgs:/opt/ros/humble/share/action_msgs/srv/CancelGoal.idl",
+    "unique_identifier_msgs:/opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
@@ -25,7 +36,18 @@
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/SetRadians.idl",
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/PlayPause.idl",
     "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/SetCoords.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/GetBlocks.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/SetJointAngles.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/PumpOff.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/srv/PumpOn.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/msg/Block.idl",
+    "/home/lance/robot/build/my_cobot_interfaces/rosidl_adapter/my_cobot_interfaces/action/SetAngles.idl",
     "/opt/ros/humble/share/builtin_interfaces/msg/Duration.idl",
-    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl"
+    "/opt/ros/humble/share/builtin_interfaces/msg/Time.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalInfo.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalStatus.idl",
+    "/opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl",
+    "/opt/ros/humble/share/action_msgs/srv/CancelGoal.idl",
+    "/opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl"
   ]
 }

@@ -1,0 +1,1201 @@
+[0.000000] (-) TimerEvent: {}
+[0.001655] (-) JobUnselected: {'identifier': 'block_mover'}
+[0.002231] (-) JobUnselected: {'identifier': 'bringup'}
+[0.002318] (-) JobUnselected: {'identifier': 'computer_vision'}
+[0.002396] (-) JobUnselected: {'identifier': 'controllers'}
+[0.002494] (-) JobUnselected: {'identifier': 'coord_controller'}
+[0.002572] (-) JobUnselected: {'identifier': 'motion_planning'}
+[0.002648] (-) JobUnselected: {'identifier': 'moveit_config'}
+[0.002722] (-) JobUnselected: {'identifier': 'my_cobot_hardware_interface'}
+[0.002796] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.002878] (my_cobot_interfaces) JobQueued: {'identifier': 'my_cobot_interfaces', 'dependencies': OrderedDict()}
+[0.002964] (my_cobot_interfaces) JobStarted: {'identifier': 'my_cobot_interfaces'}
+[0.092389] (my_cobot_interfaces) JobProgress: {'identifier': 'my_cobot_interfaces', 'progress': 'cmake'}
+[0.095859] (my_cobot_interfaces) JobProgress: {'identifier': 'my_cobot_interfaces', 'progress': 'build'}
+[0.099442] (my_cobot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/lance/robot/build/my_cobot_interfaces', '--', '-j4', '-l4'], 'cwd': '/home/lance/robot/build/my_cobot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_hardware_interface/lib:/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance/robot/src/my_cobot_interfaces/action'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1280'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1244,unix/lance-desktop:/tmp/.ICE-unix/1244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/54a2444b_3392_4694_b586_a52774d5916a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UPER71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/coord_controller:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/my_cobot_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/build/coord_controller:/home/lance/robot/install/coord_controller/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/coord_controller:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[0.103541] (-) TimerEvent: {}
+[0.204756] (-) TimerEvent: {}
+[0.306495] (-) TimerEvent: {}
+[0.406688] (my_cobot_interfaces) StdoutLine: {'line': b'[  0%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[0.407761] (-) TimerEvent: {}
+[0.417677] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_generator_c\x1b[0m\n'}
+[0.495804] (my_cobot_interfaces) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[0.501027] (my_cobot_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_copy_my_cobot_interfaces\n'}
+[0.508112] (-) TimerEvent: {}
+[0.609029] (-) TimerEvent: {}
+[0.710030] (-) TimerEvent: {}
+[0.811324] (-) TimerEvent: {}
+[0.914787] (-) TimerEvent: {}
+[1.018746] (-) TimerEvent: {}
+[1.121358] (-) TimerEvent: {}
+[1.225328] (-) TimerEvent: {}
+[1.326327] (-) TimerEvent: {}
+[1.427200] (-) TimerEvent: {}
+[1.528043] (-) TimerEvent: {}
+[1.628897] (-) TimerEvent: {}
+[1.729683] (-) TimerEvent: {}
+[1.830639] (-) TimerEvent: {}
+[1.931515] (-) TimerEvent: {}
+[2.032399] (-) TimerEvent: {}
+[2.135641] (-) TimerEvent: {}
+[2.236837] (-) TimerEvent: {}
+[2.338054] (-) TimerEvent: {}
+[2.439276] (-) TimerEvent: {}
+[2.540718] (-) TimerEvent: {}
+[2.642717] (-) TimerEvent: {}
+[2.702045] (my_cobot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.705539] (my_cobot_interfaces) StdoutLine: {'line': b'writing my_cobot_interfaces.egg-info/PKG-INFO\n'}
+[2.707456] (my_cobot_interfaces) StdoutLine: {'line': b'writing dependency_links to my_cobot_interfaces.egg-info/dependency_links.txt\n'}
+[2.712478] (my_cobot_interfaces) StdoutLine: {'line': b'writing top-level names to my_cobot_interfaces.egg-info/top_level.txt\n'}
+[2.727084] (my_cobot_interfaces) StdoutLine: {'line': b"reading manifest file 'my_cobot_interfaces.egg-info/SOURCES.txt'\n"}
+[2.730861] (my_cobot_interfaces) StdoutLine: {'line': b"writing manifest file 'my_cobot_interfaces.egg-info/SOURCES.txt'\n"}
+[2.743217] (-) TimerEvent: {}
+[2.844509] (-) TimerEvent: {}
+[2.928618] (my_cobot_interfaces) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_build_my_cobot_interfaces_egg\n'}
+[2.944656] (-) TimerEvent: {}
+[3.045373] (-) TimerEvent: {}
+[3.146162] (-) TimerEvent: {}
+[3.246890] (-) TimerEvent: {}
+[3.347730] (-) TimerEvent: {}
+[3.448771] (-) TimerEvent: {}
+[3.549707] (-) TimerEvent: {}
+[3.650539] (-) TimerEvent: {}
+[3.751265] (-) TimerEvent: {}
+[3.852001] (-) TimerEvent: {}
+[3.952777] (-) TimerEvent: {}
+[4.053481] (-) TimerEvent: {}
+[4.154208] (-) TimerEvent: {}
+[4.254959] (-) TimerEvent: {}
+[4.355744] (-) TimerEvent: {}
+[4.456575] (-) TimerEvent: {}
+[4.557449] (-) TimerEvent: {}
+[4.658139] (-) TimerEvent: {}
+[4.758923] (-) TimerEvent: {}
+[4.859725] (-) TimerEvent: {}
+[4.960537] (-) TimerEvent: {}
+[5.061334] (-) TimerEvent: {}
+[5.162033] (-) TimerEvent: {}
+[5.262786] (-) TimerEvent: {}
+[5.363586] (-) TimerEvent: {}
+[5.464477] (-) TimerEvent: {}
+[5.565708] (-) TimerEvent: {}
+[5.666665] (-) TimerEvent: {}
+[5.767699] (-) TimerEvent: {}
+[5.874211] (-) TimerEvent: {}
+[5.975653] (-) TimerEvent: {}
+[6.077036] (-) TimerEvent: {}
+[6.178769] (-) TimerEvent: {}
+[6.280136] (-) TimerEvent: {}
+[6.381171] (my_cobot_interfaces) StdoutLine: {'line': b'[  1%] Built target my_cobot_interfaces__cpp\n'}
+[6.382028] (-) TimerEvent: {}
+[6.450471] (my_cobot_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.482248] (-) TimerEvent: {}
+[6.497947] (my_cobot_interfaces) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c.o\x1b[0m\n'}
+[6.533303] (my_cobot_interfaces) StdoutLine: {'line': b'[  4%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c.o\x1b[0m\n'}
+[6.547219] (my_cobot_interfaces) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c.o\x1b[0m\n'}
+[6.582448] (-) TimerEvent: {}
+[6.683243] (-) TimerEvent: {}
+[6.783933] (-) TimerEvent: {}
+[6.886745] (-) TimerEvent: {}
+[6.990906] (-) TimerEvent: {}
+[7.092889] (-) TimerEvent: {}
+[7.194814] (-) TimerEvent: {}
+[7.296019] (-) TimerEvent: {}
+[7.396928] (-) TimerEvent: {}
+[7.498024] (-) TimerEvent: {}
+[7.598826] (-) TimerEvent: {}
+[7.629664] (my_cobot_interfaces) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c.o\x1b[0m\n'}
+[7.654968] (my_cobot_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.o\x1b[0m\n'}
+[7.656128] (my_cobot_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[7.699090] (-) TimerEvent: {}
+[7.800098] (-) TimerEvent: {}
+[7.901318] (-) TimerEvent: {}
+[8.002517] (-) TimerEvent: {}
+[8.060536] (my_cobot_interfaces) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.o\x1b[0m\n'}
+[8.102864] (-) TimerEvent: {}
+[8.109234] (my_cobot_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.o\x1b[0m\n'}
+[8.203126] (-) TimerEvent: {}
+[8.304030] (-) TimerEvent: {}
+[8.404995] (-) TimerEvent: {}
+[8.469401] (my_cobot_interfaces) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.o\x1b[0m\n'}
+[8.503570] (my_cobot_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.o\x1b[0m\n'}
+[8.505215] (-) TimerEvent: {}
+[8.606313] (-) TimerEvent: {}
+[8.707377] (-) TimerEvent: {}
+[8.808510] (-) TimerEvent: {}
+[8.869649] (my_cobot_interfaces) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.o\x1b[0m\n'}
+[8.908735] (-) TimerEvent: {}
+[8.914324] (my_cobot_interfaces) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[9.008940] (-) TimerEvent: {}
+[9.109760] (-) TimerEvent: {}
+[9.210698] (-) TimerEvent: {}
+[9.312232] (-) TimerEvent: {}
+[9.413484] (-) TimerEvent: {}
+[9.514962] (-) TimerEvent: {}
+[9.616323] (-) TimerEvent: {}
+[9.717643] (-) TimerEvent: {}
+[9.819264] (-) TimerEvent: {}
+[9.830489] (my_cobot_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[32m\x1b[1mLinking C shared library libmy_cobot_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[9.919540] (-) TimerEvent: {}
+[10.021533] (-) TimerEvent: {}
+[10.122636] (-) TimerEvent: {}
+[10.224469] (my_cobot_interfaces) StdoutLine: {'line': b'[ 15%] Built target my_cobot_interfaces__rosidl_generator_c\n'}
+[10.225659] (-) TimerEvent: {}
+[10.297756] (my_cobot_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.325900] (-) TimerEvent: {}
+[10.427418] (-) TimerEvent: {}
+[10.528779] (-) TimerEvent: {}
+[10.591099] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[10.629058] (-) TimerEvent: {}
+[10.730424] (-) TimerEvent: {}
+[10.783005] (my_cobot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/get_radians__type_support.cpp.o\x1b[0m\n'}
+[10.830602] (-) TimerEvent: {}
+[10.931409] (-) TimerEvent: {}
+[11.032556] (-) TimerEvent: {}
+[11.133583] (-) TimerEvent: {}
+[11.235098] (-) TimerEvent: {}
+[11.335981] (-) TimerEvent: {}
+[11.436786] (-) TimerEvent: {}
+[11.537664] (-) TimerEvent: {}
+[11.638661] (-) TimerEvent: {}
+[11.740432] (-) TimerEvent: {}
+[11.841920] (-) TimerEvent: {}
+[11.943127] (-) TimerEvent: {}
+[12.044105] (-) TimerEvent: {}
+[12.145239] (-) TimerEvent: {}
+[12.246113] (-) TimerEvent: {}
+[12.347105] (-) TimerEvent: {}
+[12.448890] (-) TimerEvent: {}
+[12.551423] (-) TimerEvent: {}
+[12.652807] (-) TimerEvent: {}
+[12.754940] (-) TimerEvent: {}
+[12.856592] (-) TimerEvent: {}
+[12.958512] (-) TimerEvent: {}
+[13.059606] (-) TimerEvent: {}
+[13.160652] (-) TimerEvent: {}
+[13.261607] (-) TimerEvent: {}
+[13.362674] (-) TimerEvent: {}
+[13.463808] (-) TimerEvent: {}
+[13.565532] (-) TimerEvent: {}
+[13.666896] (-) TimerEvent: {}
+[13.768552] (-) TimerEvent: {}
+[13.808774] (my_cobot_interfaces) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/set_radians__type_support.cpp.o\x1b[0m\n'}
+[13.868826] (-) TimerEvent: {}
+[13.970192] (-) TimerEvent: {}
+[14.025209] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[14.070398] (-) TimerEvent: {}
+[14.171409] (-) TimerEvent: {}
+[14.191518] (my_cobot_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_radians__type_support.cpp.o\x1b[0m\n'}
+[14.271657] (-) TimerEvent: {}
+[14.372704] (-) TimerEvent: {}
+[14.473583] (-) TimerEvent: {}
+[14.548733] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[14.573853] (-) TimerEvent: {}
+[14.675319] (-) TimerEvent: {}
+[14.686571] (my_cobot_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/get_radians__type_support.cpp.o\x1b[0m\n'}
+[14.775517] (-) TimerEvent: {}
+[14.876942] (-) TimerEvent: {}
+[14.978091] (-) TimerEvent: {}
+[15.079304] (-) TimerEvent: {}
+[15.180471] (-) TimerEvent: {}
+[15.281633] (-) TimerEvent: {}
+[15.383065] (-) TimerEvent: {}
+[15.485180] (-) TimerEvent: {}
+[15.586398] (-) TimerEvent: {}
+[15.687753] (-) TimerEvent: {}
+[15.789095] (-) TimerEvent: {}
+[15.890479] (-) TimerEvent: {}
+[15.976528] (my_cobot_interfaces) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/play_pause__type_support.cpp.o\x1b[0m\n'}
+[15.990943] (-) TimerEvent: {}
+[16.092178] (-) TimerEvent: {}
+[16.193968] (-) TimerEvent: {}
+[16.295567] (-) TimerEvent: {}
+[16.397270] (-) TimerEvent: {}
+[16.499037] (-) TimerEvent: {}
+[16.500606] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[16.599302] (-) TimerEvent: {}
+[16.638080] (my_cobot_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/get_radians__type_support_c.cpp.o\x1b[0m\n'}
+[16.699798] (-) TimerEvent: {}
+[16.801485] (-) TimerEvent: {}
+[16.902729] (-) TimerEvent: {}
+[17.003915] (-) TimerEvent: {}
+[17.106037] (-) TimerEvent: {}
+[17.207414] (-) TimerEvent: {}
+[17.308693] (-) TimerEvent: {}
+[17.409804] (-) TimerEvent: {}
+[17.510973] (-) TimerEvent: {}
+[17.612736] (-) TimerEvent: {}
+[17.714831] (-) TimerEvent: {}
+[17.816363] (-) TimerEvent: {}
+[17.918561] (-) TimerEvent: {}
+[18.020673] (-) TimerEvent: {}
+[18.122214] (-) TimerEvent: {}
+[18.139727] (my_cobot_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/set_coords__type_support.cpp.o\x1b[0m\n'}
+[18.222445] (-) TimerEvent: {}
+[18.265904] (my_cobot_interfaces) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/set_radians__type_support.cpp.o\x1b[0m\n'}
+[18.322771] (-) TimerEvent: {}
+[18.424041] (-) TimerEvent: {}
+[18.525032] (-) TimerEvent: {}
+[18.538771] (my_cobot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_radians__type_support.cpp.o\x1b[0m\n'}
+[18.625274] (-) TimerEvent: {}
+[18.726850] (-) TimerEvent: {}
+[18.828069] (-) TimerEvent: {}
+[18.929268] (-) TimerEvent: {}
+[19.030425] (-) TimerEvent: {}
+[19.131665] (-) TimerEvent: {}
+[19.232872] (-) TimerEvent: {}
+[19.334407] (-) TimerEvent: {}
+[19.435624] (-) TimerEvent: {}
+[19.536888] (-) TimerEvent: {}
+[19.558986] (my_cobot_interfaces) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_radians__type_support_c.cpp.o\x1b[0m\n'}
+[19.637232] (-) TimerEvent: {}
+[19.738654] (-) TimerEvent: {}
+[19.839673] (-) TimerEvent: {}
+[19.940803] (-) TimerEvent: {}
+[20.042078] (-) TimerEvent: {}
+[20.143515] (-) TimerEvent: {}
+[20.229104] (my_cobot_interfaces) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/get_blocks__type_support.cpp.o\x1b[0m\n'}
+[20.243810] (-) TimerEvent: {}
+[20.345079] (-) TimerEvent: {}
+[20.446445] (-) TimerEvent: {}
+[20.547912] (-) TimerEvent: {}
+[20.649416] (-) TimerEvent: {}
+[20.750987] (-) TimerEvent: {}
+[20.852362] (-) TimerEvent: {}
+[20.953818] (-) TimerEvent: {}
+[21.055106] (-) TimerEvent: {}
+[21.156631] (-) TimerEvent: {}
+[21.258101] (-) TimerEvent: {}
+[21.359408] (-) TimerEvent: {}
+[21.460628] (-) TimerEvent: {}
+[21.562084] (-) TimerEvent: {}
+[21.663532] (-) TimerEvent: {}
+[21.765545] (-) TimerEvent: {}
+[21.867284] (-) TimerEvent: {}
+[21.969294] (-) TimerEvent: {}
+[21.981142] (my_cobot_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/play_pause__type_support.cpp.o\x1b[0m\n'}
+[22.069581] (-) TimerEvent: {}
+[22.170831] (-) TimerEvent: {}
+[22.272063] (-) TimerEvent: {}
+[22.373069] (-) TimerEvent: {}
+[22.454271] (my_cobot_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/set_joint_angles__type_support.cpp.o\x1b[0m\n'}
+[22.473297] (-) TimerEvent: {}
+[22.497725] (my_cobot_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/play_pause__type_support.cpp.o\x1b[0m\n'}
+[22.573587] (-) TimerEvent: {}
+[22.642948] (my_cobot_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/play_pause__type_support_c.cpp.o\x1b[0m\n'}
+[22.673861] (-) TimerEvent: {}
+[22.774833] (-) TimerEvent: {}
+[22.875711] (-) TimerEvent: {}
+[22.976660] (-) TimerEvent: {}
+[23.087951] (-) TimerEvent: {}
+[23.189454] (-) TimerEvent: {}
+[23.290507] (-) TimerEvent: {}
+[23.391590] (-) TimerEvent: {}
+[23.492870] (-) TimerEvent: {}
+[23.594197] (-) TimerEvent: {}
+[23.695433] (-) TimerEvent: {}
+[23.796741] (-) TimerEvent: {}
+[23.898095] (-) TimerEvent: {}
+[23.999374] (-) TimerEvent: {}
+[24.100792] (-) TimerEvent: {}
+[24.201867] (-) TimerEvent: {}
+[24.303101] (-) TimerEvent: {}
+[24.404315] (-) TimerEvent: {}
+[24.506242] (-) TimerEvent: {}
+[24.608409] (-) TimerEvent: {}
+[24.651166] (my_cobot_interfaces) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/pump_off__type_support.cpp.o\x1b[0m\n'}
+[24.708872] (-) TimerEvent: {}
+[24.810295] (-) TimerEvent: {}
+[24.831830] (my_cobot_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/set_coords__type_support.cpp.o\x1b[0m\n'}
+[24.910535] (-) TimerEvent: {}
+[25.011566] (-) TimerEvent: {}
+[25.112811] (-) TimerEvent: {}
+[25.213950] (-) TimerEvent: {}
+[25.315219] (-) TimerEvent: {}
+[25.416550] (-) TimerEvent: {}
+[25.440912] (my_cobot_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_coords__type_support_c.cpp.o\x1b[0m\n'}
+[25.516804] (-) TimerEvent: {}
+[25.617860] (-) TimerEvent: {}
+[25.718859] (-) TimerEvent: {}
+[25.802703] (my_cobot_interfaces) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_coords__type_support.cpp.o\x1b[0m\n'}
+[25.819080] (-) TimerEvent: {}
+[25.920191] (-) TimerEvent: {}
+[26.021253] (-) TimerEvent: {}
+[26.122396] (-) TimerEvent: {}
+[26.223783] (-) TimerEvent: {}
+[26.324881] (-) TimerEvent: {}
+[26.426313] (-) TimerEvent: {}
+[26.527902] (-) TimerEvent: {}
+[26.629484] (-) TimerEvent: {}
+[26.715084] (my_cobot_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/srv/pump_on__type_support.cpp.o\x1b[0m\n'}
+[26.729826] (-) TimerEvent: {}
+[26.831260] (-) TimerEvent: {}
+[26.932762] (-) TimerEvent: {}
+[27.034553] (-) TimerEvent: {}
+[27.136133] (-) TimerEvent: {}
+[27.237640] (-) TimerEvent: {}
+[27.339252] (-) TimerEvent: {}
+[27.440416] (-) TimerEvent: {}
+[27.541721] (-) TimerEvent: {}
+[27.642932] (-) TimerEvent: {}
+[27.744418] (-) TimerEvent: {}
+[27.845857] (-) TimerEvent: {}
+[27.915954] (my_cobot_interfaces) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/get_blocks__type_support.cpp.o\x1b[0m\n'}
+[27.946141] (-) TimerEvent: {}
+[28.048776] (-) TimerEvent: {}
+[28.149918] (-) TimerEvent: {}
+[28.251151] (-) TimerEvent: {}
+[28.257345] (my_cobot_interfaces) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/get_blocks__type_support_c.cpp.o\x1b[0m\n'}
+[28.351491] (-) TimerEvent: {}
+[28.453322] (-) TimerEvent: {}
+[28.554724] (-) TimerEvent: {}
+[28.656354] (-) TimerEvent: {}
+[28.757733] (-) TimerEvent: {}
+[28.859350] (-) TimerEvent: {}
+[28.884867] (my_cobot_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/msg/block__type_support.cpp.o\x1b[0m\n'}
+[28.959632] (-) TimerEvent: {}
+[29.039808] (my_cobot_interfaces) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/get_blocks__type_support.cpp.o\x1b[0m\n'}
+[29.059894] (-) TimerEvent: {}
+[29.162022] (-) TimerEvent: {}
+[29.263892] (-) TimerEvent: {}
+[29.365741] (-) TimerEvent: {}
+[29.467307] (-) TimerEvent: {}
+[29.568427] (-) TimerEvent: {}
+[29.669766] (-) TimerEvent: {}
+[29.771176] (-) TimerEvent: {}
+[29.872463] (-) TimerEvent: {}
+[29.973627] (-) TimerEvent: {}
+[30.075521] (-) TimerEvent: {}
+[30.177269] (-) TimerEvent: {}
+[30.278668] (-) TimerEvent: {}
+[30.380373] (-) TimerEvent: {}
+[30.481971] (-) TimerEvent: {}
+[30.584078] (-) TimerEvent: {}
+[30.685524] (-) TimerEvent: {}
+[30.786697] (-) TimerEvent: {}
+[30.889533] (-) TimerEvent: {}
+[30.991191] (-) TimerEvent: {}
+[31.043599] (my_cobot_interfaces) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/set_joint_angles__type_support_c.cpp.o\x1b[0m\n'}
+[31.091471] (-) TimerEvent: {}
+[31.151838] (my_cobot_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_cobot_interfaces/action/set_angles__type_support.cpp.o\x1b[0m\n'}
+[31.191752] (-) TimerEvent: {}
+[31.250397] (my_cobot_interfaces) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/set_joint_angles__type_support.cpp.o\x1b[0m\n'}
+[31.291999] (-) TimerEvent: {}
+[31.393298] (-) TimerEvent: {}
+[31.494392] (-) TimerEvent: {}
+[31.595395] (-) TimerEvent: {}
+[31.696501] (-) TimerEvent: {}
+[31.798016] (-) TimerEvent: {}
+[31.899821] (-) TimerEvent: {}
+[32.001650] (-) TimerEvent: {}
+[32.103414] (-) TimerEvent: {}
+[32.205459] (-) TimerEvent: {}
+[32.306916] (-) TimerEvent: {}
+[32.408563] (-) TimerEvent: {}
+[32.510266] (-) TimerEvent: {}
+[32.611666] (-) TimerEvent: {}
+[32.713218] (-) TimerEvent: {}
+[32.793678] (my_cobot_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/set_joint_angles__type_support.cpp.o\x1b[0m\n'}
+[32.813450] (-) TimerEvent: {}
+[32.914861] (-) TimerEvent: {}
+[33.016017] (-) TimerEvent: {}
+[33.117140] (-) TimerEvent: {}
+[33.219228] (-) TimerEvent: {}
+[33.320546] (-) TimerEvent: {}
+[33.421821] (-) TimerEvent: {}
+[33.522918] (-) TimerEvent: {}
+[33.624350] (-) TimerEvent: {}
+[33.730741] (-) TimerEvent: {}
+[33.756617] (my_cobot_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/pump_off__type_support_c.cpp.o\x1b[0m\n'}
+[33.831093] (-) TimerEvent: {}
+[33.932424] (-) TimerEvent: {}
+[34.033922] (-) TimerEvent: {}
+[34.135215] (-) TimerEvent: {}
+[34.194842] (my_cobot_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/pump_off__type_support.cpp.o\x1b[0m\n'}
+[34.235517] (-) TimerEvent: {}
+[34.336763] (-) TimerEvent: {}
+[34.437812] (-) TimerEvent: {}
+[34.539136] (-) TimerEvent: {}
+[34.640748] (-) TimerEvent: {}
+[34.751529] (-) TimerEvent: {}
+[34.852890] (-) TimerEvent: {}
+[34.880270] (my_cobot_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[34.953166] (-) TimerEvent: {}
+[35.054452] (-) TimerEvent: {}
+[35.155719] (-) TimerEvent: {}
+[35.228840] (my_cobot_interfaces) StdoutLine: {'line': b'[ 46%] Built target my_cobot_interfaces__rosidl_typesupport_cpp\n'}
+[35.255976] (-) TimerEvent: {}
+[35.303020] (my_cobot_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[35.356360] (-) TimerEvent: {}
+[35.458627] (-) TimerEvent: {}
+[35.560654] (-) TimerEvent: {}
+[35.662312] (-) TimerEvent: {}
+[35.764087] (-) TimerEvent: {}
+[35.865982] (-) TimerEvent: {}
+[35.967628] (-) TimerEvent: {}
+[36.070198] (-) TimerEvent: {}
+[36.169577] (my_cobot_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/pump_off__type_support.cpp.o\x1b[0m\n'}
+[36.170545] (-) TimerEvent: {}
+[36.271736] (-) TimerEvent: {}
+[36.372831] (-) TimerEvent: {}
+[36.473774] (-) TimerEvent: {}
+[36.575037] (-) TimerEvent: {}
+[36.581690] (my_cobot_interfaces) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/srv/detail/pump_on__type_support_c.cpp.o\x1b[0m\n'}
+[36.675328] (-) TimerEvent: {}
+[36.776400] (-) TimerEvent: {}
+[36.877414] (-) TimerEvent: {}
+[36.978620] (-) TimerEvent: {}
+[37.079540] (-) TimerEvent: {}
+[37.180495] (-) TimerEvent: {}
+[37.281489] (-) TimerEvent: {}
+[37.387479] (-) TimerEvent: {}
+[37.417486] (my_cobot_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/srv/detail/pump_on__type_support.cpp.o\x1b[0m\n'}
+[37.487753] (-) TimerEvent: {}
+[37.588951] (-) TimerEvent: {}
+[37.689951] (-) TimerEvent: {}
+[37.790992] (-) TimerEvent: {}
+[37.892176] (-) TimerEvent: {}
+[37.993472] (-) TimerEvent: {}
+[38.094616] (-) TimerEvent: {}
+[38.195867] (-) TimerEvent: {}
+[38.297123] (-) TimerEvent: {}
+[38.409743] (-) TimerEvent: {}
+[38.510967] (-) TimerEvent: {}
+[38.612464] (-) TimerEvent: {}
+[38.713636] (-) TimerEvent: {}
+[38.814984] (-) TimerEvent: {}
+[38.916757] (-) TimerEvent: {}
+[39.018268] (-) TimerEvent: {}
+[39.119655] (-) TimerEvent: {}
+[39.193490] (my_cobot_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/srv/detail/dds_fastrtps/pump_on__type_support.cpp.o\x1b[0m\n'}
+[39.194888] (my_cobot_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/msg/detail/block__type_support_c.cpp.o\x1b[0m\n'}
+[39.220000] (-) TimerEvent: {}
+[39.321196] (-) TimerEvent: {}
+[39.422246] (-) TimerEvent: {}
+[39.523337] (-) TimerEvent: {}
+[39.624362] (-) TimerEvent: {}
+[39.725570] (-) TimerEvent: {}
+[39.826760] (-) TimerEvent: {}
+[39.927989] (-) TimerEvent: {}
+[40.029076] (-) TimerEvent: {}
+[40.130231] (-) TimerEvent: {}
+[40.231387] (-) TimerEvent: {}
+[40.326292] (my_cobot_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/msg/detail/block__type_support.cpp.o\x1b[0m\n'}
+[40.331668] (-) TimerEvent: {}
+[40.433328] (-) TimerEvent: {}
+[40.534861] (-) TimerEvent: {}
+[40.636186] (-) TimerEvent: {}
+[40.737661] (-) TimerEvent: {}
+[40.839056] (-) TimerEvent: {}
+[40.940653] (-) TimerEvent: {}
+[41.042855] (-) TimerEvent: {}
+[41.144458] (-) TimerEvent: {}
+[41.245923] (-) TimerEvent: {}
+[41.347537] (-) TimerEvent: {}
+[41.448984] (-) TimerEvent: {}
+[41.550813] (-) TimerEvent: {}
+[41.652466] (-) TimerEvent: {}
+[41.718697] (my_cobot_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_cobot_interfaces/action/detail/set_angles__type_support_c.cpp.o\x1b[0m\n'}
+[41.752779] (-) TimerEvent: {}
+[41.854460] (-) TimerEvent: {}
+[41.956059] (-) TimerEvent: {}
+[42.057561] (-) TimerEvent: {}
+[42.144981] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[42.157826] (-) TimerEvent: {}
+[42.256001] (my_cobot_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_radians__type_support.c.o\x1b[0m\n'}
+[42.258119] (-) TimerEvent: {}
+[42.359535] (-) TimerEvent: {}
+[42.460708] (-) TimerEvent: {}
+[42.518808] (my_cobot_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/msg/detail/dds_fastrtps/block__type_support.cpp.o\x1b[0m\n'}
+[42.560931] (-) TimerEvent: {}
+[42.639032] (my_cobot_interfaces) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_radians__type_support.c.o\x1b[0m\n'}
+[42.661252] (-) TimerEvent: {}
+[42.765498] (-) TimerEvent: {}
+[42.867256] (-) TimerEvent: {}
+[42.968390] (-) TimerEvent: {}
+[43.069494] (-) TimerEvent: {}
+[43.089471] (my_cobot_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/play_pause__type_support.c.o\x1b[0m\n'}
+[43.169802] (-) TimerEvent: {}
+[43.270929] (-) TimerEvent: {}
+[43.372541] (-) TimerEvent: {}
+[43.377190] (my_cobot_interfaces) StdoutLine: {'line': b'[ 59%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_coords__type_support.c.o\x1b[0m\n'}
+[43.472765] (-) TimerEvent: {}
+[43.507501] (my_cobot_interfaces) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_cobot_interfaces/action/detail/set_angles__type_support.cpp.o\x1b[0m\n'}
+[43.573120] (-) TimerEvent: {}
+[43.661205] (my_cobot_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/get_blocks__type_support.c.o\x1b[0m\n'}
+[43.673457] (-) TimerEvent: {}
+[43.774729] (-) TimerEvent: {}
+[43.875915] (-) TimerEvent: {}
+[43.971015] (my_cobot_interfaces) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/set_joint_angles__type_support.c.o\x1b[0m\n'}
+[43.977027] (-) TimerEvent: {}
+[44.079166] (-) TimerEvent: {}
+[44.180489] (-) TimerEvent: {}
+[44.264918] (my_cobot_interfaces) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/pump_off__type_support.c.o\x1b[0m\n'}
+[44.280784] (-) TimerEvent: {}
+[44.382349] (-) TimerEvent: {}
+[44.483744] (-) TimerEvent: {}
+[44.549674] (my_cobot_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/srv/detail/pump_on__type_support.c.o\x1b[0m\n'}
+[44.584500] (-) TimerEvent: {}
+[44.686039] (-) TimerEvent: {}
+[44.787235] (-) TimerEvent: {}
+[44.838401] (my_cobot_interfaces) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/msg/detail/block__type_support.c.o\x1b[0m\n'}
+[44.887563] (-) TimerEvent: {}
+[44.904016] (my_cobot_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[44.987929] (-) TimerEvent: {}
+[45.089428] (-) TimerEvent: {}
+[45.135645] (my_cobot_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_cobot_interfaces/action/detail/set_angles__type_support.c.o\x1b[0m\n'}
+[45.189760] (-) TimerEvent: {}
+[45.291242] (-) TimerEvent: {}
+[45.392531] (-) TimerEvent: {}
+[45.493980] (-) TimerEvent: {}
+[45.509063] (my_cobot_interfaces) StdoutLine: {'line': b'[ 67%] Built target my_cobot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[45.565343] (my_cobot_interfaces) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking C shared library libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[45.585711] (my_cobot_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[45.594281] (-) TimerEvent: {}
+[45.695524] (-) TimerEvent: {}
+[45.799248] (-) TimerEvent: {}
+[45.856510] (my_cobot_interfaces) StdoutLine: {'line': b'[ 69%] Built target my_cobot_interfaces__rosidl_typesupport_introspection_c\n'}
+[45.879454] (my_cobot_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_cobot_interfaces/action/detail/dds_fastrtps/set_angles__type_support.cpp.o\x1b[0m\n'}
+[45.899489] (-) TimerEvent: {}
+[46.000541] (-) TimerEvent: {}
+[46.101538] (-) TimerEvent: {}
+[46.202551] (-) TimerEvent: {}
+[46.303520] (-) TimerEvent: {}
+[46.405616] (-) TimerEvent: {}
+[46.506622] (-) TimerEvent: {}
+[46.607669] (-) TimerEvent: {}
+[46.709049] (-) TimerEvent: {}
+[46.810769] (-) TimerEvent: {}
+[46.911861] (-) TimerEvent: {}
+[47.012960] (-) TimerEvent: {}
+[47.114829] (-) TimerEvent: {}
+[47.228033] (-) TimerEvent: {}
+[47.329313] (-) TimerEvent: {}
+[47.440628] (-) TimerEvent: {}
+[47.543189] (-) TimerEvent: {}
+[47.648420] (-) TimerEvent: {}
+[47.749375] (-) TimerEvent: {}
+[47.850568] (-) TimerEvent: {}
+[47.951590] (-) TimerEvent: {}
+[48.042331] (my_cobot_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[48.051828] (-) TimerEvent: {}
+[48.152995] (-) TimerEvent: {}
+[48.254038] (-) TimerEvent: {}
+[48.354930] (-) TimerEvent: {}
+[48.456033] (-) TimerEvent: {}
+[48.534735] (my_cobot_interfaces) StdoutLine: {'line': b'[ 71%] Built target my_cobot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[48.556617] (-) TimerEvent: {}
+[48.657920] (-) TimerEvent: {}
+[48.758877] (-) TimerEvent: {}
+[48.860995] (-) TimerEvent: {}
+[48.964216] (-) TimerEvent: {}
+[49.066820] (-) TimerEvent: {}
+[49.168070] (-) TimerEvent: {}
+[49.238554] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[49.268357] (-) TimerEvent: {}
+[49.315274] (my_cobot_interfaces) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/get_radians__type_support.cpp.o\x1b[0m\n'}
+[49.318967] (my_cobot_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/play_pause__type_support.cpp.o\x1b[0m\n'}
+[49.330536] (my_cobot_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/set_radians__type_support.cpp.o\x1b[0m\n'}
+[49.368828] (-) TimerEvent: {}
+[49.470670] (-) TimerEvent: {}
+[49.549198] (my_cobot_interfaces) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/get_blocks__type_support.cpp.o\x1b[0m\n'}
+[49.553867] (my_cobot_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/set_joint_angles__type_support.cpp.o\x1b[0m\n'}
+[49.555211] (my_cobot_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/set_coords__type_support.cpp.o\x1b[0m\n'}
+[49.570931] (-) TimerEvent: {}
+[49.671987] (-) TimerEvent: {}
+[49.773715] (-) TimerEvent: {}
+[49.776729] (my_cobot_interfaces) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/pump_off__type_support.cpp.o\x1b[0m\n'}
+[49.786940] (my_cobot_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/srv/pump_on__type_support.cpp.o\x1b[0m\n'}
+[49.793824] (my_cobot_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/msg/block__type_support.cpp.o\x1b[0m\n'}
+[49.873956] (-) TimerEvent: {}
+[49.975128] (-) TimerEvent: {}
+[49.991160] (my_cobot_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_cobot_interfaces/action/set_angles__type_support.cpp.o\x1b[0m\n'}
+[50.025831] (my_cobot_interfaces) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[50.075323] (-) TimerEvent: {}
+[50.176256] (-) TimerEvent: {}
+[50.277256] (-) TimerEvent: {}
+[50.306351] (my_cobot_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking CXX shared library libmy_cobot_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[50.377484] (-) TimerEvent: {}
+[50.442396] (my_cobot_interfaces) StdoutLine: {'line': b'[ 82%] Built target my_cobot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[50.477702] (-) TimerEvent: {}
+[50.529344] (my_cobot_interfaces) StdoutLine: {'line': b'[ 82%] Built target my_cobot_interfaces__rosidl_typesupport_c\n'}
+[50.577938] (-) TimerEvent: {}
+[50.631573] (my_cobot_interfaces) StdoutLine: {'line': b'[ 82%] Built target my_cobot_interfaces\n'}
+[50.678183] (-) TimerEvent: {}
+[50.738267] (my_cobot_interfaces) StdoutLine: {'line': b'[ 83%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[50.778349] (-) TimerEvent: {}
+[50.879113] (-) TimerEvent: {}
+[50.979866] (-) TimerEvent: {}
+[51.080710] (-) TimerEvent: {}
+[51.181503] (-) TimerEvent: {}
+[51.282206] (-) TimerEvent: {}
+[51.382912] (-) TimerEvent: {}
+[51.483612] (-) TimerEvent: {}
+[51.584386] (-) TimerEvent: {}
+[51.685172] (-) TimerEvent: {}
+[51.785883] (-) TimerEvent: {}
+[51.886555] (-) TimerEvent: {}
+[51.987318] (-) TimerEvent: {}
+[52.087988] (-) TimerEvent: {}
+[52.188685] (-) TimerEvent: {}
+[52.289358] (-) TimerEvent: {}
+[52.390088] (-) TimerEvent: {}
+[52.490814] (-) TimerEvent: {}
+[52.591497] (-) TimerEvent: {}
+[52.692181] (-) TimerEvent: {}
+[52.792956] (-) TimerEvent: {}
+[52.893648] (-) TimerEvent: {}
+[52.994504] (-) TimerEvent: {}
+[53.095427] (-) TimerEvent: {}
+[53.196129] (-) TimerEvent: {}
+[53.296881] (-) TimerEvent: {}
+[53.397553] (-) TimerEvent: {}
+[53.498321] (-) TimerEvent: {}
+[53.598990] (-) TimerEvent: {}
+[53.699667] (-) TimerEvent: {}
+[53.800378] (-) TimerEvent: {}
+[53.901077] (-) TimerEvent: {}
+[54.001764] (-) TimerEvent: {}
+[54.102459] (-) TimerEvent: {}
+[54.203265] (-) TimerEvent: {}
+[54.303956] (-) TimerEvent: {}
+[54.404744] (-) TimerEvent: {}
+[54.505420] (-) TimerEvent: {}
+[54.606021] (-) TimerEvent: {}
+[54.706748] (-) TimerEvent: {}
+[54.807841] (-) TimerEvent: {}
+[54.909147] (-) TimerEvent: {}
+[55.010373] (-) TimerEvent: {}
+[55.111517] (-) TimerEvent: {}
+[55.212595] (-) TimerEvent: {}
+[55.313545] (-) TimerEvent: {}
+[55.414218] (-) TimerEvent: {}
+[55.514974] (-) TimerEvent: {}
+[55.615665] (-) TimerEvent: {}
+[55.716397] (-) TimerEvent: {}
+[55.817091] (-) TimerEvent: {}
+[55.917810] (-) TimerEvent: {}
+[56.018612] (-) TimerEvent: {}
+[56.119310] (-) TimerEvent: {}
+[56.219987] (-) TimerEvent: {}
+[56.320849] (-) TimerEvent: {}
+[56.421522] (-) TimerEvent: {}
+[56.522276] (-) TimerEvent: {}
+[56.622941] (-) TimerEvent: {}
+[56.723616] (-) TimerEvent: {}
+[56.824367] (-) TimerEvent: {}
+[56.925162] (-) TimerEvent: {}
+[57.025877] (-) TimerEvent: {}
+[57.126711] (-) TimerEvent: {}
+[57.227450] (-) TimerEvent: {}
+[57.328198] (-) TimerEvent: {}
+[57.428966] (-) TimerEvent: {}
+[57.529752] (-) TimerEvent: {}
+[57.630729] (-) TimerEvent: {}
+[57.731481] (-) TimerEvent: {}
+[57.832165] (-) TimerEvent: {}
+[57.932893] (-) TimerEvent: {}
+[58.033546] (-) TimerEvent: {}
+[58.134236] (-) TimerEvent: {}
+[58.234965] (-) TimerEvent: {}
+[58.335659] (-) TimerEvent: {}
+[58.436350] (-) TimerEvent: {}
+[58.537230] (-) TimerEvent: {}
+[58.637890] (-) TimerEvent: {}
+[58.738581] (-) TimerEvent: {}
+[58.839202] (-) TimerEvent: {}
+[58.939875] (-) TimerEvent: {}
+[59.040603] (-) TimerEvent: {}
+[59.141323] (-) TimerEvent: {}
+[59.242116] (-) TimerEvent: {}
+[59.342917] (-) TimerEvent: {}
+[59.444149] (-) TimerEvent: {}
+[59.546102] (-) TimerEvent: {}
+[59.647520] (-) TimerEvent: {}
+[59.749085] (-) TimerEvent: {}
+[59.750222] (my_cobot_interfaces) StdoutLine: {'line': b'[ 83%] Built target my_cobot_interfaces__py\n'}
+[59.819861] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_generator_py\x1b[0m\n'}
+[59.849255] (-) TimerEvent: {}
+[59.950220] (-) TimerEvent: {}
+[59.956280] (my_cobot_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_get_radians_s.c.o\x1b[0m\n'}
+[59.962394] (my_cobot_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_set_radians_s.c.o\x1b[0m\n'}
+[59.963603] (my_cobot_interfaces) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_play_pause_s.c.o\x1b[0m\n'}
+[59.970573] (my_cobot_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_set_coords_s.c.o\x1b[0m\n'}
+[60.050369] (-) TimerEvent: {}
+[60.151198] (-) TimerEvent: {}
+[60.252079] (-) TimerEvent: {}
+[60.353223] (-) TimerEvent: {}
+[60.454318] (-) TimerEvent: {}
+[60.555655] (-) TimerEvent: {}
+[60.660591] (-) TimerEvent: {}
+[60.765149] (-) TimerEvent: {}
+[60.776825] (my_cobot_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_get_blocks_s.c.o\x1b[0m\n'}
+[60.785464] (my_cobot_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_set_joint_angles_s.c.o\x1b[0m\n'}
+[60.833267] (my_cobot_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_pump_off_s.c.o\x1b[0m\n'}
+[60.860686] (my_cobot_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/srv/_pump_on_s.c.o\x1b[0m\n'}
+[60.868045] (-) TimerEvent: {}
+[60.975016] (-) TimerEvent: {}
+[61.075988] (-) TimerEvent: {}
+[61.177170] (-) TimerEvent: {}
+[61.278225] (-) TimerEvent: {}
+[61.379406] (-) TimerEvent: {}
+[61.480584] (-) TimerEvent: {}
+[61.485301] (my_cobot_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/msg/_block_s.c.o\x1b[0m\n'}
+[61.486218] (my_cobot_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_cobot_interfaces/action/_set_angles_s.c.o\x1b[0m\n'}
+[61.580800] (-) TimerEvent: {}
+[61.681706] (-) TimerEvent: {}
+[61.782735] (-) TimerEvent: {}
+[61.884368] (-) TimerEvent: {}
+[61.987041] (-) TimerEvent: {}
+[62.088069] (-) TimerEvent: {}
+[62.188989] (-) TimerEvent: {}
+[62.213833] (my_cobot_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_cobot_interfaces/libmy_cobot_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[62.289249] (-) TimerEvent: {}
+[62.390181] (-) TimerEvent: {}
+[62.460680] (my_cobot_interfaces) StdoutLine: {'line': b'[ 94%] Built target my_cobot_interfaces__rosidl_generator_py\n'}
+[62.490417] (-) TimerEvent: {}
+[62.516698] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[62.521601] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[62.527076] (my_cobot_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_cobot_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[62.590817] (-) TimerEvent: {}
+[62.592025] (my_cobot_interfaces) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[62.595367] (my_cobot_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[62.612793] (my_cobot_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32mBuilding C object CMakeFiles/my_cobot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[62.691034] (-) TimerEvent: {}
+[62.792352] (-) TimerEvent: {}
+[62.893777] (-) TimerEvent: {}
+[62.995365] (-) TimerEvent: {}
+[63.096694] (-) TimerEvent: {}
+[63.198335] (-) TimerEvent: {}
+[63.300643] (-) TimerEvent: {}
+[63.402243] (-) TimerEvent: {}
+[63.503897] (-) TimerEvent: {}
+[63.605414] (-) TimerEvent: {}
+[63.651002] (my_cobot_interfaces) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[63.671258] (my_cobot_interfaces) StdoutLine: {'line': b'[ 99%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[63.687225] (my_cobot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[63.705578] (-) TimerEvent: {}
+[63.806656] (-) TimerEvent: {}
+[63.908221] (-) TimerEvent: {}
+[64.009258] (my_cobot_interfaces) StdoutLine: {'line': b'[100%] Built target my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[64.010255] (-) TimerEvent: {}
+[64.030316] (my_cobot_interfaces) StdoutLine: {'line': b'[100%] Built target my_cobot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[64.046670] (my_cobot_interfaces) StdoutLine: {'line': b'[100%] Built target my_cobot_interfaces__rosidl_typesupport_c__pyext\n'}
+[64.104052] (my_cobot_interfaces) CommandEnded: {'returncode': 0}
+[64.110569] (-) TimerEvent: {}
+[64.213045] (-) TimerEvent: {}
+[64.313726] (-) TimerEvent: {}
+[64.414496] (-) TimerEvent: {}
+[64.515662] (-) TimerEvent: {}
+[64.616400] (-) TimerEvent: {}
+[64.717111] (-) TimerEvent: {}
+[64.817800] (-) TimerEvent: {}
+[64.918932] (-) TimerEvent: {}
+[65.019677] (-) TimerEvent: {}
+[65.120424] (-) TimerEvent: {}
+[65.221156] (-) TimerEvent: {}
+[65.321941] (-) TimerEvent: {}
+[65.422679] (-) TimerEvent: {}
+[65.523377] (-) TimerEvent: {}
+[65.624121] (-) TimerEvent: {}
+[65.725037] (-) TimerEvent: {}
+[65.727291] (my_cobot_interfaces) JobProgress: {'identifier': 'my_cobot_interfaces', 'progress': 'install'}
+[65.767406] (my_cobot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/lance/robot/build/my_cobot_interfaces'], 'cwd': '/home/lance/robot/build/my_cobot_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'lance'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/lance/robot/install/my_cobot_hardware_interface/lib:/home/lance/robot/install/my_cobot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/lance'), ('OLDPWD', '/home/lance/robot/src/my_cobot_interfaces/action'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1280'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/lance/moveit2_ws/install:/home/lance/robot/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'lance'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'lance'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/lance/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/lance-desktop:@/tmp/.ICE-unix/1244,unix/lance-desktop:/tmp/.ICE-unix/1244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/54a2444b_3392_4694_b586_a52774d5916a'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('RMW_IMPLEMENTATION', 'rmw_cyclonedds_cpp'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.UPER71'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.298'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/robot_description:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/coord_controller:/home/lance/robot/install/controllers:/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/motion_planning:/home/lance/robot/install/bringup:/home/lance/moveit2_ws/install:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/lance/robot/build/my_cobot_interfaces'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/lance/robot/install/robot_description/lib/python3.10/site-packages:/home/lance/robot/build/coord_controller:/home/lance/robot/install/coord_controller/lib/python3.10/site-packages:/home/lance/robot/install/controllers/lib/python3.10/site-packages:/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages:/home/lance/robot/install/motion_planning/lib/python3.10/site-packages:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:/home/lance/robot/install/bringup/lib/python3.10/site-packages:/home/lance/moveit2_ws/install/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/robot/install/my_cobot_interfaces:/home/lance/moveit2_ws/install:/home/lance/robot/install/robot_description:/home/lance/robot/install/coord_controller:/home/lance/robot/install/controllers:/home/lance/robot/install/motion_planning:/home/lance/robot/install/bringup:/opt/ros/humble')]), 'shell': False}
+[65.806815] (my_cobot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[65.809214] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_cobot_interfaces\n'}
+[65.815310] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[65.816862] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[65.818239] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[65.820251] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__functions.h\n'}
+[65.822323] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__functions.h\n'}
+[65.824051] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__functions.c\n'}
+[65.825153] (-) TimerEvent: {}
+[65.825747] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__functions.c\n'}
+[65.827504] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__type_support.h\n'}
+[65.829144] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__functions.c\n'}
+[65.830812] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__struct.h\n'}
+[65.832485] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__functions.h\n'}
+[65.834133] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__struct.h\n'}
+[65.835556] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__struct.h\n'}
+[65.837115] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__struct.h\n'}
+[65.838279] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__struct.h\n'}
+[65.839456] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__functions.h\n'}
+[65.841018] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__functions.h\n'}
+[65.842401] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__type_support.h\n'}
+[65.844401] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__functions.c\n'}
+[65.845786] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__functions.c\n'}
+[65.847211] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__type_support.h\n'}
+[65.848620] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__type_support.h\n'}
+[65.849949] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__functions.h\n'}
+[65.851360] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__functions.h\n'}
+[65.852944] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c\n'}
+[65.854540] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__functions.c\n'}
+[65.856062] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__type_support.h\n'}
+[65.857853] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__type_support.h\n'}
+[65.859240] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__functions.c\n'}
+[65.861361] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__struct.h\n'}
+[65.863936] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__struct.h\n'}
+[65.865354] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__type_support.h\n'}
+[65.866559] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__functions.h\n'}
+[65.867868] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__struct.h\n'}
+[65.869193] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__type_support.h\n'}
+[65.870422] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/pump_off.h\n'}
+[65.871532] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/play_pause.h\n'}
+[65.872616] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/set_coords.h\n'}
+[65.873738] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/set_radians.h\n'}
+[65.874813] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/get_radians.h\n'}
+[65.875909] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/get_blocks.h\n'}
+[65.876989] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/pump_on.h\n'}
+[65.878206] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/set_joint_angles.h\n'}
+[65.879813] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg\n'}
+[65.881221] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail\n'}
+[65.882421] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__struct.h\n'}
+[65.884036] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__functions.c\n'}
+[65.885611] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__type_support.h\n'}
+[65.886840] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__functions.h\n'}
+[65.888128] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[65.888721] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/block.h\n'}
+[65.889573] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action\n'}
+[65.890237] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail\n'}
+[65.891032] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__functions.c\n'}
+[65.892949] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__struct.h\n'}
+[65.894135] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__type_support.h\n'}
+[65.895458] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__functions.h\n'}
+[65.896961] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/set_angles.h\n'}
+[65.898949] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/library_path.sh\n'}
+[65.899485] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/library_path.dsv\n'}
+[65.901613] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_generator_c.so\n'}
+[65.905808] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_generator_c.so" to ""\n'}
+[65.906411] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[65.906989] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[65.907302] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[65.907684] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__rosidl_typesupport_fastrtps_c.h\n'}
+[65.909065] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__rosidl_typesupport_fastrtps_c.h\n'}
+[65.910518] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_fastrtps_c.h\n'}
+[65.911868] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_fastrtps_c.h\n'}
+[65.913339] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__rosidl_typesupport_fastrtps_c.h\n'}
+[65.914683] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_fastrtps_c.h\n'}
+[65.916169] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__rosidl_typesupport_fastrtps_c.h\n'}
+[65.917592] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__rosidl_typesupport_fastrtps_c.h\n'}
+[65.918873] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg\n'}
+[65.919471] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail\n'}
+[65.919974] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__rosidl_typesupport_fastrtps_c.h\n'}
+[65.921224] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[65.921700] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action\n'}
+[65.922085] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail\n'}
+[65.922452] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__rosidl_typesupport_fastrtps_c.h\n'}
+[65.925303] (-) TimerEvent: {}
+[65.926837] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[65.930649] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[65.931282] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[65.931727] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[65.932146] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[65.932661] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__struct.hpp\n'}
+[65.934145] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__struct.hpp\n'}
+[65.935568] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__struct.hpp\n'}
+[65.937260] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__struct.hpp\n'}
+[65.938510] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__traits.hpp\n'}
+[65.939875] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__traits.hpp\n'}
+[65.941183] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__traits.hpp\n'}
+[65.942483] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__builder.hpp\n'}
+[65.943671] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__builder.hpp\n'}
+[65.945025] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__traits.hpp\n'}
+[65.946253] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__builder.hpp\n'}
+[65.947453] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__traits.hpp\n'}
+[65.948690] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__struct.hpp\n'}
+[65.949963] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__builder.hpp\n'}
+[65.951156] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__struct.hpp\n'}
+[65.952508] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__traits.hpp\n'}
+[65.954057] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__builder.hpp\n'}
+[65.955548] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__traits.hpp\n'}
+[65.956967] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__struct.hpp\n'}
+[65.958456] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__builder.hpp\n'}
+[65.959917] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__traits.hpp\n'}
+[65.964020] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__builder.hpp\n'}
+[65.964764] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__struct.hpp\n'}
+[65.965748] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__builder.hpp\n'}
+[65.966972] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/pump_on.hpp\n'}
+[65.968081] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/set_joint_angles.hpp\n'}
+[65.969489] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/get_blocks.hpp\n'}
+[65.970559] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/get_radians.hpp\n'}
+[65.971639] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/pump_off.hpp\n'}
+[65.972762] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/set_radians.hpp\n'}
+[65.973911] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/play_pause.hpp\n'}
+[65.974993] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/set_coords.hpp\n'}
+[65.975992] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg\n'}
+[65.976472] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail\n'}
+[65.976987] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__struct.hpp\n'}
+[65.980681] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__traits.hpp\n'}
+[65.981427] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__builder.hpp\n'}
+[65.982179] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/block.hpp\n'}
+[65.982960] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action\n'}
+[65.983704] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail\n'}
+[65.984153] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__traits.hpp\n'}
+[65.985325] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__builder.hpp\n'}
+[65.986516] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__struct.hpp\n'}
+[65.988073] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/set_angles.hpp\n'}
+[65.989438] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[65.992691] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[65.993329] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[65.993785] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/dds_fastrtps\n'}
+[65.998310] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.998685] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.999000] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.999279] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[65.999584] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.000005] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.001048] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.002473] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.003731] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg\n'}
+[66.004213] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail\n'}
+[66.004720] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/dds_fastrtps\n'}
+[66.005270] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.006617] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[66.007112] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action\n'}
+[66.007502] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail\n'}
+[66.007899] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/dds_fastrtps\n'}
+[66.008481] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[66.013342] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[66.020796] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[66.021437] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[66.021911] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[66.022457] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[66.023042] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__type_support.c\n'}
+[66.023627] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_c.h\n'}
+[66.024003] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__type_support.c\n'}
+[66.025473] (-) TimerEvent: {}
+[66.026341] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__rosidl_typesupport_introspection_c.h\n'}
+[66.027604] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__type_support.c\n'}
+[66.029243] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__type_support.c\n'}
+[66.030760] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__type_support.c\n'}
+[66.032338] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__rosidl_typesupport_introspection_c.h\n'}
+[66.033823] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__rosidl_typesupport_introspection_c.h\n'}
+[66.035162] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__rosidl_typesupport_introspection_c.h\n'}
+[66.036505] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__type_support.c\n'}
+[66.038050] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_introspection_c.h\n'}
+[66.039333] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_introspection_c.h\n'}
+[66.040702] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__type_support.c\n'}
+[66.042095] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__type_support.c\n'}
+[66.043477] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__rosidl_typesupport_introspection_c.h\n'}
+[66.044778] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg\n'}
+[66.045304] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail\n'}
+[66.045739] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__rosidl_typesupport_introspection_c.h\n'}
+[66.047146] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__type_support.c\n'}
+[66.048403] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[66.048891] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action\n'}
+[66.049325] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail\n'}
+[66.049784] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__type_support.c\n'}
+[66.051431] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__rosidl_typesupport_introspection_c.h\n'}
+[66.053939] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[66.057803] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[66.059000] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_c.so\n'}
+[66.063385] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[66.064989] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces\n'}
+[66.065519] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv\n'}
+[66.065853] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail\n'}
+[66.066290] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.067288] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__type_support.cpp\n'}
+[66.068673] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__type_support.cpp\n'}
+[66.070048] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.071392] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/play_pause__type_support.cpp\n'}
+[66.072919] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_radians__type_support.cpp\n'}
+[66.074275] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__type_support.cpp\n'}
+[66.075635] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_coords__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.077024] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__type_support.cpp\n'}
+[66.078531] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.080547] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_on__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.082440] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.084209] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_joint_angles__type_support.cpp\n'}
+[66.085997] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/pump_off__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.087389] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/set_radians__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.088783] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/srv/detail/get_blocks__type_support.cpp\n'}
+[66.090037] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg\n'}
+[66.090548] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail\n'}
+[66.090945] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.092390] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/msg/detail/block__type_support.cpp\n'}
+[66.093604] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action\n'}
+[66.094872] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail\n'}
+[66.095421] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__rosidl_typesupport_introspection_cpp.hpp\n'}
+[66.096002] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/include/my_cobot_interfaces/my_cobot_interfaces/action/detail/set_angles__type_support.cpp\n'}
+[66.101151] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[66.105659] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[66.109494] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_cpp.so\n'}
+[66.114364] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[66.115578] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/pythonpath.sh\n'}
+[66.116525] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/pythonpath.dsv\n'}
+[66.117772] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info\n'}
+[66.118515] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[66.120197] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[66.121846] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[66.123308] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[66.124947] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces\n'}
+[66.125543] (-) TimerEvent: {}
+[66.126409] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[66.128901] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/__init__.py\n'}
+[66.130064] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/libmy_cobot_interfaces__rosidl_generator_py.so\n'}
+[66.132629] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.135085] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv\n'}
+[66.135746] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_play_pause_s.c\n'}
+[66.137594] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_radians.py\n'}
+[66.138895] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/__init__.py\n'}
+[66.140115] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_pump_off_s.c\n'}
+[66.141575] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_coords_s.c\n'}
+[66.142910] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_play_pause.py\n'}
+[66.144250] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_coords.py\n'}
+[66.145767] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_radians.py\n'}
+[66.147149] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_joint_angles_s.c\n'}
+[66.148544] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_pump_on.py\n'}
+[66.149976] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_joint_angles.py\n'}
+[66.151308] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_blocks.py\n'}
+[66.152951] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_pump_off.py\n'}
+[66.154614] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_radians_s.c\n'}
+[66.156266] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_blocks_s.c\n'}
+[66.157858] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_radians_s.c\n'}
+[66.159455] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_pump_on_s.c\n'}
+[66.161116] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.165068] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[66.167942] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/_my_cobot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[66.171169] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.173346] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/msg\n'}
+[66.174018] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/msg/_block.py\n'}
+[66.175382] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/msg/__init__.py\n'}
+[66.176751] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/msg/_block_s.c\n'}
+[66.178166] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/action\n'}
+[66.179296] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/action/__init__.py\n'}
+[66.181400] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/action/_set_angles.py\n'}
+[66.183590] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/action/_set_angles_s.c\n'}
+[66.225728] (-) TimerEvent: {}
+[66.326675] (-) TimerEvent: {}
+[66.427519] (-) TimerEvent: {}
+[66.485564] (my_cobot_interfaces) StdoutLine: {'line': b"Listing '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces'...\n"}
+[66.487564] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/__init__.py'...\n"}
+[66.488703] (my_cobot_interfaces) StdoutLine: {'line': b"Listing '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/action'...\n"}
+[66.489648] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/action/__init__.py'...\n"}
+[66.490629] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/action/_set_angles.py'...\n"}
+[66.491787] (my_cobot_interfaces) StdoutLine: {'line': b"Listing '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/msg'...\n"}
+[66.492594] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/msg/__init__.py'...\n"}
+[66.493665] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/msg/_block.py'...\n"}
+[66.494933] (my_cobot_interfaces) StdoutLine: {'line': b"Listing '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv'...\n"}
+[66.496002] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/__init__.py'...\n"}
+[66.497023] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_blocks.py'...\n"}
+[66.498093] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_get_radians.py'...\n"}
+[66.498863] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_play_pause.py'...\n"}
+[66.499799] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_pump_off.py'...\n"}
+[66.500601] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_pump_on.py'...\n"}
+[66.501161] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_coords.py'...\n"}
+[66.501641] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_joint_angles.py'...\n"}
+[66.502106] (my_cobot_interfaces) StdoutLine: {'line': b"Compiling '/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/srv/_set_radians.py'...\n"}
+[66.515236] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.519058] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[66.521080] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.526117] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[66.527643] (-) TimerEvent: {}
+[66.528437] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[66.532949] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/local/lib/python3.10/dist-packages/my_cobot_interfaces/my_cobot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[66.534190] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_generator_py.so\n'}
+[66.537602] (my_cobot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/lance/robot/install/my_cobot_interfaces/lib/libmy_cobot_interfaces__rosidl_generator_py.so" to ""\n'}
+[66.539078] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians.idl\n'}
+[66.539782] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians.idl\n'}
+[66.540433] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause.idl\n'}
+[66.540981] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetCoords.idl\n'}
+[66.541502] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetBlocks.idl\n'}
+[66.541953] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetJointAngles.idl\n'}
+[66.542416] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PumpOff.idl\n'}
+[66.542877] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PumpOn.idl\n'}
+[66.543486] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/msg/Block.idl\n'}
+[66.544460] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/action/SetAngles.idl\n'}
+[66.545782] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians.srv\n'}
+[66.546395] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians_Request.msg\n'}
+[66.546894] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetRadians_Response.msg\n'}
+[66.547366] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians.srv\n'}
+[66.547793] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians_Request.msg\n'}
+[66.548248] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetRadians_Response.msg\n'}
+[66.548773] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause.srv\n'}
+[66.549258] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause_Request.msg\n'}
+[66.549713] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PlayPause_Response.msg\n'}
+[66.550182] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetCoords.srv\n'}
+[66.550637] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetCoords_Request.msg\n'}
+[66.551204] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetCoords_Response.msg\n'}
+[66.551677] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetBlocks.srv\n'}
+[66.552134] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetBlocks_Request.msg\n'}
+[66.552704] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/GetBlocks_Response.msg\n'}
+[66.553207] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetJointAngles.srv\n'}
+[66.553674] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetJointAngles_Request.msg\n'}
+[66.554098] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/SetJointAngles_Response.msg\n'}
+[66.554524] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PumpOff.srv\n'}
+[66.555096] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PumpOff_Request.msg\n'}
+[66.555683] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PumpOff_Response.msg\n'}
+[66.556462] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PumpOn.srv\n'}
+[66.557204] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PumpOn_Request.msg\n'}
+[66.557809] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/srv/PumpOn_Response.msg\n'}
+[66.558544] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/msg/Block.msg\n'}
+[66.559145] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/action/SetAngles.action\n'}
+[66.560341] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_cobot_interfaces\n'}
+[66.563942] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_cobot_interfaces\n'}
+[66.567266] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/ament_prefix_path.sh\n'}
+[66.567898] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/ament_prefix_path.dsv\n'}
+[66.569226] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/path.sh\n'}
+[66.569780] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/environment/path.dsv\n'}
+[66.571118] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.bash\n'}
+[66.571652] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.sh\n'}
+[66.572107] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.zsh\n'}
+[66.572732] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/local_setup.dsv\n'}
+[66.573881] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/package.dsv\n'}
+[66.575380] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/ament_index/resource_index/packages/my_cobot_interfaces\n'}
+[66.576379] (my_cobot_interfaces) StdoutLine: {'line': b'-- Old export file "/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cExport.cmake" will be replaced.  Removing files [/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cExport-noconfig.cmake].\n'}
+[66.577040] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cExport.cmake\n'}
+[66.579381] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[66.582197] (my_cobot_interfaces) StdoutLine: {'line': b'-- Old export file "/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake" will be replaced.  Removing files [/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake].\n'}
+[66.583038] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[66.584805] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[66.587362] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[66.589749] (my_cobot_interfaces) StdoutLine: {'line': b'-- Old export file "/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake" will be replaced.  Removing files [/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake].\n'}
+[66.590595] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[66.592247] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[66.594577] (my_cobot_interfaces) StdoutLine: {'line': b'-- Old export file "/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cExport.cmake" will be replaced.  Removing files [/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake].\n'}
+[66.595610] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[66.597144] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[66.599280] (my_cobot_interfaces) StdoutLine: {'line': b'-- Old export file "/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cExport.cmake" will be replaced.  Removing files [/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cExport-noconfig.cmake].\n'}
+[66.600139] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[66.601843] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[66.603939] (my_cobot_interfaces) StdoutLine: {'line': b'-- Old export file "/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cppExport.cmake" will be replaced.  Removing files [/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake].\n'}
+[66.606084] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[66.607531] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[66.609100] (my_cobot_interfaces) StdoutLine: {'line': b'-- Old export file "/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cppExport.cmake" will be replaced.  Removing files [/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake].\n'}
+[66.610450] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[66.611975] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[66.613954] (my_cobot_interfaces) StdoutLine: {'line': b'-- Old export file "/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_pyExport.cmake" will be replaced.  Removing files [/home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_pyExport-noconfig.cmake].\n'}
+[66.615417] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[66.616532] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/export_my_cobot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[66.618235] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[66.619875] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[66.621709] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[66.622650] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[66.623383] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[66.624948] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[66.626203] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[66.626578] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfacesConfig.cmake\n'}
+[66.626880] (my_cobot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/cmake/my_cobot_interfacesConfig-version.cmake\n'}
+[66.627186] (my_cobot_interfaces) StdoutLine: {'line': b'-- Installing: /home/lance/robot/install/my_cobot_interfaces/share/my_cobot_interfaces/package.xml\n'}
+[66.627765] (-) TimerEvent: {}
+[66.634762] (my_cobot_interfaces) CommandEnded: {'returncode': 0}
+[66.733150] (-) TimerEvent: {}
+[66.841032] (-) TimerEvent: {}
+[66.942142] (-) TimerEvent: {}
+[67.042875] (-) TimerEvent: {}
+[67.143580] (-) TimerEvent: {}
+[67.244268] (-) TimerEvent: {}
+[67.345087] (-) TimerEvent: {}
+[67.445753] (-) TimerEvent: {}
+[67.546413] (-) TimerEvent: {}
+[67.647155] (-) TimerEvent: {}
+[67.748349] (-) TimerEvent: {}
+[67.849030] (-) TimerEvent: {}
+[67.949762] (-) TimerEvent: {}
+[68.050471] (-) TimerEvent: {}
+[68.151488] (-) TimerEvent: {}
+[68.252124] (-) TimerEvent: {}
+[68.352832] (-) TimerEvent: {}
+[68.453476] (-) TimerEvent: {}
+[68.530580] (my_cobot_interfaces) JobEnded: {'identifier': 'my_cobot_interfaces', 'rc': 0}
+[68.533472] (-) EventReactorShutdown: {}

@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_cobot_interfaces/action/SetAngles.action
+// generated code does not contain a copyright notice
+
+
+module my_cobot_interfaces {
+  module action {
+    struct SetAngles_Goal {
+      double j1;
+
+      double j2;
+
+      double j3;
+
+      double j4;
+
+      double j5;
+
+      double j6;
+    };
+    struct SetAngles_Result {
+      boolean timeout;
+    };
+    struct SetAngles_Feedback {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

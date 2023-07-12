@@ -21,15 +21,15 @@ namespace srv
 namespace builder
 {
 
-class Init_SetCoords_Request_cartesian
+class Init_SetCoords_Request_k
 {
 public:
-  explicit Init_SetCoords_Request_cartesian(::my_cobot_interfaces::srv::SetCoords_Request & msg)
+  explicit Init_SetCoords_Request_k(::my_cobot_interfaces::srv::SetCoords_Request & msg)
   : msg_(msg)
   {}
-  ::my_cobot_interfaces::srv::SetCoords_Request cartesian(::my_cobot_interfaces::srv::SetCoords_Request::_cartesian_type arg)
+  ::my_cobot_interfaces::srv::SetCoords_Request k(::my_cobot_interfaces::srv::SetCoords_Request::_k_type arg)
   {
-    msg_.cartesian = std::move(arg);
+    msg_.k = std::move(arg);
     return std::move(msg_);
   }
 
@@ -37,48 +37,48 @@ private:
   ::my_cobot_interfaces::srv::SetCoords_Request msg_;
 };
 
-class Init_SetCoords_Request_rz
+class Init_SetCoords_Request_j
 {
 public:
-  explicit Init_SetCoords_Request_rz(::my_cobot_interfaces::srv::SetCoords_Request & msg)
+  explicit Init_SetCoords_Request_j(::my_cobot_interfaces::srv::SetCoords_Request & msg)
   : msg_(msg)
   {}
-  Init_SetCoords_Request_cartesian rz(::my_cobot_interfaces::srv::SetCoords_Request::_rz_type arg)
+  Init_SetCoords_Request_k j(::my_cobot_interfaces::srv::SetCoords_Request::_j_type arg)
   {
-    msg_.rz = std::move(arg);
-    return Init_SetCoords_Request_cartesian(msg_);
+    msg_.j = std::move(arg);
+    return Init_SetCoords_Request_k(msg_);
   }
 
 private:
   ::my_cobot_interfaces::srv::SetCoords_Request msg_;
 };
 
-class Init_SetCoords_Request_ry
+class Init_SetCoords_Request_i
 {
 public:
-  explicit Init_SetCoords_Request_ry(::my_cobot_interfaces::srv::SetCoords_Request & msg)
+  explicit Init_SetCoords_Request_i(::my_cobot_interfaces::srv::SetCoords_Request & msg)
   : msg_(msg)
   {}
-  Init_SetCoords_Request_rz ry(::my_cobot_interfaces::srv::SetCoords_Request::_ry_type arg)
+  Init_SetCoords_Request_j i(::my_cobot_interfaces::srv::SetCoords_Request::_i_type arg)
   {
-    msg_.ry = std::move(arg);
-    return Init_SetCoords_Request_rz(msg_);
+    msg_.i = std::move(arg);
+    return Init_SetCoords_Request_j(msg_);
   }
 
 private:
   ::my_cobot_interfaces::srv::SetCoords_Request msg_;
 };
 
-class Init_SetCoords_Request_rx
+class Init_SetCoords_Request_w
 {
 public:
-  explicit Init_SetCoords_Request_rx(::my_cobot_interfaces::srv::SetCoords_Request & msg)
+  explicit Init_SetCoords_Request_w(::my_cobot_interfaces::srv::SetCoords_Request & msg)
   : msg_(msg)
   {}
-  Init_SetCoords_Request_ry rx(::my_cobot_interfaces::srv::SetCoords_Request::_rx_type arg)
+  Init_SetCoords_Request_i w(::my_cobot_interfaces::srv::SetCoords_Request::_w_type arg)
   {
-    msg_.rx = std::move(arg);
-    return Init_SetCoords_Request_ry(msg_);
+    msg_.w = std::move(arg);
+    return Init_SetCoords_Request_i(msg_);
   }
 
 private:
@@ -91,10 +91,10 @@ public:
   explicit Init_SetCoords_Request_z(::my_cobot_interfaces::srv::SetCoords_Request & msg)
   : msg_(msg)
   {}
-  Init_SetCoords_Request_rx z(::my_cobot_interfaces::srv::SetCoords_Request::_z_type arg)
+  Init_SetCoords_Request_w z(::my_cobot_interfaces::srv::SetCoords_Request::_z_type arg)
   {
     msg_.z = std::move(arg);
-    return Init_SetCoords_Request_rx(msg_);
+    return Init_SetCoords_Request_w(msg_);
   }
 
 private:

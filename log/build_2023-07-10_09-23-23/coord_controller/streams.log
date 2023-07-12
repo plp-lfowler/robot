@@ -1,0 +1,34 @@
+[6.012s] Invoking command in '/home/lance/robot/build/coord_controller': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install LD_LIBRARY_PATH=/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/lance/robot/build/coord_controller/prefix_override:/home/lance/robot/install/coord_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/lance/robot/build/coord_controller/build
+[7.795s] running develop
+[8.969s] Removing /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord-controller.egg-link (link to .)
+[9.168s] Invoked command in '/home/lance/robot/build/coord_controller' returned '0': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install LD_LIBRARY_PATH=/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/lance/robot/build/coord_controller/prefix_override:/home/lance/robot/install/coord_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/lance/robot/build/coord_controller/build
+[9.177s] Invoking command in '/home/lance/robot/src/coord_controller': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install LD_LIBRARY_PATH=/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/lance/robot/build/coord_controller/prefix_override:/home/lance/robot/install/coord_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/coord_controller build --build-base /home/lance/robot/build/coord_controller/build install --record /home/lance/robot/build/coord_controller/install.log --single-version-externally-managed
+[10.773s] running egg_info
+[10.776s] writing ../../build/coord_controller/coord_controller.egg-info/PKG-INFO
+[10.777s] writing dependency_links to ../../build/coord_controller/coord_controller.egg-info/dependency_links.txt
+[10.778s] writing entry points to ../../build/coord_controller/coord_controller.egg-info/entry_points.txt
+[10.779s] writing requirements to ../../build/coord_controller/coord_controller.egg-info/requires.txt
+[10.779s] writing top-level names to ../../build/coord_controller/coord_controller.egg-info/top_level.txt
+[10.788s] reading manifest file '../../build/coord_controller/coord_controller.egg-info/SOURCES.txt'
+[10.793s] writing manifest file '../../build/coord_controller/coord_controller.egg-info/SOURCES.txt'
+[10.794s] running build
+[10.794s] running build_py
+[10.795s] copying coord_controller/inverse_kinematics.py -> /home/lance/robot/build/coord_controller/build/lib/coord_controller
+[10.796s] copying coord_controller/my_cobot.py -> /home/lance/robot/build/coord_controller/build/lib/coord_controller
+[10.798s] running install
+[10.800s] running install_lib
+[10.804s] creating /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller
+[10.805s] copying /home/lance/robot/build/coord_controller/build/lib/coord_controller/inverse_kinematics.py -> /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller
+[10.805s] copying /home/lance/robot/build/coord_controller/build/lib/coord_controller/__init__.py -> /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller
+[10.806s] copying /home/lance/robot/build/coord_controller/build/lib/coord_controller/my_cobot.py -> /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller
+[10.809s] byte-compiling /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller/inverse_kinematics.py to inverse_kinematics.cpython-310.pyc
+[10.817s] byte-compiling /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller/__init__.py to __init__.cpython-310.pyc
+[10.818s] byte-compiling /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller/my_cobot.py to my_cobot.cpython-310.pyc
+[10.823s] running install_data
+[10.827s] copying package.xml -> /home/lance/robot/install/coord_controller/share/coord_controller
+[10.828s] running install_egg_info
+[10.836s] Copying ../../build/coord_controller/coord_controller.egg-info to /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller-0.0.0-py3.10.egg-info
+[10.845s] running install_scripts
+[10.929s] Installing my_cobot script to /home/lance/robot/install/coord_controller/lib/coord_controller
+[10.931s] writing list of installed files to '/home/lance/robot/build/coord_controller/install.log'
+[11.093s] Invoked command in '/home/lance/robot/src/coord_controller' returned '0': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install LD_LIBRARY_PATH=/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/lance/robot/build/coord_controller/prefix_override:/home/lance/robot/install/coord_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/coord_controller build --build-base /home/lance/robot/build/coord_controller/build install --record /home/lance/robot/build/coord_controller/install.log --single-version-externally-managed

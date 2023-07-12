@@ -23,10 +23,10 @@ typedef struct my_cobot_interfaces__srv__SetCoords_Request
   double x;
   double y;
   double z;
-  double rx;
-  double ry;
-  double rz;
-  bool cartesian;
+  double w;
+  double i;
+  double j;
+  double k;
 } my_cobot_interfaces__srv__SetCoords_Request;
 
 // Struct for a sequence of my_cobot_interfaces__srv__SetCoords_Request.

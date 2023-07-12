@@ -41,10 +41,10 @@ struct SetCoords_Request_
       this->x = 0.0;
       this->y = 0.0;
       this->z = 0.0;
-      this->rx = 0.0;
-      this->ry = 0.0;
-      this->rz = 0.0;
-      this->cartesian = false;
+      this->w = 0.0;
+      this->i = 0.0;
+      this->j = 0.0;
+      this->k = 0.0;
     }
   }
 
@@ -57,10 +57,10 @@ struct SetCoords_Request_
       this->x = 0.0;
       this->y = 0.0;
       this->z = 0.0;
-      this->rx = 0.0;
-      this->ry = 0.0;
-      this->rz = 0.0;
-      this->cartesian = false;
+      this->w = 0.0;
+      this->i = 0.0;
+      this->j = 0.0;
+      this->k = 0.0;
     }
   }
 
@@ -74,18 +74,18 @@ struct SetCoords_Request_
   using _z_type =
     double;
   _z_type z;
-  using _rx_type =
+  using _w_type =
     double;
-  _rx_type rx;
-  using _ry_type =
+  _w_type w;
+  using _i_type =
     double;
-  _ry_type ry;
-  using _rz_type =
+  _i_type i;
+  using _j_type =
     double;
-  _rz_type rz;
-  using _cartesian_type =
-    bool;
-  _cartesian_type cartesian;
+  _j_type j;
+  using _k_type =
+    double;
+  _k_type k;
 
   // setters for named parameter idiom
   Type & set__x(
@@ -106,28 +106,28 @@ struct SetCoords_Request_
     this->z = _arg;
     return *this;
   }
-  Type & set__rx(
+  Type & set__w(
     const double & _arg)
   {
-    this->rx = _arg;
+    this->w = _arg;
     return *this;
   }
-  Type & set__ry(
+  Type & set__i(
     const double & _arg)
   {
-    this->ry = _arg;
+    this->i = _arg;
     return *this;
   }
-  Type & set__rz(
+  Type & set__j(
     const double & _arg)
   {
-    this->rz = _arg;
+    this->j = _arg;
     return *this;
   }
-  Type & set__cartesian(
-    const bool & _arg)
+  Type & set__k(
+    const double & _arg)
   {
-    this->cartesian = _arg;
+    this->k = _arg;
     return *this;
   }
 
@@ -182,16 +182,16 @@ struct SetCoords_Request_
     if (this->z != other.z) {
       return false;
     }
-    if (this->rx != other.rx) {
+    if (this->w != other.w) {
       return false;
     }
-    if (this->ry != other.ry) {
+    if (this->i != other.i) {
       return false;
     }
-    if (this->rz != other.rz) {
+    if (this->j != other.j) {
       return false;
     }
-    if (this->cartesian != other.cartesian) {
+    if (this->k != other.k) {
       return false;
     }
     return true;

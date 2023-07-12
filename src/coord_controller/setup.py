@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'my_cobot=coord_controller.my_cobot:main'
+            'my_cobot=coord_controller.my_cobot:main',
+            'state_machine=coord_controller.region_mover:main'
         ],
     },
 )

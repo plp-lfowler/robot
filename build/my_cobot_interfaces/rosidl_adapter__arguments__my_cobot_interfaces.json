@@ -4,6 +4,12 @@
     "/home/lance/robot/src/my_cobot_interfaces:srv/GetRadians.srv",
     "/home/lance/robot/src/my_cobot_interfaces:srv/SetRadians.srv",
     "/home/lance/robot/src/my_cobot_interfaces:srv/PlayPause.srv",
-    "/home/lance/robot/src/my_cobot_interfaces:srv/SetCoords.srv"
+    "/home/lance/robot/src/my_cobot_interfaces:srv/SetCoords.srv",
+    "/home/lance/robot/src/my_cobot_interfaces:srv/GetBlocks.srv",
+    "/home/lance/robot/src/my_cobot_interfaces:srv/SetJointAngles.srv",
+    "/home/lance/robot/src/my_cobot_interfaces:srv/PumpOff.srv",
+    "/home/lance/robot/src/my_cobot_interfaces:srv/PumpOn.srv",
+    "/home/lance/robot/src/my_cobot_interfaces:msg/Block.msg",
+    "/home/lance/robot/src/my_cobot_interfaces:action/SetAngles.action"
   ]
 }

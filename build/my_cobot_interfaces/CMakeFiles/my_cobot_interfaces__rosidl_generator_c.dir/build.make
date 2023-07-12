@@ -86,8 +86,19 @@ rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: rosidl_adapter/my_cobo
 rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: rosidl_adapter/my_cobot_interfaces/srv/SetRadians.idl
 rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: rosidl_adapter/my_cobot_interfaces/srv/PlayPause.idl
 rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: rosidl_adapter/my_cobot_interfaces/srv/SetCoords.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: rosidl_adapter/my_cobot_interfaces/srv/GetBlocks.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: rosidl_adapter/my_cobot_interfaces/srv/SetJointAngles.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: rosidl_adapter/my_cobot_interfaces/srv/PumpOff.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: rosidl_adapter/my_cobot_interfaces/srv/PumpOn.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: rosidl_adapter/my_cobot_interfaces/msg/Block.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: rosidl_adapter/my_cobot_interfaces/action/SetAngles.idl
 rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
+rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h: /opt/ros/humble/share/unique_identifier_msgs/msg/UUID.idl
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
 	/usr/bin/python3.10 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c__arguments.json
 
@@ -136,6 +147,78 @@ rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__struct.h: rosidl_g
 rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__type_support.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__type_support.h
 
+rosidl_generator_c/my_cobot_interfaces/srv/get_blocks.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/get_blocks.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__struct.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__struct.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__type_support.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__type_support.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/set_joint_angles.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/set_joint_angles.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__struct.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__struct.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__type_support.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__type_support.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/pump_off.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/pump_off.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__struct.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__struct.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__type_support.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__type_support.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/pump_on.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/pump_on.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__struct.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__struct.h
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__type_support.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__type_support.h
+
+rosidl_generator_c/my_cobot_interfaces/msg/block.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/msg/block.h
+
+rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.h
+
+rosidl_generator_c/my_cobot_interfaces/msg/detail/block__struct.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/msg/detail/block__struct.h
+
+rosidl_generator_c/my_cobot_interfaces/msg/detail/block__type_support.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/msg/detail/block__type_support.h
+
+rosidl_generator_c/my_cobot_interfaces/action/set_angles.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/action/set_angles.h
+
+rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.h
+
+rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__struct.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__struct.h
+
+rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__type_support.h: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__type_support.h
+
 rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c
 
@@ -147,6 +230,24 @@ rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c: rosid
 
 rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c
+
+rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c
+
+rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c
+
+rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c
 
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c.o: rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c
@@ -204,12 +305,102 @@ CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cob
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c.s
 
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.o: rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.o -MF CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.o.d -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.o -c /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c > CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.i
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.s
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.o: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.o -MF CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.o.d -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.o -c /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c > CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.i
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.s
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.o: rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.o -MF CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.o.d -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.o -c /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c > CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.i
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.s
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.o: rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.o -MF CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.o.d -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.o -c /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c > CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.i
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.s
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.o: rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.o -MF CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.o.d -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.o -c /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c > CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.i
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.s
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.o: rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.o: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.o -MF CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.o.d -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.o -c /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c > CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.i
+
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c -o CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.s
+
 # Object files for target my_cobot_interfaces__rosidl_generator_c
 my_cobot_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c.o" \
 "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c.o" \
 "CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c.o" \
-"CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c.o"
+"CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c.o" \
+"CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.o" \
+"CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.o" \
+"CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.o" \
+"CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.o" \
+"CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.o" \
+"CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.o"
 
 # External object files for target my_cobot_interfaces__rosidl_generator_c
 my_cobot_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -218,12 +409,20 @@ libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__r
 libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c.o
 libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.c.o
 libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c.o
+libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c.o
+libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c.o
+libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c.o
+libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c.o
+libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c.o
+libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c.o
 libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/build.make
+libmy_cobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
+libmy_cobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 libmy_cobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 libmy_cobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libmy_cobot_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libmy_cobot_interfaces__rosidl_generator_c.so: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libmy_cobot_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lance/robot/build/my_cobot_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C shared library libmy_cobot_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -234,6 +433,20 @@ CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/clean
 
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__struct.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__type_support.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/action/set_angles.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/msg/block.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/msg/detail/block__struct.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/msg/detail/block__type_support.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__struct.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__type_support.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.c
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__struct.h
@@ -242,17 +455,33 @@ CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__struct.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__type_support.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__struct.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__type_support.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__struct.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__type_support.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__struct.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__type_support.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.c
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__struct.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__type_support.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.c
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__functions.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__struct.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__type_support.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/get_blocks.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/get_radians.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/play_pause.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/pump_off.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/pump_on.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/set_coords.h
+CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/set_joint_angles.h
 CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/my_cobot_interfaces/srv/set_radians.h
 	cd /home/lance/robot/build/my_cobot_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/lance/robot/src/my_cobot_interfaces /home/lance/robot/src/my_cobot_interfaces /home/lance/robot/build/my_cobot_interfaces /home/lance/robot/build/my_cobot_interfaces /home/lance/robot/build/my_cobot_interfaces/CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/depend

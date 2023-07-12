@@ -78,8 +78,26 @@ CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/PlayPause_Response.msg
 CMakeFiles/my_cobot_interfaces: /home/lance/robot/src/my_cobot_interfaces/srv/SetCoords.srv
 CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/SetCoords_Request.msg
 CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/SetCoords_Response.msg
+CMakeFiles/my_cobot_interfaces: /home/lance/robot/src/my_cobot_interfaces/srv/GetBlocks.srv
+CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/GetBlocks_Request.msg
+CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/GetBlocks_Response.msg
+CMakeFiles/my_cobot_interfaces: /home/lance/robot/src/my_cobot_interfaces/srv/SetJointAngles.srv
+CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/SetJointAngles_Request.msg
+CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/SetJointAngles_Response.msg
+CMakeFiles/my_cobot_interfaces: /home/lance/robot/src/my_cobot_interfaces/srv/PumpOff.srv
+CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/PumpOff_Request.msg
+CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/PumpOff_Response.msg
+CMakeFiles/my_cobot_interfaces: /home/lance/robot/src/my_cobot_interfaces/srv/PumpOn.srv
+CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/PumpOn_Request.msg
+CMakeFiles/my_cobot_interfaces: rosidl_cmake/srv/PumpOn_Response.msg
+CMakeFiles/my_cobot_interfaces: /home/lance/robot/src/my_cobot_interfaces/msg/Block.msg
+CMakeFiles/my_cobot_interfaces: /home/lance/robot/src/my_cobot_interfaces/action/SetAngles.action
 CMakeFiles/my_cobot_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/my_cobot_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
+CMakeFiles/my_cobot_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
+CMakeFiles/my_cobot_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
+CMakeFiles/my_cobot_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
+CMakeFiles/my_cobot_interfaces: /opt/ros/humble/share/action_msgs/srv/CancelGoal.idl
 
 my_cobot_interfaces: CMakeFiles/my_cobot_interfaces
 my_cobot_interfaces: CMakeFiles/my_cobot_interfaces.dir/build.make

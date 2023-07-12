@@ -60,20 +60,20 @@ class SetCoords_Request(metaclass=Metaclass_SetCoords_Request):
         '_x',
         '_y',
         '_z',
-        '_rx',
-        '_ry',
-        '_rz',
-        '_cartesian',
+        '_w',
+        '_i',
+        '_j',
+        '_k',
     ]
 
     _fields_and_field_types = {
         'x': 'double',
         'y': 'double',
         'z': 'double',
-        'rx': 'double',
-        'ry': 'double',
-        'rz': 'double',
-        'cartesian': 'boolean',
+        'w': 'double',
+        'i': 'double',
+        'j': 'double',
+        'k': 'double',
     }
 
     SLOT_TYPES = (
@@ -83,7 +83,7 @@ class SetCoords_Request(metaclass=Metaclass_SetCoords_Request):
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
         rosidl_parser.definition.BasicType('double'),  # noqa: E501
-        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
+        rosidl_parser.definition.BasicType('double'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -93,10 +93,10 @@ class SetCoords_Request(metaclass=Metaclass_SetCoords_Request):
         self.x = kwargs.get('x', float())
         self.y = kwargs.get('y', float())
         self.z = kwargs.get('z', float())
-        self.rx = kwargs.get('rx', float())
-        self.ry = kwargs.get('ry', float())
-        self.rz = kwargs.get('rz', float())
-        self.cartesian = kwargs.get('cartesian', bool())
+        self.w = kwargs.get('w', float())
+        self.i = kwargs.get('i', float())
+        self.j = kwargs.get('j', float())
+        self.k = kwargs.get('k', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -133,13 +133,13 @@ class SetCoords_Request(metaclass=Metaclass_SetCoords_Request):
             return False
         if self.z != other.z:
             return False
-        if self.rx != other.rx:
+        if self.w != other.w:
             return False
-        if self.ry != other.ry:
+        if self.i != other.i:
             return False
-        if self.rz != other.rz:
+        if self.j != other.j:
             return False
-        if self.cartesian != other.cartesian:
+        if self.k != other.k:
             return False
         return True
 
@@ -194,62 +194,64 @@ class SetCoords_Request(metaclass=Metaclass_SetCoords_Request):
         self._z = value
 
     @builtins.property
-    def rx(self):
-        """Message field 'rx'."""
-        return self._rx
+    def w(self):
+        """Message field 'w'."""
+        return self._w
 
-    @rx.setter
-    def rx(self, value):
+    @w.setter
+    def w(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'rx' field must be of type 'float'"
+                "The 'w' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'rx' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._rx = value
+                "The 'w' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._w = value
 
     @builtins.property
-    def ry(self):
-        """Message field 'ry'."""
-        return self._ry
+    def i(self):
+        """Message field 'i'."""
+        return self._i
 
-    @ry.setter
-    def ry(self, value):
+    @i.setter
+    def i(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'ry' field must be of type 'float'"
+                "The 'i' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'ry' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._ry = value
+                "The 'i' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._i = value
 
     @builtins.property
-    def rz(self):
-        """Message field 'rz'."""
-        return self._rz
+    def j(self):
+        """Message field 'j'."""
+        return self._j
 
-    @rz.setter
-    def rz(self, value):
+    @j.setter
+    def j(self, value):
         if __debug__:
             assert \
                 isinstance(value, float), \
-                "The 'rz' field must be of type 'float'"
+                "The 'j' field must be of type 'float'"
             assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
-                "The 'rz' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
-        self._rz = value
+                "The 'j' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._j = value
 
     @builtins.property
-    def cartesian(self):
-        """Message field 'cartesian'."""
-        return self._cartesian
+    def k(self):
+        """Message field 'k'."""
+        return self._k
 
-    @cartesian.setter
-    def cartesian(self, value):
+    @k.setter
+    def k(self, value):
         if __debug__:
             assert \
-                isinstance(value, bool), \
-                "The 'cartesian' field must be of type 'bool'"
-        self._cartesian = value
+                isinstance(value, float), \
+                "The 'k' field must be of type 'float'"
+            assert not (value < -1.7976931348623157e+308 or value > 1.7976931348623157e+308) or math.isinf(value), \
+                "The 'k' field must be a double in [-1.7976931348623157e+308, 1.7976931348623157e+308]"
+        self._k = value
 
 
 # Import statements for member types

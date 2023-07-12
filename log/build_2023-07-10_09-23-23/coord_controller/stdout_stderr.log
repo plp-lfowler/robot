@@ -1,0 +1,30 @@
+running develop
+Removing /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord-controller.egg-link (link to .)
+running egg_info
+writing ../../build/coord_controller/coord_controller.egg-info/PKG-INFO
+writing dependency_links to ../../build/coord_controller/coord_controller.egg-info/dependency_links.txt
+writing entry points to ../../build/coord_controller/coord_controller.egg-info/entry_points.txt
+writing requirements to ../../build/coord_controller/coord_controller.egg-info/requires.txt
+writing top-level names to ../../build/coord_controller/coord_controller.egg-info/top_level.txt
+reading manifest file '../../build/coord_controller/coord_controller.egg-info/SOURCES.txt'
+writing manifest file '../../build/coord_controller/coord_controller.egg-info/SOURCES.txt'
+running build
+running build_py
+copying coord_controller/inverse_kinematics.py -> /home/lance/robot/build/coord_controller/build/lib/coord_controller
+copying coord_controller/my_cobot.py -> /home/lance/robot/build/coord_controller/build/lib/coord_controller
+running install
+running install_lib
+creating /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller
+copying /home/lance/robot/build/coord_controller/build/lib/coord_controller/inverse_kinematics.py -> /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller
+copying /home/lance/robot/build/coord_controller/build/lib/coord_controller/__init__.py -> /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller
+copying /home/lance/robot/build/coord_controller/build/lib/coord_controller/my_cobot.py -> /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller
+byte-compiling /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller/inverse_kinematics.py to inverse_kinematics.cpython-310.pyc
+byte-compiling /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller/my_cobot.py to my_cobot.cpython-310.pyc
+running install_data
+copying package.xml -> /home/lance/robot/install/coord_controller/share/coord_controller
+running install_egg_info
+Copying ../../build/coord_controller/coord_controller.egg-info to /home/lance/robot/install/coord_controller/lib/python3.10/site-packages/coord_controller-0.0.0-py3.10.egg-info
+running install_scripts
+Installing my_cobot script to /home/lance/robot/install/coord_controller/lib/coord_controller
+writing list of installed files to '/home/lance/robot/build/coord_controller/install.log'

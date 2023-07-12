@@ -11,6 +11,12 @@
   <exec_depend>pymycobot</exec_depend>
   <exec_depend>my_cobot_interfaces</exec_depend>
   <exec_depend>time</exec_depend>
+  <exec_depend>math</exec_depend>
+  <exec_depend>scipy</exec_depend>
+  <exec_depend>RPi.GPIO</exec_depend>
+  <exec_depend>itertools</exec_depend>
+  <exec_depend>matplotlib</exec_depend>
+  <exec_depend>mpt_toolkits</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

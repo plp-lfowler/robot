@@ -18,7 +18,25 @@ def mag(arr:np.ndarray):
 def norm(arr:np.ndarray):
     return arr / mag(arr)
 
-def inverse_kinematics(x:float, y:float, z:float, rot:Rotation, pump=True):
+def z_invariant_inverse_kinematics(x:float, y:float, z:float, pump=True):
+    bestTheta = None
+    bestSol = None
+    best = 0
+    for theta in range(0, 360, 5):
+        try:
+            res = inverse_kinematics(x, y, z, Rotation.from_euler('xyz', [0, 0, theta]), returnEval=True)
+        
+            if res is not None:
+                sol, eval = res
+                if eval > best:
+                    best = eval
+                    bestSol = sol
+                    bestTheta = theta
+        except:
+            pass
+    return  bestSol, bestTheta
+
+def inverse_kinematics(x:float, y:float, z:float, rot:Rotation, pump=True, returnEval=False):
     bestSolutionUnitVectors = None
     best = 0
     p5 = np.array([x,y,z-d0])
@@ -30,7 +48,7 @@ def inverse_kinematics(x:float, y:float, z:float, rot:Rotation, pump=True):
         if mag(p2) < d1 + d2:
             p1s = getP1s(p2)
             for p1 in p1s:
-                eval = evalSolution(p1, p2, p3, p4, p5)
+                eval = evalSolution(p1, p2, p3, p4, p5, p6)
                 if(eval > best):
                     best = eval
                     bestSolutionUnitVectors = (norm(p1),
@@ -44,6 +62,8 @@ def inverse_kinematics(x:float, y:float, z:float, rot:Rotation, pump=True):
         return None
     
     angles = unitVectorsToRotations(bestSolutionUnitVectors)
+    if returnEval:
+        return angles, eval
     return angles
 
 def set_axes_equal(ax):
@@ -74,7 +94,6 @@ def unitVectorsToRotations(vectors):
     v1, v2, v3, v4, v5, v6 = vectors
     y = np.array([0,-1,0])
     z = np.array([0,0,1])
-    v1xy = np.array([v1[0], v1[1], 0])
     j1 = angle(y, v3, z)
     j2 = angle(z, v1, v3)
     j3 = angle(v1, v2, v3)
@@ -94,15 +113,34 @@ def angle(va:np.ndarray, vb:np.ndarray, vn:np.ndarray):
     x = np.dot(va, vb)
     return np.degrees(np.arctan2(y, x))
             
-def evalSolution(p1, p2, p3, p4, p5):
-    points = [p1, p2, p3, p4, p5]
+def evalSolution(p1, p2, p3, p4, p5, p6):
+    points = [p1, p2, p3, p4, p5, p1+30*norm(p4-p3), p2+30*norm(p4-p3), np.array([0,0,0])]
     score = 0
     for p in points:
         score += (p[2] + d0) * (p[2] + d0)
+    closeness = 0
     for a, b in combinations(points, 2):
-        if(mag(a - b) < 40):
+        closeness += 1 / (sqrmag(a - b))
+        if(mag(a - b) < 29):
             return 0
-    return score
+    correction = [-40, -8, 0, 0, 0, -45]
+    bestSolutionUnitVectors = (norm(p1),
+                                            norm(p2 - p1),
+                                            norm(p3 - p2),
+                                            norm(p4 - p3),
+                                            norm(p5 - p4),
+                                            norm(p6 - p5))
+    angles = unitVectorsToRotations(bestSolutionUnitVectors)
+    angleScore = 1
+    for i in range(len(angles)):
+        angle = angles[i] + correction[i]
+        while angle < -180:
+            angle += 360
+        while angle > 180:
+            angle -= 360
+        s = (181 - abs(angle))/20
+        angleScore *= max(min(s * s, 1), 0.001)
+    return score*closeness
 
 def pumpCoordsToHeadCoords(v:np.ndarray, rot:Rotation):
     offset = np.array([14.605, 0, -64.86])

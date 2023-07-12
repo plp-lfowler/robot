@@ -1,0 +1,11 @@
+gmake[2]: *** Deleting file 'rosidl_generator_cpp/my_cobot_interfaces/action/detail/set_angles__traits.hpp'
+gmake[2]: *** Deleting file 'rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c'
+gmake[2]: *** Deleting file 'rosidl_generator_cpp/my_cobot_interfaces/action/detail/set_angles__struct.hpp'
+gmake[2]: *** Deleting file 'rosidl_generator_cpp/my_cobot_interfaces/action/detail/set_angles__builder.hpp'
+gmake[2]: *** [CMakeFiles/my_cobot_interfaces__cpp.dir/build.make:254: rosidl_generator_cpp/my_cobot_interfaces/action/detail/set_angles__builder.hpp] Interrupt
+gmake[2]: *** [CMakeFiles/my_cobot_interfaces__cpp.dir/build.make:257: rosidl_generator_cpp/my_cobot_interfaces/action/detail/set_angles__struct.hpp] Interrupt
+gmake[2]: *** [CMakeFiles/my_cobot_interfaces__cpp.dir/build.make:260: rosidl_generator_cpp/my_cobot_interfaces/action/detail/set_angles__traits.hpp] Interrupt
+gmake[2]: *** [CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/build.make:232: rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.c] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/my_cobot_interfaces__cpp.dir/all] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/my_cobot_interfaces__rosidl_generator_c.dir/all] Interrupt
+gmake: *** [Makefile:146: all] Interrupt

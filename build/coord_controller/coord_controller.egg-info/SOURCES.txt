@@ -9,7 +9,10 @@ setup.py
 ../../build/coord_controller/coord_controller.egg-info/top_level.txt
 ../../build/coord_controller/coord_controller.egg-info/zip-safe
 coord_controller/__init__.py
+coord_controller/inverse_kinematics.py
+coord_controller/locations.py
 coord_controller/my_cobot.py
+coord_controller/region_mover.py
 coord_controller.egg-info/PKG-INFO
 coord_controller.egg-info/SOURCES.txt
 coord_controller.egg-info/dependency_links.txt

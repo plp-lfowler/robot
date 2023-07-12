@@ -1,15 +1,18 @@
 #!/user/bin/env3
 # -*- coding: utf-8 -*-
 from pymycobot.mycobot import MyCobot
+import RPi.GPIO as GPIO
 import rclpy
 from rclpy.node import Node
+from rclpy.executors import MultiThreadedExecutor
+from rclpy.callback_groups import MutuallyExclusiveCallbackGroup
+from rclpy.action import ActionServer
 
-from my_cobot_interfaces.srv import SetCoords
+from my_cobot_interfaces.srv import SetJointAngles, PumpOn, PumpOff
+from my_cobot_interfaces.action import SetAngles
 import time
 import math
-from scipy.spatial.transform import Rotation
-import numpy as np
-from inverse_kinematics import inverse_kinematics
+
 
 class Error:
     def __init__(self):
@@ -18,7 +21,7 @@ class Error:
         self.timestamp = time.time()
 
     def low_error(self):
-        return self.e < 3
+        return self.e < 5
     
     def low_derror(self):
         return self.de > -10
@@ -38,12 +41,16 @@ class Error:
 class Robot:
     def __init__(self):
         self.robot = MyCobot("/dev/serial0", 1000000)
-        time.sleep(1)
+        time.sleep(0.1)
         self.robot.power_on()
         time.sleep(0.1)
         self.robot.set_fresh_mode(1)
         time.sleep(0.1)
-        self.correction = [-40, -8, 0, 0, 0, -50]
+        self.correction = [-40, -8, 0, 0, 0, -45]
+        GPIO.setmode(GPIO.BCM)
+        GPIO.setup(20, GPIO.OUT)
+        GPIO.setup(21, GPIO.OUT)
+        self.pump_off()
 
     def transform(self, angles:list[float], toRobot:bool) -> list[float]:
         new = []
@@ -51,73 +58,91 @@ class Robot:
             new.append(float(angles[i] + self.correction[i] * (1 if toRobot else -1)))
         return list(new)
     
-    def send_angles(self, angles, speed=20):
+    def send_angles(self, angles, speed=30):
         angles = self.transform(angles, toRobot=True)
-        print(angles)
-        time.sleep(0.5)
+        #print(angles)
+        time.sleep(0.2)
         self.robot.send_angles(angles, speed)
-        time.sleep(0.5)
+        time.sleep(0.7)
 
     def get_angles(self):
-        coords = self.robot.get_angles()
+        coords = []
+        try:
+            coords = self.robot.get_angles()
+        except:
+            pass
         if len(coords) == 6:
             coords = self.transform(coords, toRobot=False)
+        else:
+            time.sleep(0.3)
         time.sleep(0.1)
         return coords
+    
+    def pump_on(self):
+        GPIO.output(21, 0)
+        time.sleep(0.05)
+    
+    def pump_off(self):
+        GPIO.output(20,0)
+        time.sleep(0.05)
+        GPIO.output(21, 0)
+        time.sleep(0.1)
+        GPIO.output(21, 1)
+        time.sleep(0.05)
 
     def release_all_servos(self):
         self.robot.release_all_servos()
         time.sleep(0.1)
 
 
-class MyCobotServer(Node):
+class MyCobotPositionController(Node):
     def __init__(self):
         super().__init__("my_cobot_coord_server")
         self.robot = Robot()
-        self.set_coords_service = self.create_service(SetCoords, '/mycobot/set_coords', self.set_coords_callback)
-        self.move_robot_timer = self.create_timer(1, self.move_robot_callback)
-        self.target = inverse_kinematics(180, 190, 80, Rotation.from_euler('xyz',[0,0,45], degrees=True))
+        self.move_robot_timer = self.create_timer(0.5, self.move_robot_callback, callback_group = MutuallyExclusiveCallbackGroup())
+        self.set_angles_action = ActionServer(self, SetAngles, '/set_angles', self.set_angles_callback)
+        self.pump_on_service = self.create_service(PumpOn, "/pump_on", self.pump_on_callback)
+        self.pump_off_service = self.create_service(PumpOff, "/pump_off", self.pump_off_callback)
+        self.target = self.get_angles()
+        self.ignore_shutdown = 3
         self.e = Error()
         self.speed = 10
         self.get_logger().info("Coord server started")
-        self.move_robot_callback(True)
 
-
-
-    def move_robot_callback(self, ignore_shutdown:bool=False):
+    def move_robot_callback(self):
         self.update_error()
-        if (not self.e.low_error() and self.e.low_derror()) or ignore_shutdown:
+        if (not self.e.low_error() and self.e.low_derror()) or self.ignore_shutdown:
             self.robot.send_angles(self.target, self.speed)
             self.get_logger().info("moving robot")
-        if self.e.derror() > 3 and not ignore_shutdown:
+        if self.e.derror() > 5 and not self.ignore_shutdown:
             self.get_logger().error("EMERGENCY ROBOT SHUTDOWN")
             self.move_robot_timer.destroy()
-            self.set_coords_service.destroy()
-            for i in range(50):
+            self.set_angles_action.destroy()
+            for i in range(3):
                 self.on_shutdown()
             while True:
                 pass
+        if self.ignore_shutdown: self.ignore_shutdown -= 1
 
-    def set_coords_callback(self, request:SetCoords.Request(), response:SetCoords.Response()):
-        #response.success = self.move_to_blocking(request.x, request.y, request.z)
+    def set_angles_callback(self, goal_handle):
+        request = goal_handle.request
+        target = [request.j1, request.j2, request.j3, request.j4, request.j5, request.j6]
+        goal_handle.succeed()
+        response = SetAngles.Result()
+        response.timeout = not self.move_to_blocking(target)
         return response
 
-    def move_to_blocking(self, x:float, y:float, z:float, rot:Rotation, timeout:float=30):
-        target = inverse_kinematics(x, y, z, rot)
-        if target is None:
-            self.get_logger().error("Inverse Kinematics does not have a solution")
-            return False
-        self.target = target
-
+    def move_to_blocking(self, target:list[float], timeout:float=30):
+        self.get_logger().info("Motion request accepted")
         start = time.time()
-        self.move_robot_callback(True)
+        self.target = target
+        self.ignore_shutdown = 3
 
-        while(not self.e.low_error()):
-            rclpy.spin_once(self, timeout_sec = 0.5)
+        while(not self.e.low_error() or self.ignore_shutdown == 3):
+            time.sleep(0.1)
             if time.time() - start > timeout:
                 self.get_logger().error("Motion request timed out")
                 return False
-
         return True
     
     def error(self, current:list[float], target:list[float]):
@@ -138,28 +163,32 @@ class MyCobotServer(Node):
     
     def update_error(self):
         current = self.get_angles()
-        self.get_logger().info(str(current))
         if current is not None:
             self.e.update(self.error(current, self.target))
+        else: self.update_error()
 
     def on_shutdown(self):
         self.robot.release_all_servos()
+        #self.robot.pump_off()
+
+    def pump_on_callback(self, request:PumpOn.Request, response:PumpOn.Response):
+        self.robot.pump_on()
+        return response
+
+    def pump_off_callback(self, request:PumpOff.Request, response:PumpOff.Response):
+        self.robot.pump_off()
+        return response
 
 
 def main(args=None):
     rclpy.init(args=args)
-    node = MyCobotServer()
-    rclpy.spin(node)
-    node.on_shutdown()
-    node.destroy_node()
-    rclpy.shutdown()
-
-def shutdown(args=None):
-    rclpy.init(args=args)
-    node = MyCobotServer()
-    node.on_shutdown()
-    node.destroy_node()
-    rclpy.shutdown()
+    node = MyCobotPositionController()
+    executor = MultiThreadedExecutor(5)
+    executor.add_node(node)
+    try:
+        executor.spin()
+    except KeyboardInterrupt:
+        node.on_shutdown()
 
 if __name__ == "__main__":
     main()

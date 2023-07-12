@@ -77,40 +77,40 @@ bool my_cobot_interfaces__srv__set_coords__request__convert_from_py(PyObject * _
     ros_message->z = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // rx
-    PyObject * field = PyObject_GetAttrString(_pymsg, "rx");
+  {  // w
+    PyObject * field = PyObject_GetAttrString(_pymsg, "w");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->rx = PyFloat_AS_DOUBLE(field);
+    ros_message->w = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // ry
-    PyObject * field = PyObject_GetAttrString(_pymsg, "ry");
+  {  // i
+    PyObject * field = PyObject_GetAttrString(_pymsg, "i");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->ry = PyFloat_AS_DOUBLE(field);
+    ros_message->i = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // rz
-    PyObject * field = PyObject_GetAttrString(_pymsg, "rz");
+  {  // j
+    PyObject * field = PyObject_GetAttrString(_pymsg, "j");
     if (!field) {
       return false;
     }
     assert(PyFloat_Check(field));
-    ros_message->rz = PyFloat_AS_DOUBLE(field);
+    ros_message->j = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
-  {  // cartesian
-    PyObject * field = PyObject_GetAttrString(_pymsg, "cartesian");
+  {  // k
+    PyObject * field = PyObject_GetAttrString(_pymsg, "k");
     if (!field) {
       return false;
     }
-    assert(PyBool_Check(field));
-    ros_message->cartesian = (Py_True == field);
+    assert(PyFloat_Check(field));
+    ros_message->k = PyFloat_AS_DOUBLE(field);
     Py_DECREF(field);
   }
 
@@ -168,44 +168,44 @@ PyObject * my_cobot_interfaces__srv__set_coords__request__convert_to_py(void * r
       }
     }
   }
-  {  // rx
+  {  // w
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->rx);
+    field = PyFloat_FromDouble(ros_message->w);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "rx", field);
+      int rc = PyObject_SetAttrString(_pymessage, "w", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // ry
+  {  // i
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->ry);
+    field = PyFloat_FromDouble(ros_message->i);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "ry", field);
+      int rc = PyObject_SetAttrString(_pymessage, "i", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // rz
+  {  // j
     PyObject * field = NULL;
-    field = PyFloat_FromDouble(ros_message->rz);
+    field = PyFloat_FromDouble(ros_message->j);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "rz", field);
+      int rc = PyObject_SetAttrString(_pymessage, "j", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // cartesian
+  {  // k
     PyObject * field = NULL;
-    field = PyBool_FromLong(ros_message->cartesian ? 1 : 0);
+    field = PyFloat_FromDouble(ros_message->k);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "cartesian", field);
+      int rc = PyObject_SetAttrString(_pymessage, "k", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

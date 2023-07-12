@@ -90,14 +90,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SetCoords_Req
     nullptr  // resize(index) function pointer
   },
   {
-    "rx",  // name
+    "w",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(my_cobot_interfaces::srv::SetCoords_Request, rx),  // bytes offset in struct
+    offsetof(my_cobot_interfaces::srv::SetCoords_Request, w),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -107,14 +107,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SetCoords_Req
     nullptr  // resize(index) function pointer
   },
   {
-    "ry",  // name
+    "i",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(my_cobot_interfaces::srv::SetCoords_Request, ry),  // bytes offset in struct
+    offsetof(my_cobot_interfaces::srv::SetCoords_Request, i),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -124,14 +124,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SetCoords_Req
     nullptr  // resize(index) function pointer
   },
   {
-    "rz",  // name
+    "j",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(my_cobot_interfaces::srv::SetCoords_Request, rz),  // bytes offset in struct
+    offsetof(my_cobot_interfaces::srv::SetCoords_Request, j),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -141,14 +141,14 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember SetCoords_Req
     nullptr  // resize(index) function pointer
   },
   {
-    "cartesian",  // name
-    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    "k",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_DOUBLE,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(my_cobot_interfaces::srv::SetCoords_Request, cartesian),  // bytes offset in struct
+    offsetof(my_cobot_interfaces::srv::SetCoords_Request, k),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

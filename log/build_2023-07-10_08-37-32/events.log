@@ -1,0 +1,11 @@
+[0.000000] (-) TimerEvent: {}
+[0.001239] (-) JobUnselected: {'identifier': 'bringup'}
+[0.001505] (-) JobUnselected: {'identifier': 'computer_vision'}
+[0.001614] (-) JobUnselected: {'identifier': 'controllers'}
+[0.001695] (-) JobUnselected: {'identifier': 'coord_controller'}
+[0.001867] (-) JobUnselected: {'identifier': 'motion_planning'}
+[0.002143] (-) JobUnselected: {'identifier': 'moveit_config'}
+[0.002224] (-) JobUnselected: {'identifier': 'my_cobot_hardware_interface'}
+[0.002302] (-) JobUnselected: {'identifier': 'my_cobot_interfaces'}
+[0.002379] (-) JobUnselected: {'identifier': 'robot_description'}
+[0.002856] (-) EventReactorShutdown: {}

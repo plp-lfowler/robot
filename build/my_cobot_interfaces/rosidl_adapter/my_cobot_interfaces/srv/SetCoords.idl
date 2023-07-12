@@ -12,13 +12,13 @@ module my_cobot_interfaces {
 
       double z;
 
-      double rx;
+      double w;
 
-      double ry;
+      double i;
 
-      double rz;
+      double j;
 
-      boolean cartesian;
+      double k;
     };
     struct SetCoords_Response {
       boolean success;

@@ -64,24 +64,24 @@ static bool _SetCoords_Request__cdr_serialize(
     cdr << ros_message->z;
   }
 
-  // Field name: rx
+  // Field name: w
   {
-    cdr << ros_message->rx;
+    cdr << ros_message->w;
   }
 
-  // Field name: ry
+  // Field name: i
   {
-    cdr << ros_message->ry;
+    cdr << ros_message->i;
   }
 
-  // Field name: rz
+  // Field name: j
   {
-    cdr << ros_message->rz;
+    cdr << ros_message->j;
   }
 
-  // Field name: cartesian
+  // Field name: k
   {
-    cdr << (ros_message->cartesian ? true : false);
+    cdr << ros_message->k;
   }
 
   return true;
@@ -111,26 +111,24 @@ static bool _SetCoords_Request__cdr_deserialize(
     cdr >> ros_message->z;
   }
 
-  // Field name: rx
+  // Field name: w
   {
-    cdr >> ros_message->rx;
+    cdr >> ros_message->w;
   }
 
-  // Field name: ry
+  // Field name: i
   {
-    cdr >> ros_message->ry;
+    cdr >> ros_message->i;
   }
 
-  // Field name: rz
+  // Field name: j
   {
-    cdr >> ros_message->rz;
+    cdr >> ros_message->j;
   }
 
-  // Field name: cartesian
+  // Field name: k
   {
-    uint8_t tmp;
-    cdr >> tmp;
-    ros_message->cartesian = tmp ? true : false;
+    cdr >> ros_message->k;
   }
 
   return true;
@@ -168,27 +166,27 @@ size_t get_serialized_size_my_cobot_interfaces__srv__SetCoords_Request(
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name rx
+  // field.name w
   {
-    size_t item_size = sizeof(ros_message->rx);
+    size_t item_size = sizeof(ros_message->w);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name ry
+  // field.name i
   {
-    size_t item_size = sizeof(ros_message->ry);
+    size_t item_size = sizeof(ros_message->i);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name rz
+  // field.name j
   {
-    size_t item_size = sizeof(ros_message->rz);
+    size_t item_size = sizeof(ros_message->j);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
-  // field.name cartesian
+  // field.name k
   {
-    size_t item_size = sizeof(ros_message->cartesian);
+    size_t item_size = sizeof(ros_message->k);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -240,32 +238,33 @@ size_t max_serialized_size_my_cobot_interfaces__srv__SetCoords_Request(
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: rx
+  // member: w
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: ry
+  // member: i
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: rz
+  // member: j
   {
     size_t array_size = 1;
 
     current_alignment += array_size * sizeof(uint64_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
-  // member: cartesian
+  // member: k
   {
     size_t array_size = 1;
 
-    current_alignment += array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint64_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint64_t));
   }
 
   return current_alignment - initial_alignment;

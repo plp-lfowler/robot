@@ -46,31 +46,31 @@ inline void to_flow_style_yaml(
     out << ", ";
   }
 
-  // member: rx
+  // member: w
   {
-    out << "rx: ";
-    rosidl_generator_traits::value_to_yaml(msg.rx, out);
+    out << "w: ";
+    rosidl_generator_traits::value_to_yaml(msg.w, out);
     out << ", ";
   }
 
-  // member: ry
+  // member: i
   {
-    out << "ry: ";
-    rosidl_generator_traits::value_to_yaml(msg.ry, out);
+    out << "i: ";
+    rosidl_generator_traits::value_to_yaml(msg.i, out);
     out << ", ";
   }
 
-  // member: rz
+  // member: j
   {
-    out << "rz: ";
-    rosidl_generator_traits::value_to_yaml(msg.rz, out);
+    out << "j: ";
+    rosidl_generator_traits::value_to_yaml(msg.j, out);
     out << ", ";
   }
 
-  // member: cartesian
+  // member: k
   {
-    out << "cartesian: ";
-    rosidl_generator_traits::value_to_yaml(msg.cartesian, out);
+    out << "k: ";
+    rosidl_generator_traits::value_to_yaml(msg.k, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -109,43 +109,43 @@ inline void to_block_style_yaml(
     out << "\n";
   }
 
-  // member: rx
+  // member: w
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "rx: ";
-    rosidl_generator_traits::value_to_yaml(msg.rx, out);
+    out << "w: ";
+    rosidl_generator_traits::value_to_yaml(msg.w, out);
     out << "\n";
   }
 
-  // member: ry
+  // member: i
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "ry: ";
-    rosidl_generator_traits::value_to_yaml(msg.ry, out);
+    out << "i: ";
+    rosidl_generator_traits::value_to_yaml(msg.i, out);
     out << "\n";
   }
 
-  // member: rz
+  // member: j
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "rz: ";
-    rosidl_generator_traits::value_to_yaml(msg.rz, out);
+    out << "j: ";
+    rosidl_generator_traits::value_to_yaml(msg.j, out);
     out << "\n";
   }
 
-  // member: cartesian
+  // member: k
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "cartesian: ";
-    rosidl_generator_traits::value_to_yaml(msg.cartesian, out);
+    out << "k: ";
+    rosidl_generator_traits::value_to_yaml(msg.k, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

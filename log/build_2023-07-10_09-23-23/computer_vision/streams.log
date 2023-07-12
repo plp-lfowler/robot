@@ -1,0 +1,31 @@
+[4.510s] Invoking command in '/home/lance/robot/build/computer_vision': PYTHONPATH=/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/lance/robot/build/computer_vision/build
+[6.459s] running develop
+[7.631s] Removing /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer-vision.egg-link (link to .)
+[7.834s] Invoked command in '/home/lance/robot/build/computer_vision' returned '0': PYTHONPATH=/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --uninstall --editable --build-directory /home/lance/robot/build/computer_vision/build
+[7.845s] Invoking command in '/home/lance/robot/src/computer_vision': PYTHONPATH=/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/computer_vision build --build-base /home/lance/robot/build/computer_vision/build install --record /home/lance/robot/build/computer_vision/install.log --single-version-externally-managed
+[9.587s] running egg_info
+[9.591s] writing ../../build/computer_vision/computer_vision.egg-info/PKG-INFO
+[9.592s] writing dependency_links to ../../build/computer_vision/computer_vision.egg-info/dependency_links.txt
+[9.593s] writing entry points to ../../build/computer_vision/computer_vision.egg-info/entry_points.txt
+[9.594s] writing requirements to ../../build/computer_vision/computer_vision.egg-info/requires.txt
+[9.595s] writing top-level names to ../../build/computer_vision/computer_vision.egg-info/top_level.txt
+[9.605s] reading manifest file '../../build/computer_vision/computer_vision.egg-info/SOURCES.txt'
+[9.611s] writing manifest file '../../build/computer_vision/computer_vision.egg-info/SOURCES.txt'
+[9.612s] running build
+[9.613s] running build_py
+[9.614s] copying computer_vision/computer_vision.py -> /home/lance/robot/build/computer_vision/build/lib/computer_vision
+[9.620s] running install
+[9.623s] running install_lib
+[9.627s] creating /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision
+[9.628s] copying /home/lance/robot/build/computer_vision/build/lib/computer_vision/computer_vision.py -> /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision
+[9.629s] copying /home/lance/robot/build/computer_vision/build/lib/computer_vision/__init__.py -> /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision
+[9.632s] byte-compiling /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision/computer_vision.py to computer_vision.cpython-310.pyc
+[9.641s] byte-compiling /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision/__init__.py to __init__.cpython-310.pyc
+[9.642s] running install_data
+[9.647s] copying package.xml -> /home/lance/robot/install/computer_vision/share/computer_vision
+[9.651s] running install_egg_info
+[9.659s] Copying ../../build/computer_vision/computer_vision.egg-info to /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision-0.0.0-py3.10.egg-info
+[9.668s] running install_scripts
+[9.764s] Installing cv script to /home/lance/robot/install/computer_vision/lib/computer_vision
+[9.766s] writing list of installed files to '/home/lance/robot/build/computer_vision/install.log'
+[9.933s] Invoked command in '/home/lance/robot/src/computer_vision' returned '0': PYTHONPATH=/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/computer_vision build --build-base /home/lance/robot/build/computer_vision/build install --record /home/lance/robot/build/computer_vision/install.log --single-version-externally-managed

@@ -201,11 +201,14 @@ CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/ro
  /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/action_type_support_struct.h \
- /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__type_support.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__type_support.h \
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/msg/rosidl_generator_c__visibility_control.h \
- /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__struct.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__struct.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/msg/detail/block__functions.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__type_support.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__struct.h \
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_radians__functions.h \
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__type_support.h \
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_radians__struct.h \
@@ -215,4 +218,21 @@ CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/ro
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/play_pause__functions.h \
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__type_support.h \
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__struct.h \
- /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.h
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_coords__functions.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__type_support.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__struct.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/get_blocks__functions.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__type_support.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__struct.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__functions.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__type_support.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__struct.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__type_support.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__struct.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__type_support.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__struct.h \
+ /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.h

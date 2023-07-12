@@ -5,6 +5,8 @@ from rclpy.node import Node
 
 import cv2
 import numpy as np
+from my_cobot_interfaces.srv import GetBlocks
+from my_cobot_interfaces.msg import Block as BlockMsg
 
 class Block:
     def __init__(self, x, y, w, h, angle, color):
@@ -13,6 +15,7 @@ class Block:
         self.HORIZ_RES = 640
         self.VERT_RES = 480
         self.PERSPECTIVE_FACTOR = 14/120
+        self.BOX_SIZE = 40
         x = x - (self.HORIZ_RES / 2)
         y = (self.VERT_RES / 2) - y
         theta = np.radians(angle)
@@ -32,20 +35,19 @@ class Block:
 
     
     def get_3D_point_cam(self):
-        BOX_SIZE = 40 #box-width
         CAM_HEIGHT_BOXES = 9.4231
         pixel_size = (self.w + self.h) / 2
-        scalingFactor = BOX_SIZE / pixel_size
+        scalingFactor = self.BOX_SIZE / pixel_size
         pixel_position = self.get_unitless_depth_point(self.x, self.y)
         point = pixel_position * scalingFactor
-        point[2] = (CAM_HEIGHT_BOXES * BOX_SIZE)  - point[2]
+        point[2] = (CAM_HEIGHT_BOXES * self.BOX_SIZE)  - point[2]
         return point
     
     def get_3D_point(self):
         xCam, yCam, zCam = self.get_3D_point_cam()
         xRob = self.ROBOT_X_AT_ORIGIN - yCam
         yRob = self.ROBOT_Y_AT_ORIGIN + xCam
-        zRob = zCam
+        zRob = round(zCam / self.BOX_SIZE) * self.BOX_SIZE
         return np.array([xRob, yRob, zRob])
     
     def drawOn(self, img):
@@ -69,12 +71,21 @@ class Block:
         img = cv2.putText(img, text3, org3, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
         return img
     
+    def getMsg(self):
+        block = BlockMsg()
+        block.x,block.y,block.z = self.get_3D_point()
+        block.theta = self.angle
+        block.color = self.color
+        return block
+        
+    
 
 class ComputerVision(Node):
     def __init__(self):
         super().__init__("Computer_Vision")
         self.vid = cv2.VideoCapture(0)
         self.timer = self.create_timer(0.1, self.timer_callback)
+        self.service = self.create_service(GetBlocks, "/get_blocks", self.find_blocks_callback)
 
     def timer_callback(self):
         self.run()
@@ -84,7 +95,7 @@ class ComputerVision(Node):
         cv2.destroyAllWindows()
 
     def show_picture(self, frame):
-        cv2.imshow("video", frame)
+        cv2.imshow("video", cv2.resize(frame, (0,0), fx=2, fy=2))
         cv2.waitKey(1)
 
     def take_picture(self):
@@ -92,8 +103,14 @@ class ComputerVision(Node):
         return frame
     
     def run(self):
+        self.find_blocks_callback(None, GetBlocks.Response())
+
+    def find_blocks_callback(self, request:GetBlocks.Request, response:GetBlocks.Response):
         img = self.take_picture()
-        self.show_picture(cv2.resize(self.show_blocks(img), (0,0), fx=2, fy=2))
+        blocks = self.find_blocks(img)
+        self.show_blocks(img, blocks)
+        response.blocks = self.getBlockMsgs(blocks)
+        return response
         
 
     def find_yellow(self, img):
@@ -122,24 +139,26 @@ class ComputerVision(Node):
         high_upper = np.array([181, 256, 256])
         return cv2.bitwise_or(cv2.inRange(hsv, low_lower, low_upper), cv2.inRange(hsv, high_lower, high_upper))
     
-    def show_blocks(self, img):
-        blocks = self.find_blocks(img)
-        points = []
+    def getBlockMsgs(self, blocks:list[Block]):
+        msgs = []
+        for block in blocks:
+            msgs.append(block.getMsg())
+        return msgs
+    
+    def show_blocks(self, img, blocks):
         for block in blocks:
             img = block.drawOn(img)
-            points.append(block.get_3D_point())
-
-        return img
+        self.show_picture(img)
 
     def find_blocks(self, img):
         red = self.find_red(img)
         yellow =  self.find_yellow(img)
         green = self.find_green(img)
         blue = self.find_blue(img)
-        cv2.imshow("red", red)
-        cv2.imshow("yellow", yellow)
-        cv2.imshow("green", green)
-        cv2.imshow("blue", blue)
+        #cv2.imshow("red", red)
+        #cv2.imshow("yellow", yellow)
+        #cv2.imshow("green", green)
+        #cv2.imshow("blue", blue)
         blocks = []
         blocks += self.find_blocks_from_mask(red, "red")
         blocks += self.find_blocks_from_mask(yellow, "yellow")
@@ -185,3 +204,6 @@ def main(args=None):
     node.shutdown()
     node.destroy_node()
     rclpy.shutdown()
+
+if __name__ == "__main__":
+    main()
