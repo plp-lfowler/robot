@@ -9,7 +9,7 @@ from my_cobot_interfaces.srv import GetBlocks
 from my_cobot_interfaces.msg import Block as BlockMsg
 
 class Block:
-    def __init__(self, x, y, w, h, angle, color):
+    def __init__(self, x, y, w, h, angle, color, i=0):
         self.ROBOT_X_AT_ORIGIN = 147
         self.ROBOT_Y_AT_ORIGIN = 15
         self.HORIZ_RES = 640
@@ -27,6 +27,14 @@ class Block:
         self.h = h - np.abs(dh)
         self.angle = angle
         self.color = color
+
+        x = self.x + self.HORIZ_RES / 2
+        y = self.VERT_RES / 2 - self.y
+
+        box = cv2.boxPoints(((x, y), (self.w, self.h), self.angle))
+        box = np.int0(box)
+        #cv2.imwrite("8_"+str(i)+".png", cv2.drawContours(np.zeros((self.VERT_RES, self.HORIZ_RES)), [box], 0, (255,255,255), 1))
+
 
     def get_unitless_depth_point(self, x, y):
         DEPTH = 759.1
@@ -148,9 +156,11 @@ class ComputerVision(Node):
     def show_blocks(self, img, blocks):
         for block in blocks:
             img = block.drawOn(img)
+        #cv2.imwrite("9.png", img)
         self.show_picture(img)
 
     def find_blocks(self, img):
+        #cv2.imwrite("1.png", img)
         red = self.find_red(img)
         yellow =  self.find_yellow(img)
         green = self.find_green(img)
@@ -160,40 +170,44 @@ class ComputerVision(Node):
         #cv2.imshow("green", green)
         #cv2.imshow("blue", blue)
         blocks = []
-        blocks += self.find_blocks_from_mask(red, "red")
-        blocks += self.find_blocks_from_mask(yellow, "yellow")
+        #blocks += self.find_blocks_from_mask(red, "red")
+        #blocks += self.find_blocks_from_mask(yellow, "yellow")
         blocks += self.find_blocks_from_mask(green, "green")
-        blocks += self.find_blocks_from_mask(blue, "blue")
+        #blocks += self.find_blocks_from_mask(blue, "blue")
         return blocks
 
+    def saveConnectedComponents(self, totalLabels, label_ids, filename):
+        #cv2.imwrite(filename, label_ids * 255 / (totalLabels-1))
+
     def find_blocks_from_mask(self, mask, color):
+        #cv2.imwrite("2.png", mask)
         blurred = cv2.GaussianBlur(mask, (5, 5), 0)
+        #cv2.imwrite("3.png", blurred)
         threshold = cv2.inRange(blurred, 64, 255)
+        #cv2.imwrite("4.png", threshold)
 
         (totalLabels, label_ids, values, centroid) = cv2.connectedComponentsWithStats(threshold, 8, cv2.CV_32S)
-
-        background = (label_ids == 0).astype("uint8") * 255
-        found = cv2.bitwise_not(background)
-
-        (totalLabels, label_ids, values, centroid) = cv2.connectedComponentsWithStats(found, 8, cv2.CV_32S)
+        self.saveConnectedComponents(totalLabels, label_ids, "5.png")
 
         blocks = []
-
         for i in range(1, totalLabels):
             area = values[i, cv2.CC_STAT_AREA]
 
             if(area > 500):
                 mask = (label_ids == i).astype("uint8") * 255
                 contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
+                #cv2.imwrite("6_" + str(i) + ".png", cv2.drawContours(np.zeros(mask.shape), contours, -1, (255, 255, 255), 1))
                 rect = cv2.minAreaRect(contours[0])
                 (x, y), (w, h), angle = rect
+
+                #cv2.imwrite("7_" + str(i) + ".png", cv2.drawContours(np.zeros(mask.shape),[np.int0(cv2.boxPoints(rect))], 0, (255, 255, 255), 1))
 
                 aspect_ratio = min(w, h) / max(w, h)
 
                 if(aspect_ratio > 0.8):
-                    b = Block(x, y, w, h, angle, color)
+                    b = Block(x, y, w, h, angle, color, i)
                     blocks.append(b)
-
+        
         return blocks
         
 
