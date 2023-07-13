@@ -270,10 +270,10 @@ libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_
 libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_generator_c.so
 libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so
-libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so
+libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libcontrol_msgs__rosidl_generator_c.so
+libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so
 libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so
 libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_c.so
 libmy_cobot_hardware_interface.so: /opt/ros/humble/lib/libsensor_msgs__rosidl_generator_c.so

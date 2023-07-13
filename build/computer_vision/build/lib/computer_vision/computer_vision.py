@@ -6,10 +6,10 @@ from rclpy.node import Node
 import cv2
 import numpy as np
 from my_cobot_interfaces.srv import GetBlocks
-from my_cobot_interfaces.msg import Block
+from my_cobot_interfaces.msg import Block as BlockMsg
 
 class Block:
-    def __init__(self, x, y, w, h, angle, color):
+    def __init__(self, x, y, w, h, angle, color, i=0):
         self.ROBOT_X_AT_ORIGIN = 147
         self.ROBOT_Y_AT_ORIGIN = 15
         self.HORIZ_RES = 640
@@ -27,6 +27,7 @@ class Block:
         self.h = h - np.abs(dh)
         self.angle = angle
         self.color = color
+
 
     def get_unitless_depth_point(self, x, y):
         DEPTH = 759.1
@@ -63,16 +64,15 @@ class Block:
         org3 = (int(x - 40), int(y + 20))
         point3d = self.get_3D_point()
         text1 = "(" + str(round(point3d[0], 1)) + ", " + str(round(point3d[1], 1)) + ", " + str(round(point3d[2], 1)) + ")"
-        #text1 = "(" + str(round(self.x)) + ", " + str(round(self.y)) + ")"
         text2 = str(round(self.w)) + " x " + str(round(self.h))
-        text3 = str(round(self.angle, 4))
+        text3 = str(round(self.angle, 2))
         img = cv2.putText(img, text1, org1, cv2.FONT_HERSHEY_SIMPLEX, 0.3, (0, 0, 0), 1, cv2.LINE_AA)
         img = cv2.putText(img, text2, org2, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
         img = cv2.putText(img, text3, org3, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
         return img
     
     def getMsg(self):
-        block = Block()
+        block = BlockMsg()
         block.x,block.y,block.z = self.get_3D_point()
         block.theta = self.angle
         block.color = self.color
@@ -84,7 +84,7 @@ class ComputerVision(Node):
     def __init__(self):
         super().__init__("Computer_Vision")
         self.vid = cv2.VideoCapture(0)
-        #self.timer = self.create_timer(0.1, self.timer_callback)
+        self.timer = self.create_timer(0.1, self.timer_callback)
         self.service = self.create_service(GetBlocks, "/get_blocks", self.find_blocks_callback)
 
     def timer_callback(self):
@@ -95,7 +95,7 @@ class ComputerVision(Node):
         cv2.destroyAllWindows()
 
     def show_picture(self, frame):
-        cv2.imshow("video", frame)
+        cv2.imshow("video", cv2.resize(frame, (0,0), fx=2, fy=2))
         cv2.waitKey(1)
 
     def take_picture(self):
@@ -103,8 +103,7 @@ class ComputerVision(Node):
         return frame
     
     def run(self):
-        img = self.take_picture()
-        self.show_picture(cv2.resize(self.show_blocks(img), (0,0), fx=2, fy=2))
+        self.find_blocks_callback(None, GetBlocks.Response())
 
     def find_blocks_callback(self, request:GetBlocks.Request, response:GetBlocks.Response):
         img = self.take_picture()
@@ -149,17 +148,15 @@ class ComputerVision(Node):
     def show_blocks(self, img, blocks):
         for block in blocks:
             img = block.drawOn(img)
+        #cv2.imwrite("9.png", img)
         self.show_picture(img)
 
     def find_blocks(self, img):
+        #cv2.imwrite("1.png", img)
         red = self.find_red(img)
         yellow =  self.find_yellow(img)
         green = self.find_green(img)
         blue = self.find_blue(img)
-        #cv2.imshow("red", red)
-        #cv2.imshow("yellow", yellow)
-        #cv2.imshow("green", green)
-        #cv2.imshow("blue", blue)
         blocks = []
         blocks += self.find_blocks_from_mask(red, "red")
         blocks += self.find_blocks_from_mask(yellow, "yellow")
@@ -173,13 +170,7 @@ class ComputerVision(Node):
 
         (totalLabels, label_ids, values, centroid) = cv2.connectedComponentsWithStats(threshold, 8, cv2.CV_32S)
 
-        background = (label_ids == 0).astype("uint8") * 255
-        found = cv2.bitwise_not(background)
-
-        (totalLabels, label_ids, values, centroid) = cv2.connectedComponentsWithStats(found, 8, cv2.CV_32S)
-
         blocks = []
-
         for i in range(1, totalLabels):
             area = values[i, cv2.CC_STAT_AREA]
 
@@ -192,9 +183,9 @@ class ComputerVision(Node):
                 aspect_ratio = min(w, h) / max(w, h)
 
                 if(aspect_ratio > 0.8):
-                    b = Block(x, y, w, h, angle, color)
+                    b = Block(x, y, w, h, angle, color, i)
                     blocks.append(b)
-
+        
         return blocks
         
 

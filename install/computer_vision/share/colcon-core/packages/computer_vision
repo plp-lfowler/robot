@@ -1,1 +1,1 @@
-setuptools
+cv2:my_cobot_interfaces:numpy:rclpy

@@ -9,7 +9,8 @@ setup.py
 ../../build/bringup/bringup.egg-info/top_level.txt
 ../../build/bringup/bringup.egg-info/zip-safe
 bringup/__init__.py
-launch/bringup.launch.py
+launch/computer_vision.launch.xml
+launch/motion_planning.launch.py
 resource/bringup
 test/test_copyright.py
 test/test_flake8.py

@@ -272,4 +272,9 @@ CMakeFiles/my_cobot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/ro
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__type_support.h
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__struct.h
  /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.h
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__type_support.h
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__struct.h
+ /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h
+ /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h
+ /home/lance/robot/build/my_cobot_interfaces/rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.h
 

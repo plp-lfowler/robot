@@ -28,13 +28,6 @@ class Block:
         self.angle = angle
         self.color = color
 
-        x = self.x + self.HORIZ_RES / 2
-        y = self.VERT_RES / 2 - self.y
-
-        box = cv2.boxPoints(((x, y), (self.w, self.h), self.angle))
-        box = np.int0(box)
-        #cv2.imwrite("8_"+str(i)+".png", cv2.drawContours(np.zeros((self.VERT_RES, self.HORIZ_RES)), [box], 0, (255,255,255), 1))
-
 
     def get_unitless_depth_point(self, x, y):
         DEPTH = 759.1
@@ -71,9 +64,8 @@ class Block:
         org3 = (int(x - 40), int(y + 20))
         point3d = self.get_3D_point()
         text1 = "(" + str(round(point3d[0], 1)) + ", " + str(round(point3d[1], 1)) + ", " + str(round(point3d[2], 1)) + ")"
-        #text1 = "(" + str(round(self.x)) + ", " + str(round(self.y)) + ")"
         text2 = str(round(self.w)) + " x " + str(round(self.h))
-        text3 = str(round(self.angle, 4))
+        text3 = str(round(self.angle, 2))
         img = cv2.putText(img, text1, org1, cv2.FONT_HERSHEY_SIMPLEX, 0.3, (0, 0, 0), 1, cv2.LINE_AA)
         img = cv2.putText(img, text2, org2, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
         img = cv2.putText(img, text3, org3, cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 0, 0), 1, cv2.LINE_AA)
@@ -165,29 +157,18 @@ class ComputerVision(Node):
         yellow =  self.find_yellow(img)
         green = self.find_green(img)
         blue = self.find_blue(img)
-        #cv2.imshow("red", red)
-        #cv2.imshow("yellow", yellow)
-        #cv2.imshow("green", green)
-        #cv2.imshow("blue", blue)
         blocks = []
-        #blocks += self.find_blocks_from_mask(red, "red")
-        #blocks += self.find_blocks_from_mask(yellow, "yellow")
+        blocks += self.find_blocks_from_mask(red, "red")
+        blocks += self.find_blocks_from_mask(yellow, "yellow")
         blocks += self.find_blocks_from_mask(green, "green")
-        #blocks += self.find_blocks_from_mask(blue, "blue")
+        blocks += self.find_blocks_from_mask(blue, "blue")
         return blocks
 
-    def saveConnectedComponents(self, totalLabels, label_ids, filename):
-        #cv2.imwrite(filename, label_ids * 255 / (totalLabels-1))
-
     def find_blocks_from_mask(self, mask, color):
-        #cv2.imwrite("2.png", mask)
         blurred = cv2.GaussianBlur(mask, (5, 5), 0)
-        #cv2.imwrite("3.png", blurred)
         threshold = cv2.inRange(blurred, 64, 255)
-        #cv2.imwrite("4.png", threshold)
 
         (totalLabels, label_ids, values, centroid) = cv2.connectedComponentsWithStats(threshold, 8, cv2.CV_32S)
-        self.saveConnectedComponents(totalLabels, label_ids, "5.png")
 
         blocks = []
         for i in range(1, totalLabels):
@@ -196,11 +177,8 @@ class ComputerVision(Node):
             if(area > 500):
                 mask = (label_ids == i).astype("uint8") * 255
                 contours, _ = cv2.findContours(mask, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
-                #cv2.imwrite("6_" + str(i) + ".png", cv2.drawContours(np.zeros(mask.shape), contours, -1, (255, 255, 255), 1))
                 rect = cv2.minAreaRect(contours[0])
                 (x, y), (w, h), angle = rect
-
-                #cv2.imwrite("7_" + str(i) + ".png", cv2.drawContours(np.zeros(mask.shape),[np.int0(cv2.boxPoints(rect))], 0, (255, 255, 255), 1))
 
                 aspect_ratio = min(w, h) / max(w, h)
 

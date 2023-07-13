@@ -1,0 +1,24 @@
+[7.241s] Invoking command in '/home/lance/robot/src/controllers': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install LD_LIBRARY_PATH=/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/lance/robot/build/controllers/prefix_override:/home/lance/robot/install/controllers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/controllers build --build-base /home/lance/robot/build/controllers/build install --record /home/lance/robot/build/controllers/install.log --single-version-externally-managed
+[8.845s] running egg_info
+[8.849s] writing ../../build/controllers/controllers.egg-info/PKG-INFO
+[8.851s] writing dependency_links to ../../build/controllers/controllers.egg-info/dependency_links.txt
+[8.851s] writing entry points to ../../build/controllers/controllers.egg-info/entry_points.txt
+[8.852s] writing requirements to ../../build/controllers/controllers.egg-info/requires.txt
+[8.852s] writing top-level names to ../../build/controllers/controllers.egg-info/top_level.txt
+[8.864s] reading manifest file '../../build/controllers/controllers.egg-info/SOURCES.txt'
+[8.866s] writing manifest file '../../build/controllers/controllers.egg-info/SOURCES.txt'
+[8.867s] running build
+[8.868s] running build_py
+[8.870s] running install
+[8.872s] running install_lib
+[8.880s] running install_data
+[8.882s] running install_egg_info
+[8.891s] removing '/home/lance/robot/install/controllers/lib/python3.10/site-packages/controllers-0.0.0-py3.10.egg-info' (and everything under it)
+[8.892s] Copying ../../build/controllers/controllers.egg-info to /home/lance/robot/install/controllers/lib/python3.10/site-packages/controllers-0.0.0-py3.10.egg-info
+[8.902s] running install_scripts
+[9.005s] Installing follow_trajectory script to /home/lance/robot/install/controllers/lib/controllers
+[9.006s] Installing joint_state script to /home/lance/robot/install/controllers/lib/controllers
+[9.008s] Installing my_cobot script to /home/lance/robot/install/controllers/lib/controllers
+[9.010s] Installing shutdown script to /home/lance/robot/install/controllers/lib/controllers
+[9.013s] writing list of installed files to '/home/lance/robot/build/controllers/install.log'
+[9.332s] Invoked command in '/home/lance/robot/src/controllers' returned '0': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install LD_LIBRARY_PATH=/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/lance/robot/build/controllers/prefix_override:/home/lance/robot/install/controllers/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/controllers build --build-base /home/lance/robot/build/controllers/build install --record /home/lance/robot/build/controllers/install.log --single-version-externally-managed

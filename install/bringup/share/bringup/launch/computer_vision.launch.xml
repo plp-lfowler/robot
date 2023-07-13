@@ -1,0 +1,5 @@
+<launch>
+    <node pkg = "coord_controller" exec="my_cobot"/>
+    <node pkg = "coord_controller" exec = "state_machine"/>
+    <node pkg = "computer_vision" exec = "cv"/>
+</launch>

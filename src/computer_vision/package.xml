@@ -9,11 +9,13 @@
 
   <build_depend>cv2</build_depend>
   <build_depend>numpy</build_depend>
-  <build_depend>my_cobot_interfaces</exec_depend>
+  <build_depend>my_cobot_interfaces</build_depend>
+  <build_depend>rclpy</build_depend>
 
   <exec_depend>cv2</exec_depend>
   <exec_depend>numpy</exec_depend>
   <exec_depend>my_cobot_interfaces</exec_depend>
+  <exec_depend>rclpy</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>

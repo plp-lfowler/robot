@@ -270,8 +270,19 @@ CMakeFiles/my_cobot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_
   rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__functions.h \
   rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__type_support.h \
   rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__struct.h \
-  rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.h
+  rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__functions.h \
+  rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__type_support.h \
+  rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__struct.h \
+  /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
+  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h \
+  rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.h
 
+
+rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__functions.h:
+
+/opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.h:
+
+rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__type_support.h:
 
 rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_on__struct.h:
 
@@ -533,6 +544,8 @@ rosidl_generator_c/my_cobot_interfaces/srv/detail/set_joint_angles__type_support
 
 /usr/include/limits.h:
 
+/opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:
+
 /usr/include/python3.10/objimpl.h:
 
 /usr/include/python3.10/patchlevel.h:
@@ -756,6 +769,8 @@ rosidl_generator_c/my_cobot_interfaces/srv/detail/pump_off__struct.h:
 /usr/include/python3.10/context.h:
 
 /usr/include/python3.10/modsupport.h:
+
+rosidl_generator_c/my_cobot_interfaces/action/detail/set_angles__struct.h:
 
 /usr/include/python3.10/compile.h:
 

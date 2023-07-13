@@ -1,0 +1,24 @@
+[3.682s] Invoking command in '/home/lance/robot/src/computer_vision': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install LD_LIBRARY_PATH=/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/computer_vision build --build-base /home/lance/robot/build/computer_vision/build install --record /home/lance/robot/build/computer_vision/install.log --single-version-externally-managed
+[5.055s] running egg_info
+[5.058s] writing ../../build/computer_vision/computer_vision.egg-info/PKG-INFO
+[5.059s] writing dependency_links to ../../build/computer_vision/computer_vision.egg-info/dependency_links.txt
+[5.062s] writing entry points to ../../build/computer_vision/computer_vision.egg-info/entry_points.txt
+[5.063s] writing requirements to ../../build/computer_vision/computer_vision.egg-info/requires.txt
+[5.063s] writing top-level names to ../../build/computer_vision/computer_vision.egg-info/top_level.txt
+[5.073s] reading manifest file '../../build/computer_vision/computer_vision.egg-info/SOURCES.txt'
+[5.076s] writing manifest file '../../build/computer_vision/computer_vision.egg-info/SOURCES.txt'
+[5.077s] running build
+[5.078s] running build_py
+[5.078s] copying computer_vision/computer_vision.py -> /home/lance/robot/build/computer_vision/build/lib/computer_vision
+[5.079s] running install
+[5.081s] running install_lib
+[5.085s] copying /home/lance/robot/build/computer_vision/build/lib/computer_vision/computer_vision.py -> /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision
+[5.088s] byte-compiling /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision/computer_vision.py to computer_vision.cpython-310.pyc
+[5.096s] running install_data
+[5.099s] running install_egg_info
+[5.106s] removing '/home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision-0.0.0-py3.10.egg-info' (and everything under it)
+[5.108s] Copying ../../build/computer_vision/computer_vision.egg-info to /home/lance/robot/install/computer_vision/lib/python3.10/site-packages/computer_vision-0.0.0-py3.10.egg-info
+[5.113s] running install_scripts
+[5.197s] Installing cv script to /home/lance/robot/install/computer_vision/lib/computer_vision
+[5.199s] writing list of installed files to '/home/lance/robot/build/computer_vision/install.log'
+[5.349s] Invoked command in '/home/lance/robot/src/computer_vision' returned '0': CMAKE_PREFIX_PATH=/home/lance/robot/install/my_cobot_interfaces:/home/lance/robot/install/moveit_config:/home/lance/robot/install/my_cobot_hardware_interface:/home/lance/moveit2_ws/install LD_LIBRARY_PATH=/home/lance/robot/install/my_cobot_interfaces/lib:/home/lance/robot/install/my_cobot_hardware_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/lance/robot/build/computer_vision/prefix_override:/home/lance/robot/install/computer_vision/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/computer_vision build --build-base /home/lance/robot/build/computer_vision/build install --record /home/lance/robot/build/computer_vision/install.log --single-version-externally-managed

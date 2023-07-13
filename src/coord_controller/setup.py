@@ -21,7 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'my_cobot=coord_controller.my_cobot:main',
-            'state_machine=coord_controller.region_mover:main'
+            'state_machine=coord_controller.state_machine:main'
         ],
     },
 )

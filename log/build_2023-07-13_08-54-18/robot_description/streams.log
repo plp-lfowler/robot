@@ -1,0 +1,20 @@
+[17.914s] Invoking command in '/home/lance/robot/src/robot_description': PYTHONPATH=/home/lance/robot/build/robot_description/prefix_override:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/lance/robot/build/robot_description/build install --record /home/lance/robot/build/robot_description/install.log --single-version-externally-managed
+[21.470s] running egg_info
+[21.476s] writing ../../build/robot_description/robot_description.egg-info/PKG-INFO
+[21.480s] writing dependency_links to ../../build/robot_description/robot_description.egg-info/dependency_links.txt
+[21.483s] writing entry points to ../../build/robot_description/robot_description.egg-info/entry_points.txt
+[21.486s] writing requirements to ../../build/robot_description/robot_description.egg-info/requires.txt
+[21.489s] writing top-level names to ../../build/robot_description/robot_description.egg-info/top_level.txt
+[21.514s] reading manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[21.522s] writing manifest file '../../build/robot_description/robot_description.egg-info/SOURCES.txt'
+[21.525s] running build
+[21.527s] running build_py
+[21.532s] running install
+[21.535s] running install_lib
+[21.546s] running install_data
+[21.557s] running install_egg_info
+[21.572s] removing '/home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info' (and everything under it)
+[21.577s] Copying ../../build/robot_description/robot_description.egg-info to /home/lance/robot/install/robot_description/lib/python3.10/site-packages/robot_description-0.0.0-py3.10.egg-info
+[21.592s] running install_scripts
+[21.712s] writing list of installed files to '/home/lance/robot/build/robot_description/install.log'
+[21.930s] Invoked command in '/home/lance/robot/src/robot_description' returned '0': PYTHONPATH=/home/lance/robot/build/robot_description/prefix_override:/home/lance/robot/install/robot_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/robot_description build --build-base /home/lance/robot/build/robot_description/build install --record /home/lance/robot/build/robot_description/install.log --single-version-externally-managed

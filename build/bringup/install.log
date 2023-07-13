@@ -2,7 +2,8 @@
 /home/lance/robot/install/bringup/lib/python3.10/site-packages/bringup/__pycache__/__init__.cpython-310.pyc
 /home/lance/robot/install/bringup/share/ament_index/resource_index/packages/bringup
 /home/lance/robot/install/bringup/share/bringup/package.xml
-/home/lance/robot/install/bringup/share/bringup/launch/bringup.launch.py
+/home/lance/robot/install/bringup/share/bringup/launch/motion_planning.launch.py
+/home/lance/robot/install/bringup/share/bringup/launch/computer_vision.launch.xml
 /home/lance/robot/install/bringup/lib/python3.10/site-packages/bringup-0.0.0-py3.10.egg-info/SOURCES.txt
 /home/lance/robot/install/bringup/lib/python3.10/site-packages/bringup-0.0.0-py3.10.egg-info/entry_points.txt
 /home/lance/robot/install/bringup/lib/python3.10/site-packages/bringup-0.0.0-py3.10.egg-info/zip-safe
